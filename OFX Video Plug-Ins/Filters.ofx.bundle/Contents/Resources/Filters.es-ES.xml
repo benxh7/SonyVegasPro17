@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+	***************************************************************************
+	*   Copyright (C) 2016 MAGIX Software GmbH. All rights reserved. 
+	*
+	*       $Header: //sonic3/release/vegas/17.0release/vplugins/ofxFilters/Filters.es-ES.xml#1 $
+	*       $DateTime: 2019/06/29 14:35:43 $
+	*       $Author: Administrator $
+	*
+	*   Description:
+	*       Localized resources for the Filters plugin bundle (default)
+	***************************************************************************
+-->
+<!--
+<!DOCTYPE OfxImageEffectResource SYSTEM "ofx.dtd">
+ -->
+<OfxImageEffectResource>
+	<OfxPlugin name="com.vegascreativesoftware:Filters.Stereoscopic3DAdjust">
+
+		<OfxResourceSet ofxHost="default">
+			<OfxPropLabel>Ajuste 3D estereoscópico de VEGAS</OfxPropLabel>
+
+            <OfxImageEffectPluginPropGrouping>VEGAS</OfxImageEffectPluginPropGrouping>
+            <OfxPropPluginDescription>Proporciona ajustes para los medios 3D estereoscópicos</OfxPropPluginDescription>
+            <OfxImageEffectContext name="default">
+            </OfxImageEffectContext>
+
+			<OfxImageEffectContext name="OfxImageEffectContextFilter">
+
+				<OfxParamTypeDouble name="Horizontal">
+					<OfxPropLabel>Desplazamiento horizontal</OfxPropLabel>
+				</OfxParamTypeDouble>
+				
+				<OfxParamTypeGroup name="AdjustmentsGroup">
+                    <OfxPropLabel>Correcciones</OfxPropLabel>
+                </OfxParamTypeGroup>
+				
+				<OfxParamTypeDouble name="Vertical">
+					<OfxPropLabel>Desplazamiento vertical</OfxPropLabel>
+				</OfxParamTypeDouble>
+				<OfxParamTypeDouble name="Zoom">
+					<OfxPropLabel>Zoom</OfxPropLabel>
+				</OfxParamTypeDouble>
+				<OfxParamTypeDouble name="Keystone">
+					<OfxPropLabel>Piedra angular</OfxPropLabel>
+				</OfxParamTypeDouble>
+				<OfxParamTypeDouble name="Rotation">
+					<OfxPropLabel>Rotación</OfxPropLabel>
+				</OfxParamTypeDouble>
+				<OfxParamTypeChoice name="FlipHorizontal">
+					<OfxPropLabel>Invertir horizontalmente</OfxPropLabel>
+					<OfxParamPropChoiceOption>Desactivado</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>Izquierda</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>Derecha</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>Ambos</OfxParamPropChoiceOption>
+				</OfxParamTypeChoice>
+				<OfxParamTypeChoice name="FlipVertical">
+					<OfxPropLabel>Invertir verticalmente</OfxPropLabel>
+					<OfxParamPropChoiceOption>Desactivado</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>Izquierda</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>Derecha</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>Ambos</OfxParamPropChoiceOption>
+				</OfxParamTypeChoice>
+                <OfxParamTypePushButton name="AutoAlignButton">
+                    <OfxPropLabel>Corrección automática</OfxPropLabel>
+                </OfxParamTypePushButton>
+
+                <OfxParamTypeBoolean name="AutoCrop">
+                    <OfxPropLabel>Recorte automático</OfxPropLabel>
+                </OfxParamTypeBoolean>
+
+				<OfxParamTypeDouble name="Crop">
+					<OfxPropLabel>Recortar</OfxPropLabel>
+				</OfxParamTypeDouble>
+
+				<OfxParamTypeGroup name="FloatingWindowsGroup">
+					<OfxPropLabel>Ventanas flotantes</OfxPropLabel>
+				</OfxParamTypeGroup>
+				
+				<OfxParamTypeDouble name="FloatingWindowLeft">
+					<OfxPropLabel>Izquierda</OfxPropLabel>
+				</OfxParamTypeDouble>
+				<OfxParamTypeDouble name="FloatingWindowRight">
+					<OfxPropLabel>Derecha</OfxPropLabel>
+				</OfxParamTypeDouble>
+
+                <OfxMessage name="CouldNotAutoCorrect">No se puede encontrar similitudes suficientes en las imágenes para corregir de forma automática.</OfxMessage>
+
+                <OfxProgress name="AutoCorrectProgress">Auto corrección...</OfxProgress>
+                
+			</OfxImageEffectContext>
+
+		</OfxResourceSet>
+
+	</OfxPlugin>
+</OfxImageEffectResource>

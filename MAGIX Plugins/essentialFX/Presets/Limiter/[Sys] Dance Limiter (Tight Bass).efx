@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<preset owner="eFX Limiter" name="Dance Limiter (Tight Bass)">
+    <params version="2.030000">
+        <param id="active" value="1.000000" />
+        <param id="input" value="0.000000" />
+        <param id="output" value="-0.098133" />
+        <param id="threshold" value="0.000000" />
+        <param id="release" value="19.681988" />
+        <param id="clipgain" value="0.000000" />
+        <param id="attack" value="5.003677" />
+        <param id="adaptrelease" value="0.906250" />
+        <param id="peak_rms" value="0.156250" />
+        <param id="automakeup" value="1.000000" />
+        <param id="in_lc" value="39.999996" />
+        <param id="sc_lc" value="60.767551" />
+        <param id="clipshape" value="0.956250" />
+        <param id="version" value="10.000000" />
+    </params>
+</preset>

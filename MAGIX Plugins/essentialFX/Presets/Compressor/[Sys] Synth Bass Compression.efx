@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<preset owner="eFX Compressor" name="Synth Bass Compression">
+    <params version="2.010000">
+        <param id="active" value="1.000000" />
+        <param id="input" value="1.000000" />
+        <param id="output" value="0.598714" />
+        <param id="scfilter" value="0.290613" />
+        <param id="threshold" value="0.626725" />
+        <param id="ratio" value="0.695266" />
+        <param id="attack" value="0.506671" />
+        <param id="release" value="0.391923" />
+        <param id="sclisten" value="0.000000" />
+        <param id="softclip" value="0.000000" />
+        <param id="scflttype" value="1.000000" />
+        <param id="mode" value="0.000000" />
+        <param id="adaptrelease" value="2.300000" />
+        <param id="automakeup" value="0.000000" />
+        <param id="mix" value="1.000000" />
+        <param id="version" value="2.010000" />
+    </params>
+</preset>

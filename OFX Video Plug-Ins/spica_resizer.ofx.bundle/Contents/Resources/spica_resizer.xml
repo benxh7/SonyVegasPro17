@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<OfxImageEffectResource>
+	<OfxPlugin name="com.sonycreativesoftware:smart_upscale">
+		<OfxResourceSet ofxHost="default">
+			<OfxPropLabel>VEGAS Smart Upscale</OfxPropLabel>
+			<OfxPropShortLabel>VEGAS Smart Upscale</OfxPropShortLabel>
+			<OfxPropLongLabel>VEGAS Smart Upscale</OfxPropLongLabel>
+			<OfxImageEffectPluginPropGrouping>VEGAS</OfxImageEffectPluginPropGrouping>			
+			<OfxPropPluginDescription>VEGAS high quality resizer.</OfxPropPluginDescription>
+			<OfxImageEffectContext name="default">
+				<OfxParamTypeDouble3D name="Scale">
+					<OfxPropLabel>Scale</OfxPropLabel>
+			        <OfxPropShortLabel>Scale</OfxPropShortLabel>
+			        <OfxPropLongLabel>Scale</OfxPropLongLabel>
+					<OfxParamPropHint>Sets the resize scale value.</OfxParamPropHint>
+				</OfxParamTypeDouble3D>
+				<OfxParamTypeDouble name="Noise">
+					<OfxPropLabel>Noise sensitivity</OfxPropLabel>
+			        <OfxPropShortLabel>Noise sensitivity</OfxPropShortLabel>
+			        <OfxPropLongLabel>Noise sensitivity</OfxPropLongLabel>
+					<OfxParamPropHint>The noise level of the image.</OfxParamPropHint>
+				</OfxParamTypeDouble>
+				<OfxParamTypeBoolean name="EnableEnhancement">
+					<OfxPropLabel>Enable enhancement</OfxPropLabel>
+			        <OfxPropShortLabel>Enable enhancement</OfxPropShortLabel>
+			        <OfxPropLongLabel>Enable enhancement</OfxPropLongLabel>
+					<OfxParamPropHint>Enable or disable the smart enhancement.</OfxParamPropHint>
+				</OfxParamTypeBoolean>
+				<OfxMessage name="GenericError">
+				    The plugin experienced an error from which it cannot recover.
+				</OfxMessage>
+				<OfxMessage name="FrameFormatNotSupported">
+				    The specified Frame Format is not supported. Please choose 8-bit or 32-bit floating point RGBA from the Project settings.
+				</OfxMessage>
+				<OfxMessage name="OpenCLMissing">
+				    This plug-in requires OpenCL to function.
+				</OfxMessage>
+				<OfxMessage name="OpenCLError">
+				    The plugin experienced an OpenCL Error.
+				</OfxMessage>
+				<OfxMessage name="OpenCLMemoryError">
+				    OpenCL GPU memory was exhausted. Please try again with lower resolution images, or fewer OpenCL video effects.
+				</OfxMessage>
+				<OfxMessage name="OpenCLImageSizeError">
+				    The project resolution is too large. Please try again with lower resolution images.
+				</OfxMessage>
+			</OfxImageEffectContext>
+		</OfxResourceSet>
+	</OfxPlugin>
+</OfxImageEffectResource>

@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+	***************************************************************************
+	*   Copyright © 2018 MAGIX Software GmbH. All Rights Reserved.
+	*
+	*       $DateTime: 2018/08/08 $
+	*       $Author: pkelm $
+	*
+	*   Description:
+	*       Localized resources for the dual-fisheye plugin bundle (default)
+	***************************************************************************
+-->
+
+<!--
+<!DOCTYPE OfxImageEffectResource SYSTEM "ofx.dtd">
+ -->
+
+<OfxImageEffectResource>  
+  <OfxPlugin name="com.magix.ofx.vr.dual.stich">
+
+		<!--
+		Define the resouces overrides to be used for the host 'default' (or 'all' or 'com.vegascreativesoftware.vegas'
+		    in the locale 'fr-FR' (or 'de-DE' or 'es-ES' or 'ja-JP')
+			ofxHost="someHost"
+		-->
+		<OfxResourceSet ofxHost="default">
+
+			<!-- Set the user visible label on the plug-in -->
+			<OfxPropLabel>VEGAS 듀얼 어안렌즈 연결</OfxPropLabel>
+
+			<OfxImageEffectPluginPropGrouping>VEGAS\360</OfxImageEffectPluginPropGrouping>
+
+			<OfxPropPluginDescription>Magix Computer Products Intl.</OfxPropPluginDescription>
+
+			<!--
+	        Define default overrides that apply in all contexts (unless specified in a specific context)
+			-->
+			<OfxImageEffectContext name="default">
+			</OfxImageEffectContext>
+			
+			<!--
+	        Define default overrides that apply only in the generator context
+			-->
+			<OfxImageEffectContext name="OfxImageEffectContextFilter">
+				<OfxParamTypeChoice name="mx.ofx.360.stitch.fisheye.presets">
+					<OfxParamPropChoiceOption>사용자 정의</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>Samsung Gear 360°</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>LG 360° Cam</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>Ricoh Theta V</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>Ricoh Theta S</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>Ricoh Theta</OfxParamPropChoiceOption>
+					<OfxPropLabel>모델</OfxPropLabel>
+					<OfxPropShortLabel>모델</OfxPropShortLabel>
+			        <OfxPropLongLabel>모델</OfxPropLongLabel>
+					<OfxParamPropHint>특정 카메라를 위해 프리셋을 선택하실 수 있습니다.</OfxParamPropHint>
+				</OfxParamTypeChoice>			
+			
+				<OfxParamTypeDouble name="mx.ofx.360.stitch.fisheye.fov">
+                    <OfxPropLabel>화각</OfxPropLabel>
+					<OfxPropShortLabel>화각</OfxPropShortLabel>
+			        <OfxPropLongLabel>화각</OfxPropLongLabel>
+					<OfxParamPropHint>화각은 렌즈를 통해 사진기가 이미지를 담을 수 있는 세계의 범위를 가리킵니다. </OfxParamPropHint>
+                </OfxParamTypeDouble>
+				
+				<OfxParamTypeChoice name="mx.ofx.360.stitch.fisheye.orient.left">
+					<OfxParamPropChoiceOption>0 도</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>-90도</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>180도</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>90도</OfxParamPropChoiceOption>
+					<OfxPropLabel>왼쪽 어안</OfxPropLabel>
+					<OfxPropShortLabel>왼쪽 어안</OfxPropShortLabel>
+			        <OfxPropLongLabel>왼쪽 어안</OfxPropLongLabel>
+					<OfxParamPropHint>원본 푸티지 영상에서 왼쪽 어안 렌즈의 방향을 선택하십시오.</OfxParamPropHint>
+				</OfxParamTypeChoice>
+				
+				<OfxParamTypeChoice name="mx.ofx.360.stitch.fisheye.orient.right">
+					<OfxParamPropChoiceOption>0 도</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>-90도</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>180도</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>90도</OfxParamPropChoiceOption>
+					<OfxPropLabel>오른쪽 어안</OfxPropLabel>
+					<OfxPropShortLabel>오른쪽 어안</OfxPropShortLabel>
+			        <OfxPropLongLabel>오른쪽 어안</OfxPropLongLabel>
+					<OfxParamPropHint>원본 푸티지 영상에서 오른쪽 어안 렌즈의 방향을 선택하십시오.</OfxParamPropHint>
+				</OfxParamTypeChoice>
+				
+				<OfxParamTypeGroup name="mx.ofx.360.stitch.group0_0">
+					<OfxPropLabel>이미지 삽화화</OfxPropLabel>
+					<OfxPropShortLabel>이미지 삽화화</OfxPropShortLabel>
+			        <OfxPropLongLabel>이미지 삽화화</OfxPropLongLabel>
+					<OfxParamPropHint>삽화화(vignetting)은 이미지 중심을 밝게 남겨 둔 채, 이미지 주변의 밝기 혹은 채도를 감소시키는 것입니다. </OfxParamPropHint>
+				</OfxParamTypeGroup>
+				
+				<OfxParamTypeBoolean name="mx.ofx.360.stitch.fisheye.falloff.use">
+					<OfxPropLabel>삽화 제거</OfxPropLabel>
+					<OfxPropShortLabel>삽화 제거</OfxPropShortLabel>
+			        <OfxPropLongLabel>삽화 제거</OfxPropLongLabel>
+					<OfxParamPropHint>삽화화(vignetting)은 이미지 중심을 밝게 남겨 둔 채, 이미지 주변의 밝기 혹은 채도를 감소시키는 것입니다. </OfxParamPropHint>
+				</OfxParamTypeBoolean>
+				
+                <OfxParamTypeDouble name="mx.ofx.360.stitch.fisheye.falloff.factor">
+                    <OfxPropLabel>강도</OfxPropLabel>
+					<OfxPropShortLabel>강도</OfxPropShortLabel>
+			        <OfxPropLongLabel>강도</OfxPropLongLabel>
+					<OfxParamPropHint>그림의 주변부로 갈수록 세지는 강도입니다.</OfxParamPropHint>
+                </OfxParamTypeDouble>
+				
+                <OfxParamTypeDouble name="mx.ofx.360.stitch.fisheye.falloff.range">
+                    <OfxPropLabel>범위</OfxPropLabel>
+					<OfxPropShortLabel>범위</OfxPropShortLabel>
+			        <OfxPropLongLabel>범위</OfxPropLongLabel>
+					<OfxParamPropHint>범위가 적용되는 주변부까지의 거리입니다.</OfxParamPropHint>
+                </OfxParamTypeDouble>
+				
+				<OfxParamTypeGroup name="mx.ofx.360.stitch.group1_0">
+					<OfxPropLabel>개선</OfxPropLabel>
+					<OfxPropShortLabel>개선</OfxPropShortLabel>
+			        <OfxPropLongLabel>개선</OfxPropLongLabel>
+				</OfxParamTypeGroup>
+				
+				<OfxParamTypeDouble name="mx.ofx.360.stitch.fisheye.center">
+                    <OfxPropLabel>중앙</OfxPropLabel>
+					<OfxPropShortLabel>중앙</OfxPropShortLabel>
+			        <OfxPropLongLabel>중앙</OfxPropLongLabel>
+					<OfxParamPropHint>양 어안이 상쇄되는 중간점입니다.</OfxParamPropHint>
+                </OfxParamTypeDouble>
+				
+                <OfxParamTypeDouble name="mx.ofx.360.stitch.fisheye.narrowing">
+                    <OfxPropLabel>반경</OfxPropLabel>
+					<OfxPropShortLabel>반경</OfxPropShortLabel>
+			        <OfxPropLongLabel>반경</OfxPropLongLabel>
+					<OfxParamPropHint>모든 계산에 사용될 지름 거리입니다.</OfxParamPropHint>
+                </OfxParamTypeDouble>
+				
+				<OfxParamTypeDouble name="mx.ofx.360.stitch.fisheye.rotation">
+                    <OfxPropLabel>회전</OfxPropLabel>
+					<OfxPropShortLabel>회전</OfxPropShortLabel>
+			        <OfxPropLongLabel>회전</OfxPropLongLabel>
+					<OfxParamPropHint>양 어안의 사이의 각도 회전</OfxParamPropHint>
+                </OfxParamTypeDouble>
+				
+			</OfxImageEffectContext>
+		</OfxResourceSet>
+	</OfxPlugin>
+  
+</OfxImageEffectResource>

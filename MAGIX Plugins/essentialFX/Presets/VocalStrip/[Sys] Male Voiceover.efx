@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<preset owner="eFX VocalStrip" name="Male Voiceover">
+    <params version="2.000000">
+        <param id="active" value="1.000000" />
+        <param id="input" value="0.000000" />
+        <param id="output" value="2.400001" />
+        <param id="hpfilter" value="109.807739" />
+        <param id="gate" value="-45.195980" />
+        <param id="deesser" value="12.959999" />
+        <param id="compression" value="24.959999" />
+        <param id="tone" value="0.510000" />
+        <param id="ds_detfreq" value="6120.000000" />
+        <param id="comp_automakeup" value="1.000000" />
+        <param id="comp_attack" value="0.700000" />
+        <param id="comp_adaptrelease" value="2.317073" />
+    </params>
+</preset>

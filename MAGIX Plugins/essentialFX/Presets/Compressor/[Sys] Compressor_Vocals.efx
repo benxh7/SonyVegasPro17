@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<preset owner="eFX Compressor" name="Daniel\Compressor_Vocals">
+    <params version="1.000000">
+        <param id="active" value="1.000000" />
+        <param id="mode" value="0.000000" />
+        <param id="sync" value="0.000000" />
+        <param id="input" value="1.000000" />
+        <param id="output" value="0.582889" />
+        <param id="scfilter" value="0.000000" />
+        <param id="threshold" value="0.666667" />
+        <param id="ratio" value="0.259322" />
+        <param id="attack" value="0.022976" />
+        <param id="release" value="0.088750" />
+    </params>
+</preset>

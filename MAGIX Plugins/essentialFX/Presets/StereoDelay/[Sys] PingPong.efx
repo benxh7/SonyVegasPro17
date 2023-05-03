@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<preset owner="eFX StereoDelay" name="PingPong">
+    <params>
+        <param id="active" value="1.000000" />
+        <param id="mode" value="0.000000" />
+        <param id="sync" value="0.000000" />
+        <param id="input" value="1.000000" />
+        <param id="output" value="1.000000" />
+        <param id="delay_l" value="0.612515" />
+        <param id="delay_r" value="0.553410" />
+        <param id="damping" value="0.286369" />
+        <param id="feedback" value="0.428874" />
+        <param id="mix" value="0.500000" />
+    </params>
+</preset>

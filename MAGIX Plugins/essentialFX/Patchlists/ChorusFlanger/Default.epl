@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+<patchlist owner="efx" origin="">
+    <programs last_prg="0">
+        <prg number="0" preset="Default.efx" />
+        <prg number="1" preset="Acoustic Guitar.efx" /> 
+        <prg number="2" preset="Chorus Classic Bass.efx" /> 
+        <prg number="3" preset="Chorus Fx Any Direction.efx" /> 
+        <prg number="4" preset="Chorus Vocal Spread.efx" /> 
+        <prg number="5" preset="Flanger Pad Enhancer.efx" /> 
+        <prg number="6" preset="Heavy Stereo Chorus Fx.efx" /> 
+        <prg number="7" preset="Heavy Stereo Flanger Fx.efx" /> 
+        <prg number="8" preset="Keys Shimmering.efx" /> 
+        <prg number="9" preset="Lush And Wide Open.efx" /> 
+        <prg number="10" preset="Reggae Guitar Chorus.efx" />
+        <prg number="11" preset="Rhode's Chorus.efx" />
+        <prg number="12" preset="Stereo Ensemble.efx" />
+        <prg number="13" preset="Strong Guitar Chorus.efx" />
+        <prg number="14" preset="Subtle movement for pads.efx" />
+        <prg number="15" preset="Try on Drums at 120 BPM - use mix and depth.efx" />
+        <prg number="16" preset="Vox Alien Warble.efx" />
+        <prg number="17" preset="Vox Chorus.efx" />
+        <prg number="18" preset="Vox Ensemble Warm + Decoupled.efx" />
+        <prg number="19" preset="Vox Vibrato Mono.efx" />
+        <prg number="20" preset="Vox Vibrato Stereo.efx" />
+    </programs>
+</patchlist>

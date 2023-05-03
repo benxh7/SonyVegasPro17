@@ -1,0 +1,804 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MuxStatusCodeList xmlns="http://tempuri.org/XMLSchema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://tempuri.org/XMLSchema.xsd
+StatusCodeTable.xsd">
+
+	<MuxStatusCodeStrings MuxStatusCodeName="MUX_SN_S_SUCCESS">
+		<StatusString>Successful</StatusString>
+		<!--
+			Mux Component Successful.
+		-->	
+	</MuxStatusCodeStrings>
+	
+	
+	<MuxStatusCodeStrings MuxStatusCodeName="MUX_SN_S_PROC_TS">
+		<StatusString>TS Component Processing</StatusString> 
+		<Template1>TSComp::{5}{9}</Template1>
+		<Template2>PC:port={3}</Template2>
+		<!--
+			TS Component Processing.
+				0	ModuleName 
+				1	ClassName
+				2	MethodName
+				3	ServerPC:port
+				4	Reserve
+				5	Processing Detail
+		-->
+	</MuxStatusCodeStrings>
+	
+	
+	<MuxStatusCodeStrings MuxStatusCodeName="MUX_SN_S_PROC_DB">
+		<StatusString>DB Component Processing</StatusString>
+		<Template1>DBComp::{5}</Template1>
+		<Template2></Template2>
+		<!--
+			DB Component Processing.
+				0	ModuleName 
+				1	ClassName
+				2	MethodName
+				3	ServerPC:port
+				4	Reserve
+				5	Processing Detail
+		-->		
+	</MuxStatusCodeStrings>
+	
+	
+	<MuxStatusCodeStrings MuxStatusCodeName="MUX_SN_S_PROC_FS">
+		<StatusString>FS Component Processing</StatusString>
+		<Template1>FSComp::{5}</Template1>
+		<Template2></Template2>
+		<!--
+			FS Component Processing.
+				0	ModuleName 
+				1	ClassName
+				2	MethodName
+				3	ServerPC:port
+				4	Reserve
+				5	Processing Detail
+		-->		
+	</MuxStatusCodeStrings>
+	
+	
+	<MuxStatusCodeStrings MuxStatusCodeName="MUX_SN_S_DONE_TS">
+		<StatusString>TS Component Complete</StatusString>
+		<Template1>TSComp::{5}</Template1>
+		<Template2>PC:port={3}</Template2>
+		<!--
+			TS Component Complete.
+				0	ModuleName 
+				1	ClassName
+				2	MethodName
+				3	ServerPC:port
+				4	Reserve
+				5	Processing Detail
+		-->
+	</MuxStatusCodeStrings>
+	
+	
+	<MuxStatusCodeStrings MuxStatusCodeName="MUX_SN_S_DONE_DB">
+		<StatusString>DB Component Complete</StatusString> 
+		<Template1>DBComp::{5}</Template1>
+		<Template2></Template2>
+		<!--
+			DB Component Complete.
+				0	ModuleName 
+				1	ClassName
+				2	MethodName
+				3	ServerPC:port
+				4	Reserve
+				5	Processing Detail
+		-->
+	</MuxStatusCodeStrings>
+	
+	
+	<MuxStatusCodeStrings MuxStatusCodeName="MUX_SN_S_DONE_FS">
+		<StatusString>FS Component Complete</StatusString> 
+		<Template1>FSComp::{5}</Template1>
+		<Template2></Template2>
+		<!--
+			FS Component Complete.
+				0	ModuleName 
+				1	ClassName
+				2	MethodName
+				3	ServerPC:port
+				4	Reserve
+				5	Processing Detail
+		-->
+	</MuxStatusCodeStrings>
+	
+	
+	<MuxStatusCodeStrings MuxStatusCodeName="MUX_SN_S_DONE">
+		<StatusString>Mux Complete</StatusString>
+		<Template1>{5}</Template1>	
+		<!--
+			Mux Component Complete.
+				0	ModuleName 
+				1	ClassName
+				2	MethodName
+				3	ServerPC:port
+				4	Reserve
+				5	Processing Detail
+		-->		
+	</MuxStatusCodeStrings>
+	
+	
+	<MuxStatusCodeStrings MuxStatusCodeName="MUX_SN_S_EXECUTE_BUSY">
+		<StatusString>The function under processing is not completed</StatusString>  
+		<Template1>FSComp::{5}{6}</Template1>
+		<Template2>PC:port={3}</Template2>
+	</MuxStatusCodeStrings>
+	
+	
+	<MuxStatusCodeStrings MuxStatusCodeName="MUX_SN_E_MUX_ACTIVE">
+		<StatusString>Mux Process Already Active</StatusString>
+		<!--
+			Mux Process Already Active.
+		-->		
+	</MuxStatusCodeStrings>
+	
+	
+	<MuxStatusCodeStrings MuxStatusCodeName="MUX_SN_E_NO_MUX">
+		<StatusString>No Active Mux Process</StatusString>
+		<!--
+			No Active Mux Process.
+		-->		
+	</MuxStatusCodeStrings>
+	
+	
+	<MuxStatusCodeStrings MuxStatusCodeName="MUX_SN_E_PAUSED">
+		<StatusString>Active Mux Already Paused</StatusString>
+		<!--
+			Active Mux Already Paused.
+		-->		
+	</MuxStatusCodeStrings>
+	
+	
+	<MuxStatusCodeStrings MuxStatusCodeName="MUX_SN_E_NOT_PAUSED">
+		<StatusString>Active Mux Not Paused</StatusString>
+		<!--
+			Active Mux Not Paused.
+		-->		
+	</MuxStatusCodeStrings>
+	
+	
+	<MuxStatusCodeStrings MuxStatusCodeName="MUX_SN_E_ABORTED">
+		<StatusString>Mux Aborted</StatusString>
+		<Template1>{0}::{1}::{2}::Mux Aborted</Template1>
+		<Template2>PC:port={3}</Template2>
+		<!--
+			Mux Aborted.
+		-->		
+	</MuxStatusCodeStrings>
+
+
+	<!--Error Code-->
+	<MuxStatusCodeStrings MuxStatusCodeName="MUX_SN_E_MEM">
+		<StatusString>Failed to allocate memory</StatusString>
+		<Template1>{0}::{1}::{2}::Memory allocate error  --- {5}</Template1>
+		<Template2>PC:port={3}</Template2>
+		<!--
+				0	ModuleName 
+				1	ClassName
+				2	MethodName
+				3	ServerPC:port
+				4	Reserve
+				5	Error detail string
+		-->		
+	</MuxStatusCodeStrings>
+	
+	
+	<MuxStatusCodeStrings MuxStatusCodeName="MUX_SN_E_IO">
+		<StatusString>I/O Error</StatusString>
+		<Template1>{0}::{1}::{2}::IO Error --- {5}</Template1>
+		<Template2>PC:port={3}</Template2>
+		<!--
+			It is an error concerning I/O. 
+				0	ModuleName 
+				1	ClassName
+				2	MethodName
+				3	ServerPC:port
+				4	Reserve
+				5	Windows Exception String
+		-->
+	</MuxStatusCodeStrings>
+	
+	<MuxStatusCodeStrings MuxStatusCodeName="MUX_SN_E_INIT">
+		<StatusString>Initalize Error</StatusString>
+		<Template1>{0}::{1}::{2} --- {5}</Template1>
+		<Template2>PC:port={3}</Template2>
+		<!--
+				0	ModuleName 
+				1	ClassName
+				2	MethodName
+				3	ServerPC:port
+				4	Reserve
+				5	Error detail string
+		-->
+	</MuxStatusCodeStrings>
+	
+	<MuxStatusCodeStrings MuxStatusCodeName="MUX_SN_E_INVALID_XML">
+		<StatusString>Invalid value</StatusString>
+		<Template1>{0}::{1}::{2} Invalid Xml value. --- {5}</Template1>
+		<Template2>PC:port={3}</Template2>
+		<!--
+			Xml Invalid Value.
+				0	ModuleName 
+				1	ClassName
+				2	MethodName
+				3	ServerPC:port
+				4	Reserve
+				5	Error detail string
+		-->
+	</MuxStatusCodeStrings>
+	
+	
+	<MuxStatusCodeStrings MuxStatusCodeName="MUX_SN_E_INV_PARAM">
+		<StatusString>Invalid Start Command Parameter</StatusString>
+		<!--
+			Invalid Start Command Parameter
+		-->
+	</MuxStatusCodeStrings>
+	
+	
+	<MuxStatusCodeStrings MuxStatusCodeName="MUX_SN_E_EXCEPTION">
+		<StatusString>Exeption is thrown</StatusString>
+		<Template1>{0}::{1}::{2}::Catch Exception --- {5}</Template1>
+		<Template2>PC:port={3}</Template2>
+		<!--
+			Exception　throw
+				0	ModuleName 
+				1	ClassName
+				2	MethodName
+				3	ServerPC:port
+				4	Reserve
+				5	Windows Exception String
+		-->
+	</MuxStatusCodeStrings>
+
+
+
+	
+	<MuxStatusCodeStrings MuxStatusCodeName="MUX_SN_E_INTERNAL">
+		<StatusString>Internal Error</StatusString>
+		<Template1>{0}::{1}::{2}::Internal Error--- {5}</Template1>
+		<Template2>PC:port={3}</Template2>
+		<!--
+			The bug of Controller, TSComp, DBComp, and FSComp that is an internal error of Mux when generated.
+				0	ModuleName 
+				1	ClassName
+				2	MethodName
+				3	ServerPC:port
+				4	Reserve
+				5	Error detail string
+		-->
+	</MuxStatusCodeStrings>
+
+	
+	<MuxStatusCodeStrings MuxStatusCodeName="MUX_SN_E_XML_VALIDATION">
+		<StatusString>Validating error</StatusString>
+		<Template1>MUXComp:Validating error. --- {5}</Template1>
+		<Template2>PC:port={3}</Template2>
+		<!--
+			Error caught by the schema.
+				0	ModuleName 
+				1	ClassName
+				2	MethodName
+				3	ServerPC:port
+				4	Reserve
+				5	Windows Exception String
+		-->		
+	</MuxStatusCodeStrings>
+	
+
+	<MuxStatusCodeStrings MuxStatusCodeName="MUX_SN_E_XML_INVALID_ITEMCOUNT">
+		<StatusString>Invalid item count</StatusString>
+		<Template1>{0}::{1}::{2}::Invalid item count --- {5}</Template1>
+		<Template2>PC:port={3}</Template2>
+		<!--
+			The bug of Controller, TSComp, DBComp, and FSComp that is an internal error of Mux when generated.
+				0	ModuleName 
+				1	ClassName
+				2	MethodName
+				3	ServerPC:port
+				4	Reserve
+				5	Error "<number_of_xxx>" TAG
+		-->
+	</MuxStatusCodeStrings>	
+
+
+	<MuxStatusCodeStrings MuxStatusCodeName="MUX_SN_E_XML_INVALID_SELECT">
+		<StatusString>Invalid select type</StatusString>
+		<Template1>{0}::{1}::{2}::Invalid select type --- {5}</Template1>
+		<Template2>PC:port={3}</Template2>
+		<!--
+			Invalid select.
+				0	ModuleName 
+				1	ClassName
+				2	MethodName
+				3	ServerPC:port
+				4	Reserve
+				5	Error detail string
+		-->
+	</MuxStatusCodeStrings>	
+	
+	
+	<MuxStatusCodeStrings MuxStatusCodeName="MUX_SN_E_EMPTY_FILENAME">
+		<StatusString>Filename or FilePath is empty</StatusString>
+		<Template1>{0}::{1}::{2}::XML Filename or FilePath is empty --- {5}</Template1>
+		<Template2>PC:port={3}</Template2>
+		<!--
+			Path of the file is empty.
+				0	ModuleName 
+				1	ClassName
+				2	MethodName
+				3	ServerPC:port
+				4	Reserve
+				5	Element Name that indicates file
+		-->
+	</MuxStatusCodeStrings>
+
+
+	
+	<MuxStatusCodeStrings MuxStatusCodeName="MUX_SN_E_CTRL_XML_NOT_FOUND_CLIP_FILENAME">
+		<StatusString>Associated CLIP is not found</StatusString>
+		<Template1>{0}::{1}::{2}::MUXComp:Associated CLIP is not found. --- {5}</Template1>
+		<Template2>PC:port={3}</Template2>
+		<!--
+			CLIP file specified in CLIPDescriptor file is not found.
+				0	ModuleName 
+				1	ClassName
+				2	MethodName
+				3	ServerPC:port
+				4	Reserve
+				5	Name of the clip file
+		-->		
+	</MuxStatusCodeStrings>
+	
+	
+	<MuxStatusCodeStrings MuxStatusCodeName="MUX_SN_E_CTRL_XML_VALUE_DUPLICATE">
+		<StatusString>CLPI FileName of CLIPDescriptor overlaps</StatusString>
+		<Template1>Overlap value. CLPI FileName = {5}</Template1>
+		<Template2>PC:port={3}</Template2>
+		<!--
+			CLPI FileName of CLIPDescriptor overlaps. 
+				0	ModuleName 
+				1	ClassName
+				2	MethodName
+				3	ServerPC:port
+				4	Reserve
+				5	CLPI FileName
+		-->		
+	</MuxStatusCodeStrings>
+	
+
+	<MuxStatusCodeStrings MuxStatusCodeName="MUX_SN_E_XML_SCHEMA_VERSION">
+		<StatusString>The version of the program and the version of the schema are different</StatusString>
+		<Template1>The version of {5} is not {6}</Template1>
+		<Template2>PC:port={3}</Template2>
+		<!--
+			The version of the program and the version of the schema are different 
+				0	ModuleName 
+				1	ClassName
+				2	MethodName
+				3	ServerPC:port
+				4	Reserve
+				5	ErrorXMLFileName
+				6   Version of requested schema
+		-->		
+	</MuxStatusCodeStrings>
+
+
+<!--TSCompStatusCode-->
+	<MuxStatusCodeStrings MuxStatusCodeName="MUX_SN_E_TS_CREATE_M2TS_ERR">
+		<StatusString>m2ts file can not open</StatusString>
+		<Template1>{0}::{1}::{2}::{5}</Template1>
+		<Template2>PC:port={3}</Template2>
+	</MuxStatusCodeStrings>
+		<!--
+			m2ts file can not open. MuxCore Error
+				0	ModuleName 
+				1	ClassName
+				2	MethodName
+				3	ServerPC:port
+				4	Reserve
+				5	Error detail string
+		-->	
+		
+		
+	<MuxStatusCodeStrings MuxStatusCodeName="MUX_SN_E_TS_INVALID_INPUT">
+		<StatusString>The mui_file_type is invalid. current real</StatusString>
+		<Template1>{0}::{1}::{2}::{5}</Template1>
+		<Template2>PC:port={3}</Template2>
+	</MuxStatusCodeStrings>
+		<!--
+			The input data is illegal. MuxCore Error
+				0	ModuleName 
+				1	ClassName
+				2	MethodName
+				3	ServerPC:port
+				4	Reserve
+				5	Error detail string
+		-->
+		
+		
+	<MuxStatusCodeStrings MuxStatusCodeName="MUX_SN_E_TS_UNDERFLOW_ERR">
+		<StatusString>Buffer underflows</StatusString>
+		<Template1>{0}::{1}::{2}::{5}</Template1>
+		<Template2>PC:port={3}</Template2>
+	</MuxStatusCodeStrings>
+		<!--
+			Buffer underflows. MuxCore Error
+				0	ModuleName 
+				1	ClassName
+				2	MethodName
+				3	ServerPC:port
+				4	Reserve
+				5	Error detail string
+		-->
+		
+		
+	<MuxStatusCodeStrings MuxStatusCodeName="MUX_SN_E_TS_UNKNOW_ERR">
+		<StatusString>Unknown Error</StatusString>
+		<Template1>{0}::{1}::{2}::{5}</Template1>
+		<Template2>PC:port={3}</Template2>
+	</MuxStatusCodeStrings>
+		<!--
+			MuxCore ErrorCode
+				0	ModuleName 
+				1	ClassName
+				2	MethodName
+				3	ServerPC:port
+				4	Reserve
+				5	Error detail string
+		-->
+		
+		
+	<MuxStatusCodeStrings MuxStatusCodeName="MUX_SN_E_TS_PID_INVALID">
+		<StatusString>This pid is reserved</StatusString>
+		<Template1>{0}::{1}::{2}::{5}</Template1>
+		<Template2>PC:port={3}</Template2>
+	</MuxStatusCodeStrings>
+		<!--
+			This pid is reserved. MuxCore Error
+				0	ModuleName 
+				1	ClassName
+				2	MethodName
+				3	ServerPC:port
+				4	Reserve
+				5	Error detail string
+		-->
+		
+		
+	<MuxStatusCodeStrings MuxStatusCodeName="MUX_SN_E_TS_START_PTS_IS_TOO_SMALL">
+		<StatusString>Start PTS is too small</StatusString>
+		<Template1>{0}::{1}::{2}::{5}</Template1> 
+		<Template2>PC:port={3}</Template2>
+	</MuxStatusCodeStrings>
+		<!--
+			This pid is reserved. MuxCore Error
+				0	ModuleName 
+				1	ClassName
+				2	MethodName
+				3	ServerPC:port
+				4	Reserve
+				5	Error detail string
+		-->
+		
+	<MuxStatusCodeStrings MuxStatusCodeName="MUX_SN_E_TS_CREATE_EXTENT_INFO_ERR">
+		<StatusString>Failed in making extent.ifo</StatusString>
+		<Template1>{0}::{1}::{2}::{5}</Template1>
+		<Template2>PC:port={3}</Template2>
+	</MuxStatusCodeStrings>
+		<!--
+			 It failed in making extent.ifo.  MuxCore ErrorCode
+				0	ModuleName 
+				1	ClassName
+				2	MethodName
+				3	ServerPC:port
+				4	Reserve
+				5	Error detail string
+		-->
+		
+	
+	<MuxStatusCodeStrings MuxStatusCodeName="MUX_SN_E_TS_UNKNOWN_SC_STATUS">
+		<StatusString>Unknown error occurred in TS comp</StatusString>
+		<Template1>{0}::{1}::{2}::{5}</Template1>
+		<Template2>PC:port={3}</Template2>
+	</MuxStatusCodeStrings>
+		<!--
+			It is an error of Mux Core not defined.  MuxCore ErrorCode
+				0	ModuleName 
+				1	ClassName
+				2	MethodName
+				3	ServerPC:port
+				4	Reserve
+				5	Error detail string
+		-->
+	
+	
+	<MuxStatusCodeStrings MuxStatusCodeName="MUX_SN_E_TS_TOO_MANY_M2TS">
+		<StatusString>There are too many M2TS numbers created at once</StatusString>
+		<Template1>TSComp:There are too many M2TS numbers created at once --- {5}</Template1>
+		<Template2>PC:port={3}</Template2>
+		<!--
+			There are too many M2TS numbers created at once.
+				0	ModuleName 
+				1	ClassName
+				2	MethodName
+				3	ServerPC:port
+				4	Reserve
+		-->
+	</MuxStatusCodeStrings>
+	
+	
+	<MuxStatusCodeStrings MuxStatusCodeName="MUX_SN_E_TS_FILEPATH_TOO_LONG">
+		<StatusString>File PATH is too long</StatusString>
+		<Template1>TSComp:The file PATH is too long.  --- {5}</Template1>
+		<Template2>PC:port={3}</Template2>
+		<!--
+			The file PATH is too long.
+				0	ModuleName 
+				1	ClassName
+				2	MethodName
+				3	ServerPC:port
+				4	Reserve
+				5	FilePath
+		-->
+	</MuxStatusCodeStrings>
+		
+	
+	<MuxStatusCodeStrings MuxStatusCodeName="MUX_SN_E_TS_PROFILE_AND_LEVEL">
+		<StatusString>ProfileAndLevel Error</StatusString>
+		<Template1>{0}:ProfileAndLevel is 0x48 or 0x44.  should --- {5}</Template1>
+		<Template2>PC:port={3}</Template2>
+		<!--
+			ProfileAndLevel Error
+				0	ModuleName 
+				1	ClassName
+				2	MethodName
+				3	ServerPC:port
+				4	Reserve
+				5	InputValue
+		-->
+	</MuxStatusCodeStrings>
+
+
+<!--FSCompStatusCode-->	
+	
+	<MuxStatusCodeStrings MuxStatusCodeName="MUX_SN_E_FS_ALLOCATOR_ERROR_FAIL_ALLOCATE">
+		<StatusString>Allocatation Fail</StatusString>
+		<Template1>FS Component::File Allocator::Allocatation Fail --- {5}</Template1>
+		<Template2>PC:port={3}</Template2>
+		<!--
+			 Allocator Fail.
+				0	ModuleName 
+				1	ClassName
+				2	MethodName
+				3	ServerPC:port
+				4	Reserve
+				5	Error detail string
+		-->
+	</MuxStatusCodeStrings>
+	
+		
+	
+	<MuxStatusCodeStrings MuxStatusCodeName="MUX_SN_E_FS_ERROR_FAIL_CREATE_IMAGE">
+		<StatusString>Create Image Fail</StatusString>
+		<Template1>FS Component::FS Builder::Create Fail --- {5}</Template1>
+		<!--
+			 Create Image Fail.
+				0	ModuleName 
+				1	ClassName
+				2	MethodName
+				3	Reserve
+				4	Reserve
+				5	Error detail string
+		-->
+	</MuxStatusCodeStrings>
+				
+	<MuxStatusCodeStrings MuxStatusCodeName="MUX_SN_E_FS_LAYER_SIZE_OVER">	<!-- 20051227 Add. by Yumoto -->
+		<StatusString>Layer size was exceeded.</StatusString>
+		<Template1>{0}:{1}:{2}::Layer size was exceeded. [Layer0={5} blocks] [Layer1={6} blocks] [Max(One Side)={7} blocks]</Template1>
+		<!--
+			 Create Image Fail.
+				0	ModuleName 
+				1	ClassName
+				2	MethodName
+				3	Reserve
+				4	Reserve
+				5	Block number of Layer0
+				6	Block number of Layer1
+				7	Maximum number of block of Layer0
+		-->
+	</MuxStatusCodeStrings>
+
+	<MuxStatusCodeStrings MuxStatusCodeName="MUX_SN_E_FS_LAYER1_LARGER_LAYER0">	<!-- 20051227 Add. by Yumoto -->
+		<StatusString>Layer1 is larger than Layer0.</StatusString>
+		<Template1>{0}:{1}:{2}::Layer1 is larger than Layer0. [Layer0={5} blocks] [Layer1={6} blocks] [Max(Layer0)={7} blocks]</Template1>
+		<!--
+			 Create Image Fail.
+				0	ModuleName 
+				1	ClassName
+				2	MethodName
+				3	Reserve
+				4	Reserve
+				5	Block number of Layer0
+				6	Block number of Layer1
+				7	Maximum number of block of Layer0
+		-->
+	</MuxStatusCodeStrings>
+
+	<MuxStatusCodeStrings MuxStatusCodeName="MUX_SN_E_DB_COARSETABLES_EXCEEDED_MAXIMUM">
+		<StatusString>number_of_EP_coarse_entries exceeded 24576</StatusString>
+		<Template1>DBComp:number_of_EP_coarse_entries exceeded 24576 --- {5}</Template1>
+		<!--
+			 The number_of_EP_coarse_entries in a clip exceeded 24576..
+				0	ModuleName 
+				1	ClassName
+				2	MethodName
+				3	Reserve
+				4	Reserve
+				5	Error detail string
+		-->
+	</MuxStatusCodeStrings>
+	
+	
+	<MuxStatusCodeStrings MuxStatusCodeName="MUX_SN_E_DB_FINETABLES_EXCEEDED_MAXIMUM">
+		<StatusString>number_of_EP_fine_entries exceeded 180000</StatusString>
+		<Template1>DBComp:number_of_EP_fine_entries exceeded 180000 --- {5}</Template1>
+		<!--
+			 The number_of_EP_fine_entries in a clip exceeded 180000.
+				0	ModuleName 
+				1	ClassName
+				2	MethodName
+				3	Reserve
+				4	Reserve
+				5	Error detail string
+		-->
+	</MuxStatusCodeStrings>
+	
+	
+	
+	<MuxStatusCodeStrings MuxStatusCodeName="MUX_SN_E_DB_NO_PTS_START">
+		<StatusString>No PTS_EP_start</StatusString>
+		<Template1>"Intermediate file {5} Err."</Template1>
+		<!--
+			<PTS_EP_Start> does not exist in intermediate file.
+				0	ModuleName 
+				1	ClassName
+				2	MethodName
+				3	Reserve
+				4	Reserve
+				5	Path of intermediate file
+		-->
+	</MuxStatusCodeStrings>
+	
+	
+	<MuxStatusCodeStrings MuxStatusCodeName="MUX_SN_E_DB_NUMSSQ">
+		<StatusString>Invalid number of sequences</StatusString>
+		<!--
+			Number of the sequences in sequence.ifo is invalid.
+				0	ModuleName 
+				1	ClassName
+				2	MethodName
+				3	Reserve
+				4	Reserve     
+		-->
+	</MuxStatusCodeStrings>
+	
+	
+	<MuxStatusCodeStrings MuxStatusCodeName="MUX_SN_E_DB_INVALID_ATCDELTA">
+		<StatusString>Invalid ATC_delta</StatusString>
+		<Template1>DBComp:Invalid ATC_delta TS1:{5} TS2:{6}</Template1>
+		<!--
+			Calculated value of <ATC_Delta> is invalid.
+				0	ModuleName 
+				1	ClassName
+				2	MethodName
+				3	Reserve
+				4	Reserve
+				5	TS1 ClipName
+				6	TS2 ClipName
+		-->
+	</MuxStatusCodeStrings>
+	
+
+	<MuxStatusCodeStrings MuxStatusCodeName="MUX_SN_E_DB_BS_STILLTIME">
+		<StatusString>B/S still_time Err</StatusString>
+		<Template1>B/S still_time Err. clip_name={5} still_time={6}</Template1>
+		<Template2></Template2>
+		<!--
+			B/S still_time Err.
+				0	ModuleName 
+				1	ClassName
+				2	MethodName
+				3	ServerPC:port
+				4	Reserve
+				5 ClipName
+				6 still_time
+		-->
+	</MuxStatusCodeStrings>
+	
+
+	<!--Controller Warning-->
+		<MuxStatusCodeStrings MuxStatusCodeName="MUX_SN_W_CTRL_NOT_REFERRED_CLIP">
+		<StatusString>There is Clip not referred to from PlayItem</StatusString>
+		<Template1>{0}::Warning---{5}</Template1>
+		<!--
+			There is Clip not referred to from PlayItem.
+				0	ModuleName 
+				1	ClassName
+				2	MethodName
+				3	Reserve
+				4	Reserve
+				5	Warning detail string
+		-->
+	</MuxStatusCodeStrings>
+	
+	<!--DB Warning-->
+		<MuxStatusCodeStrings MuxStatusCodeName="MUX_SN_W_DB_ILLEGAL_EPMAP">
+		<StatusString>Illegal EPMAP</StatusString>
+		<Template1>{0}::Warning---Only an illegal EP_map can be made. Do you continue?  \nES_type[{5}]\nPID:[{6}]</Template1>
+		<!--
+			Only an illegal EP_map can be made.
+				0	ModuleName 
+				1	ClassName
+				2	MethodName
+				3	Reserve
+				4	Reserve
+				5	ES_type
+				6	PID
+		-->
+	</MuxStatusCodeStrings>
+	
+	<!--DB Warning-->
+		<MuxStatusCodeStrings MuxStatusCodeName="MUX_SN_W_DB_MAXIMUM_DATABASE_SIZE">
+		<StatusString>The DB file Annex B Maximum database size warning</StatusString>
+		<Template1>The DB file Annex B Maximum database size warning [section={5}] [file name={6}] [field={7}] Do you continue?</Template1>
+		<Template2>{7}. Do you continue?</Template2>
+		<!--
+			Annex B Maximum database size warning
+				0 ModuleName 
+				1 ClassName
+				2 MethodName
+				3 Reserve
+				4 Reserve
+				5 Illegal section
+				6 file name
+				7 field
+		-->
+	</MuxStatusCodeStrings>
+	<!--DB Warning-->
+		<MuxStatusCodeStrings MuxStatusCodeName="MUX_SN_W_DB_SP_SEGMENT_LENGTH">
+		<StatusString>The duration of SP Segment shall be equal to or more than 10 second</StatusString>
+		<Template1>SP(Sony Proprietary) Segment Length Error [clip name={5}] [application type={6}] continue?</Template1>
+		<Template2>The duration of SP(Sony Proprietary) Segment shall be equal to or more than 10 second</Template2>
+		<!--
+			Annex B Maximum database size warning
+				0 ModuleName 
+				1 ClassName
+				2 MethodName
+				3 Reserve
+				4 Reserve
+				5 clip name
+				6 application type
+		-->
+	</MuxStatusCodeStrings>
+	
+	
+	<!--FS Warning-->
+	<MuxStatusCodeStrings MuxStatusCodeName="MUX_SN_W_FS_VOLUME_SET_ID_SHORT">
+		<StatusString>The length of &#60;Volume_Set_ID&#62; is necessary for 16 or more</StatusString>
+		<Template1>FS Component::Warning---{5} Do you continue?</Template1>
+		<Template2>{0}::{1}::{2} The length of &#60;Volume_Set_ID&#62; is necessary for 16 or more.  Do you continue?</Template2>
+		<!--
+			The length of <Volume_Set_ID> is necessary for 16 or more.
+				0	ModuleName 
+				1	ClassName
+				2	MethodName
+				3	Reserve
+				4	Reserve
+				5	Warning detail string
+		-->
+	</MuxStatusCodeStrings>
+
+</MuxStatusCodeList>

@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+	***************************************************************************
+	*   Copyright © 2018 MAGIX Software GmbH. All Rights Reserved.
+	*
+	*       $DateTime: 2018/08/08 $
+	*       $Author: pkelm $
+	*
+	*   Description:
+	*       Localized resources for the dual-fisheye plugin bundle (default)
+	***************************************************************************
+-->
+
+<!--
+<!DOCTYPE OfxImageEffectResource SYSTEM "ofx.dtd">
+ -->
+
+<OfxImageEffectResource>  
+  <OfxPlugin name="com.magixsoftware:panorotation">
+
+		<!--
+		Define the resouces overrides to be used for the host 'default' (or 'all' or 'com.vegascreativesoftware.vegas'
+		    in the locale 'fr-FR' (or 'de-DE' or 'es-ES' or 'ja-JP')
+			ofxHost="someHost"
+		-->
+		<OfxResourceSet ofxHost="default">
+
+			<!-- Set the user visible label on the plug-in -->
+			<OfxPropLabel>VEGAS Scene Rotation</OfxPropLabel>
+
+			<OfxImageEffectPluginPropGrouping>VEGAS\360</OfxImageEffectPluginPropGrouping>
+
+			<OfxPropPluginDescription>MAGIX Computer Products Intl. Co.</OfxPropPluginDescription>
+
+			<!--
+	        Define default overrides that apply in all contexts (unless specified in a specific context)
+			-->
+			<OfxImageEffectContext name="default">
+			</OfxImageEffectContext>
+			
+			<!--
+	        Define default overrides that apply only in the generator context
+			-->
+			<OfxImageEffectContext name="OfxImageEffectContextFilter">				
+				<OfxParamTypeDouble name="mx.ofx.plugin.rotate.x.angle">
+                    <OfxPropLabel>Obr&oacute;ć wokoł osi X</OfxPropLabel>
+					<OfxPropShortLabel>Obr&oacute;ć wokoł osi X</OfxPropShortLabel>
+			        <OfxPropLongLabel>Obr&oacute;ć wokoł osi X</OfxPropLongLabel>
+					<OfxParamPropHint>Obr&oacute;ć pole podglądu wok&oacute;ł osi X.</OfxParamPropHint>
+                </OfxParamTypeDouble>
+				
+				<OfxParamTypeDouble name="mx.ofx.plugin.rotate.y.angle">
+                    <OfxPropLabel>Obr&oacute;ć wok&oacute;ł osi Y</OfxPropLabel>
+					<OfxPropShortLabel>Obr&oacute;ć wok&oacute;ł osi Y</OfxPropShortLabel>
+			        <OfxPropLongLabel>Obr&oacute;ć wok&oacute;ł osi Y</OfxPropLongLabel>
+					<OfxParamPropHint>Obr&oacute;ć pole podglądu wok&oacute;ł osi Y.</OfxParamPropHint>
+                </OfxParamTypeDouble>
+				
+				<OfxParamTypeDouble name="mx.ofx.plugin.rotate.z.angle">
+                    <OfxPropLabel>Obr&oacute;ć wok&oacute;ł osi Z</OfxPropLabel>
+					<OfxPropShortLabel>Obr&oacute;ć wok&oacute;ł osi Z</OfxPropShortLabel>
+			        <OfxPropLongLabel>Obr&oacute;ć wok&oacute;ł osi Z</OfxPropLongLabel>
+					<OfxParamPropHint>Obr&oacute;ć pole podglądu wok&oacute;ł osi Z.</OfxParamPropHint>
+                </OfxParamTypeDouble>
+				
+				<OfxParamTypeChoice name="mx.ofx.plugin.rotate.stereo">
+					<OfxParamPropChoiceOption>Brak</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>G&oacute;ra i d&oacute;ł</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>Strona po stronie</OfxParamPropChoiceOption>
+					<OfxPropLabel>Stereoskop</OfxPropLabel>
+					<OfxPropShortLabel>Stereoskop</OfxPropShortLabel>
+			        <OfxPropLongLabel>Stereoskop</OfxPropLongLabel>
+					<OfxParamPropHint>Wybierz format klatki 3D.</OfxParamPropHint>
+				</OfxParamTypeChoice>
+				
+				<OfxMessage name="mx.ofx.plugin.rotate.warning.hostnotsupported">Aktualny host nie jest obsługiwany przez tę wtyczkę.</OfxMessage>
+				
+				<OfxMessage name="mx.ofx.plugin.rotate.warning.unknown">Nieznany błąd</OfxMessage>
+				
+			</OfxImageEffectContext>
+		</OfxResourceSet>
+	</OfxPlugin>
+  
+</OfxImageEffectResource>

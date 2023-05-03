@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<preset owner="eFX Compressor" name="Extreme Guitar Compression">
+    <params version="1.000000">
+        <param id="active" value="1.000000" />
+        <param id="mode" value="0.000000" />
+        <param id="sync" value="0.000000" />
+        <param id="input" value="1.000000" />
+        <param id="output" value="0.674242" />
+        <param id="scfilter" value="0.216928" />
+        <param id="threshold" value="0.478125" />
+        <param id="ratio" value="0.562694" />
+        <param id="attack" value="0.391781" />
+        <param id="release" value="0.732388" />
+    </params>
+</preset>

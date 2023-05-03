@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+<patchlist owner="efx" origin="">
+    <programs last_prg="0">
+	<prg number="0" preset="Default.efx" />
+        <prg number="1" preset="Cathedral.efx" />
+        <prg number="2" preset="Central Station.efx" />
+        <prg number="3" preset="Classic Snare Plate - wet.efx" />
+        <prg number="4" preset="Classic Vocal Plate.efx" />
+        <prg number="5" preset="Drum Plate.efx" />
+        <prg number="6" preset="Intimate Room.efx" />
+        <prg number="7" preset="Large Concert Hall.efx" />
+        <prg number="8" preset="Light Guitar Plate.efx" />
+        <prg number="9" preset="Living Room.efx" />
+        <prg number="10" preset="Reverb_Drum_Room.efx" />
+	<prg number="11" preset="Reverb_Empty_Hall.efx" />
+	<prg number="12" preset="Reverb_Vocal_Ambient_Room.efx" />
+	<prg number="13" preset="Reverb_Vocal_Hall.efx" />
+	<prg number="14" preset="SlapBack.efx" />
+	<prg number="15" preset="Small Club.efx" />
+	<prg number="16" preset="Small Hall.efx" />
+	<prg number="17" preset="Soupe Du Jour.efx" />
+	<prg number="18" preset="Very Large & Rich.efx" />
+	<prg number="19" preset="Very Light Guitar Room.efx" />
+	<prg number="20" preset="Vox Decoupler.efx" />
+    </programs>
+</patchlist>

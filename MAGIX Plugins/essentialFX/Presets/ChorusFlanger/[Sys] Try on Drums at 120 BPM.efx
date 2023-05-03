@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<preset owner="eFX ChorusFlanger" name="Try on Drums at 120 BPM - use mix and depth">
+    <params version="2.000000">
+        <param id="active" value="1.000000" />
+        <param id="mode" value="1.000000" />
+        <param id="input" value="1.000000" />
+        <param id="output" value="0.809851" />
+        <param id="rate" value="0.012728" />
+        <param id="depth" value="1.000000" />
+        <param id="phase" value="0.000000" />
+        <param id="feedback" value="0.942503" />
+        <param id="mix" value="0.153184" />
+        <param id="sync" value="0.000000" />
+    </params>
+</preset>

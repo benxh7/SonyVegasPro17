@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<preset owner="eFX StereoDelay" name="Synth Arp 8th 16th BBD">
+    <params version="2.000000">
+        <param id="active" value="1.000000" />
+        <param id="mode" value="2.000000" />
+        <param id="input" value="1.000000" />
+        <param id="output" value="1.000000" />
+        <param id="delay_l" value="0.416667" />
+        <param id="delay_r" value="0.166667" />
+        <param id="damping" value="0.080000" />
+        <param id="feedback" value="0.280000" />
+        <param id="mix" value="0.440000" />
+        <param id="sync" value="1.000000" />
+        <param id="hpfreq" value="45.650970" />
+        <param id="bbd_stages" value="3.000000" />
+        <param id="bbd_compander" value="0.000000" />
+        <param id="bbd_noise" value="-80.000000" />
+        <param id="bbd_cldrift" value="0.000000" />
+        <param id="tape_smear" value="0.000000" />
+    </params>
+</preset>

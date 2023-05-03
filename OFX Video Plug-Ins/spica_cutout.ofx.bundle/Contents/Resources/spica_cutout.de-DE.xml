@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<OfxImageEffectResource>
+	<OfxPlugin name="com.sonycreativesoftware:smart_zoom">
+		<OfxResourceSet ofxHost="default">
+			<OfxPropLabel>VEGAS Smart Zoom</OfxPropLabel>
+			<OfxPropShortLabel>VEGAS Smart Zoom</OfxPropShortLabel>
+			<OfxPropLongLabel>VEGAS Smart Zoom</OfxPropLongLabel>
+			<OfxImageEffectPluginPropGrouping>VEGAS</OfxImageEffectPluginPropGrouping>			
+			<OfxPropPluginDescription>Zoom-Tool für hohe Ansprüche von VEGAS.</OfxPropPluginDescription>
+			<OfxImageEffectContext name="default">
+				<OfxParamTypeDouble3D name="LocationAndZoom">
+					<OfxPropLabel>Ausschnitt</OfxPropLabel>
+			        <OfxPropShortLabel>Cutout</OfxPropShortLabel>
+			        <OfxPropLongLabel>Cutout</OfxPropLongLabel>
+					<OfxParamPropHint>Ort und Zoom des Ausschnitts.</OfxParamPropHint>
+				</OfxParamTypeDouble3D>
+				<OfxParamTypeDouble name="Noise">
+					<OfxPropLabel>Rauschempfindlichkeit</OfxPropLabel>
+			        <OfxPropShortLabel>Noise sensitivity</OfxPropShortLabel>
+			        <OfxPropLongLabel>Noise sensitivity</OfxPropLongLabel>
+					<OfxParamPropHint>Die Rauschstufe des Bilds.</OfxParamPropHint>
+				</OfxParamTypeDouble>
+				<OfxParamTypeBoolean name="EnableEnhancement">
+					<OfxPropLabel>Optimierung aktivieren</OfxPropLabel>
+			        <OfxPropShortLabel>Enable enhancement</OfxPropShortLabel>
+			        <OfxPropLongLabel>Enable enhancement</OfxPropLongLabel>
+					<OfxParamPropHint>Aktiviert oder deaktiviert die intelligente Optimierung.</OfxParamPropHint>
+				</OfxParamTypeBoolean>
+				<OfxMessage name="GenericError">
+				    Es gab einen Fehler für das Plug-In, der nicht korrigiert werden kann.
+				</OfxMessage>
+				<OfxMessage name="FrameFormatNotSupported">
+				    Das angegebene Frame-Format wird nicht unterstützt. Bitte wählen Sie in den Projekteinstellungen ein 8- oder 32-Bit-Fließkomma-RGBA aus.
+				</OfxMessage>
+				<OfxMessage name="OpenCLMissing">
+				    Dieses Plug-In erfordert OpenCL, um zu funktionieren.
+				</OfxMessage>
+				<OfxMessage name="OpenCLError">
+				    Für das Plug-In ist ein OpenCL-Fehler aufgetreten.
+				</OfxMessage>
+				<OfxMessage name="OpenCLMemoryError">
+				    Der OpenCL-GPU-Speicher war erschöpft. Bitte wiederholen Sie den Vorgang unter Verwendung von Bildern mit einer niedrigeren Auflösung oder weniger OpenCL-Videoeffekten.
+				</OfxMessage>
+				<OfxMessage name="OpenCLImageSizeError">
+				    Die Projektauflösung ist zu groß. Bitte wiederholen Sie den Vorgang unter Verwendung von Bildern mit einer niedrigeren Auflösung.
+				</OfxMessage>
+			</OfxImageEffectContext>
+		</OfxResourceSet>
+	</OfxPlugin>
+</OfxImageEffectResource>

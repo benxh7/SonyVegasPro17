@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<preset owner="eFX StereoDelay" name="">
+    <params version="2.010000">
+        <param id="active" value="1.000000" />
+        <param id="mode" value="2.000000" />
+        <param id="input" value="1.000000" />
+        <param id="output" value="1.000000" />
+        <param id="delay_l" value="0.333333" />
+        <param id="delay_r" value="0.333333" />
+        <param id="damping" value="0.190000" />
+        <param id="feedback" value="0.720000" />
+        <param id="mix" value="1.000000" />
+        <param id="sync" value="0.000000" />
+        <param id="hpfreq" value="164.403671" />
+        <param id="noise" value="-60.000000" />
+        <param id="bbd_stages" value="2.000000" />
+        <param id="bbd_compander" value="5.062500" />
+        <param id="bbd_cldrift" value="0.000000" />
+        <param id="version" value="2.010000" />
+    </params>
+</preset>

@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<preset owner="eFX DeEsser" name="Male Vox">
+    <params version="2.000000">
+        <param id="active" value="1.000000" />
+        <param id="input" value="0.000000" />
+        <param id="output" value="0.000000" />
+        <param id="scfilter" value="5950.000488" />
+        <param id="reduction" value="7.595462" />
+        <param id="prelisten" value="0.000000" />
+    </params>
+</preset>

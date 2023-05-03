@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+	***************************************************************************
+	*   Copyright © 2018 MAGIX Software GmbH. All Rights Reserved.
+	*
+	*       $DateTime: 2018/08/08 $
+	*       $Author: pkelm $
+	*
+	*   Description:
+	*       Localized resources for the dual-fisheye plugin bundle (default)
+	***************************************************************************
+-->
+
+<!--
+<!DOCTYPE OfxImageEffectResource SYSTEM "ofx.dtd">
+ -->
+
+<OfxImageEffectResource>  
+  <OfxPlugin name="com.magixsoftware:panorotation">
+
+		<!--
+		Define the resouces overrides to be used for the host 'default' (or 'all' or 'com.vegascreativesoftware.vegas'
+		    in the locale 'fr-FR' (or 'de-DE' or 'es-ES' or 'ja-JP')
+			ofxHost="someHost"
+		-->
+		<OfxResourceSet ofxHost="default">
+
+			<!-- Set the user visible label on the plug-in -->
+			<OfxPropLabel>VEGAS 장면 회전</OfxPropLabel>
+
+			<OfxImageEffectPluginPropGrouping>VEGAS\360</OfxImageEffectPluginPropGrouping>
+
+			<OfxPropPluginDescription>Magix Computer Products Intl.</OfxPropPluginDescription>
+
+			<!--
+	        Define default overrides that apply in all contexts (unless specified in a specific context)
+			-->
+			<OfxImageEffectContext name="default">
+			</OfxImageEffectContext>
+			
+			<!--
+	        Define default overrides that apply only in the generator context
+			-->
+			<OfxImageEffectContext name="OfxImageEffectContextFilter">				
+				<OfxParamTypeDouble name="mx.ofx.plugin.rotate.x.angle">
+                    <OfxPropLabel>X 축으로 회전</OfxPropLabel>
+					<OfxPropShortLabel>X 축으로 회전</OfxPropShortLabel>
+			        <OfxPropLongLabel>X 축으로 회전</OfxPropLongLabel>
+					<OfxParamPropHint>시야를 X축으로 회전</OfxParamPropHint>
+                </OfxParamTypeDouble>
+				
+				<OfxParamTypeDouble name="mx.ofx.plugin.rotate.y.angle">
+                    <OfxPropLabel>Y축으로 회전</OfxPropLabel>
+					<OfxPropShortLabel>Y축으로 회전</OfxPropShortLabel>
+			        <OfxPropLongLabel>Y축으로 회전</OfxPropLongLabel>
+					<OfxParamPropHint>시야를 Y 축으로 회전</OfxParamPropHint>
+                </OfxParamTypeDouble>
+				
+				<OfxParamTypeDouble name="mx.ofx.plugin.rotate.z.angle">
+                    <OfxPropLabel>Z 축으로 회전</OfxPropLabel>
+					<OfxPropShortLabel>Z 축으로 회전</OfxPropShortLabel>
+			        <OfxPropLongLabel>Z 축으로 회전</OfxPropLongLabel>
+					<OfxParamPropHint>시야를 Z축으로 회전</OfxParamPropHint>
+                </OfxParamTypeDouble>
+				
+				<OfxParamTypeChoice name="mx.ofx.plugin.rotate.stereo">
+					<OfxParamPropChoiceOption>없음</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>위</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>정렬</OfxParamPropChoiceOption>
+					<OfxPropLabel>스테레오스코프</OfxPropLabel>
+					<OfxPropShortLabel>스테레오스코프</OfxPropShortLabel>
+			        <OfxPropLongLabel>스테레오스코프</OfxPropLongLabel>
+					<OfxParamPropHint>대상 3D 프레임 형식을 선택해 주세요</OfxParamPropHint>
+				</OfxParamTypeChoice>
+				
+				<OfxMessage name="mx.ofx.plugin.rotate.warning.hostnotsupported">이 플러그인은 현재 호스트를 지원하지 않습니다.</OfxMessage>
+				
+				<OfxMessage name="mx.ofx.plugin.rotate.warning.unknown">알 수 없는 오류</OfxMessage>
+				
+			</OfxImageEffectContext>
+		</OfxResourceSet>
+	</OfxPlugin>
+  
+</OfxImageEffectResource>

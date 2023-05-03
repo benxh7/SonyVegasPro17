@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<preset owner="eFX Compressor" name="TDX-Paralel Compression - Glue">
+    <params version="2.010000">
+        <param id="active" value="1.000000" />
+        <param id="input" value="1.000000" />
+        <param id="output" value="0.575000" />
+        <param id="scfilter" value="0.000000" />
+        <param id="threshold" value="0.585000" />
+        <param id="ratio" value="0.505000" />
+        <param id="attack" value="0.065000" />
+        <param id="release" value="0.405000" />
+        <param id="sclisten" value="0.000000" />
+        <param id="softclip" value="1.000000" />
+        <param id="scflttype" value="1.000000" />
+        <param id="mode" value="0.000000" />
+        <param id="adaptrelease" value="2.300000" />
+        <param id="automakeup" value="0.000000" />
+        <param id="mix" value="0.737500" />
+    </params>
+</preset>

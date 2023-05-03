@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<preset owner="eFX Compressor" name="Daniel\Compressor_Master_Mixdown">
+    <params version="1.000000">
+        <param id="active" value="1.000000" />
+        <param id="mode" value="0.000000" />
+        <param id="sync" value="0.000000" />
+        <param id="input" value="1.000000" />
+        <param id="output" value="0.521875" />
+        <param id="scfilter" value="0.000000" />
+        <param id="threshold" value="0.822175" />
+        <param id="ratio" value="0.179135" />
+        <param id="attack" value="0.039332" />
+        <param id="release" value="0.244583" />
+    </params>
+</preset>

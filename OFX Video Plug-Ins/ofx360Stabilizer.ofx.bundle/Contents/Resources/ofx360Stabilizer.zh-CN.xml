@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	***************************************************************************
+	*   Copyright © 2018 MAGIX Software GmbH. All Rights Reserved.
+	*
+	*       $DateTime: 2018/09/24 $
+	*       $Author: pkelm $
+	*
+	*   Description:
+	*       Localized resources for the 360 Stabilization plugin bundle (default)
+	***************************************************************************
+-->
+
+<!--
+<!DOCTYPE OfxImageEffectResource SYSTEM "ofx.dtd">
+ -->
+
+<OfxImageEffectResource>  
+  <OfxPlugin name="com.magix.ofx.vr.stabilization">
+
+		<!--
+		Define the resouces overrides to be used for the host 'default' (or 'all' or 'com.vegascreativesoftware.vegas'
+		    in the locale 'fr-FR' (or 'de-DE' or 'es-ES' or 'ja-JP')
+			ofxHost="someHost"
+		-->
+		<OfxResourceSet ofxHost="default">
+
+			<!-- Set the user visible label on the plug-in -->
+			<OfxPropLabel>VEGAS 360° 视频防抖动处理</OfxPropLabel>
+
+			<OfxImageEffectPluginPropGrouping>VEGAS\360</OfxImageEffectPluginPropGrouping>
+
+			<OfxPropPluginDescription>来自Magix Computer Products Intl. Co.</OfxPropPluginDescription>
+
+			<!--
+	        Define default overrides that apply in all contexts (unless specified in a specific context)
+			-->
+			<OfxImageEffectContext name="default">
+			</OfxImageEffectContext>
+			
+			<!--
+	        Define default overrides that apply only in the generator context
+			-->			
+			
+			<OfxImageEffectContext name="OfxImageEffectContextFilter">
+			
+				<OfxProgress name="mx.ofx.stab.plugin.progress">正在对媒体进行防抖动处理</OfxProgress>
+				
+				<OfxMessage name="mx.ofx.stab.plugin.warning.effectfx">您已将视频防抖动处理插件添加到事件中。此插件必须作为媒体效果应用于素材或子素材。
+
+要应用媒体效果，请选择时间线上的事件（或“工程媒体”窗口中的素材），然后选择“工具”&gt;“视频”&gt;“Media FX”。</OfxMessage>
+		  
+				<OfxMessage name="mx.ofx.plugin.rotate.warning.hostnotsupported">此插件不支持當前主機。</OfxMessage>
+				
+				<OfxMessage name="mx.ofx.plugin.rotate.warning.unknown">未知錯誤！</OfxMessage>
+			
+				<OfxParamTypeChoice name="mx.ofx.stab.plugin.stereo">
+					<OfxParamPropChoiceOption>无</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>从上到下</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>并排</OfxParamPropChoiceOption>
+					<OfxPropLabel>立体图</OfxPropLabel>
+					<OfxPropShortLabel>立体图</OfxPropShortLabel>
+			        <OfxPropLongLabel>立体图</OfxPropLongLabel>
+					<OfxParamPropHint>您可以为立体模型选择预设。</OfxParamPropHint>
+				</OfxParamTypeChoice>			
+				
+				<OfxParamTypePushButton name="mx.ofx.stab.plugin.btn.analyze">
+                    <OfxPropLabel>分析运动数据</OfxPropLabel>
+					<OfxPropShortLabel>分析运动数据</OfxPropShortLabel>
+			        <OfxPropLongLabel>分析运动数据</OfxPropLongLabel>
+					<OfxParamPropHint>执行分析以确定运动数据。</OfxParamPropHint>
+                </OfxParamTypePushButton>
+				
+				<OfxParamTypePushButton name="mx.ofx.stab.plugin.btn.clear">
+                    <OfxPropLabel>清晰的动作数据</OfxPropLabel>
+					<OfxPropShortLabel>清晰的动作数据</OfxPropShortLabel>
+			        <OfxPropLongLabel>清晰的动作数据</OfxPropLongLabel>
+					<OfxParamPropHint>所有分析结果都被丢弃。</OfxParamPropHint>
+                </OfxParamTypePushButton>
+				
+				<OfxParamTypeChoice name="mx.ofx.stab.plugin.exclude.bottom">
+					<OfxParamPropChoiceOption>北极和南极</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>南极</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>无</OfxParamPropChoiceOption>
+					<OfxPropLabel>排除视图</OfxPropLabel>
+					<OfxPropShortLabel>排除视图</OfxPropShortLabel>
+			        <OfxPropLongLabel>排除视图</OfxPropLongLabel>
+					<OfxParamPropHint>未包含在分析中的视图。</OfxParamPropHint>
+				</OfxParamTypeChoice>
+				
+				<OfxParamTypeBoolean name="mx.ofx.stab.plugin.ssd.deviation">
+				  <OfxPropLabel>精致</OfxPropLabel>
+				  <OfxPropShortLabel>精致</OfxPropShortLabel>
+			      <OfxPropLongLabel>精致</OfxPropLongLabel>
+				  <OfxParamPropHint>单击以自动细化结果。</OfxParamPropHint>
+				</OfxParamTypeBoolean>
+				
+				<OfxParamTypeInteger name="mx.ofx.stab.plugin.smoothness">
+                    <OfxPropLabel>平滑</OfxPropLabel>
+					<OfxPropShortLabel>平滑</OfxPropShortLabel>
+			        <OfxPropLongLabel>平滑</OfxPropLongLabel>
+					<OfxParamPropHint>平滑参数是有助于定义场景中应保留多少“不稳定”的参数，该因子越高，画面就越平滑。</OfxParamPropHint>
+                </OfxParamTypeInteger>
+								
+			</OfxImageEffectContext>
+		</OfxResourceSet>
+	</OfxPlugin>
+  
+</OfxImageEffectResource>

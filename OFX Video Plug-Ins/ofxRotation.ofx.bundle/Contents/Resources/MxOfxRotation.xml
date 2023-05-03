@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<strings>
+  <string id="mx.ofx.plugin.rotate.x.angle" default="0x9">
+    <text langid="0x9">Turn around x-axis</text>
+    <text langid="0x7">Drehung um x-Achse</text>
+  </string>
+  <string id="mx.ofx.plugin.rotate.y.angle" default="0x9">
+    <text langid="0x9">Turn around y-axis</text>
+    <text langid="0x7">Drehung um y-Achse</text>
+  </string>
+  <string id="mx.ofx.plugin.rotate.z.angle" default="0x9">
+    <text langid="0x9">Turn around z-axis</text>
+    <text langid="0x7">Drehung um z-Achse</text>
+  </string>
+  <string id="mx.ofx.plugin.rotate.x.angle.hint" default="0x9">
+    <text langid="0x9">Turn the field of view around x-axis.</text>
+    <text langid="0x7">Die Ansicht um die x-Achse drehen.</text>
+  </string>
+  <string id="mx.ofx.plugin.rotate.y.angle.hint" default="0x9">
+    <text langid="0x9">Turn the field of view around y-axis.</text>
+    <text langid="0x7">Die Ansicht um die y-Achse drehen.</text>
+  </string>
+  <string id="mx.ofx.plugin.rotate.z.angle.hint" default="0x9">
+    <text langid="0x9">Turn the field of view around z-axis.</text>
+    <text langid="0x7">Die Ansicht um die z-Achse drehen.</text>
+  </string>
+  <string id="mx.ofx.plugin.rotate.stereo" default="0x9">
+    <text langid="0x9">Stereoscopy</text>
+    <text langid="0x7">Stereoskopie</text>
+  </string>
+  <string id="mx.ofx.plugin.rotate.stereo.hint" default="0x9">
+    <text langid="0x9">Select the target 3D frame format.</text>
+    <text langid="0x7">Zum Wählen eines stereoskopischen Zielformates.</text>
+  </string>
+  <string id="mx.ofx.plugin.rotate.stereo.entry.0" default="0x9">
+    <text langid="0x9">None</text>
+    <text langid="0x7">Keine</text>
+  </string>
+  <string id="mx.ofx.plugin.rotate.stereo.entry.1" default="0x9">
+    <text langid="0x9">Top-and-Bottom</text>
+    <text langid="0x7">Oben-Unten</text>
+  </string>
+  <string id="mx.ofx.plugin.rotate.stereo.entry.2" default="0x9">
+    <text langid="0x9">Side-by-Side</text>
+    <text langid="0x7">Seite an Seite</text>
+  </string>
+  <string id="mx.ofx.plugin.rotate.about" default="0x9">
+    <text langid="0x9">You can free rotate the camera to achieve the desired field of view.</text>
+    <text langid="0x7">Drehen Sie die Kamera, um die gewünschte Startansicht einzustellen.</text>
+  </string>
+  <string id="mx.ofx.plugin.rotate.label" default="0x9">
+    <text langid="0x9">VEGAS Scene Rotation</text>
+    <text langid="0x7">VEGAS Szenenrotation</text>
+  </string>
+  <string id="mx.ofx.plugin.rotate.grouping" default="0x9">
+    <text langid="0x9">VEGAS\360</text>
+    <text langid="0x7">VEGAS\360</text>
+  </string>
+  <string id="mx.ofx.plugin.rotate.warning.effectfx" default="0x9">
+    <text langid="0x9">Please assign this plugin exclusively via media FX!</text>
+    <text langid="0x7">Bitte weisen Sie diesen Plugin einem Medium nur über Media-FX zu!</text>
+  </string>
+  <string id="mx.ofx.plugin.rotate.warning.hostnotsupported" default="0x9">
+    <text langid="0x9">The current host is not supported by this plugin.</text>
+    <text langid="0x7">Der Host wird nicht durch diesen Plugin unterstützt.</text>
+  </string>
+  <string id="mx.ofx.plugin.rotate.warning.unknown" default="0x9">
+    <text langid="0x9">Unknown error!</text>
+    <text langid="0x7">Unbekannter Fehler!</text>
+  </string>
+</strings>

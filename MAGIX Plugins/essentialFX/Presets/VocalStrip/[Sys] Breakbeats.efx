@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<preset owner="eFX VocalStrip" name="Breakbeats">
+    <params version="2.000000">
+        <param id="active" value="1.000000" />
+        <param id="input" value="0.000000" />
+        <param id="output" value="2.998901" />
+        <param id="hpfilter" value="50.006756" />
+        <param id="gate" value="-30.016897" />
+        <param id="deesser" value="9.000000" />
+        <param id="compression" value="10.047993" />
+        <param id="tone" value="0.250000" />
+    </params>
+</preset>

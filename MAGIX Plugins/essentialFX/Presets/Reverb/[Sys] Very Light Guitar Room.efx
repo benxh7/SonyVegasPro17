@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<preset owner="eFX Reverb" name="Very Light Guitar Room">
+    <params version="2.000000">
+        <param id="active" value="1.000000" />
+        <param id="mode" value="1.000000" />
+        <param id="input" value="1.000000" />
+        <param id="output" value="1.000000" />
+        <param id="size" value="0.319438" />
+        <param id="time" value="0.469889" />
+        <param id="damping" value="0.532167" />
+        <param id="mod" value="0.347698" />
+        <param id="mix" value="0.083777" />
+        <param id="sync" value="0.000000" />
+        <param id="predelay" value="11.853449" />
+        <param id="diffusion" value="0.712000" />
+        <param id="locut" value="142.729080" />
+    </params>
+</preset>

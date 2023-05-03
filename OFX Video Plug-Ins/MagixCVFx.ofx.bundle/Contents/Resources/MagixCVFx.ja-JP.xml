@@ -1,0 +1,576 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<OfxImageEffectResource>
+  <OfxPlugin name="de.magix:LensCorrection">
+
+    <OfxResourceSet ofxHost="default">
+      <OfxPropLabel>VEGAS レンズ補正</OfxPropLabel>
+
+      <OfxImageEffectPluginPropGrouping>VEGAS</OfxImageEffectPluginPropGrouping>
+      <OfxPropPluginDescription>レンズ歪みの補正</OfxPropPluginDescription>
+      <OfxImageEffectContext name="default">
+      </OfxImageEffectContext>
+
+      <OfxImageEffectContext name="OfxImageEffectContextFilter">
+        
+		<OfxParamTypeChoice name="Localization">
+          <OfxParamPropChoiceOption>レンズを選択してください</OfxParamPropChoiceOption>
+          <OfxParamPropChoiceOption>何も見つかりませんでした</OfxParamPropChoiceOption>
+        </OfxParamTypeChoice>
+
+		<OfxParamTypeGroup name="GroupDb">
+          <OfxPropLabel>レンズモデル</OfxPropLabel>
+		  <OfxPropShortLabel>レンズモデル</OfxPropShortLabel>
+		  <OfxPropLongLabel>レンズモデル</OfxPropLongLabel>
+		  <OfxParamPropHint>レンズモデルのセットを含みます。</OfxParamPropHint>
+        </OfxParamTypeGroup>
+
+		<OfxParamTypeString name="Query">
+          <OfxPropLabel>検索対象</OfxPropLabel>
+		  <OfxPropShortLabel>検索対象</OfxPropShortLabel>
+		  <OfxPropLongLabel>検索対象</OfxPropLongLabel>
+		  <OfxParamPropHint>検索するレンズモデルの名前を入力してください。</OfxParamPropHint>
+        </OfxParamTypeString>
+		
+		<OfxParamTypeChoice name="QueryResult">
+          <OfxPropLabel>レンズが検出されました。</OfxPropLabel>
+		  <OfxPropShortLabel>レンズが検出されました。</OfxPropShortLabel>
+		  <OfxPropLongLabel>レンズが検出されました。</OfxPropLongLabel>
+		  <OfxParamPropHint>全てのレンズのフルクエリーを列挙してください。</OfxParamPropHint>
+        </OfxParamTypeChoice>
+		
+		<OfxParamTypeBoolean name="ShowMesh">
+          <OfxPropLabel>歪みを表示</OfxPropLabel>
+		  <OfxPropShortLabel>歪みを表示</OfxPropShortLabel>
+		  <OfxPropLongLabel>指定したパラメーターに従ってレンズの歪みを表示します。</OfxPropLongLabel>
+		  <OfxParamPropHint>指定したパラメーターで補正されたレンズの歪みを表示します。</OfxParamPropHint>
+        </OfxParamTypeBoolean>
+		
+        <OfxParamTypeDouble2D name="DistCenter">
+         <OfxPropLabel>歪みの中心</OfxPropLabel>
+		 <OfxPropShortLabel>歪みの中心</OfxPropShortLabel>
+		 <OfxPropLongLabel>歪みの中心</OfxPropLongLabel>
+		 <OfxParamPropHint>レンズが中心からずれている場合、中心を調整してください。</OfxParamPropHint>
+        </OfxParamTypeDouble2D>
+    
+		<OfxParamTypeDouble name="RadialDistParam1">
+         <OfxPropLabel>放射状歪み k1</OfxPropLabel>
+		 <OfxPropShortLabel>放射状歪み k1</OfxPropShortLabel>
+		 <OfxPropLongLabel>放射状歪み k1</OfxPropLongLabel>
+		 <OfxParamPropHint>これはptlensモデルのパラメーター a です。</OfxParamPropHint>
+        </OfxParamTypeDouble>
+		
+		<OfxParamTypeDouble name="RadialDistParam2">
+         <OfxPropLabel>放射状歪み k2</OfxPropLabel>
+		 <OfxPropShortLabel>放射状歪み k2</OfxPropShortLabel>
+		 <OfxPropLongLabel>放射状歪み k2</OfxPropLongLabel>
+		 <OfxParamPropHint>これはptlensモデルのパラメーター b です。</OfxParamPropHint>
+        </OfxParamTypeDouble>
+
+		<OfxParamTypeDouble name="RadialDistParam3">
+         <OfxPropLabel>放射状歪み k3</OfxPropLabel>
+		 <OfxPropShortLabel>放射状歪み k3</OfxPropShortLabel>
+		 <OfxPropLongLabel>放射状歪み k3</OfxPropLongLabel>
+		 <OfxParamPropHint>これはptlensモデルのパラメーター c です。</OfxParamPropHint>
+        </OfxParamTypeDouble>	
+      </OfxImageEffectContext>
+
+    </OfxResourceSet>
+
+  </OfxPlugin>
+  <OfxPlugin name="de.magix:MeshWarp">
+
+    <OfxResourceSet ofxHost="default">
+      <OfxPropLabel>VEGAS Mesh Warp</OfxPropLabel>
+
+      <OfxImageEffectPluginPropGrouping>VEGAS</OfxImageEffectPluginPropGrouping>
+      <OfxPropPluginDescription>画像を変形させる</OfxPropPluginDescription>
+      <OfxImageEffectContext name="default">
+      </OfxImageEffectContext>
+
+      <OfxImageEffectContext name="OfxImageEffectContextFilter">
+        	
+		<OfxParamTypeBoolean name="EnableWarp">
+          <OfxPropLabel>ワープエフェクトを有効にする</OfxPropLabel>
+		  <OfxPropShortLabel>エフェクトを有効にする</OfxPropShortLabel>
+		  <OfxPropLongLabel>ワープエフェクトを有効にする</OfxPropLongLabel>
+		  <OfxParamPropHint>ワープエフェクトを有効にする</OfxParamPropHint>
+        </OfxParamTypeBoolean>
+		
+		<OfxParamTypeInteger name="GridCountX">
+          <OfxPropLabel>グリッドサイズ (X)</OfxPropLabel>
+		  <OfxPropShortLabel>グリッドサイズ (X)</OfxPropShortLabel>
+		  <OfxPropLongLabel>グリッドサイズ (X)</OfxPropLongLabel>
+		  <OfxParamPropHint>グリッドサイズ (X)</OfxParamPropHint>
+        </OfxParamTypeInteger>
+
+		<OfxParamTypeInteger name="GridCountY">
+          <OfxPropLabel>グリッドサイズ (Y)</OfxPropLabel>
+		  <OfxPropShortLabel>グリッドサイズ (Y)</OfxPropShortLabel>
+		  <OfxPropLongLabel>グリッドサイズ (Y)</OfxPropLongLabel>
+		  <OfxParamPropHint>グリッドサイズ (Y)</OfxParamPropHint>
+        </OfxParamTypeInteger>
+		
+		<OfxParamTypeInteger name="ScaleGridX">
+          <OfxPropLabel>Xのグリッドサイズの乗数</OfxPropLabel>
+		  <OfxPropShortLabel>Xのグリッドサイズの乗数</OfxPropShortLabel>
+		  <OfxPropLongLabel>Xのグリッドサイズの乗数</OfxPropLongLabel>
+		  <OfxParamPropHint>Xのグリッドサイズの乗数</OfxParamPropHint>
+        </OfxParamTypeInteger>
+		
+		<OfxParamTypeInteger name="ScaleGridY">
+          <OfxPropLabel>Yのグリッドサイズの乗数</OfxPropLabel>
+		  <OfxPropShortLabel>Yのグリッドサイズの乗数</OfxPropShortLabel>
+		  <OfxPropLongLabel>Yのグリッドサイズの乗数</OfxPropLongLabel>
+		  <OfxParamPropHint>Yのグリッドサイズの乗数</OfxParamPropHint>
+        </OfxParamTypeInteger>
+    
+		<OfxParamTypeBoolean name="GridCountLink">
+         <OfxPropLabel>グリッドサイズをXとYに固定する</OfxPropLabel>
+		 <OfxPropShortLabel>グリッドサイズをXとYに固定する</OfxPropShortLabel>
+		 <OfxPropLongLabel>グリッドサイズをXとYに固定する</OfxPropLongLabel>
+		 <OfxParamPropHint>XとYのグリッドサイズを等しくする</OfxParamPropHint>
+        </OfxParamTypeBoolean>
+		
+		<OfxParamTypeBoolean name="KeepMeshStructure">
+         <OfxPropLabel>メッシュ構造を維持</OfxPropLabel>
+		 <OfxPropShortLabel>メッシュ構造を維持</OfxPropShortLabel>
+		 <OfxPropLongLabel>メッシュ構造を維持</OfxPropLongLabel>
+		 <OfxParamPropHint>サイズ変更の間、グリッドの構造を維持するようにします。</OfxParamPropHint>
+        </OfxParamTypeBoolean>	
+
+		<OfxParamTypePushButton name="ResetMesh">
+          <OfxPropLabel>メッシュをリセット</OfxPropLabel>
+		  <OfxPropShortLabel>メッシュをリセット</OfxPropShortLabel>
+		  <OfxPropLongLabel>メッシュをリセット</OfxPropLongLabel>
+		  <OfxParamPropHint>メッシュをリセット</OfxParamPropHint>
+        </OfxParamTypePushButton>
+		
+      </OfxImageEffectContext>
+
+    </OfxResourceSet>
+
+  </OfxPlugin>
+  <OfxPlugin name="de.magix:TimeWarp">
+
+    <OfxResourceSet ofxHost="default">
+      <OfxPropLabel>VEGAS スローモーション</OfxPropLabel>
+
+      <OfxImageEffectPluginPropGrouping>VEGAS</OfxImageEffectPluginPropGrouping>
+      <OfxPropPluginDescription>スローモーションビデオを作成する</OfxPropPluginDescription>
+      <OfxImageEffectContext name="default">
+      </OfxImageEffectContext>
+
+      <OfxImageEffectContext name="OfxImageEffectContextFilter">
+
+        <OfxMessage name="OutOfMemory">あなたのグラフィックカードはあなたが指定した品質レベルでこの操作を完了するのに十分なメモリを持っていません。 低品質の設定を選択する必要があります。</OfxMessage>
+        <OfxMessage name="NoGPU">このプラグインは、GPUの使用に大きく依存しています。 現在、CPU処理を使用しています。 プラグインは引き続き機能しますが、パフォーマンスの低下と結果の潜在的なアーティファクトが予想されます。</OfxMessage>
+		<OfxMessage name="TrimHint">[スローモーション]を適用した後にイベントを編集すると、予想外の結果を引き起こす可能性があります。このイベントの編集は、[スローモーション]エフェクトの適用前にすることをおすすめします。または、[スローモーション]を、編集制限がないメディアエフェクトレベルで適用してください。</OfxMessage>
+		<OfxMessage name="EventFXSpeedUp">A Playback Rate greater than 1.0 will have unexpected results if you change the event length. If you need to change the length of the event after applying a rate greater than 1.0, apply the Slow Motion plug-in at the media level where no restrictions apply.</OfxMessage>
+		
+		<OfxParamTypeGroup name="Group Parameter">
+          <OfxPropLabel>パラメータ</OfxPropLabel>
+		  <OfxPropShortLabel>パラメータ</OfxPropShortLabel>
+		  <OfxPropLongLabel>パラメータ</OfxPropLongLabel>
+		  <OfxParamPropHint>個々のパラメータをまとめます。</OfxParamPropHint>	
+        </OfxParamTypeGroup>
+		
+		<OfxParamTypeChoice name="Choice Box Algorithm">
+		  <OfxParamPropChoiceOption>モーフ</OfxParamPropChoiceOption>
+          <OfxParamPropChoiceOption>高速オプティカルフロー</OfxParamPropChoiceOption>
+          <!--<OfxParamPropChoiceOption>境界線対応のオプティカルフロー</OfxParamPropChoiceOption>-->
+		  <OfxPropLabel>方法</OfxPropLabel>	
+		  <OfxParamPropHint>中間フレームを作成するためにさまざまな方法を切り替えます。</OfxParamPropHint>		  
+        </OfxParamTypeChoice>
+		
+		<OfxParamTypeChoice name="Choice Box Quality">
+          <OfxParamPropChoiceOption>粗い</OfxParamPropChoiceOption>
+		  <OfxParamPropChoiceOption>中</OfxParamPropChoiceOption>
+          <OfxParamPropChoiceOption>細かい</OfxParamPropChoiceOption>
+		  <OfxPropLabel>品質</OfxPropLabel>	
+		  <OfxParamPropHint>中間フレームを作成するためのさまざまな品質を切り替えます。</OfxParamPropHint>		  
+        </OfxParamTypeChoice>
+    
+		<OfxParamTypeDouble name="Slow Motion Ratio">
+         <OfxPropLabel>再生レート</OfxPropLabel>
+		 <OfxPropShortLabel>再生レート</OfxPropShortLabel>
+		 <OfxPropLongLabel>再生レート</OfxPropLongLabel>
+		 <OfxParamPropHint>このパラメータでクリップの速度比を変更できます。</OfxParamPropHint>
+        </OfxParamTypeDouble>
+
+        <OfxParamTypePushButton name="Analyse Button">
+          <OfxPropLabel>モーション解析</OfxPropLabel>
+		  <OfxPropShortLabel>モーション解析</OfxPropShortLabel>
+		  <OfxPropLongLabel>モーション解析</OfxPropLongLabel>
+		  <OfxParamPropHint>モーション解析を開始します。</OfxParamPropHint>
+        </OfxParamTypePushButton>
+
+        <OfxParamTypePushButton name="Clear Button">
+          <OfxPropLabel>モーションデータの消去</OfxPropLabel>
+		  <OfxPropShortLabel>モーションデータの消去</OfxPropShortLabel>
+		  <OfxPropLongLabel>モーションデータの消去</OfxPropLongLabel>
+		  <OfxParamPropHint>モーション解析の結果を消去します。</OfxParamPropHint>
+        </OfxParamTypePushButton>		
+      </OfxImageEffectContext>
+
+    </OfxResourceSet>
+
+  </OfxPlugin>
+
+  <OfxPlugin name="de.magix:Stabilize">
+
+    <OfxResourceSet ofxHost="default">
+      <OfxPropLabel>VEGAS ビデオ手ブレ補正</OfxPropLabel>
+
+      <OfxImageEffectPluginPropGrouping>VEGAS</OfxImageEffectPluginPropGrouping>
+      <OfxPropPluginDescription>ビデオの手ブレを補正します。</OfxPropPluginDescription>
+      <OfxImageEffectContext name="default">
+      </OfxImageEffectContext>
+
+      <OfxImageEffectContext name="OfxImageEffectContextFilter">
+
+        <OfxMessage name="invalidEffectContextEffect_Event">
+          イベントにビデオ手ブレ補正プラグインが追加されています。このプラグインは、メディアエフェクトとしてクリップまたはサブクリップに適用される必要があります。
+
+          メディアエフェクトを適用するには、タイムライン内のイベント (またはプロジェクトメディアウィンドウ内のクリップ) を選択し、［ツール］&gt;［ビデオ］&gt;［メディア FX］を選択します。</OfxMessage>
+
+        <OfxMessage name="invalidEffectContextEffect_Track">
+          トラックにビデオ手ブレ補正プラグインが追加されています。このプラグインは、メディアエフェクトとしてクリップまたはサブクリップに適用される必要があります。
+
+          メディアエフェクトを適用するには、タイムライン内のイベント (またはプロジェクトメディアウィンドウ内のクリップ) を選択し、［ツール］&gt;［ビデオ］&gt;［メディア FX］を選択します。</OfxMessage>
+
+        <OfxMessage name="invalidEffectContextEffect_VideoOutput">
+          ビデオ出力にビデオ手ブレ補正プラグインが追加されています。このプラグインは、メディアエフェクトとしてクリップまたはサブクリップに適用される必要があります。
+
+          メディアエフェクトを適用するには、タイムライン内のイベント (またはプロジェクトメディアウィンドウ内のクリップ) を選択し、［ツール］&gt;［ビデオ］&gt;［メディア FX］を選択します。</OfxMessage>
+		  
+		<OfxMessage name="trimHint">
+		このイベントの編集をすると（トリミングや分割など）、スタビライズデータが失われたり、または他の予期しなかった結果が生じる可能性があります。スタビライズをする前に全ての編集をすることをお勧めします。
+		</OfxMessage> 
+
+        <OfxProgress name="StabilizeAnalyzeProgress">メディアの手ブレ補正</OfxProgress>
+        <OfxMessage name="mustClickApply">ビデオの手ブレ補正をするには、［モーション解析］ボタンをクリックしてください。分析中はメディアを再生しないようにしてください。</OfxMessage>
+         
+		<OfxParamTypeGroup name="GroupParameters">
+          <OfxPropLabel>パラメータ</OfxPropLabel>
+		  <OfxPropShortLabel>パラメータ</OfxPropShortLabel>
+		  <OfxPropLongLabel>パラメータ</OfxPropLongLabel>
+		  <OfxParamPropHint>手ブレ補正の前にパラメータについての追加情報を表示しています。</OfxParamPropHint>
+        </OfxParamTypeGroup>
+		
+		<OfxParamTypeChoice name="Views">
+			<OfxParamPropChoiceOption>基本</OfxParamPropChoiceOption>
+			<OfxParamPropChoiceOption>プロフェッショナル</OfxParamPropChoiceOption>
+			<OfxParamPropChoiceOption>エキスパート</OfxParamPropChoiceOption>
+          <OfxPropLabel>ユーザービュー</OfxPropLabel>
+		  <OfxPropShortLabel>ユーザービュー</OfxPropShortLabel>
+		  <OfxPropLongLabel>ユーザービュー</OfxPropLongLabel>
+		  <OfxParamPropHint>別のユーザービューへ切り替えます。</OfxParamPropHint>
+        </OfxParamTypeChoice>
+		
+		<OfxParamTypePushButton name="AnalyzeMotionBasic">
+          <OfxPropLabel>手ブレ補正</OfxPropLabel>
+		  <OfxPropShortLabel>手ブレ補正</OfxPropShortLabel>
+		  <OfxPropLongLabel>手ブレ補正</OfxPropLongLabel>
+		  <OfxParamPropHint>手ブレ補正機能をスタートします。</OfxParamPropHint>
+        </OfxParamTypePushButton>
+
+        <OfxParamTypePushButton name="CLearMotionBasic">
+          <OfxPropLabel>リセット</OfxPropLabel>
+		  <OfxPropShortLabel>リセット</OfxPropShortLabel>
+		  <OfxPropLongLabel>リセット</OfxPropLongLabel>
+		  <OfxParamPropHint>手ブレ補正後の動画を消去します。</OfxParamPropHint>
+        </OfxParamTypePushButton>
+		
+		<OfxParamTypeGroup name="GroupSmoothing">
+          <OfxPropLabel>スムージング</OfxPropLabel>
+		  <OfxPropShortLabel>スムージング</OfxPropShortLabel>
+		  <OfxPropLongLabel>スムージング</OfxPropLongLabel>
+		  <OfxParamPropHint>スムージングプロセスに関する追加情報を表示しています。</OfxParamPropHint>
+        </OfxParamTypeGroup>
+		
+		<OfxParamTypeBoolean name="IsStaticCamera">
+          <OfxPropLabel>静的なカメラ</OfxPropLabel>
+		  <OfxPropShortLabel>静的なカメラ</OfxPropShortLabel>
+		  <OfxPropLongLabel>静的なカメラ</OfxPropLongLabel>
+		  <OfxParamPropHint>スムージングモーションモード(&apos;静的なカメラ&apos;はオフ)とフィックスモーションモード(&apos;静的なカメラ&apos;はオン)を切り替えています。</OfxParamPropHint>
+        </OfxParamTypeBoolean>
+		
+		<OfxParamTypeInteger name="StaticReference">
+          <OfxPropLabel>参照フレーム数</OfxPropLabel>
+		  <OfxPropShortLabel>参照フレーム数</OfxPropShortLabel>
+		  <OfxPropLongLabel>参照フレーム数</OfxPropLongLabel>
+		  <OfxParamPropHint>このパラメータは手ブレ補正後の動画の参照フレームを変更します。</OfxParamPropHint>
+        </OfxParamTypeInteger>
+       
+		<OfxParamTypeChoice name="Presets">
+			<OfxParamPropChoiceOption>高速</OfxParamPropChoiceOption>
+			<OfxParamPropChoiceOption>正確</OfxParamPropChoiceOption>
+          <OfxPropLabel>方法</OfxPropLabel>
+		  <OfxPropShortLabel>方法</OfxPropShortLabel>
+		  <OfxPropLongLabel>方法</OfxPropLongLabel>
+		  <OfxParamPropHint>この選択ボックスは、モーショントラッキングアルゴリズム、トラッキング可能なポイントの決定方法、ならびにどのモーショントラックがモーションモデリングに関係するかに作用します。</OfxParamPropHint>
+        </OfxParamTypeChoice>
+
+        <OfxParamTypeChoice name="MotionCompensation">
+          <OfxParamPropChoiceOption>トランスレーション</OfxParamPropChoiceOption>
+          <OfxParamPropChoiceOption>トランスレーション + ローテーション</OfxParamPropChoiceOption>
+          <OfxParamPropChoiceOption>トランスレーション + ローテーション + スケール</OfxParamPropChoiceOption>		  
+          <OfxParamPropChoiceOption>アフィン</OfxParamPropChoiceOption>
+          <OfxPropLabel>モーション補正</OfxPropLabel>
+		  <OfxPropShortLabel>モーション補正</OfxPropShortLabel>
+		  <OfxPropLongLabel>モーション補正</OfxPropLongLabel>
+		  <OfxParamPropHint>この選択ボックスはモーションモデリングアルゴリズムに作用します。</OfxParamPropHint>
+        </OfxParamTypeChoice>
+		
+        <OfxParamTypeDouble name="SmoothingMagnitude">
+         <OfxPropLabel>スムージング</OfxPropLabel>
+		 <OfxPropShortLabel>スムージング</OfxPropShortLabel>
+		 <OfxPropLongLabel>スムージング</OfxPropLongLabel>
+		 <OfxParamPropHint>スムージングマグニチュード(秒単位)は、どのくらいの&quot;不安定性&quot;がシーン内にあるべきかを定義づけるパラメーターとなり、その係数が大きいほど、動きはスムーズになります。</OfxParamPropHint>
+        </OfxParamTypeDouble>
+
+        <OfxParamTypePushButton name="AnalyzeMotion">
+          <OfxPropLabel>モーション解析</OfxPropLabel>
+		  <OfxPropShortLabel>モーション解析</OfxPropShortLabel>
+		  <OfxPropLongLabel>モーション解析</OfxPropLongLabel>
+		  <OfxParamPropHint>モーション解析を開始します。</OfxParamPropHint>
+        </OfxParamTypePushButton>
+
+        <OfxParamTypePushButton name="CLearMotion">
+          <OfxPropLabel>モーションデータの消去</OfxPropLabel>
+		  <OfxPropShortLabel>モーションデータの消去</OfxPropShortLabel>
+		  <OfxPropLongLabel>モーションデータの消去</OfxPropLongLabel>
+		  <OfxParamPropHint>モーション解析の結果を消去します。</OfxParamPropHint>
+        </OfxParamTypePushButton>
+		
+		
+		<OfxParamTypeGroup name="GroupBorders">
+          <OfxPropLabel>枠線</OfxPropLabel>
+		  <OfxPropShortLabel>枠線</OfxPropShortLabel>
+		  <OfxPropLongLabel>枠線</OfxPropLongLabel>
+		  <OfxParamPropHint>枠線についての追加情報を表示しています。</OfxParamPropHint>
+        </OfxParamTypeGroup>
+		
+		<OfxParamTypeBoolean name="AvoidBlackBorders">
+          <OfxPropLabel>自動ズーム</OfxPropLabel>
+		  <OfxPropShortLabel>自動ズーム</OfxPropShortLabel>
+		  <OfxPropLongLabel>自動ズーム</OfxPropLongLabel>
+		  <OfxParamPropHint>自動ズームインをクリックして黒枠を回避します。</OfxParamPropHint>
+        </OfxParamTypeBoolean>
+		
+		<OfxParamTypeDouble2D name="AdditionalTranslation">
+         <OfxPropLabel>追加のトランスレーション</OfxPropLabel>
+		 <OfxPropShortLabel>追加のトランスレーション</OfxPropShortLabel>
+		 <OfxPropLongLabel>追加のトランスレーション</OfxPropLongLabel>
+		 <OfxParamPropHint>オフセットをトランスレーションの位置に追加します。</OfxParamPropHint>
+        </OfxParamTypeDouble2D>
+
+        <OfxParamTypeDouble name="AdditionalRotation">
+          <OfxPropLabel>追加のローテーション</OfxPropLabel>
+		  <OfxPropShortLabel>追加のローテーション</OfxPropShortLabel>
+		  <OfxPropLongLabel>追加のローテーション</OfxPropLongLabel>
+		  <OfxParamPropHint>オフセットをローテーションに追加してください。ローテーションパラメータ(角度)を使い、水平線を調整することができます。</OfxParamPropHint>
+        </OfxParamTypeDouble>
+
+		<OfxParamTypeDouble name="AdditionalScale">
+          <OfxPropLabel>追加ズーム</OfxPropLabel>
+		  <OfxPropShortLabel>追加ズーム</OfxPropShortLabel>
+		  <OfxPropLongLabel>追加ズーム</OfxPropLongLabel>
+		  <OfxParamPropHint>ズームにオフセットを追加してください。拡大して黒枠を避けたり、画像の中心にフォーカスすることができます。</OfxParamPropHint>
+        </OfxParamTypeDouble>
+		
+		<OfxParamTypeChoice name="Zoom_Filling">
+          <OfxParamPropChoiceOption>透明</OfxParamPropChoiceOption>
+          <OfxParamPropChoiceOption>ミラーパディング</OfxParamPropChoiceOption>
+          <OfxParamPropChoiceOption>繰り返し</OfxParamPropChoiceOption>		  
+          <OfxParamPropChoiceOption>エッジへクランプする</OfxParamPropChoiceOption>
+<!--		  
+          <OfxParamPropChoiceOption>黒</OfxParamPropChoiceOption>	
+          <OfxParamPropChoiceOption>色</OfxParamPropChoiceOption>	
+-->
+          <OfxPropLabel>エッジの塗りつぶし</OfxPropLabel>
+		  <OfxPropShortLabel>エッジの塗りつぶし</OfxPropShortLabel>
+		  <OfxPropLongLabel>エッジの塗りつぶし</OfxPropLongLabel>
+		  <OfxParamPropHint>この選択ボックスは背景の塗りつぶしに作用します。</OfxParamPropHint>
+        </OfxParamTypeChoice>
+		
+		<OfxParamTypeRGBA name="Zoom_ColorPicker">
+          <OfxPropLabel>色</OfxPropLabel>
+		  <OfxPropShortLabel>色</OfxPropShortLabel>
+		  <OfxPropLongLabel>色</OfxPropLongLabel>
+		  <OfxParamPropHint>塗りつぶしの色を選択します。</OfxParamPropHint>
+        </OfxParamTypeRGBA>
+        
+
+        <OfxParamTypeGroup name="GroupMotionBlur">
+          <OfxPropLabel>モーションブラー</OfxPropLabel>
+		  <OfxPropShortLabel>モーションブラー</OfxPropShortLabel>
+		  <OfxPropLongLabel>モーションブラー</OfxPropLongLabel>
+		  <OfxParamPropHint>モーションブラーについての追加情報を表示しています。</OfxParamPropHint>
+        </OfxParamTypeGroup>
+        
+        <OfxParamTypeBoolean name="MotionBlur">
+          <OfxPropLabel>モーションブラーを追加する</OfxPropLabel>
+		  <OfxPropShortLabel>モーションブラーを追加する</OfxPropShortLabel>
+		  <OfxPropLongLabel>モーションブラーを追加する</OfxPropLongLabel>
+		  <OfxParamPropHint>クリックして水平カメラパンにモーションブラーを追加します。</OfxParamPropHint>
+        </OfxParamTypeBoolean>
+
+        <OfxParamTypeDouble name="MotionBlurThreshold">
+          <OfxPropLabel>しきい値</OfxPropLabel>
+		  <OfxPropShortLabel>しきい値</OfxPropShortLabel>
+		  <OfxPropLongLabel>しきい値</OfxPropLongLabel>
+		  <OfxParamPropHint>モーションブラーは検出された水平カメラパンがそのしきい値を超えたときにのみ適用されます。</OfxParamPropHint>
+        </OfxParamTypeDouble>
+		
+		
+		<OfxParamTypeGroup name="GroupExpertMode">
+          <OfxPropLabel>上級者モード</OfxPropLabel>
+		  <OfxPropShortLabel>上級者モード</OfxPropShortLabel>
+		  <OfxPropLongLabel>上級者モード</OfxPropLongLabel>
+		  <OfxParamPropHint>トラッキングアルゴリズムの調整についての追加情報を表示しています。</OfxParamPropHint>
+        </OfxParamTypeGroup>
+		
+		<OfxParamTypeDouble name="XScale">
+          <OfxPropLabel>幅(ROI)</OfxPropLabel>
+		  <OfxPropShortLabel>幅(ROI)</OfxPropShortLabel>
+		  <OfxPropLongLabel>幅(ROI)</OfxPropLongLabel>
+		  <OfxParamPropHint>このパラメーターは、関心領域の幅を縮小します。</OfxParamPropHint>
+        </OfxParamTypeDouble>
+		
+		<OfxParamTypeDouble name="YScale">
+          <OfxPropLabel>高さ(ROI)</OfxPropLabel>
+		  <OfxPropShortLabel>高さ(ROI)</OfxPropShortLabel>
+		  <OfxPropLongLabel>高さ(ROI)</OfxPropLongLabel>
+		  <OfxParamPropHint>このパラメーターは、関心領域の高さを縮小します。</OfxParamPropHint>
+        </OfxParamTypeDouble>
+		
+		<OfxParamTypeInteger name="NumGridsX">
+          <OfxPropLabel>Xのグリッド数</OfxPropLabel>
+		  <OfxPropShortLabel>Xのグリッド数</OfxPropShortLabel>
+		  <OfxPropLongLabel>Xのグリッド数</OfxPropLongLabel>
+		  <OfxParamPropHint>このパラメーターはXのグリッド数を変えます。</OfxParamPropHint>
+        </OfxParamTypeInteger>
+		
+		<OfxParamTypeInteger name="NumGridsY">
+          <OfxPropLabel>Yのグリッド数</OfxPropLabel>
+		  <OfxPropShortLabel>Yのグリッド数</OfxPropShortLabel>
+		  <OfxPropLongLabel>Yのグリッド数</OfxPropLongLabel>
+		  <OfxParamPropHint>このパラメーターはYのグリッド数を変えます。</OfxParamPropHint>
+        </OfxParamTypeInteger>
+		
+		<OfxParamTypeInteger name="PointsPerGridCell">
+          <OfxPropLabel>グリッドセルあたりのポイント数</OfxPropLabel>
+		  <OfxPropShortLabel>グリッドセルあたりのポイント数</OfxPropShortLabel>
+		  <OfxPropLongLabel>グリッドセルあたりのポイント数</OfxPropLongLabel>
+		  <OfxParamPropHint>このパラメーターはグリッドセルのポイント数を変えます。</OfxParamPropHint>
+        </OfxParamTypeInteger>
+		
+		<OfxParamTypeChoice name="ChoiceTrackerType">
+          <OfxParamPropChoiceOption>ルーカス・カナデ</OfxParamPropChoiceOption>
+          <OfxParamPropChoiceOption>絶対差の合計</OfxParamPropChoiceOption>
+          <OfxParamPropChoiceOption>ハイブリッド</OfxParamPropChoiceOption>
+          <OfxPropLabel>トラッカータイプ</OfxPropLabel>
+		  <OfxPropShortLabel>トラッカータイプ</OfxPropShortLabel>
+		  <OfxPropLongLabel>トラッカータイプ</OfxPropLongLabel>
+		  <OfxParamPropHint>この選択ボックスはトラッカータイプに作用します。</OfxParamPropHint>
+        </OfxParamTypeChoice>
+		
+		
+		<OfxParamTypeGroup name="GroupLockState">
+          <OfxPropLabel>スムージングパラメーター</OfxPropLabel>
+		  <OfxPropShortLabel>スムージングパラメーター</OfxPropShortLabel>
+		  <OfxPropLongLabel>スムージングパラメーター</OfxPropLongLabel>
+		  <OfxParamPropHint>スムージングパラメーターの調整についての追加情報を表示しています。</OfxParamPropHint>
+        </OfxParamTypeGroup>
+		
+		<OfxParamTypeBoolean name="LockTranslateX">
+          <OfxPropLabel>トランスレート X</OfxPropLabel>
+		  <OfxPropShortLabel>トランスレート X</OfxPropShortLabel>
+		  <OfxPropLongLabel>トランスレート X</OfxPropLongLabel>
+		  <OfxParamPropHint>Xのトランスレーションのスムージング</OfxParamPropHint>
+        </OfxParamTypeBoolean>
+		
+		<OfxParamTypeBoolean name="LockTranslateY">
+          <OfxPropLabel>トランスレート Y</OfxPropLabel>
+		  <OfxPropShortLabel>トランスレート Y</OfxPropShortLabel>
+		  <OfxPropLongLabel>トランスレート Y</OfxPropLongLabel>
+		  <OfxParamPropHint>Yのトランスレーションのスムージング</OfxParamPropHint>
+        </OfxParamTypeBoolean>
+		
+		<OfxParamTypeBoolean name="LockAngle">
+          <OfxPropLabel>アングル</OfxPropLabel>
+		  <OfxPropShortLabel>アングル</OfxPropShortLabel>
+		  <OfxPropLongLabel>アングル</OfxPropLongLabel>
+		  <OfxParamPropHint>アングルのスムージング</OfxParamPropHint>
+        </OfxParamTypeBoolean>
+		
+		<OfxParamTypeBoolean name="LockScaleX">
+          <OfxPropLabel>スケール X</OfxPropLabel>
+		  <OfxPropShortLabel>スケール X</OfxPropShortLabel>
+		  <OfxPropLongLabel>スケール X</OfxPropLongLabel>
+		  <OfxParamPropHint>Xのスケールのスムージング</OfxParamPropHint>
+        </OfxParamTypeBoolean>
+		
+		<OfxParamTypeBoolean name="LockScaleY">
+          <OfxPropLabel>スケール Y</OfxPropLabel>
+		  <OfxPropShortLabel>スケール Y</OfxPropShortLabel>
+		  <OfxPropLongLabel>スケール Y</OfxPropLongLabel>
+		  <OfxParamPropHint>Yのスケールのスムージング</OfxParamPropHint>
+        </OfxParamTypeBoolean>
+		
+		<OfxParamTypeBoolean name="LockShear">
+          <OfxPropLabel>シアー</OfxPropLabel>
+		  <OfxPropShortLabel>シアー</OfxPropShortLabel>
+		  <OfxPropLongLabel>シアー</OfxPropLongLabel>
+		  <OfxParamPropHint>シアーのスムージング</OfxParamPropHint>
+        </OfxParamTypeBoolean>
+		
+		<OfxParamTypeGroup name="GroupVisualization">
+          <OfxPropLabel>視覚化</OfxPropLabel>
+		  <OfxPropShortLabel>視覚化</OfxPropShortLabel>
+		  <OfxPropLongLabel>視覚化</OfxPropLongLabel>
+		  <OfxParamPropHint>ビジュアライゼーションの設定に関する追加情報が表示されます。</OfxParamPropHint>
+        </OfxParamTypeGroup>
+		
+		<OfxParamTypeBoolean name="ShowFeatures">
+          <OfxPropLabel>ポイントを表示する</OfxPropLabel>
+		  <OfxPropShortLabel>ポイントを表示する</OfxPropShortLabel>
+		  <OfxPropLongLabel>ポイントを表示する</OfxPropLongLabel>
+		  <OfxParamPropHint>トラッキングポイントを表示します。</OfxParamPropHint>
+        </OfxParamTypeBoolean>
+
+        <OfxParamTypeInteger name="ShowFeaturesMinLen">
+          <OfxPropLabel>トラックの最短時間</OfxPropLabel>
+          <OfxPropShortLabel>トラックの最短時間</OfxPropShortLabel>
+          <OfxPropLongLabel>トラックの最短時間を表示する</OfxPropLongLabel>
+          <OfxParamPropHint>このパラメーターはどのトラッキングポイントを表示するかを決定します。</OfxParamPropHint>
+        </OfxParamTypeInteger>
+
+		</OfxImageEffectContext>
+
+    </OfxResourceSet>
+
+  </OfxPlugin>
+
+  <OfxPlugin name="de.magix:WarpFlowTransition">
+
+    <OfxResourceSet ofxHost="default">
+      <OfxPropLabel>VEGAS Warp Flow</OfxPropLabel>
+
+      <OfxImageEffectPluginPropGrouping>VEGAS</OfxImageEffectPluginPropGrouping>
+      <OfxPropPluginDescription>モーフトランジションを作成する。</OfxPropPluginDescription>
+      <OfxImageEffectContext name="default">
+      </OfxImageEffectContext>
+
+      <OfxImageEffectContext name="OfxImageEffectContextTransition">
+        	
+		<OfxMessage name="NoCorrespondences">安定した結果を得るには、クリップ間の相違が大きすぎるため、Warp Flow トランジションは通常のクロスフェードになる可能性があります。</OfxMessage>
+		
+      </OfxImageEffectContext>
+
+    </OfxResourceSet>
+
+  </OfxPlugin>
+
+</OfxImageEffectResource>

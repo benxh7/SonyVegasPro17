@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<patchlist owner="efx" origin="">
+    <programs last_prg="0">
+        <prg number="0" preset="Default.efx" />
+        <prg number="1" preset="1_4_Deep_Depth_Sync.efx" /> 
+        <prg number="2" preset="1_4_Triple_No_Shape_Sync.efx" /> 
+        <prg number="3" preset="1_8_Deep_Depth_Sync.efx" /> 
+        <prg number="4" preset="1_8_Triple_No_Shape_Sync.efx" /> 
+        <prg number="5" preset="1_16_Deep_Depth_Sync.efx" /> 
+        <prg number="6" preset="1_16_Triple_No_Shape_Sync.efx" /> 
+        <prg number="7" preset="1_32_Deep_Depth_Sync.efx" /> 
+        <prg number="8" preset="Alien Voice.efx" /> 
+        <prg number="9" preset="Around Your Head.efx" /> 
+        <prg number="10" preset="Guitar Tremolo 8th Stereo.efx" />
+        <prg number="11" preset="Guitar Tremolo 16th.efx" />
+        <prg number="12" preset="Percussion Exciter.efx" />
+        <prg number="13" preset="Quarter-Notes Panning.efx" />
+        <prg number="14" preset="Quarter-Notes Square Tremolo.efx" />
+        <prg number="15" preset="Wider Organ.efx" />
+    </programs>
+</patchlist>

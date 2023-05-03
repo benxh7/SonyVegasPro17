@@ -1,0 +1,2 @@
+Todos los archivos que estan en esta carpeta ponelos en cualquier Disco de tu PC. Exceptuando el archivo.exe de esta carpeta ese colocalo
+en el escritorio para luego ejecutar SonyVegas

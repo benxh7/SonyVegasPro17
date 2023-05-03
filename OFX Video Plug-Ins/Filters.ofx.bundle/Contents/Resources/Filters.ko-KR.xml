@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+	***************************************************************************
+	*   Copyright © 2016 MAGIX Software GmbH. All Rights Reserved.
+	*
+	*       $Header: //sonic3/release/vegas/15.0/vplugins/ofxFilters/Filters.xml#1 $
+	*       $DateTime: 2017/07/30 21:10:32 $
+	*       $Author: dblume $
+	*
+	*   Description:
+	*       Localized resources for the Filters plugin bundle (default)
+	***************************************************************************
+-->
+
+<!--
+<!DOCTYPE OfxImageEffectResource SYSTEM "ofx.dtd">
+ -->
+
+<OfxImageEffectResource>
+	<OfxPlugin name="com.vegascreativesoftware:Filters.Stereoscopic3DAdjust">
+
+		<OfxResourceSet ofxHost="default">
+			<OfxPropLabel>베가스 스테레오스코픽 3D 조정</OfxPropLabel>
+
+            <OfxImageEffectPluginPropGrouping>베가스</OfxImageEffectPluginPropGrouping>
+            <OfxPropPluginDescription>스테레오스코픽 3D 미디어 조정 제공</OfxPropPluginDescription>
+            <OfxImageEffectContext name="default">
+            </OfxImageEffectContext>
+
+			<OfxImageEffectContext name="OfxImageEffectContextFilter">
+
+				<OfxParamTypeDouble name="Horizontal">
+					<OfxPropLabel>수평 오프셋</OfxPropLabel>
+				</OfxParamTypeDouble>
+				
+				<OfxParamTypeGroup name="AdjustmentsGroup">
+                    <OfxPropLabel>교정사항</OfxPropLabel>
+                </OfxParamTypeGroup>
+				
+				<OfxParamTypeDouble name="Vertical">
+					<OfxPropLabel>수직 오프셋</OfxPropLabel>
+				</OfxParamTypeDouble>
+				<OfxParamTypeDouble name="Zoom">
+					<OfxPropLabel>줌</OfxPropLabel>
+				</OfxParamTypeDouble>
+				<OfxParamTypeDouble name="Keystone">
+					<OfxPropLabel>키스톤</OfxPropLabel>
+				</OfxParamTypeDouble>
+				<OfxParamTypeDouble name="Rotation">
+					<OfxPropLabel>회전</OfxPropLabel>
+				</OfxParamTypeDouble>
+				<OfxParamTypeChoice name="FlipHorizontal">
+					<OfxPropLabel>수평 뒤집기</OfxPropLabel>
+					<OfxParamPropChoiceOption>끄기</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>왼쪽</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>오른쪽</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>둘 다</OfxParamPropChoiceOption>
+				</OfxParamTypeChoice>
+				<OfxParamTypeChoice name="FlipVertical">
+					<OfxPropLabel>수직 뒤집기</OfxPropLabel>
+					<OfxParamPropChoiceOption>끄기</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>왼쪽</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>오른쪽</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>둘 다</OfxParamPropChoiceOption>
+				</OfxParamTypeChoice>
+                <OfxParamTypePushButton name="AutoAlignButton">
+                    <OfxPropLabel>자동 보정</OfxPropLabel>
+                </OfxParamTypePushButton>
+
+                <OfxParamTypeBoolean name="AutoCrop">
+                    <OfxPropLabel>자동 자르기</OfxPropLabel>
+                </OfxParamTypeBoolean>
+
+				<OfxParamTypeDouble name="Crop">
+					<OfxPropLabel>자르기</OfxPropLabel>
+				</OfxParamTypeDouble>
+
+				<OfxParamTypeGroup name="FloatingWindowsGroup">
+					<OfxPropLabel>유동창</OfxPropLabel>
+				</OfxParamTypeGroup>
+				
+				<OfxParamTypeDouble name="FloatingWindowLeft">
+					<OfxPropLabel>왼쪽</OfxPropLabel>
+				</OfxParamTypeDouble>
+				<OfxParamTypeDouble name="FloatingWindowRight">
+					<OfxPropLabel>오른쪽</OfxPropLabel>
+				</OfxParamTypeDouble>
+
+                <OfxMessage name="CouldNotAutoCorrect">두 이미지 간에 자동 보정에 필요한 유사점을 찾을 수 없습니다.</OfxMessage>
+
+                <OfxProgress name="AutoCorrectProgress">자동 보정 중...</OfxProgress>
+                
+			</OfxImageEffectContext>
+
+		</OfxResourceSet>
+
+	</OfxPlugin>
+</OfxImageEffectResource>

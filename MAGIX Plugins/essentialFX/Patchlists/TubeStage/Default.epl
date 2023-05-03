@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+<patchlist owner="efx" origin="">
+    <programs last_prg="0">
+        <prg number="0" preset="Default.efx" />
+        <prg number="1" preset="Aggressive Bassdrum.efx" /> 
+        <prg number="2" preset="Bass Guitar Tube Preamp.efx" /> 
+        <prg number="3" preset="Bluesguitar.efx" /> 
+        <prg number="4" preset="Bring Forward.efx" /> 
+        <prg number="5" preset="Crunchy Guitar.efx" /> 
+        <prg number="6" preset="Dirty Drums.efx" /> 
+        <prg number="7" preset="Fatten.efx" /> 
+        <prg number="8" preset="Loud Neighbours.efx" /> 
+        <prg number="9" preset="Lush Mix.efx" /> 
+        <prg number="10" preset="Megaphone.efx" />
+        <prg number="11" preset="More Presence.efx" />
+        <prg number="12" preset="Old Radio.efx" />
+        <prg number="13" preset="Older Radio.efx" />
+        <prg number="14" preset="Rhythm Guitar.efx" />
+        <prg number="15" preset="Rough Vocals.efx" />
+        <prg number="16" preset="Tube console -Master Buss.efx" />
+        <prg number="17" preset="Tube console -place on every mixer channel.efx" />
+        <prg number="18" preset="Tube Fryer.efx" />
+        <prg number="19" preset="Vintage Organ Toolkit.efx" />
+        <prg number="20" preset="Warm Tube Preamp.efx" />
+    </programs>
+</patchlist>

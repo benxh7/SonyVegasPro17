@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<preset owner="eFX VocalStrip" name="el with de-squeek - Tim Dolbear">
+    <params version="2.000000">
+        <param id="active" value="1.000000" />
+        <param id="input" value="0.000000" />
+        <param id="output" value="0.000000" />
+        <param id="hpfilter" value="50.006752" />
+        <param id="gate" value="-90.000000" />
+        <param id="deesser" value="18.360001" />
+        <param id="compression" value="7.920000" />
+        <param id="tone" value="0.160000" />
+    </params>
+</preset>

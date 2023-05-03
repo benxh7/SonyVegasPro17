@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<preset owner="eFX StereoDelay" name="Daniel\Delay_Digital_Robot">
+    <params version="1.000000">
+        <param id="active" value="1.000000" />
+        <param id="mode" value="0.000000" />
+        <param id="sync" value="0.000000" />
+        <param id="input" value="1.000000" />
+        <param id="output" value="1.000000" />
+        <param id="delay_l" value="0.234944" />
+        <param id="delay_r" value="0.190149" />
+        <param id="damping" value="0.000000" />
+        <param id="feedback" value="0.896028" />
+        <param id="mix" value="0.257200" />
+    </params>
+</preset>

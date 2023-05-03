@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<preset owner="eFX Compressor" name="Bus Comp - snare enhancement 2">
+    <params version="1.000000">
+        <param id="active" value="1.000000" />
+        <param id="mode" value="0.000000" />
+        <param id="sync" value="0.000000" />
+        <param id="input" value="1.000000" />
+        <param id="output" value="0.866565" />
+        <param id="scfilter" value="0.355589" />
+        <param id="threshold" value="0.000000" />
+        <param id="ratio" value="0.342689" />
+        <param id="attack" value="0.732281" />
+        <param id="release" value="0.577182" />
+    </params>
+</preset>

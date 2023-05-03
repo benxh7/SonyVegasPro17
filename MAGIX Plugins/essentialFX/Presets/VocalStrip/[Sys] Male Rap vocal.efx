@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<preset owner="eFX VocalStrip" name="Male Rap vocal">
+    <params version="2.000000">
+        <param id="active" value="1.000000" />
+        <param id="input" value="0.000000" />
+        <param id="output" value="0.000000" />
+        <param id="hpfilter" value="50.006752" />
+        <param id="gate" value="-90.000000" />
+        <param id="deesser" value="7.740000" />
+        <param id="compression" value="15.360000" />
+        <param id="tone" value="0.330000" />
+        <param id="ds_detfreq" value="5840.000000" />
+        <param id="comp_automakeup" value="1.000000" />
+        <param id="comp_attack" value="0.700000" />
+        <param id="comp_adaptrelease" value="4.000000" />
+    </params>
+</preset>

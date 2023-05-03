@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<preset owner="eFX Reverb" name="Drum Plate">
+    <params version="2.000000">
+        <param id="active" value="1.000000" />
+        <param id="mode" value="0.000000" />
+        <param id="input" value="1.000000" />
+        <param id="output" value="1.000000" />
+        <param id="size" value="0.262838" />
+        <param id="time" value="0.357711" />
+        <param id="damping" value="0.094074" />
+        <param id="mod" value="0.481855" />
+        <param id="mix" value="0.500000" />
+        <param id="sync" value="0.000000" />
+        <param id="predelay" value="2.300613" />
+        <param id="diffusion" value="1.000000" />
+        <param id="locut" value="151.923065" />
+    </params>
+</preset>

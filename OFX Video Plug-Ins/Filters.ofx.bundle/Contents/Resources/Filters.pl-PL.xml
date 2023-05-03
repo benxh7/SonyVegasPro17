@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+	***************************************************************************
+	*   Copyright (C) 2016 MAGIX Software GmbH. All rights reserved. 
+	*
+	*       $Header: //sonic3/main/vplugins/ofxFilters/Filters.xml#3 $
+	*       $DateTime: 2011/06/04 17:25:16 $
+	*       $Author: DAdams $
+	*
+	*   Description:
+	*       Localized resources for the Filters plugin bundle (default)
+	***************************************************************************
+-->
+<!--
+<!DOCTYPE OfxImageEffectResource SYSTEM "ofx.dtd">
+ -->
+<OfxImageEffectResource>
+	<OfxPlugin name="com.vegascreativesoftware:Filters.Stereoscopic3DAdjust">
+
+		<OfxResourceSet ofxHost="default">
+			<OfxPropLabel>Dostosowanie stereoskopowego 3D VEGAS</OfxPropLabel>
+
+            <OfxImageEffectPluginPropGrouping>VEGAS</OfxImageEffectPluginPropGrouping>
+            <OfxPropPluginDescription>Zapewnia regulację do mediów w stereoskopowym 3D.</OfxPropPluginDescription>
+            <OfxImageEffectContext name="default">
+            </OfxImageEffectContext>
+
+			<OfxImageEffectContext name="OfxImageEffectContextFilter">
+
+				<OfxParamTypeDouble name="Horizontal">
+					<OfxPropLabel>Przesunięcie poziome</OfxPropLabel>
+				</OfxParamTypeDouble>
+				
+				<OfxParamTypeGroup name="AdjustmentsGroup">
+                    <OfxPropLabel>Korekty</OfxPropLabel>
+                </OfxParamTypeGroup>
+				
+				<OfxParamTypeDouble name="Vertical">
+					<OfxPropLabel>Przesunięcie pionowe</OfxPropLabel>
+				</OfxParamTypeDouble>
+				<OfxParamTypeDouble name="Zoom">
+					<OfxPropLabel>Przybliżenie/oddalenie</OfxPropLabel>
+				</OfxParamTypeDouble>
+				<OfxParamTypeDouble name="Keystone">
+					<OfxPropLabel>Zwornik</OfxPropLabel>
+				</OfxParamTypeDouble>
+				<OfxParamTypeDouble name="Rotation">
+					<OfxPropLabel>Obrócenie</OfxPropLabel>
+				</OfxParamTypeDouble>
+				<OfxParamTypeChoice name="FlipHorizontal">
+					<OfxPropLabel>Przekręć poziomo</OfxPropLabel>
+					<OfxParamPropChoiceOption>Wył.</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>Lewo</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>Prawo</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>Oba</OfxParamPropChoiceOption>
+				</OfxParamTypeChoice>
+				<OfxParamTypeChoice name="FlipVertical">
+					<OfxPropLabel>Przekręć pionowo</OfxPropLabel>
+					<OfxParamPropChoiceOption>Wył.</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>Lewo</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>Prawo</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>Oba</OfxParamPropChoiceOption>
+				</OfxParamTypeChoice>
+                <OfxParamTypePushButton name="AutoAlignButton">
+                    <OfxPropLabel>Automatyczna korekta</OfxPropLabel>
+                </OfxParamTypePushButton>
+
+                <OfxParamTypeBoolean name="AutoCrop">
+                    <OfxPropLabel>Automatyczne przycinanie</OfxPropLabel>
+                </OfxParamTypeBoolean>
+
+				<OfxParamTypeDouble name="Crop">
+					<OfxPropLabel>Przycięcie</OfxPropLabel>
+				</OfxParamTypeDouble>
+
+				<OfxParamTypeGroup name="FloatingWindowsGroup">
+					<OfxPropLabel>Unoszące się okna</OfxPropLabel>
+				</OfxParamTypeGroup>
+				
+				<OfxParamTypeDouble name="FloatingWindowLeft">
+					<OfxPropLabel>Lewo</OfxPropLabel>
+				</OfxParamTypeDouble>
+				<OfxParamTypeDouble name="FloatingWindowRight">
+					<OfxPropLabel>Prawo</OfxPropLabel>
+				</OfxParamTypeDouble>
+
+                <OfxMessage name="CouldNotAutoCorrect">Nie znaleziono dość podobieństw między obrazami, żeby przeprowadzić automatyczną korektę.</OfxMessage>
+
+                <OfxProgress name="AutoCorrectProgress">Automatyczna korekta...</OfxProgress>
+                
+			</OfxImageEffectContext>
+
+		</OfxResourceSet>
+
+	</OfxPlugin>
+</OfxImageEffectResource>

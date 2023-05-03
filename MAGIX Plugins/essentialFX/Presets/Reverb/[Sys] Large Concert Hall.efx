@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<preset owner="eFX Reverb" name="Large Concert Hall">
+    <params version="2.000000">
+        <param id="active" value="1.000000" />
+        <param id="mode" value="2.000000" />
+        <param id="input" value="1.000000" />
+        <param id="output" value="1.000000" />
+        <param id="size" value="0.571429" />
+        <param id="time" value="0.412570" />
+        <param id="damping" value="0.359985" />
+        <param id="mod" value="0.338243" />
+        <param id="mix" value="0.261169" />
+        <param id="sync" value="0.000000" />
+        <param id="predelay" value="24.870802" />
+        <param id="diffusion" value="0.815500" />
+        <param id="locut" value="104.739777" />
+    </params>
+</preset>

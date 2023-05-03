@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<preset owner="eFX Compressor" name="Daniel\Compressor_Acoustic_Guitar">
+    <params version="1.000000">
+        <param id="active" value="1.000000" />
+        <param id="mode" value="0.000000" />
+        <param id="sync" value="0.000000" />
+        <param id="input" value="1.000000" />
+        <param id="output" value="0.568278" />
+        <param id="scfilter" value="0.000000" />
+        <param id="threshold" value="0.681799" />
+        <param id="ratio" value="0.417111" />
+        <param id="attack" value="0.730010" />
+        <param id="release" value="0.378129" />
+    </params>
+</preset>

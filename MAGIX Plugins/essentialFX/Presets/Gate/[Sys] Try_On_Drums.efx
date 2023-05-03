@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<preset owner="eFX Gate" name="Try_On_Drums">
+    <params version="2.000000">
+        <param id="active" value="1.000000" />
+        <param id="input" value="0.000000" />
+        <param id="output" value="0.000000" />
+        <param id="scfilter" value="1079.533203" />
+        <param id="threshold" value="-27.399628" />
+        <param id="range" value="14.485260" />
+        <param id="attack" value="0.050000" />
+        <param id="release" value="109.300095" />
+        <param id="sclisten" value="0.000000" />
+        <param id="softknee" value="1.000000" />
+        <param id="scflttype" value="2.000000" />
+        <param id="scmode" value="0.000000" />
+        <param id="holdtime" value="1.000000" />
+    </params>
+</preset>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	***************************************************************************
+	*   Copyright © 2018 MAGIX Software GmbH. All Rights Reserved.
+	*
+	*       $DateTime: 2018/08/08 $
+	*       $Author: pkelm $
+	*
+	*   Description:
+	*       Localized resources for the dual-fisheye plugin bundle (default)
+	***************************************************************************
+-->
+
+<!--
+<!DOCTYPE OfxImageEffectResource SYSTEM "ofx.dtd">
+ -->
+
+<OfxImageEffectResource>  
+  <OfxPlugin name="com.magix.ofx.vr.dual.stich">
+
+		<!--
+		Define the resouces overrides to be used for the host 'default' (or 'all' or 'com.vegascreativesoftware.vegas'
+		    in the locale 'fr-FR' (or 'de-DE' or 'es-ES' or 'ja-JP')
+			ofxHost="someHost"
+		-->
+		<OfxResourceSet ofxHost="default">
+
+			<!-- Set the user visible label on the plug-in -->
+			<OfxPropLabel>VEGAS Dual Fish Eye Stitching</OfxPropLabel>
+
+			<OfxImageEffectPluginPropGrouping>VEGAS\360</OfxImageEffectPluginPropGrouping>
+
+			<OfxPropPluginDescription>From Magix Computer Products Intl. Co.</OfxPropPluginDescription>
+
+			<!--
+	        Define default overrides that apply only in the generator context
+			-->
+			<OfxImageEffectContext name="OfxImageEffectContextFilter">
+				<OfxParamTypeChoice name="mx.ofx.360.stitch.fisheye.presets">
+					<OfxParamPropChoiceOption>Определяется пользователем</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>Samsung Gear 360°</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>LG 360° Cam</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>Ricoh Theta V</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>Ricoh Theta S</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>Ricoh Theta</OfxParamPropChoiceOption>
+					<OfxPropLabel>Модель</OfxPropLabel>
+					<OfxPropShortLabel>Модель</OfxPropShortLabel>
+			        <OfxPropLongLabel>Модель</OfxPropLongLabel>
+					<OfxParamPropHint>Вы можете выбрать настройки для нужной модели видеокамеры.</OfxParamPropHint>
+				</OfxParamTypeChoice>			
+			
+				<OfxParamTypeDouble name="mx.ofx.360.stitch.fisheye.fov">
+                    <OfxPropLabel>Поле обзора</OfxPropLabel>
+					<OfxPropShortLabel>Поле обзора</OfxPropShortLabel>
+			        <OfxPropLongLabel>Поле обзора</OfxPropLongLabel>
+					<OfxParamPropHint>Поле обзора определяет видимую область, отображаемую всегда.</OfxParamPropHint>
+                </OfxParamTypeDouble>
+				
+				<OfxParamTypeChoice name="mx.ofx.360.stitch.fisheye.orient.left">
+					<OfxParamPropChoiceOption>0 градусов</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>-90 градусов</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>180 градусов</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>90 градусов</OfxParamPropChoiceOption>
+					<OfxPropLabel>Левый &quot;рыбий глаз&quot;</OfxPropLabel>
+					<OfxPropShortLabel>Левый &quot;рыбий глаз&quot;</OfxPropShortLabel>
+			        <OfxPropLongLabel>Левый &quot;рыбий глаз&quot;</OfxPropLongLabel>
+					<OfxParamPropHint>Выберите направление левого &quot;рыбьего глаза&quot; в вашем &quot;сыром&quot; материале.</OfxParamPropHint>
+				</OfxParamTypeChoice>
+				
+				<OfxParamTypeChoice name="mx.ofx.360.stitch.fisheye.orient.right">
+					<OfxParamPropChoiceOption>0 градусов</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>-90 градусов</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>180 градусов</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>90 градусов</OfxParamPropChoiceOption>
+					<OfxPropLabel>Правый &quot;рыбий глаз&quot;</OfxPropLabel>
+					<OfxPropShortLabel>Правый &quot;рыбий глаз&quot;</OfxPropShortLabel>
+			        <OfxPropLongLabel>Правый &quot;рыбий глаз&quot;</OfxPropLongLabel>
+					<OfxParamPropHint>Выберите направление правого &quot;рыбьего глаза&quot; в вашем &quot;сыром&quot; материале.</OfxParamPropHint>
+				</OfxParamTypeChoice>
+				
+				<OfxParamTypeGroup name="mx.ofx.360.stitch.group0_0">
+					<OfxPropLabel>Обрисовывание</OfxPropLabel>
+					<OfxPropShortLabel>Обрисовывание</OfxPropShortLabel>
+			        <OfxPropLongLabel>Обрисовывание</OfxPropLongLabel>
+					<OfxParamPropHint>Под обрисовыванием понимается снижение яркости и насыженности начиная от центра и далее к краям изображения.</OfxParamPropHint>
+				</OfxParamTypeGroup>
+				
+				<OfxParamTypeBoolean name="mx.ofx.360.stitch.fisheye.falloff.use">
+					<OfxPropLabel>Снятие обрисовывания</OfxPropLabel>
+					<OfxPropShortLabel>Снятие обрисовывания</OfxPropShortLabel>
+			        <OfxPropLongLabel>Снятие обрисовывания</OfxPropLongLabel>
+					<OfxParamPropHint>Под обрисовыванием понимается снижение яркости и насыженности начиная от центра и далее к краям изображения.</OfxParamPropHint>
+				</OfxParamTypeBoolean>
+				
+                <OfxParamTypeDouble name="mx.ofx.360.stitch.fisheye.falloff.factor">
+                    <OfxPropLabel>Интенсивность</OfxPropLabel>
+					<OfxPropShortLabel>Интенсивность</OfxPropShortLabel>
+			        <OfxPropLongLabel>Интенсивность</OfxPropLongLabel>
+					<OfxParamPropHint>Максимальная интенсивность с усилением к краям.</OfxParamPropHint>
+                </OfxParamTypeDouble>
+				
+                <OfxParamTypeDouble name="mx.ofx.360.stitch.fisheye.falloff.range">
+                    <OfxPropLabel>Область</OfxPropLabel>
+					<OfxPropShortLabel>Область</OfxPropShortLabel>
+			        <OfxPropLongLabel>Область</OfxPropLongLabel>
+					<OfxParamPropHint>Радиальное расстояние о края.</OfxParamPropHint>
+                </OfxParamTypeDouble>
+				
+				<OfxParamTypeGroup name="mx.ofx.360.stitch.group1_0">
+					<OfxPropLabel>Детализация</OfxPropLabel>
+					<OfxPropShortLabel>Детализация</OfxPropShortLabel>
+			        <OfxPropLongLabel>Детализация</OfxPropLongLabel>
+				</OfxParamTypeGroup>
+				
+				<OfxParamTypeDouble name="mx.ofx.360.stitch.fisheye.center">
+                    <OfxPropLabel>Центр</OfxPropLabel>
+					<OfxPropShortLabel>Центр</OfxPropShortLabel>
+			        <OfxPropLongLabel>Центр</OfxPropLongLabel>
+					<OfxParamPropHint>Центральное смещение обоих &quot;рыбьих глаз&quot;</OfxParamPropHint>
+                </OfxParamTypeDouble>
+				
+                <OfxParamTypeDouble name="mx.ofx.360.stitch.fisheye.narrowing">
+                    <OfxPropLabel>Радиус</OfxPropLabel>
+					<OfxPropShortLabel>Радиус</OfxPropShortLabel>
+			        <OfxPropLongLabel>Радиус</OfxPropLongLabel>
+					<OfxParamPropHint>Используемое в расчетах радиальное расстояние.</OfxParamPropHint>
+                </OfxParamTypeDouble>
+				
+				<OfxParamTypeDouble name="mx.ofx.360.stitch.fisheye.rotation">
+                    <OfxPropLabel>Вращение</OfxPropLabel>
+					<OfxPropShortLabel>Вращение</OfxPropShortLabel>
+			        <OfxPropLongLabel>Вращение</OfxPropLongLabel>
+					<OfxParamPropHint>Вращение с применением к обоим &quot;рыбьим глазам&quot;</OfxParamPropHint>
+                </OfxParamTypeDouble>
+				
+			</OfxImageEffectContext>
+		</OfxResourceSet>
+	</OfxPlugin>
+  
+</OfxImageEffectResource>

@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<preset owner="eFX TubeStage" name="More Presence">
+    <params version="2.000000">
+        <param id="active" value="1.000000" />
+        <param id="input" value="5.279995" />
+        <param id="output" value="-8.400003" />
+        <param id="pre_eq" value="0.480000" />
+        <param id="gain" value="8.329962" />
+        <param id="post_eq" value="0.430000" />
+        <param id="oversample" value="0.000000" />
+        <param id="stages" value="2.000000" />
+        <param id="class" value="0.000000" />
+    </params>
+</preset>

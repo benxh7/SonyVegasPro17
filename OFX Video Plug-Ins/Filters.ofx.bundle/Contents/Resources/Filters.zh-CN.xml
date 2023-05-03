@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+	***************************************************************************
+	*   Copyright (C) 2016 MAGIX Software GmbH. All rights reserved. 
+	*
+	*       $Header: //sonic3/main/vplugins/ofxFilters/Filters.xml#3 $
+	*       $DateTime: 2011/06/04 17:25:16 $
+	*       $Author: DAdams $
+	*
+	*   Description:
+	*       Localized resources for the Filters plugin bundle (default)
+	***************************************************************************
+-->
+<!--
+<!DOCTYPE OfxImageEffectResource SYSTEM "ofx.dtd">
+ -->
+<OfxImageEffectResource>
+	<OfxPlugin name="com.vegascreativesoftware:Filters.Stereoscopic3DAdjust">
+
+		<OfxResourceSet ofxHost="default">
+			<OfxPropLabel>VEGAS 三维立体调整</OfxPropLabel>
+
+            <OfxImageEffectPluginPropGrouping>VEGAS</OfxImageEffectPluginPropGrouping>
+            <OfxPropPluginDescription>为立体三维媒体提供调整。</OfxPropPluginDescription>
+            <OfxImageEffectContext name="default">
+            </OfxImageEffectContext>
+
+			<OfxImageEffectContext name="OfxImageEffectContextFilter">
+
+				<OfxParamTypeDouble name="Horizontal">
+					<OfxPropLabel>水平位移</OfxPropLabel>
+				</OfxParamTypeDouble>
+				
+				<OfxParamTypeGroup name="AdjustmentsGroup">
+                    <OfxPropLabel>校正</OfxPropLabel>
+                </OfxParamTypeGroup>
+				
+				<OfxParamTypeDouble name="Vertical">
+					<OfxPropLabel>垂直偏移</OfxPropLabel>
+				</OfxParamTypeDouble>
+				<OfxParamTypeDouble name="Zoom">
+					<OfxPropLabel>缩放</OfxPropLabel>
+				</OfxParamTypeDouble>
+				<OfxParamTypeDouble name="Keystone">
+					<OfxPropLabel>主旨</OfxPropLabel>
+				</OfxParamTypeDouble>
+				<OfxParamTypeDouble name="Rotation">
+					<OfxPropLabel>旋转</OfxPropLabel>
+				</OfxParamTypeDouble>
+				<OfxParamTypeChoice name="FlipHorizontal">
+					<OfxPropLabel>水平翻转</OfxPropLabel>
+					<OfxParamPropChoiceOption>关闭</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>左</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>右</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>两侧</OfxParamPropChoiceOption>
+				</OfxParamTypeChoice>
+				<OfxParamTypeChoice name="FlipVertical">
+					<OfxPropLabel>垂直翻转</OfxPropLabel>
+					<OfxParamPropChoiceOption>关闭</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>左</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>右</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>两侧</OfxParamPropChoiceOption>
+				</OfxParamTypeChoice>
+                <OfxParamTypePushButton name="AutoAlignButton">
+                    <OfxPropLabel>自动校正</OfxPropLabel>
+                </OfxParamTypePushButton>
+
+                <OfxParamTypeBoolean name="AutoCrop">
+                    <OfxPropLabel>自动裁剪</OfxPropLabel>
+                </OfxParamTypeBoolean>
+
+				<OfxParamTypeDouble name="Crop">
+					<OfxPropLabel>裁剪</OfxPropLabel>
+				</OfxParamTypeDouble>
+
+				<OfxParamTypeGroup name="FloatingWindowsGroup">
+					<OfxPropLabel>浮动窗口</OfxPropLabel>
+				</OfxParamTypeGroup>
+				
+				<OfxParamTypeDouble name="FloatingWindowLeft">
+					<OfxPropLabel>左</OfxPropLabel>
+				</OfxParamTypeDouble>
+				<OfxParamTypeDouble name="FloatingWindowRight">
+					<OfxPropLabel>右</OfxPropLabel>
+				</OfxParamTypeDouble>
+
+                <OfxMessage name="CouldNotAutoCorrect">无法在图像中找到足够的相似之处来进行自动校正。</OfxMessage>
+
+                <OfxProgress name="AutoCorrectProgress">自动校正...</OfxProgress>
+                
+			</OfxImageEffectContext>
+
+		</OfxResourceSet>
+
+	</OfxPlugin>
+</OfxImageEffectResource>

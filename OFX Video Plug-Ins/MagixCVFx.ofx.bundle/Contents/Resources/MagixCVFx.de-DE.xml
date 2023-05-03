@@ -1,0 +1,572 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<OfxImageEffectResource>
+  <OfxPlugin name="de.magix:LensCorrection">
+
+    <OfxResourceSet ofxHost="default">
+      <OfxPropLabel>VEGAS Linsenentzerrung</OfxPropLabel>
+
+      <OfxImageEffectPluginPropGrouping>VEGAS</OfxImageEffectPluginPropGrouping>
+      <OfxPropPluginDescription>Entzerrt Linsenverkrümmungen</OfxPropPluginDescription>
+      <OfxImageEffectContext name="default">
+      </OfxImageEffectContext>
+
+      <OfxImageEffectContext name="OfxImageEffectContextFilter">
+        
+		<OfxParamTypeChoice name="Localization">
+          <OfxParamPropChoiceOption>Wähle Linse</OfxParamPropChoiceOption>
+          <OfxParamPropChoiceOption>Nichts gefunden</OfxParamPropChoiceOption>
+        </OfxParamTypeChoice>
+
+		<OfxParamTypeGroup name="GroupDb">
+          <OfxPropLabel>Linsenfabrikat</OfxPropLabel>
+		  <OfxPropShortLabel>Linsenfabrikat</OfxPropShortLabel>
+		  <OfxPropLongLabel>Linsenfabrikat</OfxPropLongLabel>
+		  <OfxParamPropHint>Beinhaltet die Linsendatenbank.</OfxParamPropHint>
+        </OfxParamTypeGroup>
+
+		<OfxParamTypeString name="Query">
+          <OfxPropLabel>Suche nach</OfxPropLabel>
+		  <OfxPropShortLabel>Suche nach</OfxPropShortLabel>
+		  <OfxPropLongLabel>Suche nach</OfxPropLongLabel>
+		  <OfxParamPropHint>Gebe den Namen der Linse ein, um danach zu suchen.</OfxParamPropHint>
+        </OfxParamTypeString>
+		
+		<OfxParamTypeChoice name="QueryResult">
+          <OfxPropLabel>Gefundene Linsen</OfxPropLabel>
+		  <OfxPropShortLabel>Gefundene Linsen</OfxPropShortLabel>
+		  <OfxPropLongLabel>Gefundene Linsen</OfxPropLongLabel>
+		  <OfxParamPropHint>Listet alle Linsen auf, die der Suche entsprechen.</OfxParamPropHint>
+        </OfxParamTypeChoice>
+		
+		<OfxParamTypeBoolean name="ShowMesh">
+          <OfxPropLabel>Zeige Linsenverzerrung</OfxPropLabel>
+		  <OfxPropShortLabel>Zeige Linsenverzerrung</OfxPropShortLabel>
+		  <OfxPropLongLabel>Zeige die Linsenverzerrung der aktuellen Parameter</OfxPropLongLabel>
+		  <OfxParamPropHint>Zeigt jene Verzerrung an, die durch die aktuellen Paramter korregiert wird.</OfxParamPropHint>
+        </OfxParamTypeBoolean>
+		
+        <OfxParamTypeDouble2D name="DistCenter">
+         <OfxPropLabel>Verzerrungszentrum</OfxPropLabel>
+		 <OfxPropShortLabel>Verzerrungszentrum</OfxPropShortLabel>
+		 <OfxPropLongLabel>Verzerrungszentrum</OfxPropLongLabel>
+		 <OfxParamPropHint>Verändere das Zentrum, falls die Verzerrung deiner Linse nicht mittig ist.</OfxParamPropHint>
+        </OfxParamTypeDouble2D>
+    
+		<OfxParamTypeDouble name="RadialDistParam1">
+         <OfxPropLabel>Radialer Verzerrungsparameter k1</OfxPropLabel>
+		 <OfxPropShortLabel>Radialer Verzerrungsparameter k1</OfxPropShortLabel>
+		 <OfxPropLongLabel>Radialer Verzerrungsparameter k1</OfxPropLongLabel>
+		 <OfxParamPropHint>Das ist der Parameter a des ptlens Models.</OfxParamPropHint>
+        </OfxParamTypeDouble>
+		
+		<OfxParamTypeDouble name="RadialDistParam2">
+         <OfxPropLabel>Radialer Verzerrungsparameter k2</OfxPropLabel>
+		 <OfxPropShortLabel>Radialer Verzerrungsparameter k2</OfxPropShortLabel>
+		 <OfxPropLongLabel>Radialer Verzerrungsparameter k2</OfxPropLongLabel>
+		 <OfxParamPropHint>Das ist der Parameter b des ptlens Models.</OfxParamPropHint>
+        </OfxParamTypeDouble>
+
+		<OfxParamTypeDouble name="RadialDistParam3">
+         <OfxPropLabel>Radialer Verzerrungsparameter k3</OfxPropLabel>
+		 <OfxPropShortLabel>Radialer Verzerrungsparameter k3</OfxPropShortLabel>
+		 <OfxPropLongLabel>Radialer Verzerrungsparameter k3</OfxPropLongLabel>
+		 <OfxParamPropHint>Das ist der Parameter c des ptlens Models.</OfxParamPropHint>
+        </OfxParamTypeDouble>	
+      </OfxImageEffectContext>
+
+    </OfxResourceSet>
+
+  </OfxPlugin>
+  <OfxPlugin name="de.magix:MeshWarp">
+
+    <OfxResourceSet ofxHost="default">
+      <OfxPropLabel>VEGAS Mesh Warp</OfxPropLabel>
+
+      <OfxImageEffectPluginPropGrouping>VEGAS</OfxImageEffectPluginPropGrouping>
+      <OfxPropPluginDescription>Erzeugt Bildverzerrungen</OfxPropPluginDescription>
+      <OfxImageEffectContext name="default">
+      </OfxImageEffectContext>
+
+      <OfxImageEffectContext name="OfxImageEffectContextFilter">
+        	
+		<OfxParamTypeBoolean name="EnableWarp">
+          <OfxPropLabel>Aktiviere Warp-Effekt</OfxPropLabel>
+		  <OfxPropShortLabel>Aktiviere Effekt</OfxPropShortLabel>
+		  <OfxPropLongLabel>Aktiviere Warp-Effekt</OfxPropLongLabel>
+		  <OfxParamPropHint>Aktiviere Warp-Effekt</OfxParamPropHint>
+        </OfxParamTypeBoolean>
+		
+		<OfxParamTypeInteger name="GridCountX">
+          <OfxPropLabel>Gitteranzahl in X</OfxPropLabel>
+		  <OfxPropShortLabel>Gitteranzahl in X</OfxPropShortLabel>
+		  <OfxPropLongLabel>Gitteranzahl in X</OfxPropLongLabel>
+		  <OfxParamPropHint>Gitteranzahl in X</OfxParamPropHint>
+        </OfxParamTypeInteger>
+
+		<OfxParamTypeInteger name="GridCountY">
+          <OfxPropLabel>Gitteranzahl in Y</OfxPropLabel>
+		  <OfxPropShortLabel>Gitteranzahl in Y</OfxPropShortLabel>
+		  <OfxPropLongLabel>Gitteranzahl in Y</OfxPropLongLabel>
+		  <OfxParamPropHint>Gitteranzahl in Y</OfxParamPropHint>
+        </OfxParamTypeInteger>
+		
+		<OfxParamTypeInteger name="ScaleGridX">
+          <OfxPropLabel>Gitterskalierung in X</OfxPropLabel>
+		  <OfxPropShortLabel>Gitterskalierung in X</OfxPropShortLabel>
+		  <OfxPropLongLabel>Gitterskalierung in X</OfxPropLongLabel>
+		  <OfxParamPropHint>Gitterskalierung in X</OfxParamPropHint>
+        </OfxParamTypeInteger>
+		
+		<OfxParamTypeInteger name="ScaleGridY">
+          <OfxPropLabel>Gitterskalierung in Y</OfxPropLabel>
+		  <OfxPropShortLabel>Gitterskalierung in Y</OfxPropShortLabel>
+		  <OfxPropLongLabel>Gitterskalierung in Y</OfxPropLongLabel>
+		  <OfxParamPropHint>Gitterskalierung in Y</OfxParamPropHint>
+        </OfxParamTypeInteger>
+    
+		<OfxParamTypeBoolean name="GridCountLink">
+         <OfxPropLabel>Verknüpfe vertikale und horizontale Gitteranzahl</OfxPropLabel>
+		 <OfxPropShortLabel>Verknüpfe vertikale und horizontale Gitteranzahl</OfxPropShortLabel>
+		 <OfxPropLongLabel>Verknüpfe vertikale und horizontale Gitteranzahl</OfxPropLongLabel>
+		 <OfxParamPropHint>Gitteranzahl in X und Y wird angeglichen.</OfxParamPropHint>
+        </OfxParamTypeBoolean>
+		
+		<OfxParamTypeBoolean name="KeepMeshStructure">
+         <OfxPropLabel>Erhalte Gitterstruktur</OfxPropLabel>
+		 <OfxPropShortLabel>Erhalte Gitterstruktur</OfxPropShortLabel>
+		 <OfxPropLongLabel>Erhalte Gitterstruktur</OfxPropLongLabel>
+		 <OfxParamPropHint>Erhält die Gitterstruktur während der Skalierung.</OfxParamPropHint>
+        </OfxParamTypeBoolean>	
+
+		<OfxParamTypePushButton name="ResetMesh">
+          <OfxPropLabel>Gitter zurücksetzen</OfxPropLabel>
+		  <OfxPropShortLabel>Gitter zurücksetzen</OfxPropShortLabel>
+		  <OfxPropLongLabel>Gitter zurücksetzen</OfxPropLongLabel>
+		  <OfxParamPropHint>Setzt das Gitter zurück.</OfxParamPropHint>
+        </OfxParamTypePushButton>
+		
+      </OfxImageEffectContext>
+
+    </OfxResourceSet>
+
+  </OfxPlugin>
+  <OfxPlugin name="de.magix:TimeWarp">
+
+    <OfxResourceSet ofxHost="default">
+      <OfxPropLabel>VEGAS Zeitlupe</OfxPropLabel>
+
+      <OfxImageEffectPluginPropGrouping>VEGAS</OfxImageEffectPluginPropGrouping>
+      <OfxPropPluginDescription>Erzeugt einen Zeitlupen bzw. einen Zeitraffer Effekt</OfxPropPluginDescription>
+      <OfxImageEffectContext name="default">
+      </OfxImageEffectContext>
+
+      <OfxImageEffectContext name="OfxImageEffectContextFilter">
+
+        <OfxMessage name="OutOfMemory">Ihre Grafikkarte hat nicht genügend Speicher, um diesen Vorgang mit der von Ihnen angegebenen Qualitätsstufe durchzuführen. Wählen Sie eine niedrigere Qualitätseinstellung.</OfxMessage>
+        <OfxMessage name="NoGPU">Dieses Plug-In ist stark von der GPU-Nutzung abhängig. Sie verwenden derzeit die CPU-Verarbeitung. Obwohl das Plug-in weiterhin funktioniert, sollten Sie mit geringer Leistung und möglichen Artefakten bei den Ergebnissen rechnen.</OfxMessage>
+		<OfxMessage name="TrimHint">Nach dem Anwenden von Zeitlupe an diesem Ereignis vorgenommene Änderungen können zu unerwarteten Ergebnissen führen. Bearbeiten Sie dieses Ereignis am besten, bevor Sie den Zeitlupeneffekt anwenden. Wenden Sie alternativ Zeitlupe auf der Medieneffektebene an, für die keine Bearbeitungseinschränkungen gelten.</OfxMessage>
+		<OfxMessage name="EventFXSpeedUp">Wenn der Wert größer als 1 ist, kann die Cliplänge nicht geändert werden. Alternativ können Sie den Effekt auch ohne Einschränkungen als Medieneffekt anwenden.</OfxMessage>
+		
+		<OfxParamTypeGroup name="Group Parameter">
+          <OfxPropLabel>Parameter</OfxPropLabel>
+		  <OfxPropShortLabel>Parameter</OfxPropShortLabel>
+		  <OfxPropLongLabel>Parameter</OfxPropLongLabel>
+		  <OfxParamPropHint>Gruppiert einzelne Parameter</OfxParamPropHint>	
+        </OfxParamTypeGroup>
+		
+		<OfxParamTypeChoice name="Choice Box Algorithm">
+          <OfxParamPropChoiceOption>Morphen</OfxParamPropChoiceOption>
+		  <OfxParamPropChoiceOption>Optischer Fluss</OfxParamPropChoiceOption>
+          <!--<OfxParamPropChoiceOption>Kanten-bewahrender optischer Fluss</OfxParamPropChoiceOption>-->
+		  <OfxPropLabel>Methode</OfxPropLabel>	
+		  <OfxParamPropHint>Schaltet zwischen den verschiedenen Methoden zum Erstellen von Zwischenbildern um.</OfxParamPropHint>		  
+        </OfxParamTypeChoice>
+		
+		<OfxParamTypeChoice name="Choice Box Quality">
+          <OfxParamPropChoiceOption>Grob</OfxParamPropChoiceOption>
+		  <OfxParamPropChoiceOption>Mittel</OfxParamPropChoiceOption>
+          <OfxParamPropChoiceOption>Fein</OfxParamPropChoiceOption>
+		  <OfxPropLabel>Qualität</OfxPropLabel>	
+		  <OfxParamPropHint>Schaltet zwischen den verschiedenen Qualitäten zum Erstellen von Zwischenbildern um.</OfxParamPropHint>		  
+        </OfxParamTypeChoice>
+    
+		<OfxParamTypeDouble name="Slow Motion Ratio">
+         <OfxPropLabel>Abspielrate</OfxPropLabel>
+		 <OfxPropShortLabel>Abspielrate</OfxPropShortLabel>
+		 <OfxPropLongLabel>Abspielrate</OfxPropLongLabel>
+		 <OfxParamPropHint>Dieser Parameter ändert das Geschwindigkeitsverhältnis des jeweiligen Clips.</OfxParamPropHint>
+        </OfxParamTypeDouble>
+
+        <OfxParamTypePushButton name="Analyse Button">
+          <OfxPropLabel>Bewegung analysieren</OfxPropLabel>
+		  <OfxPropShortLabel>Bewegung analysieren</OfxPropShortLabel>
+		  <OfxPropLongLabel>Bewegung analysieren</OfxPropLongLabel>
+		  <OfxParamPropHint>Startet die Bewegungsanalyse.</OfxParamPropHint>
+        </OfxParamTypePushButton>
+
+        <OfxParamTypePushButton name="Clear Button">
+          <OfxPropLabel>Bewegungsdaten löschen</OfxPropLabel>
+		  <OfxPropShortLabel>Bewegungsdaten löschen</OfxPropShortLabel>
+		  <OfxPropLongLabel>Bewegungsdaten löschen</OfxPropLongLabel>
+		  <OfxParamPropHint>Löscht die Daten der Bewegungsanalyse.</OfxParamPropHint>
+        </OfxParamTypePushButton>
+		
+      </OfxImageEffectContext>
+
+    </OfxResourceSet>
+
+  </OfxPlugin>
+
+  <OfxPlugin name="de.magix:Stabilize">
+
+    <OfxResourceSet ofxHost="default">
+      <OfxPropLabel>VEGAS Videostabilisierung</OfxPropLabel>
+
+      <OfxImageEffectPluginPropGrouping>VEGAS</OfxImageEffectPluginPropGrouping>
+      <OfxPropPluginDescription>Stabilisiert verwackeltes Videomaterial</OfxPropPluginDescription>
+      <OfxImageEffectContext name="default">
+      </OfxImageEffectContext>
+
+      <OfxImageEffectContext name="OfxImageEffectContextFilter">
+
+        <OfxMessage name="invalidEffectContextEffect_Event">
+          Sie haben das Videostabilisierungs-Plug-in einem Event hinzugefügt. Dieses Plug-in muss auf einen Clip oder Subclip als Medieneffekt angewendet werden.
+          
+          Um Medieneffekte anzuwenden, wählen Sie ein Event in der Timeline (oder einen Clip im Fenster Projektmedien) aus und wählen Sie dann Extras > Video > Medieneffekte.</OfxMessage>
+
+        <OfxMessage name="invalidEffectContextEffect_Track">
+          Sie haben das Videostabilisierungs-Plug-in einer Spur hinzugefügt. Dieses Plug-in muss auf einen Clip oder Subclip als Medieneffekt angewendet werden.
+
+          Um Medieneffekte anzuwenden, wählen Sie ein Event in der Timeline (oder einen Clip im Fenster Projektmedien) aus und wählen Sie dann Extras > Video > Medieneffekte.</OfxMessage>
+
+        <OfxMessage name="invalidEffectContextEffect_VideoOutput">
+          Sie haben das Videostabilisierungs-Plug-in einer Videoausgabe hinzugefügt. Dieses Plug-in muss auf einen Clip oder Subclip als Medieneffekt angewendet werden.
+
+          Um Medieneffekte anzuwenden, wählen Sie ein Event in der Timeline (oder einen Clip im Fenster Projektmedien) aus und wählen Sie dann Extras > Video > Medieneffekte.</OfxMessage>
+
+        <OfxProgress name="StabilizeAnalyzeProgress">Medium wird stabilisiert</OfxProgress>
+        <OfxMessage name="mustClickApply">Klicken Sie auf den Stabilisieren bzw. Bewegung analysieren Button, damit die Änderungen wirksam werden. Medien sollten während der Analyse nicht wiedergegeben werden.</OfxMessage>
+		
+		<OfxMessage name="trimHint">Änderungen an diesem Video (Trimmen, Splitten usw.) können zum Verlust der Stabilisierungsdaten oder anderen unerwarteten Ergebnissen führen. Es ist am besten, erst alle Bearbeitungen zu diesem Video durchzuführen, bevor Sie die Stabilisierung anwenden.</OfxMessage>
+        
+		<OfxParamTypeGroup name="GroupParameters">
+          <OfxPropLabel>Parameter</OfxPropLabel>
+		  <OfxPropShortLabel>Parameter</OfxPropShortLabel>
+		  <OfxPropLongLabel>Parameter</OfxPropLongLabel>
+		  <OfxParamPropHint>Zeigt zusätzliche Informationen zu den Parametern vor der Stabilisierung an.</OfxParamPropHint>
+        </OfxParamTypeGroup>
+		
+		<OfxParamTypeChoice name="Views">
+			<OfxParamPropChoiceOption>Einfach</OfxParamPropChoiceOption>
+			<OfxParamPropChoiceOption>Professionell</OfxParamPropChoiceOption>
+			<OfxParamPropChoiceOption>Experte</OfxParamPropChoiceOption>
+          <OfxPropLabel>Benutzeransicht</OfxPropLabel>
+		  <OfxPropShortLabel>Benutzeransicht</OfxPropShortLabel>
+		  <OfxPropLongLabel>Benutzeransicht</OfxPropLongLabel>
+		  <OfxParamPropHint>Wechselt zwischen den verschiedenen Benutzeransichten.</OfxParamPropHint>
+        </OfxParamTypeChoice>
+		
+		<OfxParamTypePushButton name="AnalyzeMotionBasic">
+          <OfxPropLabel>Stabilisieren</OfxPropLabel>
+		  <OfxPropShortLabel>Stabilisieren</OfxPropShortLabel>
+		  <OfxPropLongLabel>Stabilisieren</OfxPropLongLabel>
+		  <OfxParamPropHint>Startet die Videostabilisierung.</OfxParamPropHint>
+        </OfxParamTypePushButton>
+
+        <OfxParamTypePushButton name="CLearMotionBasic">
+          <OfxPropLabel>Zurücksetzen</OfxPropLabel>
+		  <OfxPropShortLabel>Zurücksetzen</OfxPropShortLabel>
+		  <OfxPropLongLabel>Zurücksetzen</OfxPropLongLabel>
+		  <OfxParamPropHint>Löscht die Ergebnisse der Videostabilisierung.</OfxParamPropHint>
+        </OfxParamTypePushButton>
+		
+		<OfxParamTypeGroup name="GroupSmoothing">
+          <OfxPropLabel>Glättung</OfxPropLabel>
+		  <OfxPropShortLabel>Glättung</OfxPropShortLabel>
+		  <OfxPropLongLabel>Glättung</OfxPropLongLabel>
+		  <OfxParamPropHint>Zeigt zusätzliche Informationen und Parameter zur Glättung.</OfxParamPropHint>
+        </OfxParamTypeGroup>
+		
+		<OfxParamTypeBoolean name="IsStaticCamera">
+          <OfxPropLabel>Unbewegte Kamera</OfxPropLabel>
+		  <OfxPropShortLabel>Unbewegte Kamera</OfxPropShortLabel>
+		  <OfxPropLongLabel>Unbewegte Kamera</OfxPropLongLabel>
+		  <OfxParamPropHint>Wechselt zwischen den Glättungsmodus (Unbewegte Kamera ist ausgeschaltet) und fixierte Bewegung (Unbewegte Kamera ist eingeschaltet).</OfxParamPropHint>
+        </OfxParamTypeBoolean>
+		
+		<OfxParamTypeInteger name="StaticReference">
+          <OfxPropLabel>Referenzbild</OfxPropLabel>
+		  <OfxPropShortLabel>Referenzbild</OfxPropShortLabel>
+		  <OfxPropLongLabel>Referenzbild</OfxPropLongLabel>
+		  <OfxParamPropHint>Dieser Parameter setzt das Referenzbild zu dem die Bewegung fixiert werden soll.</OfxParamPropHint>
+        </OfxParamTypeInteger>
+		
+		<OfxParamTypeChoice name="Presets">
+			<OfxParamPropChoiceOption>Schnell</OfxParamPropChoiceOption>
+			<OfxParamPropChoiceOption>Präzise</OfxParamPropChoiceOption>
+          <OfxPropLabel>Methode</OfxPropLabel>
+		  <OfxPropShortLabel>Methode</OfxPropShortLabel>
+		  <OfxPropLongLabel>Methode</OfxPropLongLabel>
+		  <OfxParamPropHint>Dieses Auswahlfeld beeinflusst den Bewegungsverfolgungsalgorithmus, die Art und Weise, wie Punkte bestimmt werden und wie die Länge der Tracks gewichtet werden.</OfxParamPropHint>
+        </OfxParamTypeChoice>
+
+        <OfxParamTypeChoice name="MotionCompensation">
+          <OfxParamPropChoiceOption>Translation</OfxParamPropChoiceOption>
+          <OfxParamPropChoiceOption>Translation + Rotation</OfxParamPropChoiceOption>
+          <OfxParamPropChoiceOption>Translation + Rotation + Skalierung</OfxParamPropChoiceOption>		  
+          <OfxParamPropChoiceOption>Affines Modell</OfxParamPropChoiceOption>
+          <OfxPropLabel>Bewegungskompensation</OfxPropLabel>
+		  <OfxPropShortLabel>Bewegungskompensation</OfxPropShortLabel>
+		  <OfxPropLongLabel>Bewegungskompensation</OfxPropLongLabel>
+		  <OfxParamPropHint>Diese Auswahlbox bestimmt das Bewegungsmodell und ihre Freiheitsgrade</OfxParamPropHint>
+        </OfxParamTypeChoice>
+		
+        <OfxParamTypeDouble name="SmoothingMagnitude">
+         <OfxPropLabel>Glättungsgrad</OfxPropLabel>
+		 <OfxPropShortLabel>Glättungsgrad</OfxPropShortLabel>
+		 <OfxPropLongLabel>Glättungsgrad</OfxPropLongLabel>
+		 <OfxParamPropHint>Der Glättungsgrad gibt an, wie stark die Bewegungen geglättet werden sollen.</OfxParamPropHint>
+		</OfxParamTypeDouble>
+
+        <OfxParamTypePushButton name="AnalyzeMotion">
+          <OfxPropLabel>Bewegung analysieren</OfxPropLabel>
+		  <OfxPropShortLabel>Bewegung analysieren</OfxPropShortLabel>
+		  <OfxPropLongLabel>Bewegung analysieren</OfxPropLongLabel>
+		  <OfxParamPropHint>Startet die Bewegungsanalyse.</OfxParamPropHint>
+        </OfxParamTypePushButton>
+
+        <OfxParamTypePushButton name="CLearMotion">
+          <OfxPropLabel>Daten löschen</OfxPropLabel>
+		  <OfxPropShortLabel>Daten löschen</OfxPropShortLabel>
+		  <OfxPropLongLabel>Daten löschen</OfxPropLongLabel>
+		  <OfxParamPropHint>Löscht die Ergebnisse der Bewegungsanalyse.</OfxParamPropHint>
+        </OfxParamTypePushButton>
+		
+		
+		<OfxParamTypeGroup name="GroupBorders">
+          <OfxPropLabel>Ränder</OfxPropLabel>
+		  <OfxPropShortLabel>Ränder</OfxPropShortLabel>
+		  <OfxPropLongLabel>Ränder</OfxPropLongLabel>
+		  <OfxParamPropHint>Zeigt zusätzliche Informationen und Parameter zur Veränderung der Ränder.</OfxParamPropHint>
+        </OfxParamTypeGroup>
+		
+		<OfxParamTypeBoolean name="AvoidBlackBorders">
+          <OfxPropLabel>Auto Zoom</OfxPropLabel>
+		  <OfxPropShortLabel>Auto Zoom</OfxPropShortLabel>
+		  <OfxPropLongLabel>Auto Zoom</OfxPropLongLabel>
+		  <OfxParamPropHint>Wenn aktiviert wird soweit hineingezoomt, so dass keine schwarze Umrandung auftreten.</OfxParamPropHint>
+        </OfxParamTypeBoolean>
+		
+		<OfxParamTypeDouble2D name="AdditionalTranslation">
+         <OfxPropLabel>Zusätzliche Translation</OfxPropLabel>
+		 <OfxPropShortLabel>Zusätzliche Translation</OfxPropShortLabel>
+		 <OfxPropLongLabel>Zusätzliche Translation</OfxPropLongLabel>
+		 <OfxParamPropHint>Fügt einen Verschiebung der Translations hinzu.</OfxParamPropHint>
+        </OfxParamTypeDouble2D>
+
+        <OfxParamTypeDouble name="AdditionalRotation">
+          <OfxPropLabel>Zusätzliche Rotation</OfxPropLabel>
+		  <OfxPropShortLabel>Zusätzliche Rotation</OfxPropShortLabel>
+		  <OfxPropLongLabel>Zusätzliche Rotation</OfxPropLongLabel>
+		  <OfxParamPropHint>Fügt einen Verschiebung der Rotation hinzu.</OfxParamPropHint>
+        </OfxParamTypeDouble>
+
+		<OfxParamTypeDouble name="AdditionalScale">
+          <OfxPropLabel>Zusätzlicher Zoom</OfxPropLabel>
+		  <OfxPropShortLabel>Zusätzlicher Zoom</OfxPropShortLabel>
+		  <OfxPropLongLabel>Zusätzlicher Zoom</OfxPropLongLabel>
+		  <OfxParamPropHint>Fügt einen zusätzlichen Zoom hinzu.</OfxParamPropHint>
+        </OfxParamTypeDouble>
+		
+		<OfxParamTypeChoice name="Zoom_Filling">
+          <OfxParamPropChoiceOption>Transparent</OfxParamPropChoiceOption>
+          <OfxParamPropChoiceOption>Spiegelnd</OfxParamPropChoiceOption>
+          <OfxParamPropChoiceOption>Wiederholend</OfxParamPropChoiceOption>		  
+          <OfxParamPropChoiceOption>Verschmierend</OfxParamPropChoiceOption>	
+          <OfxPropLabel>Randfüllung</OfxPropLabel>
+		  <OfxPropShortLabel>Randfüllung</OfxPropShortLabel>
+		  <OfxPropLongLabel>Randfüllung</OfxPropLongLabel>
+		  <OfxParamPropHint>Diese Auswahlbox beeinflusst die Füllung des Randes.</OfxParamPropHint>
+        </OfxParamTypeChoice>
+		
+		<OfxParamTypeRGBA name="Zoom_ColorPicker">
+          <OfxPropLabel>Farbe</OfxPropLabel>
+		  <OfxPropShortLabel>Farbe</OfxPropShortLabel>
+		  <OfxPropLongLabel>Farbe</OfxPropLongLabel>
+		  <OfxParamPropHint>Auswahl der Farbe der Füllung.</OfxParamPropHint>
+        </OfxParamTypeRGBA>
+        
+
+        <OfxParamTypeGroup name="GroupMotionBlur">
+          <OfxPropLabel>Bewegungsunschärfe</OfxPropLabel>
+		  <OfxPropShortLabel>Bewegungsunschärfe</OfxPropShortLabel>
+		  <OfxPropLongLabel>Bewegungsunschärfe</OfxPropLongLabel>
+		  <OfxParamPropHint>Zeigt zusätzliche Informationen und Parameter zur Bewegungsunschärfe and.</OfxParamPropHint>
+        </OfxParamTypeGroup>
+        
+        <OfxParamTypeBoolean name="MotionBlur">
+          <OfxPropLabel>Bewegungsunschärfe zu Kameraschwenks hinzufügen</OfxPropLabel>
+		  <OfxPropShortLabel>Bewegungsunschärfe zu Kameraschwenks hinzufügen</OfxPropShortLabel>
+		  <OfxPropLongLabel>Bewegungsunschärfe zu Kameraschwenks hinzufügen</OfxPropLongLabel>
+		  <OfxParamPropHint>Wenn aktiviert wird Bewegungsunschärfe zu Kameraschwenks hinzugefügt.</OfxParamPropHint>
+        </OfxParamTypeBoolean>
+
+        <OfxParamTypeDouble name="MotionBlurThreshold">
+          <OfxPropLabel>Aktivierungsschwellwert in Pixel</OfxPropLabel>
+		  <OfxPropShortLabel>Aktivierungsschwellwert in Pixel</OfxPropShortLabel>
+		  <OfxPropLongLabel>Aktivierungsschwellwert in Pixel</OfxPropLongLabel>
+		  <OfxParamPropHint>Bewegungsunschärfe wird nur hinzugefügt, wenn der detektierte Kameraschwenk dieses Schwellwert überschreitet.</OfxParamPropHint>
+        </OfxParamTypeDouble>
+		
+		
+		<OfxParamTypeGroup name="GroupExpertMode">
+          <OfxPropLabel>Expertenmodus</OfxPropLabel>
+		  <OfxPropShortLabel>Expertenmodus</OfxPropShortLabel>
+		  <OfxPropLongLabel>Expertenmodus</OfxPropLongLabel>
+		  <OfxParamPropHint>Zeigt zusätzliche Informationen und Parameter für sehr erfahrene Experten an.</OfxParamPropHint>
+        </OfxParamTypeGroup>
+		
+		<OfxParamTypeDouble name="XScale">
+          <OfxPropLabel>Breite</OfxPropLabel>
+		  <OfxPropShortLabel>Breite</OfxPropShortLabel>
+		  <OfxPropLongLabel>Breite</OfxPropLongLabel>
+		  <OfxParamPropHint>Dieser Parameter verkürzt die Breite des Suchbereichs.</OfxParamPropHint>
+        </OfxParamTypeDouble>
+		
+		<OfxParamTypeDouble name="YScale">
+          <OfxPropLabel>Höhe</OfxPropLabel>
+		  <OfxPropShortLabel>Höhe</OfxPropShortLabel>
+		  <OfxPropLongLabel>Höhe</OfxPropLongLabel>
+		  <OfxParamPropHint>Dieser Parameter verkürzt die Höhe des Suchbereichs.</OfxParamPropHint>
+        </OfxParamTypeDouble>
+		
+		<OfxParamTypeInteger name="NumGridsX">
+          <OfxPropLabel>Anzahl der Spalten</OfxPropLabel>
+		  <OfxPropShortLabel>Anzahl der Spalten</OfxPropShortLabel>
+		  <OfxPropLongLabel>Anzahl der Spalten</OfxPropLongLabel>
+		  <OfxParamPropHint>Dieser Parameter ändert die Anzahl an Spalten in X Richtung.</OfxParamPropHint>
+        </OfxParamTypeInteger>
+		
+		<OfxParamTypeInteger name="NumGridsY">
+          <OfxPropLabel>Anzahl der Reihen</OfxPropLabel>
+		  <OfxPropShortLabel>Anzahl der Reihen</OfxPropShortLabel>
+		  <OfxPropLongLabel>Anzahl der Reihen</OfxPropLongLabel>
+		  <OfxParamPropHint>Dieser Parameter ändert die Anzahl an Reihen in Y Richtung.</OfxParamPropHint>
+        </OfxParamTypeInteger>
+		
+		<OfxParamTypeInteger name="PointsPerGridCell">
+          <OfxPropLabel>Anzahl an Punkte pro Zelle</OfxPropLabel>
+		  <OfxPropShortLabel>Anzahl an Punkte pro Zelle</OfxPropShortLabel>
+		  <OfxPropLongLabel>Anzahl an Punkte pro Zelle</OfxPropLongLabel>
+		  <OfxParamPropHint>Dieser Parameter ändert die maximale Anzahl an Punkte pro Zelle.</OfxParamPropHint>
+        </OfxParamTypeInteger>
+		
+		<OfxParamTypeChoice name="ChoiceTrackerType">
+          <OfxParamPropChoiceOption>Lucas-Kanade</OfxParamPropChoiceOption>
+          <OfxParamPropChoiceOption>Summe der absoluten Differenzen</OfxParamPropChoiceOption>
+          <OfxParamPropChoiceOption>Hybrid</OfxParamPropChoiceOption>
+          <OfxPropLabel>Tracker-Typ</OfxPropLabel>
+		  <OfxPropShortLabel>Tracker-Typ</OfxPropShortLabel>
+		  <OfxPropLongLabel>Tracker-Typ</OfxPropLongLabel>
+		  <OfxParamPropHint>Diese Auswahlbox ändert den Träckertyp für die Ähnlichkeitssuche.</OfxParamPropHint>
+        </OfxParamTypeChoice>
+		
+		
+		<OfxParamTypeGroup name="GroupLockState">
+          <OfxPropLabel>Glattungsparameter</OfxPropLabel>
+		  <OfxPropShortLabel>Glattungsparameter</OfxPropShortLabel>
+		  <OfxPropLongLabel>Glattungsparameter</OfxPropLongLabel>
+		  <OfxParamPropHint>Zeigt die Parameter die für die Glattung aktiviert werden sollen.</OfxParamPropHint>
+        </OfxParamTypeGroup>
+		
+		<OfxParamTypeBoolean name="LockTranslateX">
+          <OfxPropLabel>Verschiebung um X</OfxPropLabel>
+		  <OfxPropShortLabel>Verschiebung um X</OfxPropShortLabel>
+		  <OfxPropLongLabel>Verschiebung um X</OfxPropLongLabel>
+		  <OfxParamPropHint>Glättung der Verschiebung um X.</OfxParamPropHint>
+        </OfxParamTypeBoolean>
+		
+		<OfxParamTypeBoolean name="LockTranslateY">
+          <OfxPropLabel>Verschiebung um Y</OfxPropLabel>
+		  <OfxPropShortLabel>Verschiebung um Y</OfxPropShortLabel>
+		  <OfxPropLongLabel>Verschiebung um Y</OfxPropLongLabel>
+		  <OfxParamPropHint>Glättung der Verschiebung um Y.</OfxParamPropHint>
+        </OfxParamTypeBoolean>
+		
+		<OfxParamTypeBoolean name="LockAngle">
+          <OfxPropLabel>Winkel</OfxPropLabel>
+		  <OfxPropShortLabel>Winkel</OfxPropShortLabel>
+		  <OfxPropLongLabel>Winkel</OfxPropLongLabel>
+		  <OfxParamPropHint>Glättung des Winkels.</OfxParamPropHint>
+        </OfxParamTypeBoolean>
+		
+		<OfxParamTypeBoolean name="LockScaleX">
+          <OfxPropLabel>Vergrößerung in X</OfxPropLabel>
+		  <OfxPropShortLabel>Vergrößerung in X</OfxPropShortLabel>
+		  <OfxPropLongLabel>Vergrößerung in X</OfxPropLongLabel>
+		  <OfxParamPropHint>Glättung der Vergrößerung in X Richtung.</OfxParamPropHint>
+        </OfxParamTypeBoolean>
+		
+		<OfxParamTypeBoolean name="LockScaleY">
+          <OfxPropLabel>Vergrößerung in Y</OfxPropLabel>
+		  <OfxPropShortLabel>Vergrößerung in Y</OfxPropShortLabel>
+		  <OfxPropLongLabel>Vergrößerung in Y</OfxPropLongLabel>
+		  <OfxParamPropHint>Glättung der Vergrößerung in Y Richtung.</OfxParamPropHint>
+        </OfxParamTypeBoolean>
+		
+		<OfxParamTypeBoolean name="LockShear">
+          <OfxPropLabel>Scherung</OfxPropLabel>
+		  <OfxPropShortLabel>Scherung</OfxPropShortLabel>
+		  <OfxPropLongLabel>Scherung</OfxPropLongLabel>
+		  <OfxParamPropHint>Glättung der Scherung.</OfxParamPropHint>
+        </OfxParamTypeBoolean>
+		
+		<OfxParamTypeGroup name="GroupVisualization">
+          <OfxPropLabel>Visualisierung</OfxPropLabel>
+		  <OfxPropShortLabel>Visualisierung</OfxPropShortLabel>
+		  <OfxPropLongLabel>Visualisierung</OfxPropLongLabel>
+		  <OfxParamPropHint>Zeigt zusätzliche Informationen zur Visualisierung.</OfxParamPropHint>
+        </OfxParamTypeGroup>
+		
+		<OfxParamTypeBoolean name="ShowFeatures">
+          <OfxPropLabel>Zeige Punkte</OfxPropLabel>
+		  <OfxPropShortLabel>Zeige Punkte</OfxPropShortLabel>
+		  <OfxPropLongLabel>Zeige Punkte</OfxPropLongLabel>
+		  <OfxParamPropHint>Zeigt die Punkte des Trackingpfades.</OfxParamPropHint>
+        </OfxParamTypeBoolean>
+
+		<OfxParamTypeInteger name="ShowFeaturesMinLen">
+          <OfxPropLabel>Minimale Trackingpfadlänge</OfxPropLabel>
+		  <OfxPropShortLabel>Minimale Trackingpfadlänge</OfxPropShortLabel>
+		  <OfxPropLongLabel>Minimale Trackingpfadlänge</OfxPropLongLabel>
+		  <OfxParamPropHint>Zeigt nur die Punkte eines Trackingpfades mit ausreichender Länge.</OfxParamPropHint>
+        </OfxParamTypeInteger>	
+		
+      </OfxImageEffectContext>
+
+    </OfxResourceSet>
+
+  </OfxPlugin>
+
+
+  <OfxPlugin name="de.magix:WarpFlowTransition">
+
+    <OfxResourceSet ofxHost="default">
+      <OfxPropLabel>VEGAS Warp Flow</OfxPropLabel>
+
+      <OfxImageEffectPluginPropGrouping>VEGAS</OfxImageEffectPluginPropGrouping>
+      <OfxPropPluginDescription>Erzeugt einen Morphübergang.</OfxPropPluginDescription>
+      <OfxImageEffectContext name="default">
+      </OfxImageEffectContext>
+
+      <OfxImageEffectContext name="OfxImageEffectContextTransition">
+        	
+		<OfxMessage name="NoCorrespondences">Ihre Clips unterscheiden sich für zuverlässige Ergebnisse zu stark, sodass der Warp Flow-Übergang zu einer einfachen Überblendung führen kann.</OfxMessage>
+		
+      </OfxImageEffectContext>
+
+    </OfxResourceSet>
+
+  </OfxPlugin>
+
+</OfxImageEffectResource>

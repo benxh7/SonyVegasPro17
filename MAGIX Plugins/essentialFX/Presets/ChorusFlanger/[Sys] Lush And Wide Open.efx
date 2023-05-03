@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<preset owner="eFX ChorusFlanger" name="Lush And Wide Open">
+    <params version="2.000000">
+        <param id="active" value="1.000000" />
+        <param id="mode" value="2.000000" />
+        <param id="input" value="1.000000" />
+        <param id="output" value="1.000000" />
+        <param id="rate" value="0.055133" />
+        <param id="depth" value="0.690476" />
+        <param id="phase" value="0.500001" />
+        <param id="feedback" value="0.250000" />
+        <param id="mix" value="0.500000" />
+        <param id="sync" value="0.000000" />
+    </params>
+</preset>

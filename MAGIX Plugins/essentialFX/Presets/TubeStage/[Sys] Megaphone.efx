@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<preset owner="eFX TubeStage" name="Megaphone">
+    <params version="2.000000">
+        <param id="active" value="1.000000" />
+        <param id="input" value="0.000000" />
+        <param id="output" value="-15.120003" />
+        <param id="pre_eq" value="0.560000" />
+        <param id="gain" value="15.151117" />
+        <param id="post_eq" value="0.670000" />
+        <param id="oversample" value="1.000000" />
+        <param id="stages" value="2.000000" />
+        <param id="class" value="0.000000" />
+    </params>
+</preset>

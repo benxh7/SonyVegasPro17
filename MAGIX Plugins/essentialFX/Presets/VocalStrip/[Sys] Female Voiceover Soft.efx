@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<preset owner="eFX VocalStrip" name="Female Voiceover Soft">
+    <params version="2.000000">
+        <param id="active" value="1.000000" />
+        <param id="input" value="6.000003" />
+        <param id="output" value="6.000000" />
+        <param id="hpfilter" value="79.653252" />
+        <param id="gate" value="-58.315823" />
+        <param id="deesser" value="10.800000" />
+        <param id="compression" value="23.039999" />
+        <param id="tone" value="0.250000" />
+        <param id="ds_detfreq" value="7000.000000" />
+        <param id="comp_automakeup" value="1.000000" />
+        <param id="comp_attack" value="0.700000" />
+        <param id="comp_adaptrelease" value="4.000000" />
+    </params>
+</preset>

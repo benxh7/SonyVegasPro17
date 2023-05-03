@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<preset owner="eFX ChorusFlanger" name="Heavy Stereo Chorus Fx">
+    <params version="2.030000">
+        <param id="active" value="1.000000" />
+        <param id="mode" value="0.000000" />
+        <param id="input" value="1.000000" />
+        <param id="output" value="0.175000" />
+        <param id="rate" value="0.000000" />
+        <param id="depth" value="1.000000" />
+        <param id="phase" value="0.000000" />
+        <param id="feedback" value="1.000000" />
+        <param id="mix" value="1.000000" />
+        <param id="sync" value="0.000000" />
+        <param id="locut" value="20.000000" />
+        <param id="version" value="2.030000" />
+    </params>
+</preset>

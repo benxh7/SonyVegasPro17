@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<preset owner="eFX TubeStage" name="Crunchy Guitar">
+    <params version="2.000000">
+        <param id="active" value="1.000000" />
+        <param id="input" value="18.720005" />
+        <param id="output" value="-22.560003" />
+        <param id="pre_eq" value="0.180000" />
+        <param id="gain" value="7.668639" />
+        <param id="post_eq" value="0.280001" />
+        <param id="oversample" value="1.000000" />
+        <param id="stages" value="1.000000" />
+        <param id="class" value="0.000000" />
+    </params>
+</preset>

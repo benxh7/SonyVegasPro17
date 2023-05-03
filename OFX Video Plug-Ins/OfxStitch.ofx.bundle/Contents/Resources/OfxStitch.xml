@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<strings>
+  <string id="mx.ofx.360.stitch.about" default="0x9">
+    <text langid="0x9">Zum Stitchen eines 360° Dual-Fish-Eye Videos.</text>
+    <text langid="0x7">Stitches the 360° dual-fisheye footage.</text>
+  </string>
+  <string id="mx.ofx.360.stitch.label" default="0x9">
+    <text langid="0x9">VEGAS Dual-Fish-Eye Stitching</text>
+    <text langid="0x7">VEGAS Dual-Fish-Eye Stitching</text>
+  </string>
+  <string id="mx.ofx.360.stitch.grouping" default="0x9">
+    <text langid="0x9">VEGAS\360</text>
+    <text langid="0x7">VEGAS\360</text>
+  </string>
+</strings>

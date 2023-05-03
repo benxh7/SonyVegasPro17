@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+	***************************************************************************
+	*   Copyright © 2018 MAGIX Software GmbH. All Rights Reserved.
+	*
+	*       $DateTime: 2018/08/08 $
+	*       $Author: pkelm $
+	*
+	*   Description:
+	*       Localized resources for the dual-fisheye plugin bundle (default)
+	***************************************************************************
+-->
+
+<!--
+<!DOCTYPE OfxImageEffectResource SYSTEM "ofx.dtd">
+ -->
+
+<OfxImageEffectResource>  
+  <OfxPlugin name="com.magixsoftware:panorotation">
+
+		<!--
+		Define the resouces overrides to be used for the host 'default' (or 'all' or 'com.vegascreativesoftware.vegas'
+		    in the locale 'fr-FR' (or 'de-DE' or 'es-ES' or 'ja-JP')
+			ofxHost="someHost"
+		-->
+		<OfxResourceSet ofxHost="default">
+
+			<!-- Set the user visible label on the plug-in -->
+			<OfxPropLabel>VEGAS 场景旋转</OfxPropLabel>
+
+			<OfxImageEffectPluginPropGrouping>VEGAS\360</OfxImageEffectPluginPropGrouping>
+
+			<OfxPropPluginDescription>来自Magix Computer Products Intl. Co.</OfxPropPluginDescription>
+
+			<!--
+	        Define default overrides that apply in all contexts (unless specified in a specific context)
+			-->
+			<OfxImageEffectContext name="default">
+			</OfxImageEffectContext>
+			
+			<!--
+	        Define default overrides that apply only in the generator context
+			-->
+			<OfxImageEffectContext name="OfxImageEffectContextFilter">				
+				<OfxParamTypeDouble name="mx.ofx.plugin.rotate.x.angle">
+                    <OfxPropLabel>转动x轴</OfxPropLabel>
+					<OfxPropShortLabel>转动x轴</OfxPropShortLabel>
+			        <OfxPropLongLabel>转动x轴</OfxPropLongLabel>
+					<OfxParamPropHint>围绕x轴转动视野。</OfxParamPropHint>
+                </OfxParamTypeDouble>
+				
+				<OfxParamTypeDouble name="mx.ofx.plugin.rotate.y.angle">
+                    <OfxPropLabel>转动y轴</OfxPropLabel>
+					<OfxPropShortLabel>转动y轴</OfxPropShortLabel>
+			        <OfxPropLongLabel>转动y轴</OfxPropLongLabel>
+					<OfxParamPropHint>围绕y轴转动视野。</OfxParamPropHint>
+                </OfxParamTypeDouble>
+				
+				<OfxParamTypeDouble name="mx.ofx.plugin.rotate.z.angle">
+                    <OfxPropLabel>转动z轴</OfxPropLabel>
+					<OfxPropShortLabel>转动z轴</OfxPropShortLabel>
+			        <OfxPropLongLabel>转动z轴</OfxPropLongLabel>
+					<OfxParamPropHint>围绕z轴转动视野。</OfxParamPropHint>
+                </OfxParamTypeDouble>
+				
+				<OfxParamTypeChoice name="mx.ofx.plugin.rotate.stereo">
+					<OfxParamPropChoiceOption>无</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>顶部和底部</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>并排</OfxParamPropChoiceOption>
+					<OfxPropLabel>立体图</OfxPropLabel>
+					<OfxPropShortLabel>立体图</OfxPropShortLabel>
+			        <OfxPropLongLabel>立体图</OfxPropLongLabel>
+					<OfxParamPropHint>选择目标3D帧格式。</OfxParamPropHint>
+				</OfxParamTypeChoice>
+				
+				<OfxMessage name="mx.ofx.plugin.rotate.warning.hostnotsupported">此插件不支持当前主机。</OfxMessage>
+				
+				<OfxMessage name="mx.ofx.plugin.rotate.warning.unknown">未知错误</OfxMessage>
+				
+			</OfxImageEffectContext>
+		</OfxResourceSet>
+	</OfxPlugin>
+  
+</OfxImageEffectResource>

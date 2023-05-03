@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<preset owner="eFX Limiter" name="Rock Maximizer +6dB">
+    <params version="2.030000">
+        <param id="active" value="1.000000" />
+        <param id="input" value="0.000000" />
+        <param id="output" value="-0.100361" />
+        <param id="threshold" value="-6.000586" />
+        <param id="release" value="5.156141" />
+        <param id="clipgain" value="0.000000" />
+        <param id="attack" value="10.463236" />
+        <param id="adaptrelease" value="0.750000" />
+        <param id="peak_rms" value="0.200000" />
+        <param id="automakeup" value="1.000000" />
+        <param id="in_lc" value="20.000004" />
+        <param id="sc_lc" value="49.695721" />
+        <param id="clipshape" value="0.756250" />
+        <param id="version" value="10.000000" />
+    </params>
+</preset>

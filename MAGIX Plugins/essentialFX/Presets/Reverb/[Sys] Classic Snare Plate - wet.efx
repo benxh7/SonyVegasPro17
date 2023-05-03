@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<preset owner="eFX Reverb" name="Classic Snare Plate - wet">
+    <params version="2.020000">
+        <param id="active" value="1.000000" />
+        <param id="mode" value="3.000000" />
+        <param id="input" value="0.995000" />
+        <param id="output" value="1.000000" />
+        <param id="size" value="0.145000" />
+        <param id="time" value="0.353469" />
+        <param id="damping" value="0.297872" />
+        <param id="mod" value="0.550000" />
+        <param id="mix" value="1.000000" />
+        <param id="sync" value="0.000000" />
+        <param id="predelay" value="4.602128" />
+        <param id="diffusion" value="1.000000" />
+        <param id="locut" value="230.172424" />
+        <param id="version" value="2.020000" />
+    </params>
+</preset>

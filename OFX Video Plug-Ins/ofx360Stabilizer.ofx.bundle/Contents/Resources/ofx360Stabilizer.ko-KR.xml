@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	***************************************************************************
+	*   Copyright © 2018 MAGIX Software GmbH. All Rights Reserved.
+	*
+	*       $DateTime: 2018/09/24 $
+	*       $Author: pkelm $
+	*
+	*   Description:
+	*       Localized resources for the 360 Stabilization plugin bundle (default)
+	***************************************************************************
+-->
+
+<!--
+<!DOCTYPE OfxImageEffectResource SYSTEM "ofx.dtd">
+ -->
+
+<OfxImageEffectResource>  
+  <OfxPlugin name="com.magix.ofx.vr.stabilization">
+
+		<!--
+		Define the resouces overrides to be used for the host 'default' (or 'all' or 'com.vegascreativesoftware.vegas'
+		    in the locale 'fr-FR' (or 'de-DE' or 'es-ES' or 'ja-JP')
+			ofxHost="someHost"
+		-->
+		<OfxResourceSet ofxHost="default">
+
+			<!-- Set the user visible label on the plug-in -->
+			<OfxPropLabel>VEGAS  360° 안정화 </OfxPropLabel>
+
+			<OfxImageEffectPluginPropGrouping>VEGAS\360</OfxImageEffectPluginPropGrouping>
+
+			<OfxPropPluginDescription>Magix Computer Products Intl.</OfxPropPluginDescription>
+
+			<!--
+	        Define default overrides that apply in all contexts (unless specified in a specific context)
+			-->
+			<OfxImageEffectContext name="default">
+			</OfxImageEffectContext>
+			
+			<!--
+	        Define default overrides that apply only in the generator context
+			-->			
+			
+			<OfxImageEffectContext name="OfxImageEffectContextFilter">
+			
+				<OfxMessage name="mx.ofx.stab.plugin.warning.effectfx">이벤트에 영상 안정화 플러그 인을 추가하셨습니다. 이 플러그 인은 클립이나 서브클립에 미디어 효과로써 적용됩니다.
+
+	미디어 이펙트를 적용하시려면, 타임라인에서 이벤트를 선택하신 후(혹은 프로젝트 미디어 창에서 클립을 선택하신 후) 도구 &gt; 영상 &gt; 미디어 FX를 선택하십시오.</OfxMessage>
+		  
+				<OfxMessage name="mx.ofx.plugin.rotate.warning.hostnotsupported">현재 호스트는이 플러그인에서 지원되지 않습니다.</OfxMessage>
+				
+				<OfxMessage name="mx.ofx.plugin.rotate.warning.unknown">알수없는 오류!</OfxMessage>
+			
+				<OfxProgress name="mx.ofx.stab.plugin.progress">미디어 안정화</OfxProgress>
+			
+				<OfxParamTypeChoice name="mx.ofx.stab.plugin.stereo">
+					<OfxParamPropChoiceOption>없음</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>상하정렬</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>세로 정렬</OfxParamPropChoiceOption>
+					<OfxPropLabel>스테레오스코프</OfxPropLabel>
+					<OfxPropShortLabel>스테레오스코프</OfxPropShortLabel>
+			        <OfxPropLongLabel>스테레오스코프</OfxPropLongLabel>
+					<OfxParamPropHint>스테레오스코프 모델을 위해 프리셋을 선택하실 수 있습니다.</OfxParamPropHint>
+				</OfxParamTypeChoice>			
+				
+				<OfxParamTypePushButton name="mx.ofx.stab.plugin.btn.analyze">
+                    <OfxPropLabel>모션 데이터 분석</OfxPropLabel>
+					<OfxPropShortLabel>모션 데이터 분석</OfxPropShortLabel>
+			        <OfxPropLongLabel>모션 데이터 분석</OfxPropLongLabel>
+					<OfxParamPropHint>이 분석은 모션 데이터를 결정하기 위해 수행됩니다.</OfxParamPropHint>
+                </OfxParamTypePushButton>
+				
+				<OfxParamTypePushButton name="mx.ofx.stab.plugin.btn.clear">
+                    <OfxPropLabel>모션 데이터 지우기</OfxPropLabel>
+					<OfxPropShortLabel>모션 데이터 지우기</OfxPropShortLabel>
+			        <OfxPropLongLabel>모션 데이터 지우기</OfxPropLongLabel>
+					<OfxParamPropHint>모든 분석 결과가 지워집니다.</OfxParamPropHint>
+                </OfxParamTypePushButton>
+				
+				<OfxParamTypeChoice name="mx.ofx.stab.plugin.exclude.bottom">
+					<OfxParamPropChoiceOption>북극과 남극</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>남극</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>없음</OfxParamPropChoiceOption>
+					<OfxPropLabel>보기 제외</OfxPropLabel>
+					<OfxPropShortLabel>보기 제외</OfxPropShortLabel>
+			        <OfxPropLongLabel>보기 제외</OfxPropLongLabel>
+					<OfxParamPropHint>보기는 분석에 포함되지 않습니다.</OfxParamPropHint>
+				</OfxParamTypeChoice>
+				
+				<OfxParamTypeBoolean name="mx.ofx.stab.plugin.ssd.deviation">
+				  <OfxPropLabel>개선</OfxPropLabel>
+				  <OfxPropShortLabel>개선</OfxPropShortLabel>
+			      <OfxPropLongLabel>개선</OfxPropLongLabel>
+				  <OfxParamPropHint>결과를 자동으로 개선하려면 클릭해 주십시오.</OfxParamPropHint>
+				</OfxParamTypeBoolean>
+				
+				<OfxParamTypeInteger name="mx.ofx.stab.plugin.smoothness">
+                    <OfxPropLabel>매끄럽게</OfxPropLabel>
+					<OfxPropShortLabel>매끄럽게</OfxPropShortLabel>
+			        <OfxPropLongLabel>매끄럽게</OfxPropLongLabel>
+					<OfxParamPropHint>매끄럽게 파라메터를 사용하여 장면에 얼마나 많은 &quot;불안정한&quot; 요소를 유지해야 하는지 정의하실 수 있습니다. 팩터를 높게 지정하실수록 움직임이 매끄러워집니다.</OfxParamPropHint>
+                </OfxParamTypeInteger>
+								
+			</OfxImageEffectContext>
+		</OfxResourceSet>
+	</OfxPlugin>
+  
+</OfxImageEffectResource>

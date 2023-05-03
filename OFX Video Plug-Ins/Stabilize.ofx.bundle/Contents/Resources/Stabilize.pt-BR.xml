@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+	***************************************************************************
+	*   Copyright © 2016 MAGIX Software GmbH. All Rights Reserved.
+	*
+	*       $Header: //sonic3/release/vegas/14.0/vplugins/ofxStabilize/Stabilize.xml#5 $
+	*       $DateTime: 2016/09/15 12:43:37 $
+	*       $Author: dblume $
+	*
+	*   Description:
+	*       Localized resources for the Stabilize plugin bundle (default)
+	***************************************************************************
+-->
+
+<!--
+<!DOCTYPE OfxImageEffectResource SYSTEM "ofx.dtd">
+ -->
+
+<OfxImageEffectResource>
+	<OfxPlugin name="com.vegascreativesoftware:Stabilize">
+
+		<OfxResourceSet ofxHost="default">
+			<OfxPropLabel>VEGAS Stabilize</OfxPropLabel>
+
+            <OfxImageEffectPluginPropGrouping>VEGAS</OfxImageEffectPluginPropGrouping>
+            <OfxPropPluginDescription>Estabiliza o movimento vídeo</OfxPropPluginDescription>
+            <OfxImageEffectContext name="default">
+            </OfxImageEffectContext>
+
+			<OfxImageEffectContext name="OfxImageEffectContextFilter">
+
+<OfxMessage name="invalidEffectContextEffect_Event">Adicionou o pulg-in Stabilize a um evento. Este plug-in deve ser usado num clip ou subclipe como efeito de mídia.
+Para aplicar efeitos de mídia, selecione um evento na timeline (ou um clip na janela Project Media) e escolha Ferramentas &gt; Vídeo &gt;Media FX. Clique no botão ? na caixa do Media FX para mais informação sobre como usar o plug-in Stabilize.</OfxMessage>
+
+<OfxMessage name="invalidEffectContextEffect_Track">Adicionou o pulg-in Stabilize a uma faixa. Este plug-in deve ser usado num clip ou subclipe como efeito de mídia.
+Para aplicar efeitos de mídia, selecione um evento na timeline (ou um clip na janela Project Media) e escolha Ferramentas &gt; Vídeo &gt;Media FX. Clique no botão ? na caixa do Media FX para mais informação sobre como usar o plug-in Stabilize.</OfxMessage>
+
+<OfxMessage name="invalidEffectContextEffect_VideoOutput">Adicionou o pulg-in Stabilize à saída de vídeo. Este plug-in deve ser usado num clip ou subclipe como efeito de mídia.
+Para aplicar efeitos de mídia, selecione um evento na timeline (ou um clip na janela Project Media) e escolha Ferramentas &gt; Vídeo &gt;Media FX. Clique no botão ? na caixa do Media FX para mais informação sobre como usar o plug-in Stabilize.</OfxMessage>
+
+<OfxProgress name="StabilizeAnalyzeProgress">Estabilizando mídia</OfxProgress>
+<OfxMessage name="mustClickApply">Deve clicar em Aplicar para as mudanças serem efetuadas.</OfxMessage>
+                
+                <OfxParamTypeDouble name="PanSmoothing">
+                    <OfxPropLabel>Suavizando a Pan</OfxPropLabel>
+                </OfxParamTypeDouble>
+          
+                <OfxParamTypeDouble name="ViewScale">
+                    <OfxPropLabel>Quantidade de estabilização</OfxPropLabel>
+                </OfxParamTypeDouble>
+
+                <OfxParamTypeBoolean name="RollingShutterCorrection">
+                    <OfxPropLabel>Correção do Rolling shutter</OfxPropLabel>
+                </OfxParamTypeBoolean>
+                
+                <OfxParamTypePushButton name="AnalyzeButton">
+                    <OfxPropLabel>Aplicar</OfxPropLabel>
+                </OfxParamTypePushButton>
+                
+			</OfxImageEffectContext>
+
+		</OfxResourceSet>
+
+	</OfxPlugin>
+</OfxImageEffectResource>

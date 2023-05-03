@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<preset owner="eFX ChorusFlanger" name="Vox Vibrato Mono">
+    <params version="2.000000">
+        <param id="active" value="1.000000" />
+        <param id="mode" value="1.000000" />
+        <param id="input" value="1.000000" />
+        <param id="output" value="0.940000" />
+        <param id="rate" value="0.499998" />
+        <param id="depth" value="0.671875" />
+        <param id="phase" value="0.000000" />
+        <param id="feedback" value="0.225000" />
+        <param id="mix" value="1.000000" />
+        <param id="sync" value="0.000000" />
+        <param id="locut" value="50.042286" />
+    </params>
+</preset>

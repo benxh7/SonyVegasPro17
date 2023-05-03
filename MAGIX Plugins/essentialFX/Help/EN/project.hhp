@@ -1,0 +1,21 @@
+[OPTIONS]
+Compatibility=1.1 or later
+binary toc=yes
+Compiled file=project.chm
+Default Window=main
+Display compile progress=Yes
+Full-text search=Yes
+Language=0x409 Englisch (USA)
+Default topic=start.htm
+
+[WINDOWS]
+main=,"toc.hhc","index.hhk","start.htm","start.htm","blank.htm","Support",,,0x63520,,0x4304e,[4,7,785,595],,,,,,,0
+
+
+[INFOTYPES]
+
+[ALIAS]
+start=start.htm
+
+[MAP]
+#define start	0

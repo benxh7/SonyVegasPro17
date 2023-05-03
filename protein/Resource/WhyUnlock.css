@@ -1,0 +1,72 @@
+table.dialog_1 {
+	width:600px;
+
+	background-color:#FFFFFF;
+
+	border-style:solid;
+	border-width:1px;
+	border-color:#000000;
+}
+
+table.dialog_1 th {
+	background-color:#206CAA;
+	color:#FFFFFF;
+
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	line-height:16px;
+}
+
+table.dialog_1 td {
+	padding:15px;
+	background-image:url(WhyUnlock.jpg);
+	background-repeat:repeat-x;
+	background-position:bottom;
+
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	line-height:16px;
+	color:#555045;
+}
+
+table.dialog_2 {
+	width:600px;
+
+	background-color:#FFFFFF;
+}
+
+table.dialog_2 td.left_top {
+	background-image:url(../_vorlagen/img/ecke_lo.gif);
+}
+
+table.dialog_2 td.top {
+	background-image:url(../_vorlagen/img/o.gif);
+}
+table.dialog_2 td.right_top {
+	background-image:url(../_vorlagen/img/ecke_ro.gif);
+}
+table.dialog_2 td.left {
+	background-image:url(../_vorlagen/img/l.gif);
+}
+table.dialog_2 td.right {
+	background-image:url(../_vorlagen/img/r.gif);
+}
+table.dialog_2 td.left_bottom {
+	background-image:url(../_vorlagen/img/ecke_lu.gif);
+}
+table.dialog_2 td.bottom {
+	background-image:url(../_vorlagen/img/u.gif);
+}
+table.dialog_2 td.right_bottom {
+	background-image:url(../_vorlagen/img/ecke_ru.gif);
+}
+
+
+table.dialog_2 td.content {
+	padding:0;
+
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	line-height:16px;
+	color:#555045;
+}

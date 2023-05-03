@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<preset owner="eFX ChorusFlanger" name="Chorus Classic Bass">
+    <params version="2.000000">
+        <param id="active" value="1.000000" />
+        <param id="mode" value="0.000000" />
+        <param id="input" value="1.000000" />
+        <param id="output" value="1.000000" />
+        <param id="rate" value="0.056987" />
+        <param id="depth" value="0.371998" />
+        <param id="phase" value="0.000000" />
+        <param id="feedback" value="0.451872" />
+        <param id="mix" value="0.500000" />
+        <param id="sync" value="0.000000" />
+        <param id="locut" value="199.752472" />
+    </params>
+</preset>

@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<preset owner="eFX Reverb" name="Small Hall">
+    <params version="2.010000">
+        <param id="active" value="1.000000" />
+        <param id="mode" value="2.000000" />
+        <param id="input" value="1.000000" />
+        <param id="output" value="1.000000" />
+        <param id="size" value="0.335000" />
+        <param id="time" value="0.340000" />
+        <param id="damping" value="0.328729" />
+        <param id="mod" value="0.340793" />
+        <param id="mix" value="0.405000" />
+        <param id="sync" value="0.000000" />
+        <param id="predelay" value="10.170604" />
+        <param id="diffusion" value="0.443125" />
+        <param id="locut" value="361.206909" />
+    </params>
+</preset>

@@ -1,0 +1,1434 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OfxPresetPackage>
+    <OfxPreset plugin="com.vegascreativesoftware:titlesandtext" context="Generator" name="Saut">
+        <OfxPlugin>com.vegascreativesoftware:titlesandtext</OfxPlugin>
+        <OfxPluginVersion>1 0</OfxPluginVersion>
+        <OfxParamTypeString name="Text">
+            <OfxParamValue>{\rtf1\ansi\ansicpg1252\deff0{\fonttbl{\f0\fnil\fcharset0 Tahoma;}}
+\viewkind4\uc1\pard\lang1033\f0\fs96 Saut\par
+}
+    </OfxParamValue>
+        </OfxParamTypeString>
+        <OfxParamTypeRGBA name="TextColor">
+            <OfxParamValue>1.000000 0.000000 0.000000 1.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeString name="AnimationName">
+            <OfxParamValue>_Action_Flip</OfxParamValue>
+        </OfxParamTypeString>
+        <OfxParamTypeDouble name="Scale">
+            <OfxParamValue>1.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble2D name="Location">
+            <OfxParamValue>0.500000 0.500000</OfxParamValue>
+        </OfxParamTypeDouble2D>
+        <OfxParamTypeRGBA name="Background">
+            <OfxParamValue>0.000000 0.000000 0.000000 0.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeDouble name="Tracking">
+            <OfxParamValue>0.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="LineSpacing">
+            <OfxParamValue>1.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="OutlineWidth">
+            <OfxParamValue>4.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeRGBA name="OutlineColor">
+            <OfxParamValue>1.000000 1.000000 1.000000 1.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeBoolean name="ShadowEnable">
+            <OfxParamValue>false</OfxParamValue>
+        </OfxParamTypeBoolean>
+        <OfxParamTypeRGBA name="ShadowColor">
+            <OfxParamValue>0.000000 0.000000 0.000000 1.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeDouble name="ShadowOffsetX">
+            <OfxParamValue>0.200000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="ShadowOffsetY">
+            <OfxParamValue>0.200000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="ShadowBlur">
+            <OfxParamValue>0.400000</OfxParamValue>
+        </OfxParamTypeDouble>
+    </OfxPreset>
+    
+    <OfxPreset plugin="com.vegascreativesoftware:titlesandtext" context="Generator" name="Rebond">
+        <OfxPlugin>com.vegascreativesoftware:titlesandtext</OfxPlugin>
+        <OfxPluginVersion>1 0</OfxPluginVersion>
+        <OfxParamTypeString name="Text">
+            <OfxParamValue>{\rtf1\ansi\ansicpg1252\deff0{\fonttbl{\f0\fnil\fcharset0 Tahoma;}}
+\viewkind4\uc1\pard\lang1033\f0\fs96 Rebond\par
+}
+    </OfxParamValue>
+        </OfxParamTypeString>
+        <OfxParamTypeRGBA name="TextColor">
+            <OfxParamValue>0.000000 0.500000 0.000000 1.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeString name="AnimationName">
+            <OfxParamValue>_Bounce</OfxParamValue>
+        </OfxParamTypeString>
+        <OfxParamTypeDouble name="Scale">
+            <OfxParamValue>1.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble2D name="Location">
+            <OfxParamValue>0.391466 0.636964</OfxParamValue>
+        </OfxParamTypeDouble2D>
+        <OfxParamTypeRGBA name="Background">
+            <OfxParamValue>0.000000 0.000000 0.000000 0.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeDouble name="Tracking">
+            <OfxParamValue>0.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="LineSpacing">
+            <OfxParamValue>1.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="OutlineWidth">
+            <OfxParamValue>6.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeRGBA name="OutlineColor">
+            <OfxParamValue>0.567300 0.930000 0.567300 1.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeBoolean name="ShadowEnable">
+            <OfxParamValue>false</OfxParamValue>
+        </OfxParamTypeBoolean>
+        <OfxParamTypeRGBA name="ShadowColor">
+            <OfxParamValue>0.000000 0.000000 0.000000 1.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeDouble name="ShadowOffsetX">
+            <OfxParamValue>0.200000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="ShadowOffsetY">
+            <OfxParamValue>0.200000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="ShadowBlur">
+            <OfxParamValue>0.400000</OfxParamValue>
+        </OfxParamTypeDouble>
+    </OfxPreset>
+    
+    <OfxPreset plugin="com.vegascreativesoftware:titlesandtext" context="Generator" name="De près">
+        <OfxPlugin>com.vegascreativesoftware:titlesandtext</OfxPlugin>
+        <OfxPluginVersion>1 0</OfxPluginVersion>
+        <OfxParamTypeString name="Text">
+            <OfxParamValue>{\rtf1\ansi\ansicpg1252\deff0{\fonttbl{\f0\fnil\fcharset0 Palatino Linotype;}}
+\viewkind4\uc1\pard\lang1033\f0\fs96 De près\par
+}
+    </OfxParamValue>
+        </OfxParamTypeString>
+        <OfxParamTypeRGBA name="TextColor">
+            <OfxParamValue>1.000000 1.000000 0.000000 1.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeString name="AnimationName">
+            <OfxParamValue>_Coming_at_You</OfxParamValue>
+        </OfxParamTypeString>
+        <OfxParamTypeDouble name="Scale">
+            <OfxParamValue>1.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble2D name="Location">
+            <OfxParamValue>0.5000 0.5000</OfxParamValue>
+        </OfxParamTypeDouble2D>
+        <OfxParamTypeRGBA name="Background">
+            <OfxParamValue>0.000000 0.000000 0.000000 0.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeDouble name="Tracking">
+            <OfxParamValue>0.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="LineSpacing">
+            <OfxParamValue>1.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="OutlineWidth">
+            <OfxParamValue>0.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeRGBA name="OutlineColor">
+            <OfxParamValue>1.000000 1.000000 1.000000 1.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeBoolean name="ShadowEnable">
+            <OfxParamValue>false</OfxParamValue>
+        </OfxParamTypeBoolean>
+        <OfxParamTypeRGBA name="ShadowColor">
+            <OfxParamValue>0.000000 0.000000 0.000000 1.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeDouble name="ShadowOffsetX">
+            <OfxParamValue>0.200000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="ShadowOffsetY">
+            <OfxParamValue>0.200000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="ShadowBlur">
+            <OfxParamValue>0.400000</OfxParamValue>
+        </OfxParamTypeDouble>
+    </OfxPreset>
+    
+    <OfxPreset plugin="com.vegascreativesoftware:titlesandtext" context="Generator" name="Double éclair">
+        <OfxPlugin>com.vegascreativesoftware:titlesandtext</OfxPlugin>
+        <OfxPluginVersion>1 0</OfxPluginVersion>
+        <OfxParamTypeString name="Text">
+            <OfxParamValue>{\rtf1\ansi\ansicpg1252\deff0{\fonttbl{\f0\fnil\fcharset0 Palatino Linotype;}}
+\viewkind4\uc1\pard\lang1033\f0\fs96 Double éclair\par
+}
+    </OfxParamValue>
+        </OfxParamTypeString>
+        <OfxParamTypeRGBA name="TextColor">
+            <OfxParamValue>1.000000 0.000000 1.000000 1.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeString name="AnimationName">
+            <OfxParamValue>_Double_Flash_Glow</OfxParamValue>
+        </OfxParamTypeString>
+        <OfxParamTypeDouble name="Scale">
+            <OfxParamValue>1.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble2D name="Location">
+            <OfxParamValue>0.50 0.25</OfxParamValue>
+        </OfxParamTypeDouble2D>
+        <OfxParamTypeRGBA name="Background">
+            <OfxParamValue>0.000000 0.000000 0.000000 0.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeDouble name="Tracking">
+            <OfxParamValue>0.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="LineSpacing">
+            <OfxParamValue>1.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="OutlineWidth">
+            <OfxParamValue>0.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeRGBA name="OutlineColor">
+            <OfxParamValue>1.000000 1.000000 1.000000 1.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeBoolean name="ShadowEnable">
+            <OfxParamValue>false</OfxParamValue>
+        </OfxParamTypeBoolean>
+        <OfxParamTypeRGBA name="ShadowColor">
+            <OfxParamValue>1.000000 1.000000 1.000000 1.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeDouble name="ShadowOffsetX">
+            <OfxParamValue>0.200000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="ShadowOffsetY">
+            <OfxParamValue>0.200000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="ShadowBlur">
+            <OfxParamValue>1.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+    </OfxPreset>
+    
+    <OfxPreset plugin="com.vegascreativesoftware:titlesandtext" context="Generator" name="Chute et division">
+        <OfxPlugin>com.vegascreativesoftware:titlesandtext</OfxPlugin>
+        <OfxPluginVersion>1 0</OfxPluginVersion>
+        <OfxParamTypeString name="Text">
+            <OfxParamValue>{\rtf1\ansi\ansicpg1252\deff0{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+\viewkind4\uc1\pard\lang1033\fs96 Chute et division\par
+}
+    </OfxParamValue>
+        </OfxParamTypeString>
+        <OfxParamTypeRGBA name="TextColor">
+            <OfxParamValue>0.000000 0.000000 0.000000 1.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeString name="AnimationName">
+            <OfxParamValue>_Drop_split</OfxParamValue>
+        </OfxParamTypeString>
+        <OfxParamTypeDouble name="Scale">
+            <OfxParamValue>1.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble2D name="Location">
+            <OfxParamValue>0.543599 0.250825</OfxParamValue>
+        </OfxParamTypeDouble2D>
+        <OfxParamTypeRGBA name="Background">
+            <OfxParamValue>0.000000 1.000000 1.000000 1.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeDouble name="Tracking">
+            <OfxParamValue>0.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="LineSpacing">
+            <OfxParamValue>1.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="OutlineWidth">
+            <OfxParamValue>0.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeRGBA name="OutlineColor">
+            <OfxParamValue>1.000000 1.000000 1.000000 1.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeBoolean name="ShadowEnable">
+            <OfxParamValue>false</OfxParamValue>
+        </OfxParamTypeBoolean>
+        <OfxParamTypeRGBA name="ShadowColor">
+            <OfxParamValue>1.000000 1.000000 1.000000 1.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeDouble name="ShadowOffsetX">
+            <OfxParamValue>0.200000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="ShadowOffsetY">
+            <OfxParamValue>0.200000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="ShadowBlur">
+            <OfxParamValue>1.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+    </OfxPreset>
+    
+    <OfxPreset plugin="com.vegascreativesoftware:titlesandtext" context="Generator" name="Chute des mots">
+        <OfxPlugin>com.vegascreativesoftware:titlesandtext</OfxPlugin>
+        <OfxPluginVersion>1 0</OfxPluginVersion>
+        <OfxParamTypeString name="Text">
+            <OfxParamValue>{\rtf1\ansi\ansicpg1252\deff0{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+\viewkind4\uc1\pard\lang1033\fs96 Chute des mots\par
+}
+    </OfxParamValue>
+        </OfxParamTypeString>
+        <OfxParamTypeRGBA name="TextColor">
+            <OfxParamValue>1.000000 1.000000 1.000000 1.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeString name="AnimationName">
+            <OfxParamValue>_Dropping_words</OfxParamValue>
+        </OfxParamTypeString>
+        <OfxParamTypeDouble name="Scale">
+            <OfxParamValue>1.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble2D name="Location">
+            <OfxParamValue>0.497217 0.501650</OfxParamValue>
+        </OfxParamTypeDouble2D>
+        <OfxParamTypeRGBA name="Background">
+            <OfxParamValue>0.000000 0.000000 0.000000 0.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeDouble name="Tracking">
+            <OfxParamValue>0.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="LineSpacing">
+            <OfxParamValue>1.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="OutlineWidth">
+            <OfxParamValue>0.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeRGBA name="OutlineColor">
+            <OfxParamValue>1.000000 1.000000 1.000000 1.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeBoolean name="ShadowEnable">
+            <OfxParamValue>false</OfxParamValue>
+        </OfxParamTypeBoolean>
+        <OfxParamTypeRGBA name="ShadowColor">
+            <OfxParamValue>1.000000 1.000000 1.000000 1.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeDouble name="ShadowOffsetX">
+            <OfxParamValue>0.200000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="ShadowOffsetY">
+            <OfxParamValue>0.200000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="ShadowBlur">
+            <OfxParamValue>1.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+    </OfxPreset>
+    
+    <OfxPreset plugin="com.vegascreativesoftware:titlesandtext" context="Generator" name="Tremblement de terre">
+        <OfxPlugin>com.vegascreativesoftware:titlesandtext</OfxPlugin>
+        <OfxPluginVersion>1 0</OfxPluginVersion>
+        <OfxParamTypeString name="Text">
+            <OfxParamValue>{\rtf1\ansi\ansicpg1252\deff0{\fonttbl{\f0\fnil\fcharset0 Verdana;}}
+\viewkind4\uc1\pard\lang1033\f0\fs96 Tremblement de terre\par
+}
+    </OfxParamValue>
+        </OfxParamTypeString>
+        <OfxParamTypeRGBA name="TextColor">
+            <OfxParamValue>0.151387 0.064063 0.906736 1.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeString name="AnimationName">
+            <OfxParamValue>_Earthquake</OfxParamValue>
+        </OfxParamTypeString>
+        <OfxParamTypeDouble name="Scale">
+            <OfxParamValue>1.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble2D name="Location">
+            <OfxParamValue>0.500000 0.500000</OfxParamValue>
+        </OfxParamTypeDouble2D>
+        <OfxParamTypeRGBA name="Background">
+            <OfxParamValue>0.000000 0.000000 0.000000 0.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeDouble name="Tracking">
+            <OfxParamValue>0.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="LineSpacing">
+            <OfxParamValue>1.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="OutlineWidth">
+            <OfxParamValue>0.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeRGBA name="OutlineColor">
+            <OfxParamValue>1.000000 1.000000 1.000000 1.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeBoolean name="ShadowEnable">
+            <OfxParamValue>false</OfxParamValue>
+        </OfxParamTypeBoolean>
+        <OfxParamTypeRGBA name="ShadowColor">
+            <OfxParamValue>0.000000 0.000000 0.000000 1.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeDouble name="ShadowOffsetX">
+            <OfxParamValue>0.200000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="ShadowOffsetY">
+            <OfxParamValue>0.200000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="ShadowBlur">
+            <OfxParamValue>0.400000</OfxParamValue>
+        </OfxParamTypeDouble>
+    </OfxPreset>
+    
+    <OfxPreset plugin="com.vegascreativesoftware:titlesandtext" context="Generator" name="Tombée">
+        <OfxPlugin>com.vegascreativesoftware:titlesandtext</OfxPlugin>
+        <OfxPluginVersion>1 0</OfxPluginVersion>
+        <OfxParamTypeString name="Text">
+            <OfxParamValue>{\rtf1\ansi\ansicpg1252\deff0{\fonttbl{\f0\fnil\fcharset0 Georgia;}}
+\viewkind4\uc1\pard\lang1033\b\f0\fs96 Tombée\b0\par
+}
+    </OfxParamValue>
+        </OfxParamTypeString>
+        <OfxParamTypeRGBA name="TextColor">
+            <OfxParamValue>0.000000 1.000000 1.000000 1.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeString name="AnimationName">
+            <OfxParamValue>_Fall_Down</OfxParamValue>
+        </OfxParamTypeString>
+        <OfxParamTypeDouble name="Scale">
+            <OfxParamValue>1.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble2D name="Location">
+            <OfxParamValue>0.500000 0.500000</OfxParamValue>
+        </OfxParamTypeDouble2D>
+        <OfxParamTypeRGBA name="Background">
+            <OfxParamValue>0.000000 0.000000 0.000000 0.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeDouble name="Tracking">
+            <OfxParamValue>0.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="LineSpacing">
+            <OfxParamValue>1.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="OutlineWidth">
+            <OfxParamValue>0.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeRGBA name="OutlineColor">
+            <OfxParamValue>1.000000 1.000000 1.000000 1.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeBoolean name="ShadowEnable">
+            <OfxParamValue>false</OfxParamValue>
+        </OfxParamTypeBoolean>
+        <OfxParamTypeRGBA name="ShadowColor">
+            <OfxParamValue>0.000000 0.000000 0.000000 1.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeDouble name="ShadowOffsetX">
+            <OfxParamValue>0.200000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="ShadowOffsetY">
+            <OfxParamValue>0.200000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="ShadowBlur">
+            <OfxParamValue>0.400000</OfxParamValue>
+        </OfxParamTypeDouble>
+    </OfxPreset>
+    
+    <OfxPreset plugin="com.vegascreativesoftware:titlesandtext" context="Generator" name="Flotter et désempiler">
+        <OfxPlugin>com.vegascreativesoftware:titlesandtext</OfxPlugin>
+        <OfxPluginVersion>1 0</OfxPluginVersion>
+        <OfxParamTypeString name="Text">
+            <OfxParamValue>{\rtf1\ansi\ansicpg1252\deff0{\fonttbl{\f0\fnil\fcharset0 Georgia;}}
+\viewkind4\uc1\pard\lang1033\f0\fs96 Flotter et désempiler\par
+}
+    </OfxParamValue>
+        </OfxParamTypeString>
+        <OfxParamTypeRGBA name="TextColor">
+            <OfxParamValue>1.000000 0.000000 0.500000 1.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeString name="AnimationName">
+            <OfxParamValue>_Float_and_pop</OfxParamValue>
+        </OfxParamTypeString>
+        <OfxParamTypeDouble name="Scale">
+            <OfxParamValue>1.0000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble2D name="Location">
+            <OfxParamValue>0.50 0.20</OfxParamValue>
+        </OfxParamTypeDouble2D>
+        <OfxParamTypeRGBA name="Background">
+            <OfxParamValue>0.000000 0.000000 0.000000 0.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeDouble name="Tracking">
+            <OfxParamValue>0.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="LineSpacing">
+            <OfxParamValue>1.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="OutlineWidth">
+            <OfxParamValue>0.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeRGBA name="OutlineColor">
+            <OfxParamValue>1.000000 1.000000 1.000000 1.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeBoolean name="ShadowEnable">
+            <OfxParamValue>false</OfxParamValue>
+        </OfxParamTypeBoolean>
+        <OfxParamTypeRGBA name="ShadowColor">
+            <OfxParamValue>0.000000 0.000000 0.000000 1.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeDouble name="ShadowOffsetX">
+            <OfxParamValue>0.200000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="ShadowOffsetY">
+            <OfxParamValue>0.200000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="ShadowBlur">
+            <OfxParamValue>0.400000</OfxParamValue>
+        </OfxParamTypeDouble>
+    </OfxPreset>
+    
+    <OfxPreset plugin="com.vegascreativesoftware:titlesandtext" context="Generator" name="Atterrissage du droit">
+        <OfxPlugin>com.vegascreativesoftware:titlesandtext</OfxPlugin>
+        <OfxPluginVersion>1 0</OfxPluginVersion>
+        <OfxParamTypeString name="Text">
+            <OfxParamValue>{\rtf1\ansi\ansicpg1252\deff0{\fonttbl{\f0\fnil\fcharset0 Palatino Linotype;}}
+\viewkind4\uc1\pard\lang1033\f0\fs96 Atterrissage du droit\par
+}
+    </OfxParamValue>
+        </OfxParamTypeString>
+        <OfxParamTypeRGBA name="TextColor">
+            <OfxParamValue>0.500000 0.000000 0.500000 1.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeString name="AnimationName">
+            <OfxParamValue>_Fly_in_from_Right</OfxParamValue>
+        </OfxParamTypeString>
+        <OfxParamTypeDouble name="Scale">
+            <OfxParamValue>1.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble2D name="Location">
+            <OfxParamValue>0.515770 0.795380</OfxParamValue>
+        </OfxParamTypeDouble2D>
+        <OfxParamTypeRGBA name="Background">
+            <OfxParamValue>0.000000 0.000000 0.000000 0.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeDouble name="Tracking">
+            <OfxParamValue>0.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="LineSpacing">
+            <OfxParamValue>1.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="OutlineWidth">
+            <OfxParamValue>3.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeRGBA name="OutlineColor">
+            <OfxParamValue>1.000000 1.000000 1.000000 1.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeBoolean name="ShadowEnable">
+            <OfxParamValue>false</OfxParamValue>
+        </OfxParamTypeBoolean>
+        <OfxParamTypeRGBA name="ShadowColor">
+            <OfxParamValue>0.000000 0.000000 0.000000 1.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeDouble name="ShadowOffsetX">
+            <OfxParamValue>0.200000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="ShadowOffsetY">
+            <OfxParamValue>0.200000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="ShadowBlur">
+            <OfxParamValue>0.400000</OfxParamValue>
+        </OfxParamTypeDouble>
+    </OfxPreset>
+    
+    <OfxPreset plugin="com.vegascreativesoftware:titlesandtext" context="Generator" name="Voltige">
+        <OfxPlugin>com.vegascreativesoftware:titlesandtext</OfxPlugin>
+        <OfxPluginVersion>1 0</OfxPluginVersion>
+        <OfxParamTypeString name="Text">
+            <OfxParamValue>{\rtf1\ansi\ansicpg1252\deff0{\fonttbl{\f0\fnil\fcharset0 Georgia;}}
+\viewkind4\uc1\pard\lang1033\f0\fs96 Voltige\par
+}
+    </OfxParamValue>
+        </OfxParamTypeString>
+        <OfxParamTypeRGBA name="TextColor">
+            <OfxParamValue>1.000000 1.000000 1.000000 1.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeString name="AnimationName">
+            <OfxParamValue>_Fly_in</OfxParamValue>
+        </OfxParamTypeString>
+        <OfxParamTypeDouble name="Scale">
+            <OfxParamValue>0.750000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble2D name="Location">
+            <OfxParamValue>0.254174 0.234323</OfxParamValue>
+        </OfxParamTypeDouble2D>
+        <OfxParamTypeRGBA name="Background">
+            <OfxParamValue>0.000000 0.000000 0.000000 0.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeDouble name="Tracking">
+            <OfxParamValue>0.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="LineSpacing">
+            <OfxParamValue>1.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="OutlineWidth">
+            <OfxParamValue>0.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeRGBA name="OutlineColor">
+            <OfxParamValue>1.000000 1.000000 1.000000 1.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeBoolean name="ShadowEnable">
+            <OfxParamValue>false</OfxParamValue>
+        </OfxParamTypeBoolean>
+        <OfxParamTypeRGBA name="ShadowColor">
+            <OfxParamValue>0.000000 0.000000 0.000000 1.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeDouble name="ShadowOffsetX">
+            <OfxParamValue>0.200000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="ShadowOffsetY">
+            <OfxParamValue>0.200000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="ShadowBlur">
+            <OfxParamValue>0.400000</OfxParamValue>
+        </OfxParamTypeDouble>
+    </OfxPreset>
+    
+    <OfxPreset plugin="com.vegascreativesoftware:titlesandtext" context="Generator" name="Sauter">
+        <OfxPlugin>com.vegascreativesoftware:titlesandtext</OfxPlugin>
+        <OfxPluginVersion>1 0</OfxPluginVersion>
+        <OfxParamTypeString name="Text">
+            <OfxParamValue>{\rtf1\ansi\ansicpg1252\deff0{\fonttbl{\f0\fnil\fcharset0 Palatino Linotype;}}
+\viewkind4\uc1\pard\lang1033\f0\fs96 Sauter\par
+}
+    </OfxParamValue>
+        </OfxParamTypeString>
+        <OfxParamTypeRGBA name="TextColor">
+            <OfxParamValue>1.000000 0.000000 1.000000 1.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeString name="AnimationName">
+            <OfxParamValue>_Jump</OfxParamValue>
+        </OfxParamTypeString>
+        <OfxParamTypeDouble name="Scale">
+            <OfxParamValue>1.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble2D name="Location">
+            <OfxParamValue>0.263451 0.399340</OfxParamValue>
+        </OfxParamTypeDouble2D>
+        <OfxParamTypeRGBA name="Background">
+            <OfxParamValue>0.000000 0.000000 0.000000 0.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeDouble name="Tracking">
+            <OfxParamValue>0.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="LineSpacing">
+            <OfxParamValue>1.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="OutlineWidth">
+            <OfxParamValue>0.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeRGBA name="OutlineColor">
+            <OfxParamValue>1.000000 1.000000 1.000000 1.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeBoolean name="ShadowEnable">
+            <OfxParamValue>false</OfxParamValue>
+        </OfxParamTypeBoolean>
+        <OfxParamTypeRGBA name="ShadowColor">
+            <OfxParamValue>0.000000 0.000000 0.000000 1.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeDouble name="ShadowOffsetX">
+            <OfxParamValue>0.200000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="ShadowOffsetY">
+            <OfxParamValue>0.200000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="ShadowBlur">
+            <OfxParamValue>0.400000</OfxParamValue>
+        </OfxParamTypeDouble>
+    </OfxPreset>
+    
+    <OfxPreset plugin="com.vegascreativesoftware:titlesandtext" context="Generator" name="Menace">
+        <OfxPlugin>com.vegascreativesoftware:titlesandtext</OfxPlugin>
+        <OfxPluginVersion>1 0</OfxPluginVersion>
+        <OfxParamTypeString name="Text">
+            <OfxParamValue>{\rtf1\ansi\ansicpg1252\deff0{\fonttbl{\f0\fnil\fcharset0 Verdana;}}
+\viewkind4\uc1\pard\lang1033\f0\fs96 Menace\par
+}
+    </OfxParamValue>
+        </OfxParamTypeString>
+        <OfxParamTypeRGBA name="TextColor">
+            <OfxParamValue>0.000000 0.000000 0.000000 1.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeString name="AnimationName">
+            <OfxParamValue>_Menace</OfxParamValue>
+        </OfxParamTypeString>
+        <OfxParamTypeDouble name="Scale">
+            <OfxParamValue>1.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble2D name="Location">
+            <OfxParamValue>0.510204 0.267327</OfxParamValue>
+        </OfxParamTypeDouble2D>
+        <OfxParamTypeRGBA name="Background">
+            <OfxParamValue>1.000000 1.000000 1.000000 1.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeDouble name="Tracking">
+            <OfxParamValue>0.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="LineSpacing">
+            <OfxParamValue>1.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="OutlineWidth">
+            <OfxParamValue>3.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeRGBA name="OutlineColor">
+            <OfxParamValue>1.000000 1.000000 1.000000 1.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeBoolean name="ShadowEnable">
+            <OfxParamValue>false</OfxParamValue>
+        </OfxParamTypeBoolean>
+        <OfxParamTypeRGBA name="ShadowColor">
+            <OfxParamValue>0.000000 0.000000 0.000000 1.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeDouble name="ShadowOffsetX">
+            <OfxParamValue>0.200000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="ShadowOffsetY">
+            <OfxParamValue>0.200000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="ShadowBlur">
+            <OfxParamValue>0.400000</OfxParamValue>
+        </OfxParamTypeDouble>
+    </OfxPreset>
+    
+    <OfxPreset plugin="com.vegascreativesoftware:titlesandtext" context="Generator" name="Coucou">
+        <OfxPlugin>com.vegascreativesoftware:titlesandtext</OfxPlugin>
+        <OfxPluginVersion>1 0</OfxPluginVersion>
+        <OfxParamTypeString name="Text">
+            <OfxParamValue>{\rtf1\ansi\ansicpg1252\deff0{\fonttbl{\f0\fnil\fcharset0 Verdana;}}
+\viewkind4\uc1\pard\lang1033\b\f0\fs96 Coucou\b0\par
+}
+    </OfxParamValue>
+        </OfxParamTypeString>
+        <OfxParamTypeRGBA name="TextColor">
+            <OfxParamValue>1.000000 1.000000 1.000000 1.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeString name="AnimationName">
+            <OfxParamValue>_Popup</OfxParamValue>
+        </OfxParamTypeString>
+        <OfxParamTypeDouble name="Scale">
+            <OfxParamValue>1.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble2D name="Location">
+            <OfxParamValue>0.324675 0.709571</OfxParamValue>
+        </OfxParamTypeDouble2D>
+        <OfxParamTypeRGBA name="Background">
+            <OfxParamValue>0.000000 0.000000 0.000000 0.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeDouble name="Tracking">
+            <OfxParamValue>0.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="LineSpacing">
+            <OfxParamValue>1.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="OutlineWidth">
+            <OfxParamValue>0.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeRGBA name="OutlineColor">
+            <OfxParamValue>1.000000 1.000000 1.000000 1.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeBoolean name="ShadowEnable">
+            <OfxParamValue>false</OfxParamValue>
+        </OfxParamTypeBoolean>
+        <OfxParamTypeRGBA name="ShadowColor">
+            <OfxParamValue>0.000000 0.000000 0.000000 1.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeDouble name="ShadowOffsetX">
+            <OfxParamValue>0.200000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="ShadowOffsetY">
+            <OfxParamValue>0.200000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="ShadowBlur">
+            <OfxParamValue>0.400000</OfxParamValue>
+        </OfxParamTypeDouble>
+    </OfxPreset>
+    
+    <OfxPreset plugin="com.vegascreativesoftware:titlesandtext" context="Generator" name="Lueur roulant et agrandir">
+        <OfxPlugin>com.vegascreativesoftware:titlesandtext</OfxPlugin>
+        <OfxPluginVersion>1 0</OfxPluginVersion>
+        <OfxParamTypeString name="Text">
+            <OfxParamValue>{\rtf1\ansi\ansicpg1252\deff0{\fonttbl{\f0\fnil\fcharset0 Verdana;}}
+\viewkind4\uc1\pard\lang1033\f0\fs96 Lueur roulante\par
+}
+    </OfxParamValue>
+        </OfxParamTypeString>
+        <OfxParamTypeRGBA name="TextColor">
+            <OfxParamValue>0.000000 0.500000 0.000000 1.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeString name="AnimationName">
+            <OfxParamValue>_Rolling_Glow_and_Enlarge</OfxParamValue>
+        </OfxParamTypeString>
+        <OfxParamTypeDouble name="Scale">
+            <OfxParamValue>1.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble2D name="Location">
+            <OfxParamValue>0.499072 0.666667</OfxParamValue>
+        </OfxParamTypeDouble2D>
+        <OfxParamTypeRGBA name="Background">
+            <OfxParamValue>0.000000 0.000000 0.000000 0.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeDouble name="Tracking">
+            <OfxParamValue>0.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="LineSpacing">
+            <OfxParamValue>1.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="OutlineWidth">
+            <OfxParamValue>0.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeRGBA name="OutlineColor">
+            <OfxParamValue>1.000000 1.000000 1.000000 1.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeBoolean name="ShadowEnable">
+            <OfxParamValue>false</OfxParamValue>
+        </OfxParamTypeBoolean>
+        <OfxParamTypeRGBA name="ShadowColor">
+            <OfxParamValue>0.000000 0.000000 0.000000 1.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeDouble name="ShadowOffsetX">
+            <OfxParamValue>0.200000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="ShadowOffsetY">
+            <OfxParamValue>0.200000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="ShadowBlur">
+            <OfxParamValue>0.400000</OfxParamValue>
+        </OfxParamTypeDouble>
+    </OfxPreset>
+    
+    <OfxPreset plugin="com.vegascreativesoftware:titlesandtext" context="Generator" name="Mauvaise journée">
+        <OfxPlugin>com.vegascreativesoftware:titlesandtext</OfxPlugin>
+        <OfxPluginVersion>1 0</OfxPluginVersion>
+        <OfxParamTypeString name="Text">
+            <OfxParamValue>{\rtf1\ansi\ansicpg1252\deff0{\fonttbl{\f0\fnil\fcharset0 Verdana;}}
+\viewkind4\uc1\pard\lang1033\f0\fs96 Mauvaise journée\par
+}
+    </OfxParamValue>
+        </OfxParamTypeString>
+        <OfxParamTypeRGBA name="TextColor">
+            <OfxParamValue>0.000000 0.000000 0.000000 0.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeString name="AnimationName">
+            <OfxParamValue>_Rough_Day</OfxParamValue>
+        </OfxParamTypeString>
+        <OfxParamTypeDouble name="Scale">
+            <OfxParamValue>0.750000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble2D name="Location">
+            <OfxParamValue>0.653061 0.260726</OfxParamValue>
+        </OfxParamTypeDouble2D>
+        <OfxParamTypeRGBA name="Background">
+            <OfxParamValue>1.000000 1.000000 0.000000 1.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeDouble name="Tracking">
+            <OfxParamValue>0.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="LineSpacing">
+            <OfxParamValue>1.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="OutlineWidth">
+            <OfxParamValue>0.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeRGBA name="OutlineColor">
+            <OfxParamValue>0.000000 0.000000 0.000000 0.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeBoolean name="ShadowEnable">
+            <OfxParamValue>false</OfxParamValue>
+        </OfxParamTypeBoolean>
+        <OfxParamTypeRGBA name="ShadowColor">
+            <OfxParamValue>0.000000 0.000000 0.000000 1.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeDouble name="ShadowOffsetX">
+            <OfxParamValue>0.200000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="ShadowOffsetY">
+            <OfxParamValue>0.200000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="ShadowBlur">
+            <OfxParamValue>0.400000</OfxParamValue>
+        </OfxParamTypeDouble>
+    </OfxPreset>
+    
+    <OfxPreset plugin="com.vegascreativesoftware:titlesandtext" context="Generator" name="Faire défiler">
+        <OfxPlugin>com.vegascreativesoftware:titlesandtext</OfxPlugin>
+        <OfxPluginVersion>1 0</OfxPluginVersion>
+        <OfxParamTypeString name="Text">
+            <OfxParamValue>{\rtf1\ansi\ansicpg1252\deff0{\fonttbl{\f0\fnil\fcharset0 Verdana;}}
+\viewkind4\uc1\pard\lang1033\f0\fs96 Faire défiler\par
+}
+    </OfxParamValue>
+        </OfxParamTypeString>
+        <OfxParamTypeRGBA name="TextColor">
+            <OfxParamValue>1.000000 1.000000 1.000000 1.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeString name="AnimationName">
+            <OfxParamValue>_Scroll</OfxParamValue>
+        </OfxParamTypeString>
+        <OfxParamTypeDouble name="Scale">
+            <OfxParamValue>1.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble2D name="Location">
+            <OfxParamValue>0.187384 0.200000</OfxParamValue>
+        </OfxParamTypeDouble2D>
+        <OfxParamTypeRGBA name="Background">
+            <OfxParamValue>0.000000 0.000000 0.000000 0.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeDouble name="Tracking">
+            <OfxParamValue>0.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="LineSpacing">
+            <OfxParamValue>1.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="OutlineWidth">
+            <OfxParamValue>0.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeRGBA name="OutlineColor">
+            <OfxParamValue>1.000000 1.000000 1.000000 1.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeBoolean name="ShadowEnable">
+            <OfxParamValue>false</OfxParamValue>
+        </OfxParamTypeBoolean>
+        <OfxParamTypeRGBA name="ShadowColor">
+            <OfxParamValue>0.000000 0.000000 0.000000 1.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeDouble name="ShadowOffsetX">
+            <OfxParamValue>0.200000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="ShadowOffsetY">
+            <OfxParamValue>0.200000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="ShadowBlur">
+            <OfxParamValue>0.400000</OfxParamValue>
+        </OfxParamTypeDouble>
+    </OfxPreset>
+    
+    <OfxPreset plugin="com.vegascreativesoftware:titlesandtext" context="Generator" name="Défiler vers la gauche">
+        <OfxPlugin>com.vegascreativesoftware:titlesandtext</OfxPlugin>
+        <OfxPluginVersion>1 0</OfxPluginVersion>
+        <OfxParamTypeString name="Text">
+            <OfxParamValue>{\rtf1\ansi\ansicpg1252\deff0{\fonttbl{\f0\fnil\fcharset0 Verdana;}}
+\viewkind4\uc1\pard\lang1033\f0\fs96 Faire défiler\par
+}
+    </OfxParamValue>
+        </OfxParamTypeString>
+        <OfxParamTypeRGBA name="TextColor">
+            <OfxParamValue>1.000000 0.250000 0.250000 1.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeString name="AnimationName">
+            <OfxParamValue>_Scroll_Left</OfxParamValue>
+        </OfxParamTypeString>
+        <OfxParamTypeDouble name="Scale">
+            <OfxParamValue>1.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble2D name="Location">
+            <OfxParamValue>0.187384 0.800000</OfxParamValue>
+        </OfxParamTypeDouble2D>
+        <OfxParamTypeRGBA name="Background">
+            <OfxParamValue>0.000000 0.000000 0.000000 0.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeDouble name="Tracking">
+            <OfxParamValue>0.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="LineSpacing">
+            <OfxParamValue>1.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="OutlineWidth">
+            <OfxParamValue>8.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeRGBA name="OutlineColor">
+            <OfxParamValue>1.000000 1.000000 1.000000 1.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeBoolean name="ShadowEnable">
+            <OfxParamValue>false</OfxParamValue>
+        </OfxParamTypeBoolean>
+        <OfxParamTypeRGBA name="ShadowColor">
+            <OfxParamValue>0.000000 0.000000 0.000000 1.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeDouble name="ShadowOffsetX">
+            <OfxParamValue>0.200000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="ShadowOffsetY">
+            <OfxParamValue>0.200000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="ShadowBlur">
+            <OfxParamValue>0.400000</OfxParamValue>
+        </OfxParamTypeDouble>
+    </OfxPreset>
+    
+    <OfxPreset plugin="com.vegascreativesoftware:titlesandtext" context="Generator" name="Glissade vers le bas">
+        <OfxPlugin>com.vegascreativesoftware:titlesandtext</OfxPlugin>
+        <OfxPluginVersion>1 0</OfxPluginVersion>
+        <OfxParamTypeString name="Text">
+            <OfxParamValue>{\rtf1\ansi\ansicpg1252\deff0{\fonttbl{\f0\fnil\fcharset0 Verdana;}}
+\viewkind4\uc1\pard\lang1033\i\f0\fs96 Glissade vers le bas\i0\par
+}
+    </OfxParamValue>
+        </OfxParamTypeString>
+        <OfxParamTypeRGBA name="TextColor">
+            <OfxParamValue>0.000000 0.500000 1.000000 1.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeString name="AnimationName">
+            <OfxParamValue>_Slide_Down</OfxParamValue>
+        </OfxParamTypeString>
+        <OfxParamTypeDouble name="Scale">
+            <OfxParamValue>0.750000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble2D name="Location">
+            <OfxParamValue>0.500000 0.330000</OfxParamValue>
+        </OfxParamTypeDouble2D>
+        <OfxParamTypeRGBA name="Background">
+            <OfxParamValue>0.000000 0.000000 0.000000 0.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeDouble name="Tracking">
+            <OfxParamValue>0.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="LineSpacing">
+            <OfxParamValue>1.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="OutlineWidth">
+            <OfxParamValue>0.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeRGBA name="OutlineColor">
+            <OfxParamValue>1.000000 1.000000 1.000000 1.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeBoolean name="ShadowEnable">
+            <OfxParamValue>false</OfxParamValue>
+        </OfxParamTypeBoolean>
+        <OfxParamTypeRGBA name="ShadowColor">
+            <OfxParamValue>0.000000 0.000000 0.000000 1.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeDouble name="ShadowOffsetX">
+            <OfxParamValue>0.200000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="ShadowOffsetY">
+            <OfxParamValue>0.200000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="ShadowBlur">
+            <OfxParamValue>0.400000</OfxParamValue>
+        </OfxParamTypeDouble>
+    </OfxPreset>
+    
+    <OfxPreset plugin="com.vegascreativesoftware:titlesandtext" context="Generator" name="Glisser vers la gauche">
+        <OfxPlugin>com.vegascreativesoftware:titlesandtext</OfxPlugin>
+        <OfxPluginVersion>1 0</OfxPluginVersion>
+        <OfxParamTypeString name="Text">
+            <OfxParamValue>{\rtf1\ansi\ansicpg1252\deff0{\fonttbl{\f0\fnil\fcharset0 Verdana;}}
+\viewkind4\uc1\pard\lang1033\f0\fs96 Glisser vers la gauche\par
+}
+    </OfxParamValue>
+        </OfxParamTypeString>
+        <OfxParamTypeRGBA name="TextColor">
+            <OfxParamValue>0.000000 0.500000 0.500000 1.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeString name="AnimationName">
+            <OfxParamValue>_Slide_Left</OfxParamValue>
+        </OfxParamTypeString>
+        <OfxParamTypeDouble name="Scale">
+            <OfxParamValue>1.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble2D name="Location">
+            <OfxParamValue>0.330000 0.330000</OfxParamValue>
+        </OfxParamTypeDouble2D>
+        <OfxParamTypeRGBA name="Background">
+            <OfxParamValue>0.000000 0.000000 0.000000 0.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeDouble name="Tracking">
+            <OfxParamValue>0.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="LineSpacing">
+            <OfxParamValue>1.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="OutlineWidth">
+            <OfxParamValue>0.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeRGBA name="OutlineColor">
+            <OfxParamValue>1.000000 1.000000 1.000000 1.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeBoolean name="ShadowEnable">
+            <OfxParamValue>false</OfxParamValue>
+        </OfxParamTypeBoolean>
+        <OfxParamTypeRGBA name="ShadowColor">
+            <OfxParamValue>0.000000 0.000000 0.000000 1.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeDouble name="ShadowOffsetX">
+            <OfxParamValue>0.200000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="ShadowOffsetY">
+            <OfxParamValue>0.200000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="ShadowBlur">
+            <OfxParamValue>0.400000</OfxParamValue>
+        </OfxParamTypeDouble>
+    </OfxPreset>
+    
+    <OfxPreset plugin="com.vegascreativesoftware:titlesandtext" context="Generator" name="Glissade à droit">
+        <OfxPlugin>com.vegascreativesoftware:titlesandtext</OfxPlugin>
+        <OfxPluginVersion>1 0</OfxPluginVersion>
+        <OfxParamTypeString name="Text">
+            <OfxParamValue>{\rtf1\ansi\ansicpg1252\deff0{\fonttbl{\f0\fnil\fcharset0 Verdana;}}
+\viewkind4\uc1\pard\lang1033\f0\fs96 Glisser vers la droite\par
+}
+    </OfxParamValue>
+        </OfxParamTypeString>
+        <OfxParamTypeRGBA name="TextColor">
+            <OfxParamValue>0.000000 0.000000 1.000000 1.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeString name="AnimationName">
+            <OfxParamValue>_Slide_Right</OfxParamValue>
+        </OfxParamTypeString>
+        <OfxParamTypeDouble name="Scale">
+            <OfxParamValue>1.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble2D name="Location">
+            <OfxParamValue>0.500000 0.670000</OfxParamValue>
+        </OfxParamTypeDouble2D>
+        <OfxParamTypeRGBA name="Background">
+            <OfxParamValue>0.000000 0.000000 0.000000 0.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeDouble name="Tracking">
+            <OfxParamValue>0.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="LineSpacing">
+            <OfxParamValue>1.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="OutlineWidth">
+            <OfxParamValue>0.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeRGBA name="OutlineColor">
+            <OfxParamValue>1.000000 1.000000 1.000000 1.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeBoolean name="ShadowEnable">
+            <OfxParamValue>false</OfxParamValue>
+        </OfxParamTypeBoolean>
+        <OfxParamTypeRGBA name="ShadowColor">
+            <OfxParamValue>0.000000 0.000000 0.000000 1.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeDouble name="ShadowOffsetX">
+            <OfxParamValue>0.200000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="ShadowOffsetY">
+            <OfxParamValue>0.200000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="ShadowBlur">
+            <OfxParamValue>0.400000</OfxParamValue>
+        </OfxParamTypeDouble>
+    </OfxPreset>
+    
+    <OfxPreset plugin="com.vegascreativesoftware:titlesandtext" context="Generator" name="Glissade vers le haut">
+        <OfxPlugin>com.vegascreativesoftware:titlesandtext</OfxPlugin>
+        <OfxPluginVersion>1 0</OfxPluginVersion>
+        <OfxParamTypeString name="Text">
+            <OfxParamValue>{\rtf1\ansi\ansicpg1252\deff0{\fonttbl{\f0\fnil\fcharset0 Verdana;}}
+\viewkind4\uc1\pard\lang1033\f0\fs96 Glisser vers le haut\par
+}
+    </OfxParamValue>
+        </OfxParamTypeString>
+        <OfxParamTypeRGBA name="TextColor">
+            <OfxParamValue>0.000000 0.000000 0.500000 1.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeString name="AnimationName">
+            <OfxParamValue>_Slide_Up</OfxParamValue>
+        </OfxParamTypeString>
+        <OfxParamTypeDouble name="Scale">
+            <OfxParamValue>1.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble2D name="Location">
+            <OfxParamValue>0.500000 0.670000</OfxParamValue>
+        </OfxParamTypeDouble2D>
+        <OfxParamTypeRGBA name="Background">
+            <OfxParamValue>0.000000 0.000000 0.000000 0.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeDouble name="Tracking">
+            <OfxParamValue>0.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="LineSpacing">
+            <OfxParamValue>1.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="OutlineWidth">
+            <OfxParamValue>0.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeRGBA name="OutlineColor">
+            <OfxParamValue>1.000000 1.000000 1.000000 1.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeBoolean name="ShadowEnable">
+            <OfxParamValue>false</OfxParamValue>
+        </OfxParamTypeBoolean>
+        <OfxParamTypeRGBA name="ShadowColor">
+            <OfxParamValue>0.000000 0.000000 0.000000 1.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeDouble name="ShadowOffsetX">
+            <OfxParamValue>0.200000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="ShadowOffsetY">
+            <OfxParamValue>0.200000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="ShadowBlur">
+            <OfxParamValue>0.400000</OfxParamValue>
+        </OfxParamTypeDouble>
+    </OfxPreset>
+    
+    <OfxPreset plugin="com.vegascreativesoftware:titlesandtext" context="Generator" name="Glissade">
+        <OfxPlugin>com.vegascreativesoftware:titlesandtext</OfxPlugin>
+        <OfxPluginVersion>1 0</OfxPluginVersion>
+        <OfxParamTypeString name="Text">
+            <OfxParamValue>{\rtf1\ansi\ansicpg1252\deff0{\fonttbl{\f0\fnil\fcharset0 Verdana;}}
+\viewkind4\uc1\pard\lang1033\i\f0\fs96 Glissade\i0\par
+}
+    </OfxParamValue>
+        </OfxParamTypeString>
+        <OfxParamTypeRGBA name="TextColor">
+            <OfxParamValue>0.000000 1.000000 1.000000 1.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeString name="AnimationName">
+            <OfxParamValue>_Slide</OfxParamValue>
+        </OfxParamTypeString>
+        <OfxParamTypeDouble name="Scale">
+            <OfxParamValue>0.500000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble2D name="Location">
+            <OfxParamValue>0.153989 0.798680</OfxParamValue>
+        </OfxParamTypeDouble2D>
+        <OfxParamTypeRGBA name="Background">
+            <OfxParamValue>0.000000 0.000000 0.000000 0.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeDouble name="Tracking">
+            <OfxParamValue>0.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="LineSpacing">
+            <OfxParamValue>1.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="OutlineWidth">
+            <OfxParamValue>0.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeRGBA name="OutlineColor">
+            <OfxParamValue>1.000000 1.000000 1.000000 1.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeBoolean name="ShadowEnable">
+            <OfxParamValue>false</OfxParamValue>
+        </OfxParamTypeBoolean>
+        <OfxParamTypeRGBA name="ShadowColor">
+            <OfxParamValue>0.000000 0.000000 0.000000 1.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeDouble name="ShadowOffsetX">
+            <OfxParamValue>0.200000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="ShadowOffsetY">
+            <OfxParamValue>0.200000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="ShadowBlur">
+            <OfxParamValue>0.400000</OfxParamValue>
+        </OfxParamTypeDouble>
+    </OfxPreset>
+    
+    <OfxPreset plugin="com.vegascreativesoftware:titlesandtext" context="Generator" name="Rapide">
+        <OfxPlugin>com.vegascreativesoftware:titlesandtext</OfxPlugin>
+        <OfxPluginVersion>1 0</OfxPluginVersion>
+        <OfxParamTypeString name="Text">
+            <OfxParamValue>{\rtf1\ansi\ansicpg1252\deff0{\fonttbl{\f0\fnil\fcharset0 Verdana;}}
+\viewkind4\uc1\pard\lang1033\f0\fs96 Rapide\par
+}
+    </OfxParamValue>
+        </OfxParamTypeString>
+        <OfxParamTypeRGBA name="TextColor">
+            <OfxParamValue>1.000000 1.000000 0.000000 1.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeString name="AnimationName">
+            <OfxParamValue>_Speedy</OfxParamValue>
+        </OfxParamTypeString>
+        <OfxParamTypeDouble name="Scale">
+            <OfxParamValue>1.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble2D name="Location">
+            <OfxParamValue>0.500000 0.330000</OfxParamValue>
+        </OfxParamTypeDouble2D>
+        <OfxParamTypeRGBA name="Background">
+            <OfxParamValue>0.000000 0.000000 0.000000 0.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeDouble name="Tracking">
+            <OfxParamValue>0.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="LineSpacing">
+            <OfxParamValue>1.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="OutlineWidth">
+            <OfxParamValue>0.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeRGBA name="OutlineColor">
+            <OfxParamValue>1.000000 1.000000 1.000000 1.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeBoolean name="ShadowEnable">
+            <OfxParamValue>false</OfxParamValue>
+        </OfxParamTypeBoolean>
+        <OfxParamTypeRGBA name="ShadowColor">
+            <OfxParamValue>0.000000 0.000000 0.000000 1.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeDouble name="ShadowOffsetX">
+            <OfxParamValue>0.200000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="ShadowOffsetY">
+            <OfxParamValue>0.200000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="ShadowBlur">
+            <OfxParamValue>0.400000</OfxParamValue>
+        </OfxParamTypeDouble>
+    </OfxPreset>
+    
+    <OfxPreset plugin="com.vegascreativesoftware:titlesandtext" context="Generator" name="Torsion">
+        <OfxPlugin>com.vegascreativesoftware:titlesandtext</OfxPlugin>
+        <OfxPluginVersion>1 0</OfxPluginVersion>
+        <OfxParamTypeString name="Text">
+            <OfxParamValue>{\rtf1\ansi\ansicpg1252\deff0{\fonttbl{\f0\fnil\fcharset0 Verdana;}}
+\viewkind4\uc1\pard\lang1033\f0\fs96 Torsion\par
+}
+    </OfxParamValue>
+        </OfxParamTypeString>
+        <OfxParamTypeRGBA name="TextColor">
+            <OfxParamValue>1.000000 1.000000 0.000000 1.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeString name="AnimationName">
+            <OfxParamValue>_Twist_In</OfxParamValue>
+        </OfxParamTypeString>
+        <OfxParamTypeDouble name="Scale">
+            <OfxParamValue>1.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble2D name="Location">
+            <OfxParamValue>0.500000 0.500000</OfxParamValue>
+        </OfxParamTypeDouble2D>
+        <OfxParamTypeRGBA name="Background">
+            <OfxParamValue>0.000000 0.000000 0.000000 0.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeDouble name="Tracking">
+            <OfxParamValue>0.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="LineSpacing">
+            <OfxParamValue>1.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="OutlineWidth">
+            <OfxParamValue>0.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeRGBA name="OutlineColor">
+            <OfxParamValue>1.000000 1.000000 1.000000 1.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeBoolean name="ShadowEnable">
+            <OfxParamValue>false</OfxParamValue>
+        </OfxParamTypeBoolean>
+        <OfxParamTypeRGBA name="ShadowColor">
+            <OfxParamValue>0.000000 0.000000 0.000000 1.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeDouble name="ShadowOffsetX">
+            <OfxParamValue>0.200000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="ShadowOffsetY">
+            <OfxParamValue>0.200000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="ShadowBlur">
+            <OfxParamValue>0.400000</OfxParamValue>
+        </OfxParamTypeDouble>
+    </OfxPreset>
+
+    <OfxPreset plugin="com.vegascreativesoftware:titlesandtext" context="Generator" name="Emplacement">
+        <OfxPlugin>com.vegascreativesoftware:titlesandtext</OfxPlugin>
+        <OfxPluginVersion>1 0</OfxPluginVersion>
+        <OfxParamTypeString name="Text">
+            <OfxParamValue>{\rtf1\ansi\ansicpg1252\deff0{\fonttbl{\f0\fnil\fcharset0 Tahoma;}}
+\viewkind4\uc1\pard\lang1033\f0\fs96 Emplacement\par
+}
+            </OfxParamValue>
+        </OfxParamTypeString>
+        <OfxParamTypeRGBA name="TextColor">
+            <OfxParamValue>1.000000 0.000000 0.000000 1.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeString name="AnimationName">
+            <OfxParamValue>_None</OfxParamValue>
+        </OfxParamTypeString>
+        <OfxParamTypeDouble name="Scale">
+            <OfxParamValue>1.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble2D name="Location">
+            <OfxParamValue>0.500000 0.500000</OfxParamValue>
+        </OfxParamTypeDouble2D>
+        <OfxParamTypeRGBA name="Background">
+            <OfxParamValue>0.000000 0.000000 0.000000 0.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeDouble name="Tracking">
+            <OfxParamValue>0.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="LineSpacing">
+            <OfxParamValue>1.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="OutlineWidth">
+            <OfxParamValue>0.000000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeRGBA name="OutlineColor">
+            <OfxParamValue>1.000000 1.000000 1.000000 1.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeBoolean name="ShadowEnable">
+            <OfxParamValue>false</OfxParamValue>
+        </OfxParamTypeBoolean>
+        <OfxParamTypeRGBA name="ShadowColor">
+            <OfxParamValue>0.000000 0.000000 0.000000 1.000000</OfxParamValue>
+        </OfxParamTypeRGBA>
+        <OfxParamTypeDouble name="ShadowOffsetX">
+            <OfxParamValue>0.200000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="ShadowOffsetY">
+            <OfxParamValue>0.200000</OfxParamValue>
+        </OfxParamTypeDouble>
+        <OfxParamTypeDouble name="ShadowBlur">
+            <OfxParamValue>0.400000</OfxParamValue>
+        </OfxParamTypeDouble>
+    </OfxPreset>
+
+  <OfxPreset plugin="com.vegascreativesoftware:titlesandtext" context="Generator" name="Sous-titres">
+    <OfxPlugin>com.vegascreativesoftware:titlesandtext</OfxPlugin>
+    <OfxPluginVersion>1 0</OfxPluginVersion>
+    <OfxParamTypeString name="Text">
+      <OfxParamValue>{\rtf1\ansi\ansicpg1252\deff0{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+\viewkind4\uc1\pard\lang1033\qc\b\f0\fs20 Sous-titres\par
+}
+      </OfxParamValue>
+    </OfxParamTypeString>
+    <OfxParamTypeRGBA name="TextColor">
+      <OfxParamValue>1.000000 1.000000 1.000000 1.000000</OfxParamValue>
+    </OfxParamTypeRGBA>
+    <OfxParamTypeString name="AnimationName">
+      <OfxParamValue>_None</OfxParamValue>
+    </OfxParamTypeString>
+    <OfxParamTypeDouble name="Scale">
+      <OfxParamValue>1.00000</OfxParamValue>
+    </OfxParamTypeDouble>
+    <OfxParamTypeDouble2D name="Location">
+      <OfxParamValue>0.500000 0.10000</OfxParamValue>
+    </OfxParamTypeDouble2D>
+    <OfxParamTypeRGBA name="Background">
+      <OfxParamValue>1.000000 1.000000 1.000000 0.000000</OfxParamValue>
+    </OfxParamTypeRGBA>
+    <OfxParamTypeDouble name="Tracking">
+      <OfxParamValue>0.000000</OfxParamValue>
+    </OfxParamTypeDouble>
+    <OfxParamTypeDouble name="LineSpacing">
+      <OfxParamValue>0.800000</OfxParamValue>
+    </OfxParamTypeDouble>
+    <OfxParamTypeDouble name="OutlineWidth">
+      <OfxParamValue>0.000000</OfxParamValue>
+    </OfxParamTypeDouble>
+    <OfxParamTypeRGBA name="OutlineColor">
+      <OfxParamValue>1.000000 1.000000 1.000000 1.000000</OfxParamValue>
+    </OfxParamTypeRGBA>
+    <OfxParamTypeBoolean name="ShadowEnable">
+      <OfxParamValue>true</OfxParamValue>
+    </OfxParamTypeBoolean>
+    <OfxParamTypeRGBA name="ShadowColor">
+      <OfxParamValue>0.000000 0.000000 0.000000 1.000000</OfxParamValue>
+    </OfxParamTypeRGBA>
+    <OfxParamTypeDouble name="ShadowOffsetX">
+      <OfxParamValue>0.010000</OfxParamValue>
+    </OfxParamTypeDouble>
+    <OfxParamTypeDouble name="ShadowOffsetY">
+      <OfxParamValue>0.010000</OfxParamValue>
+    </OfxParamTypeDouble>
+    <OfxParamTypeDouble name="ShadowBlur">
+      <OfxParamValue>0.010000</OfxParamValue>
+    </OfxParamTypeDouble>
+  </OfxPreset>
+
+</OfxPresetPackage>

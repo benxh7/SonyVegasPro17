@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<presets>
+  <preset name="Samsung Gear 360°" uuid="{B9B1B153-8EF9-4D1E-A2A3-47CC7ECD326B}">
+    <fov>191.357990</fov>
+    <falloff intensity="34.0" range="41.5">true</falloff>
+    <orientation left="0" right="0"/>
+    <offset>0.0</offset>
+    <narrowing>100.0</narrowing>
+    <eye>0.0</eye>
+  </preset>
+  <preset name="LG 360° Cam" uuid="{7BBC8D22-A837-4EAC-A701-5DB1A62AB52B}">
+    <fov>192.4</fov>
+    <falloff>false</falloff>
+    <orientation left="0" right="0"/>
+    <offset>0.0</offset>
+    <narrowing>100.0</narrowing>
+    <eye>0.0</eye>
+  </preset>
+  <preset name="Ricoh Theta V" uuid="{3521428C-33B5-4B27-90B6-AC222B64D5B4}">
+    <fov>191.0</fov>
+    <falloff intensity="20.0" range="30.0">true</falloff>
+    <orientation left="1" right="3"/>
+    <offset>0.0</offset>
+    <narrowing>0.0</narrowing>
+    <eye>0.0</eye>
+  </preset>
+  <preset name="Ricoh Theta S" uuid="{B468AC1B-2712-4A74-9005-756EDAAE6FD2}">
+    <fov>202.50</fov>
+    <falloff intensity="12.0" range="30.0">true</falloff>
+    <orientation left="1" right="3"/>
+    <offset>0.0</offset>
+    <narrowing>100.0</narrowing>
+    <eye>0.0</eye>
+  </preset>
+  <preset name="Ricoh Theta" uuid="{132E29D5-4B9C-4234-8C6D-AD9A9B886BDF}">
+    <fov>191.0</fov>
+    <falloff intensity="35.0" range="44.0">true</falloff>
+    <orientation left="1" right="1"/>
+    <offset>0.0</offset>
+    <narrowing>96.3</narrowing>
+    <eye>0.0</eye>
+  </preset>
+</presets>

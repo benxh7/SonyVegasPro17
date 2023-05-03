@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	***************************************************************************
+	*   Copyright © 2018 MAGIX Software GmbH. All Rights Reserved.
+	*
+	*       $DateTime: 2018/09/24 $
+	*       $Author: pkelm $
+	*
+	*   Description:
+	*       Localized resources for the 360 Stabilization plugin bundle (default)
+	***************************************************************************
+-->
+
+<!--
+<!DOCTYPE OfxImageEffectResource SYSTEM "ofx.dtd">
+ -->
+
+<OfxImageEffectResource>  
+  <OfxPlugin name="com.magix.ofx.vr.stabilization">
+
+		<!--
+		Define the resouces overrides to be used for the host 'default' (or 'all' or 'com.vegascreativesoftware.vegas'
+		    in the locale 'fr-FR' (or 'de-DE' or 'es-ES' or 'ja-JP')
+			ofxHost="someHost"
+		-->
+		<OfxResourceSet ofxHost="default">
+
+			<!-- Set the user visible label on the plug-in -->
+			<OfxPropLabel>Estabilização em 360° VEGAS</OfxPropLabel>
+
+			<OfxImageEffectPluginPropGrouping>VEGAS\360</OfxImageEffectPluginPropGrouping>
+
+			<OfxPropPluginDescription>Da Magix Computer Products Intl. Co.</OfxPropPluginDescription>
+
+			<!--
+	        Define default overrides that apply in all contexts (unless specified in a specific context)
+			-->
+			<OfxImageEffectContext name="default">
+			</OfxImageEffectContext>
+			
+			<!--
+	        Define default overrides that apply only in the generator context
+			-->			
+			
+			<OfxImageEffectContext name="OfxImageEffectContextFilter">
+			
+				<OfxMessage name="mx.ofx.stab.plugin.warning.effectfx">Você adicionou o plug-in de estabilização de vídeo a um evento. Esse plug-in deve ser usado num clipe ou subclipe como efeito de mídia.
+
+        Para aplicar efeitos de mídia, selecione um evento na linha do tempo (ou um clipe na janela Project Media) e escolha Tools &gt; Video &gt;Media FX</OfxMessage>
+		  
+				<OfxMessage name="mx.ofx.plugin.rotate.warning.hostnotsupported">O host atual não é suportado por este plugin.</OfxMessage>
+				
+				<OfxMessage name="mx.ofx.plugin.rotate.warning.unknown">Erro desconhecido!</OfxMessage>
+			
+				<OfxProgress name="mx.ofx.stab.plugin.progress">Estabilizar mídia</OfxProgress>
+				
+				<OfxParamTypeChoice name="mx.ofx.stab.plugin.stereo">
+					<OfxParamPropChoiceOption>Nenhum</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>Superior-Inferior</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>Lado a lado</OfxParamPropChoiceOption>
+					<OfxPropLabel>Estereoscopia</OfxPropLabel>
+					<OfxPropShortLabel>Estereoscopia</OfxPropShortLabel>
+			        <OfxPropLongLabel>Estereoscopia</OfxPropLongLabel>
+					<OfxParamPropHint>Você pode selecionar uma predefinição para um modelo estereoscópico.</OfxParamPropHint>
+				</OfxParamTypeChoice>			
+				
+				<OfxParamTypePushButton name="mx.ofx.stab.plugin.btn.analyze">
+                    <OfxPropLabel>Analisar dados de movimento</OfxPropLabel>
+					<OfxPropShortLabel>Analisar dados de movimento</OfxPropShortLabel>
+			        <OfxPropLongLabel>Analisar dados de movimento</OfxPropLongLabel>
+					<OfxParamPropHint>A análise é realizada para determinar os dados de movimento.</OfxParamPropHint>
+                </OfxParamTypePushButton>
+				
+				<OfxParamTypePushButton name="mx.ofx.stab.plugin.btn.clear">
+                    <OfxPropLabel>Limpar os dados do movimento</OfxPropLabel>
+					<OfxPropShortLabel>Limpar os dados do movimento</OfxPropShortLabel>
+			        <OfxPropLongLabel>Limpar os dados do movimento</OfxPropLongLabel>
+					<OfxParamPropHint>Todos os resultados da análise são descartados.</OfxParamPropHint>
+                </OfxParamTypePushButton>
+				
+				<OfxParamTypeChoice name="mx.ofx.stab.plugin.exclude.bottom">
+					<OfxParamPropChoiceOption>Pólo Norte e Sul</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>Pólo Sul</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>Nenhum</OfxParamPropChoiceOption>
+					<OfxPropLabel>Excluir visualizações</OfxPropLabel>
+					<OfxPropShortLabel>Excluir visualizações</OfxPropShortLabel>
+			        <OfxPropLongLabel>Excluir visualizações</OfxPropLongLabel>
+					<OfxParamPropHint>Visualizações que não estão incluídas na análise.</OfxParamPropHint>
+				</OfxParamTypeChoice>
+				
+				<OfxParamTypeBoolean name="mx.ofx.stab.plugin.ssd.deviation">
+				  <OfxPropLabel>Refinamento</OfxPropLabel>
+				  <OfxPropShortLabel>Refinamento</OfxPropShortLabel>
+			      <OfxPropLongLabel>Refinamento</OfxPropLongLabel>
+				  <OfxParamPropHint>Clique para aperfeiçoar automaticamente os resultados.</OfxParamPropHint>
+				</OfxParamTypeBoolean>
+				
+				<OfxParamTypeInteger name="mx.ofx.stab.plugin.smoothness">
+                    <OfxPropLabel>Suavização</OfxPropLabel>
+					<OfxPropShortLabel>Suavização</OfxPropShortLabel>
+			        <OfxPropLongLabel>Suavização</OfxPropLongLabel>
+					<OfxParamPropHint>O parâmetro de suavização é o parâmetro que o ajudará a definir a quantidade de &quot;instabilidade&quot; deve ficar numa cena – quanto maior for o fator, mais suavizados serão os movimentos.</OfxParamPropHint>
+                </OfxParamTypeInteger>
+								
+			</OfxImageEffectContext>
+		</OfxResourceSet>
+	</OfxPlugin>
+  
+</OfxImageEffectResource>

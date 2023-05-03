@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<preset owner="eFX Phaser" name="Mushroomed Drums">
+    <params version="2.010000">
+        <param id="active" value="1.000000" />
+        <param id="mode" value="2.000000" />
+        <param id="input" value="1.000000" />
+        <param id="output" value="0.705000" />
+        <param id="rate" value="0.372665" />
+        <param id="depth" value="0.525344" />
+        <param id="phase" value="0.135593" />
+        <param id="feedback" value="1.000000" />
+        <param id="mix" value="0.670000" />
+        <param id="sync" value="0.000000" />
+        <param id="fcenter" value="850.000000" />
+    </params>
+</preset>

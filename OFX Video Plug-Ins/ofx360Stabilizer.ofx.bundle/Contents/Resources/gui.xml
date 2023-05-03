@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<surface>
+  <combobox id="stereo" state="0">
+    <label>Stereoscopy</label>
+    <hint>Select here the 3D frame format.</hint>
+    <data>
+      <entry>None</entry>
+      <entry>Top-and-Bottom</entry>
+      <entry>Side-by-Side</entry>
+    </data>
+  </combobox>
+
+  <button id="btn.analyze">
+    <label>Start Analysis</label>
+    <hint>Starts the analysis to determine motion data for the entire media.</hint>
+  </button>
+  <button id="btn.clear">
+    <label>Discard Analysis</label>
+    <hint>Clears the results of analysis.</hint>
+  </button>
+
+  <combobox id="exclude.bottom" state="0">
+    <label>Exclude views</label>
+    <hint>Defines views, these will be excluded from the analysis.</hint>
+    <data>
+      <entry>North &amp; South Pole</entry>
+      <entry>South Pole</entry>
+      <entry>Nothing</entry>
+    </data>
+  </combobox>
+  
+  <slider id="smoothness" type="Integer">
+    <animation>false</animation>
+    <values default="30" min="0" max="120"/>
+    <label>Smoothness</label>
+    <hint>The larger the more stable the video, but less reactive to sudden panning.</hint>
+  </slider>
+</surface>

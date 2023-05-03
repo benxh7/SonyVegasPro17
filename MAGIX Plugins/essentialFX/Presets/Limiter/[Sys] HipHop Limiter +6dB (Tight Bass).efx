@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<preset owner="eFX Limiter" name="HipHop Limiter +6dB (Tight Bass)">
+    <params version="2.030000">
+        <param id="active" value="1.000000" />
+        <param id="input" value="0.000000" />
+        <param id="output" value="-0.098133" />
+        <param id="threshold" value="-6.004324" />
+        <param id="release" value="5.051657" />
+        <param id="clipgain" value="0.000000" />
+        <param id="attack" value="2.812898" />
+        <param id="adaptrelease" value="0.393750" />
+        <param id="peak_rms" value="0.218750" />
+        <param id="automakeup" value="1.000000" />
+        <param id="in_lc" value="21.875000" />
+        <param id="sc_lc" value="39.651825" />
+        <param id="clipshape" value="0.750000" />
+        <param id="version" value="10.000000" />
+    </params>
+</preset>

@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<preset owner="eFX Limiter" name="Pop Maximizer +6dB (Transparent)">
+    <params version="2.030000">
+        <param id="active" value="1.000000" />
+        <param id="input" value="0.000000" />
+        <param id="output" value="-0.098133" />
+        <param id="threshold" value="-5.997730" />
+        <param id="release" value="34.638321" />
+        <param id="clipgain" value="0.000000" />
+        <param id="attack" value="1.000000" />
+        <param id="adaptrelease" value="1.000000" />
+        <param id="peak_rms" value="0.000000" />
+        <param id="automakeup" value="1.000000" />
+        <param id="in_lc" value="14.999998" />
+        <param id="sc_lc" value="25.179852" />
+        <param id="clipshape" value="0.850000" />
+        <param id="version" value="10.000000" />
+    </params>
+</preset>

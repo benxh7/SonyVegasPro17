@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<preset owner="eFX Reverb" name="Vox Decoupler">
+    <params version="2.000000">
+        <param id="active" value="1.000000" />
+        <param id="mode" value="1.000000" />
+        <param id="input" value="1.000000" />
+        <param id="output" value="1.000000" />
+        <param id="size" value="0.387883" />
+        <param id="time" value="0.057422" />
+        <param id="damping" value="0.368693" />
+        <param id="mod" value="0.587001" />
+        <param id="mix" value="0.230381" />
+        <param id="sync" value="0.000000" />
+        <param id="predelay" value="0.000000" />
+        <param id="diffusion" value="0.788500" />
+        <param id="locut" value="136.023621" />
+    </params>
+</preset>

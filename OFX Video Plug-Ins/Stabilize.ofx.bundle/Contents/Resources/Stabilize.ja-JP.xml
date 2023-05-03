@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+	***************************************************************************
+	*   Copyright (C) 2011 Sony Creative Software Inc. All rights reserved. 
+	*
+	*       $Header: //sonic3/release/vegas/17.0release/vplugins/ofxStabilize/Stabilize.ja-JP.xml#1 $
+	*       $DateTime: 2019/06/29 14:35:43 $
+	*       $Author: Administrator $
+	*
+	*   Description:
+	*       Localized resources for the Stabilize plugin bundle (default)
+	***************************************************************************
+-->
+<!--
+<!DOCTYPE OfxImageEffectResource SYSTEM "ofx.dtd">
+ -->
+<OfxImageEffectResource>
+	<OfxPlugin name="com.vegascreativesoftware:Stabilize">
+
+		<OfxResourceSet ofxHost="default">
+			<OfxPropLabel>VEGAS 手ブレ補正</OfxPropLabel>
+
+            <OfxImageEffectPluginPropGrouping>VEGAS</OfxImageEffectPluginPropGrouping>
+            <OfxPropPluginDescription>ビデオの手ブレを補正します。</OfxPropPluginDescription>
+            <OfxImageEffectContext name="default">
+            </OfxImageEffectContext>
+
+			<OfxImageEffectContext name="OfxImageEffectContextFilter">
+
+<OfxMessage name="invalidEffectContextEffect_Event">イベントにメディア手ブレ補正プラグインを追加しています。このプラグインは、メディア エフェクトとしてクリップまたはサブクリップに適用する必要があります。
+
+メディア エフェクトを適用するには、タイムライン内のイベント (または [プロジェクト メディア] ウィンドウ内のクリップ) を選択し、[ツール] &gt; [ビデオ] &gt; [メディア FX] を選択します。メディア手ブレ補正プラグインについて詳しくは、[メディア FX] ダイアログの [?] ボタンをクリックしてください。</OfxMessage>
+
+<OfxMessage name="invalidEffectContextEffect_Track">トラックにメディア手ブレ補正プラグインを追加しています。このプラグインは、メディア エフェクトとしてクリップまたはサブクリップに適用する必要があります。
+
+メディア エフェクトを適用するには、タイムライン内のイベント (または [プロジェクト メディア] ウィンドウ内のクリップ) を選択し、[ツール] &gt; [ビデオ] &gt; [メディア FX] を選択します。メディア手ブレ補正プラグインについて詳しくは、[メディア FX] ダイアログの [?] ボタンをクリックしてください。</OfxMessage>
+
+<OfxMessage name="invalidEffectContextEffect_VideoOutput">ビデオ出力にメディア手ブレ補正プラグインを追加しています。このプラグインは、メディア エフェクトとしてクリップまたはサブクリップに適用する必要があります。
+
+メディア エフェクトを適用するには、タイムライン内のイベント (または [プロジェクト メディア] ウィンドウ内のクリップ) を選択し、[ツール] &gt; [ビデオ] &gt; [メディア FX] を選択します。メディア手ブレ補正プラグインについて詳しくは、[メディア FX] ダイアログの [?] ボタンをクリックしてください。</OfxMessage>
+
+<OfxProgress name="StabilizeAnalyzeProgress">メディアの手ブレを補正しています</OfxProgress>
+<OfxMessage name="mustClickApply">変更を反映にするには、[適用] をクリックする必要があります。</OfxMessage>
+                
+                <OfxParamTypeDouble name="PanSmoothing">
+                    <OfxPropLabel>パン スムージング</OfxPropLabel>
+                </OfxParamTypeDouble>
+          
+                <OfxParamTypeDouble name="ViewScale">
+                    <OfxPropLabel>手ブレ補正の量</OfxPropLabel>
+                </OfxParamTypeDouble>
+
+                <OfxParamTypeBoolean name="RollingShutterCorrection">
+                    <OfxPropLabel>ローリング シャッター補正</OfxPropLabel>
+                </OfxParamTypeBoolean>
+                
+                <OfxParamTypePushButton name="AnalyzeButton">
+                    <OfxPropLabel>適用</OfxPropLabel>
+                </OfxParamTypePushButton>
+                
+			</OfxImageEffectContext>
+
+		</OfxResourceSet>
+
+	</OfxPlugin>
+</OfxImageEffectResource>

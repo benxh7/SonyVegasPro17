@@ -1,0 +1,14 @@
+﻿-- BEGIN LICENSE v1.0 9DCB178D --
+licensee: Gracenote, Inc.
+name: Sony Creative Software
+notes: Sound Forge, Vegas, ACID, CD/DVD Architect (GNSDK)
+start_date: 2012-01-27
+
+client_id: 1105920,5867776,4241664,14650368,13026304
+musicid_search: enabled
+musicid: enabled
+submit: enabled
+
+-- SIGNATURE 9DCB178D --
+lAADAgAeO6jf4L5nHQ6oNiEbYbMiaXM2w03xWnTSaTvBNHn0AB6mT+AXEy+JV+NDOiajL31jMUV+tv8+A/gtGUlO+vw=
+-- END LICENSE 9DCB178D --

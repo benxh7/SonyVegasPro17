@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<preset owner="eFX Limiter" name="Rock Clipper +6dB (Soft Transients)">
+    <params version="2.030000">
+        <param id="active" value="1.000000" />
+        <param id="input" value="0.000000" />
+        <param id="output" value="-0.100361" />
+        <param id="threshold" value="-2.997194" />
+        <param id="release" value="10.382013" />
+        <param id="clipgain" value="2.998901" />
+        <param id="attack" value="1.963323" />
+        <param id="adaptrelease" value="0.806250" />
+        <param id="peak_rms" value="0.206250" />
+        <param id="automakeup" value="1.000000" />
+        <param id="in_lc" value="20.000004" />
+        <param id="sc_lc" value="65.217392" />
+        <param id="clipshape" value="0.406250" />
+        <param id="version" value="10.000000" />
+    </params>
+</preset>

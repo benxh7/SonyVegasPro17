@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<preset owner="eFX TubeStage" name="Old Radio">
+    <params version="2.000000">
+        <param id="active" value="1.000000" />
+        <param id="input" value="5.520000" />
+        <param id="output" value="-10.560001" />
+        <param id="pre_eq" value="0.020000" />
+        <param id="gain" value="9.989837" />
+        <param id="post_eq" value="0.000000" />
+        <param id="oversample" value="1.000000" />
+        <param id="stages" value="2.000000" />
+        <param id="class" value="0.000000" />
+    </params>
+</preset>

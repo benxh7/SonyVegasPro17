@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<preset owner="eFX Compressor" name="Classic Program Limiter">
+    <params version="2.010000">
+        <param id="active" value="1.000000" />
+        <param id="input" value="1.000000" />
+        <param id="output" value="0.500000" />
+        <param id="scfilter" value="0.420000" />
+        <param id="threshold" value="0.900000" />
+        <param id="ratio" value="1.000000" />
+        <param id="attack" value="0.078445" />
+        <param id="release" value="0.051016" />
+        <param id="sclisten" value="0.000000" />
+        <param id="softclip" value="1.000000" />
+        <param id="scflttype" value="1.000000" />
+        <param id="mode" value="0.000000" />
+        <param id="adaptrelease" value="3.000000" />
+        <param id="automakeup" value="1.000000" />
+        <param id="mix" value="1.000000" />
+    </params>
+</preset>

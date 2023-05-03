@@ -1,0 +1,21 @@
+<NGenTool>
+  <Assembly>ScriptPortal.Vegas.dll</Assembly>
+  <Assembly>ScriptPortal.MediaSoftware.ExternalVideoDevice.dll</Assembly>
+  <Assembly>ScriptPortal.MediaSoftware.Skins.dll</Assembly>
+  <Assembly>ScriptPortal.Capture.dll</Assembly>
+  <Assembly>ScriptPortal.Monitor3D.dll</Assembly>
+  <Assembly>DecklinkVideoProperties.dll</Assembly>
+  <Assembly>AjaVideoProperties.dll</Assembly>
+  <Assembly>CorePrimitives.dll</Assembly>
+  <Assembly>ScriptPortal.MediaSoftware.textgen.coregraphics.dll</Assembly>
+  <Assembly>ScriptPortal.MediaSoftware.textgen.coregraphics.xmlserializers.dll</Assembly>
+  <Assembly>CoreUI.dll</Assembly>
+  <Assembly>CoreUI.XmlSerializers.dll</Assembly>
+  <Assembly>ControlLibrary.dll</Assembly>
+  <Assembly>ScriptPortal.MediaSoftware.deviceexp.dll</Assembly>
+  <Assembly>ScriptPortal.MediaSoftware.videoeffectsui.dll</Assembly>
+  <Assembly>ScriptPortal.MediaSoftware.xdcamexp.dll</Assembly>
+  <Assembly>ScriptPortal.MediaSoftware.skins.dll</Assembly>
+  <Assembly>WidgetLibrary.dll</Assembly>
+  <Assembly>Interop.dll</Assembly>
+</NGenTool>

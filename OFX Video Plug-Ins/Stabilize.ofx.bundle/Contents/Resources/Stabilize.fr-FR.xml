@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+	***************************************************************************
+	*   Copyright (C) 2011 Sony Creative Software Inc. All rights reserved. 
+	*
+	*       $Header: //sonic3/release/vegas/17.0release/vplugins/ofxStabilize/Stabilize.fr-FR.xml#1 $
+	*       $DateTime: 2019/06/29 14:35:43 $
+	*       $Author: Administrator $
+	*
+	*   Description:
+	*       Localized resources for the Stabilize plugin bundle (default)
+	***************************************************************************
+-->
+<!--
+<!DOCTYPE OfxImageEffectResource SYSTEM "ofx.dtd">
+ -->
+<OfxImageEffectResource>
+	<OfxPlugin name="com.vegascreativesoftware:Stabilize">
+
+		<OfxResourceSet ofxHost="default">
+			<OfxPropLabel>Stabilisateur VEGAS</OfxPropLabel>
+
+            <OfxImageEffectPluginPropGrouping>VEGAS</OfxImageEffectPluginPropGrouping>
+            <OfxPropPluginDescription>Stabilise le mouvement de vidéo</OfxPropPluginDescription>
+            <OfxImageEffectContext name="default">
+            </OfxImageEffectContext>
+
+			<OfxImageEffectContext name="OfxImageEffectContextFilter">
+
+<OfxMessage name="invalidEffectContextEffect_Event">Vous avez ajouté le module Stabiliser média à un événement. Ce module doit être appliqué à un clip ou à un sous-clip en tant qu'effet média.
+
+Pour appliquer des effets média, sélectionnez un événement sur la barre temporelle (ou un clip dans la fenêtre Média de projet), puis choisissez Outils &gt; Vidéo &gt; Effets média. Cliquez sur le bouton ? dans la boîte de dialogue Effets média pour en savoir plus sur l'utilisation du module Stabiliser média.</OfxMessage>
+
+<OfxMessage name="invalidEffectContextEffect_Track">Vous avez ajouté le module Stabiliser média à une piste. Ce module doit être appliqué à un clip ou à un sous-clip en tant qu'effet média.
+
+Pour appliquer des effets média, sélectionnez un événement sur la barre temporelle (ou un clip dans la fenêtre Média de projet), puis choisissez Outils &gt; Vidéo &gt; Effets média. Cliquez sur le bouton ? dans la boîte de dialogue Effets média pour en savoir plus sur l'utilisation du module Stabiliser média.</OfxMessage>
+
+<OfxMessage name="invalidEffectContextEffect_VideoOutput">Vous avez ajouté le module Stabiliser média à la sortie vidéo. Ce module doit être appliqué à un clip ou à un sous-clip en tant qu'effet média.
+
+Pour appliquer des effets média, sélectionnez un événement sur la barre temporelle (ou un clip dans la fenêtre Média de projet), puis choisissez Outils &gt; Vidéo &gt; Effets média. Cliquez sur le bouton ? dans la boîte de dialogue Effets média pour en savoir plus sur l'utilisation du module Stabiliser média.</OfxMessage>
+
+<OfxProgress name="StabilizeAnalyzeProgress">Stabilisation de média en cours</OfxProgress>
+<OfxMessage name="mustClickApply">Vous devez cliquer sur Appliquer pour que les modifications soient prises en compte.</OfxMessage>
+                
+                <OfxParamTypeDouble name="PanSmoothing">
+                    <OfxPropLabel>Lissage panoramique</OfxPropLabel>
+                </OfxParamTypeDouble>
+          
+                <OfxParamTypeDouble name="ViewScale">
+                    <OfxPropLabel>Degré de stabilisation</OfxPropLabel>
+                </OfxParamTypeDouble>
+
+                <OfxParamTypeBoolean name="RollingShutterCorrection">
+                    <OfxPropLabel>Correction du volet roulant</OfxPropLabel>
+                </OfxParamTypeBoolean>
+                
+                <OfxParamTypePushButton name="AnalyzeButton">
+                    <OfxPropLabel>Appliquer</OfxPropLabel>
+                </OfxParamTypePushButton>
+                
+			</OfxImageEffectContext>
+
+		</OfxResourceSet>
+
+	</OfxPlugin>
+</OfxImageEffectResource>

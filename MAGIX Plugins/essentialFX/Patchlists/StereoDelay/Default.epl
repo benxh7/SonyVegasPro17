@@ -1,0 +1,68 @@
+<?xml version="1.0" ?>
+<patchlist owner="efx" origin="">
+    <programs last_prg="0">
+	<prg number="0" preset="Default.efx" />
+	<prg number="1" preset="1984 Shack Reverb.efx" />
+	<prg number="2" preset="Analog Dual Delay.efx" />
+	<prg number="3" preset="Analog Feedback.efx" />
+	<prg number="4" preset="Analog SlapBack.efx" />
+	<prg number="5" preset="Analog Slow SlapBack.efx" />
+	<prg number="6" preset="BBD Voice Doubler.efx" />
+	<prg number="7" preset="Both Sides Of The Story.efx" />
+	<prg number="8" preset="Broaden.efx" />
+	<prg number="9" preset="Bucket Brigade In Space.efx" />
+	<prg number="10" preset="Delay_Analog_Old_Tape.efx" />
+	<prg number="11" preset="Delay_Digital_Ping_Pong.efx" />
+	<prg number="12" preset="Delay_Digital_Robot.efx" />
+	<prg number="13" preset="Delay_Digital_Vocal_Slap.efx" />
+	<prg number="14" preset="Dub Delay.efx" />
+	<prg number="15" preset="Endless MonoDelay.efx" />
+	<prg number="16" preset="Endless PingPong.efx" />
+	<prg number="17" preset="Groove Analog.efx" />
+	<prg number="18" preset="Groove Digital.efx" />
+	<prg number="19" preset="Krankmachine.efx" />
+	<prg number="20" preset="Longest PingPong.efx" />
+	<prg number="21" preset="Mid Delay.efx" />
+	<prg number="22" preset="Ping Pong Delay for Pads.efx" />
+	<prg number="23" preset="PingPong.efx" />
+	<prg number="24" preset="ShortDelay.efx" />
+	<prg number="25" preset="SimpleDelay.efx" />
+	<prg number="26" preset="Sweet Echo 1-8 Dot..efx" />
+	<prg number="27" preset="Sweet Echo Tripl..efx" />
+	<prg number="28" preset="Sweet Echo.efx" />
+	<prg number="29" preset="Synth Arp 8th 16th BBD.efx" />
+	<prg number="30" preset="Synth Arp 8th BBD.efx" />
+	<prg number="31" preset="TripHop Triplets.efx" />
+	<prg number="32" preset="TripleDelay.efx" />
+	<prg number="33" preset="Vox BBD Slapback.efx" />
+	<prg number="34" preset="100% Wet Mono/100% Mono Digidelay 1-16 Tripl..efx" />
+	<prg number="35" preset="100% Wet Mono/100% Mono Digidelay 1-16.efx" />
+	<prg number="36" preset="100% Wet Mono/100% Mono Digidelay 1-4 Dot..efx" />
+	<prg number="37" preset="100% Wet Mono/100% Mono Digidelay 1-4 Tripl..efx" />
+	<prg number="38" preset="100% Wet Mono/100% Mono Digidelay 1-4.efx" />
+	<prg number="39" preset="100% Wet Mono/100% Mono Digidelay 1-8 Dot..efx" />
+	<prg number="40" preset="100% Wet Mono/100% Mono Digidelay 1-8 Tripl..efx" />
+	<prg number="41" preset="100% Wet Mono/100% Mono Digidelay 1-8.efx" />
+	<prg number="42" preset="Analog Mono/Analog Mono 1-8.efx" />
+	<prg number="43" preset="Analog Mono/Analog MonoDelay 124ms.efx" />
+	<prg number="44" preset="Analog Mono/Analog Mono 1-4 Tripl..efx" />
+	<prg number="45" preset="Analog Mono/Analog Mono 1-8 Dot..efx" />
+	<prg number="46" preset="Analog Mono/Analog Mono 1-8 Tripl..efx" />
+	<prg number="47" preset="Analog Mono/Analog MonoDelay 433ms.efx" />
+	<prg number="48" preset="Analog Mono/Analog MonoDelay 251ms.efx" />
+	<prg number="49" preset="Analog Mono/Analog MonoDelay 343ms.efx" />
+	<prg number="50" preset="Analog PingPong/Analog PingPong 1-16 Dot..efx" />
+	<prg number="51" preset="Analog PingPong/Analog PingPong 1-16.efx" />
+	<prg number="52" preset="Analog PingPong/Analog PingPong 120ms.efx" />
+	<prg number="53" preset="Analog PingPong/Analog PingPong 134ms.efx" />
+	<prg number="54" preset="Analog PingPong/Analog PingPong 644ms.efx" />
+	<prg number="55" preset="Analog PingPong/Analog PlingPlong.efx" />
+	<prg number="56" preset="Analog PingPong/Analog PingPong 1-2.efx" />
+	<prg number="57" preset="Analog PingPong/Analog PingPong 1-4 Dot..efx" />
+	<prg number="58" preset="Analog PingPong/Analog PingPong 1-4 Tripl..efx" />
+	<prg number="59" preset="Analog PingPong/Analog PingPong 1-4.efx" />
+	<prg number="60" preset="Analog PingPong/Analog PingPong 1-8 Dot..efx" />
+	<prg number="61" preset="Analog PingPong/Analog PingPong 1-8.efx" />
+	<prg number="62" preset="Analog PingPong/Analog PingPong 1-8 Tripl..efx" />
+    </programs>
+</patchlist>

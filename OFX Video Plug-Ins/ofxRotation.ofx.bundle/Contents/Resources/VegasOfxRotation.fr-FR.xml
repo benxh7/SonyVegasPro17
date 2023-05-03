@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+	***************************************************************************
+	*   Copyright © 2018 MAGIX Software GmbH. All Rights Reserved.
+	*
+	*       $DateTime: 2018/08/08 $
+	*       $Author: pkelm $
+	*
+	*   Description:
+	*       Localized resources for the dual-fisheye plugin bundle (default)
+	***************************************************************************
+-->
+
+<!--
+<!DOCTYPE OfxImageEffectResource SYSTEM "ofx.dtd">
+ -->
+
+<OfxImageEffectResource>  
+  <OfxPlugin name="com.magixsoftware:panorotation">
+
+		<!--
+		Define the resouces overrides to be used for the host 'default' (or 'all' or 'com.vegascreativesoftware.vegas'
+		    in the locale 'fr-FR' (or 'de-DE' or 'es-ES' or 'ja-JP')
+			ofxHost="someHost"
+		-->
+		<OfxResourceSet ofxHost="default">
+
+			<!-- Set the user visible label on the plug-in -->
+			<OfxPropLabel>Rotation de sc&egrave;ne VEGAS</OfxPropLabel>
+
+			<OfxImageEffectPluginPropGrouping>VEGAS\360</OfxImageEffectPluginPropGrouping>
+
+			<OfxPropPluginDescription>De Magix Computer Products Intl. Co.</OfxPropPluginDescription>
+
+			<!--
+	        Define default overrides that apply in all contexts (unless specified in a specific context)
+			-->
+			<OfxImageEffectContext name="default">
+			</OfxImageEffectContext>
+			
+			<!--
+	        Define default overrides that apply only in the generator context
+			-->
+			<OfxImageEffectContext name="OfxImageEffectContextFilter">				
+				<OfxParamTypeDouble name="mx.ofx.plugin.rotate.x.angle">
+                    <OfxPropLabel>Tourner autour de l&apos;axe x</OfxPropLabel>
+					<OfxPropShortLabel>Tourner autour de l&apos;axe x</OfxPropShortLabel>
+			        <OfxPropLongLabel>Tourner autour de l&apos;axe x</OfxPropLongLabel>
+					<OfxParamPropHint>Tournez le champ de vision autour de l&apos;axe x.</OfxParamPropHint>
+                </OfxParamTypeDouble>
+				
+				<OfxParamTypeDouble name="mx.ofx.plugin.rotate.y.angle">
+                    <OfxPropLabel>Tourner autour de l&apos;axe y</OfxPropLabel>
+					<OfxPropShortLabel>Tourner autour de l&apos;axe y</OfxPropShortLabel>
+			        <OfxPropLongLabel>Tourner autour de l&apos;axe y</OfxPropLongLabel>
+					<OfxParamPropHint>Tournez le champ de vision autour de l&apos;axe y.</OfxParamPropHint>
+                </OfxParamTypeDouble>
+				
+				<OfxParamTypeDouble name="mx.ofx.plugin.rotate.z.angle">
+                    <OfxPropLabel>Tourner autour de l&apos;axe z</OfxPropLabel>
+					<OfxPropShortLabel>Tourner autour de l&apos;axe z</OfxPropShortLabel>
+			        <OfxPropLongLabel>Tourner autour de l&apos;axe z</OfxPropLongLabel>
+					<OfxParamPropHint>Tournez le champ de vision autour de l&apos;axe z.</OfxParamPropHint>
+                </OfxParamTypeDouble>
+				
+				<OfxParamTypeChoice name="mx.ofx.plugin.rotate.stereo">
+					<OfxParamPropChoiceOption>Aucun</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>Haut-et-bas</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>C&ocirc;te-&agrave;-c&ocirc;te</OfxParamPropChoiceOption>
+					<OfxPropLabel>St&eacute;r&eacute;oscopie</OfxPropLabel>
+					<OfxPropShortLabel>St&eacute;r&eacute;oscopie</OfxPropShortLabel>
+			        <OfxPropLongLabel>St&eacute;r&eacute;oscopie</OfxPropLongLabel>
+					<OfxParamPropHint>S&eacute;lectionnez le format d&apos;image 3D cible.</OfxParamPropHint>
+				</OfxParamTypeChoice>
+				
+				<OfxMessage name="mx.ofx.plugin.rotate.warning.hostnotsupported">L&apos;h&ocirc;te actuel n&apos;est pas support&eacute; par ce module externe.</OfxMessage>
+				
+				<OfxMessage name="mx.ofx.plugin.rotate.warning.unknown">Erreur inconnue</OfxMessage>
+				
+			</OfxImageEffectContext>
+		</OfxResourceSet>
+	</OfxPlugin>
+  
+</OfxImageEffectResource>

@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<patchlist owner="efx" origin="">
+    <programs last_prg="0">
+        <prg number="0" preset="Default.efx" />
+        <prg number="1" preset="Acoustic Guitar channel with de-squeek.efx" /> 
+        <prg number="2" preset="Acoustic Guitar channel.efx" /> 
+        <prg number="3" preset="Bass Guitar channel.efx" /> 
+        <prg number="4" preset="Breakbeats.efx" /> 
+        <prg number="5" preset="Bright Snare channel.efx" /> 
+        <prg number="6" preset="Clean Electric channel.efx" /> 
+        <prg number="7" preset="Commercial.efx" /> 
+        <prg number="8" preset="Female Rock.efx" /> 
+        <prg number="9" preset="Female Up-Front.efx" /> 
+        <prg number="10" preset="Female Voiceover Soft.efx" />
+        <prg number="11" preset="Female Voiceover.efx" />
+        <prg number="12" preset="Male Rap vocal.efx" />
+        <prg number="13" preset="Male Rock.efx" />
+        <prg number="14" preset="Male vocal.efx" />
+        <prg number="15" preset="Male Voiceover.efx" />
+        <prg number="16" preset="Rap.efx" />
+        <prg number="17" preset="Talkback Drum Treatment.efx" />
+        <prg number="18" preset="Vintage Vox Channel.efx" />
+    </programs>
+</patchlist>

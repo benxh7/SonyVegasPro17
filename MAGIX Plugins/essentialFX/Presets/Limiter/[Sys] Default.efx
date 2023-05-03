@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<preset owner="eFX Limiter" name="Default">
+    <params version="2.030000">
+        <param id="active" value="1.000000" />
+        <param id="input" value="0.000000" />
+        <param id="output" value="-0.099962" />
+        <param id="threshold" value="0.000000" />
+        <param id="release" value="10.001650" />
+        <param id="clipgain" value="0.000000" />
+        <param id="attack" value="1.000000" />
+        <param id="adaptrelease" value="1.000000" />
+        <param id="peak_rms" value="0.000000" />
+        <param id="automakeup" value="1.000000" />
+        <param id="in_lc" value="0.000000" />
+        <param id="sc_lc" value="0.000000" />
+        <param id="clipshape" value="1.000000" />
+        <param id="version" value="10.000000" />
+    </params>
+</preset>

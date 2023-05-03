@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OfxPresetPackage>
+  <OfxPreset plugin="com.magix.ofx.vr.dual.stich" context="Filter" name="Samsumg Gear 360°">
+    <OfxPlugin>com.magix.ofx.vr.dual.stich</OfxPlugin>
+    <OfxPluginVersion>1 0</OfxPluginVersion>
+
+    <OfxParamTypeDouble name="mx.ofx.360.stitch.fisheye.fov">
+      <OfxParamValue>192.46</OfxParamValue>
+    </OfxParamTypeDouble>
+
+    <OfxParamTypeChoice name="mx.ofx.360.stitch.fisheye.orient.left">
+      <OfxParamValue>0</OfxParamValue>
+    </OfxParamTypeChoice>
+    <OfxParamTypeChoice name="mx.ofx.360.stitch.fisheye.orient.right">
+      <OfxParamValue>0</OfxParamValue>
+    </OfxParamTypeChoice>
+
+    <OfxParamTypeBoolean name="mx.ofx.360.stitch.fisheye.falloff.use">
+      <OfxParamValue>true</OfxParamValue>
+    </OfxParamTypeBoolean>
+    <OfxParamTypeDouble name="mx.ofx.360.stitch.fisheye.falloff.factor">
+      <OfxParamValue>34.0</OfxParamValue>
+    </OfxParamTypeDouble>
+    <OfxParamTypeDouble name="mx.ofx.360.stitch.fisheye.falloff.range">
+      <OfxParamValue>41.5</OfxParamValue>
+    </OfxParamTypeDouble>
+
+    <OfxParamTypeDouble name="mx.ofx.360.stitch.fisheye.center">
+      <OfxParamValue>0.0</OfxParamValue>
+    </OfxParamTypeDouble>
+    <OfxParamTypeDouble name="mx.ofx.360.stitch.fisheye.narrowing">
+      <OfxParamValue>100.0</OfxParamValue>
+    </OfxParamTypeDouble>
+    <OfxParamTypeDouble name="mx.ofx.360.stitch.fisheye.rotation">
+      <OfxParamValue>0.0</OfxParamValue>
+    </OfxParamTypeDouble>
+  </OfxPreset>
+
+  <OfxPreset plugin="com.magix.ofx.vr.dual.stich" context="Filter" name="LG 360° Cam">
+    <OfxPlugin>com.magix.ofx.vr.dual.stich</OfxPlugin>
+    <OfxPluginVersion>1 0</OfxPluginVersion>
+    
+    <OfxParamTypeDouble name="mx.ofx.360.stitch.fisheye.fov">
+      <OfxParamValue>192.4</OfxParamValue>
+    </OfxParamTypeDouble>
+    
+    <OfxParamTypeChoice name="mx.ofx.360.stitch.fisheye.orient.left">
+      <OfxParamValue>0</OfxParamValue>
+    </OfxParamTypeChoice>
+    <OfxParamTypeChoice name="mx.ofx.360.stitch.fisheye.orient.right">
+      <OfxParamValue>0</OfxParamValue>
+    </OfxParamTypeChoice>
+
+    <OfxParamTypeBoolean name="mx.ofx.360.stitch.fisheye.falloff.use">
+      <OfxParamValue>false</OfxParamValue>
+    </OfxParamTypeBoolean>
+
+    <OfxParamTypeDouble name="mx.ofx.360.stitch.fisheye.center">
+      <OfxParamValue>0.0</OfxParamValue>
+    </OfxParamTypeDouble>
+    <OfxParamTypeDouble name="mx.ofx.360.stitch.fisheye.narrowing">
+      <OfxParamValue>100.0</OfxParamValue>
+    </OfxParamTypeDouble>
+    <OfxParamTypeDouble name="mx.ofx.360.stitch.fisheye.rotation">
+      <OfxParamValue>0.0</OfxParamValue>
+    </OfxParamTypeDouble>
+  </OfxPreset>
+
+  <OfxPreset plugin="com.magix.ofx.vr.dual.stich" context="Filter" name="Ricoh Theta V">
+    <OfxPlugin>com.magix.ofx.vr.dual.stich</OfxPlugin>
+    <OfxPluginVersion>1 0</OfxPluginVersion>
+    
+    <OfxParamTypeDouble name="mx.ofx.360.stitch.fisheye.fov">
+      <OfxParamValue>191.0</OfxParamValue>
+    </OfxParamTypeDouble>
+    
+    <OfxParamTypeChoice name="mx.ofx.360.stitch.fisheye.orient.left">
+      <OfxParamValue>3</OfxParamValue>
+    </OfxParamTypeChoice>
+    <OfxParamTypeChoice name="mx.ofx.360.stitch.fisheye.orient.right">
+      <OfxParamValue>1</OfxParamValue>
+    </OfxParamTypeChoice>
+
+    <OfxParamTypeBoolean name="mx.ofx.360.stitch.fisheye.falloff.use">
+      <OfxParamValue>true</OfxParamValue>
+    </OfxParamTypeBoolean>
+    <OfxParamTypeDouble name="mx.ofx.360.stitch.fisheye.falloff.factor">
+      <OfxParamValue>20.0</OfxParamValue>
+    </OfxParamTypeDouble>
+    <OfxParamTypeDouble name="mx.ofx.360.stitch.fisheye.falloff.range">
+      <OfxParamValue>30.0</OfxParamValue>
+    </OfxParamTypeDouble>
+
+    <OfxParamTypeDouble name="mx.ofx.360.stitch.fisheye.center">
+      <OfxParamValue>0.0</OfxParamValue>
+    </OfxParamTypeDouble>
+    <OfxParamTypeDouble name="mx.ofx.360.stitch.fisheye.narrowing">
+      <OfxParamValue>100.0</OfxParamValue>
+    </OfxParamTypeDouble>
+    <OfxParamTypeDouble name="mx.ofx.360.stitch.fisheye.rotation">
+      <OfxParamValue>0.0</OfxParamValue>
+    </OfxParamTypeDouble>
+  </OfxPreset>
+  
+  <OfxPreset plugin="com.magix.ofx.vr.dual.stich" context="Filter" name="Ricoh Theta S">
+    <OfxPlugin>com.magix.ofx.vr.dual.stich</OfxPlugin>
+    <OfxPluginVersion>1 0</OfxPluginVersion>
+    
+    <OfxParamTypeDouble name="mx.ofx.360.stitch.fisheye.fov">
+      <OfxParamValue>194.0</OfxParamValue>
+    </OfxParamTypeDouble>
+    
+    <OfxParamTypeChoice name="mx.ofx.360.stitch.fisheye.orient.left">
+      <OfxParamValue>3</OfxParamValue>
+    </OfxParamTypeChoice>
+    <OfxParamTypeChoice name="mx.ofx.360.stitch.fisheye.orient.right">
+      <OfxParamValue>1</OfxParamValue>
+    </OfxParamTypeChoice>
+
+    <OfxParamTypeBoolean name="mx.ofx.360.stitch.fisheye.falloff.use">
+      <OfxParamValue>true</OfxParamValue>
+    </OfxParamTypeBoolean>
+    <OfxParamTypeDouble name="mx.ofx.360.stitch.fisheye.falloff.factor">
+      <OfxParamValue>12.0</OfxParamValue>
+    </OfxParamTypeDouble>
+    <OfxParamTypeDouble name="mx.ofx.360.stitch.fisheye.falloff.range">
+      <OfxParamValue>30.0</OfxParamValue>
+    </OfxParamTypeDouble>
+
+    <OfxParamTypeDouble name="mx.ofx.360.stitch.fisheye.center">
+      <OfxParamValue>2.25</OfxParamValue>
+    </OfxParamTypeDouble>
+    <OfxParamTypeDouble name="mx.ofx.360.stitch.fisheye.narrowing">
+      <OfxParamValue>96.0</OfxParamValue>
+    </OfxParamTypeDouble>
+    <OfxParamTypeDouble name="mx.ofx.360.stitch.fisheye.rotation">
+      <OfxParamValue>0.0</OfxParamValue>
+    </OfxParamTypeDouble>
+  </OfxPreset>
+  
+  <OfxPreset plugin="com.magix.ofx.vr.dual.stich" context="Filter" name="Ricoh Theta">
+    <OfxPlugin>com.magix.ofx.vr.dual.stich</OfxPlugin>
+    <OfxPluginVersion>1 0</OfxPluginVersion>
+    
+    <OfxParamTypeDouble name="mx.ofx.360.stitch.fisheye.fov">
+      <OfxParamValue>191.0</OfxParamValue>
+    </OfxParamTypeDouble>
+    
+    <OfxParamTypeChoice name="mx.ofx.360.stitch.fisheye.orient.left">
+      <OfxParamValue>3</OfxParamValue>
+    </OfxParamTypeChoice>
+    <OfxParamTypeChoice name="mx.ofx.360.stitch.fisheye.orient.right">
+      <OfxParamValue>3</OfxParamValue>
+    </OfxParamTypeChoice>
+
+    <OfxParamTypeBoolean name="mx.ofx.360.stitch.fisheye.falloff.use">
+      <OfxParamValue>true</OfxParamValue>
+    </OfxParamTypeBoolean>
+    <OfxParamTypeDouble name="mx.ofx.360.stitch.fisheye.falloff.factor">
+      <OfxParamValue>35.0</OfxParamValue>
+    </OfxParamTypeDouble>
+    <OfxParamTypeDouble name="mx.ofx.360.stitch.fisheye.falloff.range">
+      <OfxParamValue>44.0</OfxParamValue>
+    </OfxParamTypeDouble>
+
+    <OfxParamTypeDouble name="mx.ofx.360.stitch.fisheye.center">
+      <OfxParamValue>0.0</OfxParamValue>
+    </OfxParamTypeDouble>
+    <OfxParamTypeDouble name="mx.ofx.360.stitch.fisheye.narrowing">
+      <OfxParamValue>97.0</OfxParamValue>
+    </OfxParamTypeDouble>
+    <OfxParamTypeDouble name="mx.ofx.360.stitch.fisheye.rotation">
+      <OfxParamValue>0.0</OfxParamValue>
+    </OfxParamTypeDouble>
+  </OfxPreset>
+</OfxPresetPackage>

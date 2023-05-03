@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<preferences owner="eFX ChorusFlanger" version="2.020000">
+    <params>
+        <param id="meter_decay" value="499.607742" />
+        <param id="meter_peakhold" value="2000.000030" />
+        <param id="meter_brightness" value="89.875010" />
+        <param id="mouse_mode" value="3.000000" />
+        <param id="mouse_shift_factor" value="0.101589" />
+    </params>
+</preferences>

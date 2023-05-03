@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OfxPresetPackage>
+<OfxPreset plugin="com.vegascreativesoftware:Stabilize" context="Filter" name="手ブレ補正 (弱)">
+    <OfxPlugin>com.vegascreativesoftware:Stabilize</OfxPlugin>
+    <OfxPluginVersion>1 0</OfxPluginVersion>
+    <OfxParamTypeDouble name="PanSmoothing">
+        <OfxParamValue>0.250000</OfxParamValue>
+    </OfxParamTypeDouble>
+    <OfxParamTypeDouble name="ViewScale">
+        <OfxParamValue>0.250000</OfxParamValue>
+    </OfxParamTypeDouble>
+    <OfxParamTypeBoolean name="RollingShutterCorrection">
+        <OfxParamValue>false</OfxParamValue>
+    </OfxParamTypeBoolean>
+</OfxPreset>
+<OfxPreset plugin="com.vegascreativesoftware:Stabilize" context="Filter" name="手ブレ補正 (標準)">
+    <OfxPlugin>com.vegascreativesoftware:Stabilize</OfxPlugin>
+    <OfxPluginVersion>1 0</OfxPluginVersion>
+    <OfxParamTypeDouble name="PanSmoothing">
+        <OfxParamValue>0.500000</OfxParamValue>
+    </OfxParamTypeDouble>
+    <OfxParamTypeDouble name="ViewScale">
+        <OfxParamValue>0.500000</OfxParamValue>
+    </OfxParamTypeDouble>
+    <OfxParamTypeBoolean name="RollingShutterCorrection">
+        <OfxParamValue>false</OfxParamValue>
+    </OfxParamTypeBoolean>
+</OfxPreset>
+<OfxPreset plugin="com.vegascreativesoftware:Stabilize" context="Filter" name="手ブレ補正 (強)">
+    <OfxPlugin>com.vegascreativesoftware:Stabilize</OfxPlugin>
+    <OfxPluginVersion>1 0</OfxPluginVersion>
+    <OfxParamTypeDouble name="PanSmoothing">
+        <OfxParamValue>0.750000</OfxParamValue>
+    </OfxParamTypeDouble>
+    <OfxParamTypeDouble name="ViewScale">
+        <OfxParamValue>0.750000</OfxParamValue>
+    </OfxParamTypeDouble>
+    <OfxParamTypeBoolean name="RollingShutterCorrection">
+        <OfxParamValue>false</OfxParamValue>
+    </OfxParamTypeBoolean>
+</OfxPreset>
+</OfxPresetPackage>

@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<preset owner="eFX ChorusFlanger" name="Strong Guitar Chorus">
+    <params version="2.000000">
+        <param id="active" value="1.000000" />
+        <param id="mode" value="0.000000" />
+        <param id="input" value="1.000000" />
+        <param id="output" value="1.000000" />
+        <param id="rate" value="0.030646" />
+        <param id="depth" value="0.741779" />
+        <param id="phase" value="0.000000" />
+        <param id="feedback" value="0.612901" />
+        <param id="mix" value="0.333333" />
+        <param id="sync" value="0.000000" />
+        <param id="locut" value="45.257732" />
+    </params>
+</preset>

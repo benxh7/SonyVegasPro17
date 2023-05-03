@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+	***************************************************************************
+	*   Copyright © 2016 MAGIX Software GmbH. All Rights Reserved.
+	*
+	*       $Header: //sonic3/release/vegas/15.0/vplugins/ofxStabilize/Stabilize.xml#1 $
+	*       $DateTime: 2017/07/30 21:10:32 $
+	*       $Author: dblume $
+	*
+	*   Description:
+	*       Localized resources for the Stabilize plugin bundle (default)
+	***************************************************************************
+-->
+
+<!--
+<!DOCTYPE OfxImageEffectResource SYSTEM "ofx.dtd">
+ -->
+
+<OfxImageEffectResource>
+	<OfxPlugin name="com.vegascreativesoftware:Stabilize">
+
+		<OfxResourceSet ofxHost="default">
+			<OfxPropLabel>VEGAS 안정화</OfxPropLabel>
+
+            <OfxImageEffectPluginPropGrouping>VEGAS</OfxImageEffectPluginPropGrouping>
+            <OfxPropPluginDescription>동영상 모션 안정화</OfxPropPluginDescription>
+            <OfxImageEffectContext name="default">
+            </OfxImageEffectContext>
+
+			<OfxImageEffectContext name="OfxImageEffectContextFilter">
+
+<OfxMessage name="invalidEffectContextEffect_Event">이벤트에 안정화 플러그 인을 추가하셨습니다. 이 플러그 인은 클립이나 서브클립에 미디어 효과로써 적용됩니다.
+
+미디어 이펙트를 적용하시려면, 타임라인에서 이벤트를 선택하신 후(혹은 프로젝트 미디어 창에서 클립을 선택하신 후) 도구 &gt; 영상 &gt; 미디어 FX를 선택하십시오. 미디어 FX 대화 상자 안의 ? 버튼을 누르시면 안정화 플러그 인을 사용하는 방법에 대한 더 자세한 정보를 찾아보실 수 있습니다.</OfxMessage>
+
+<OfxMessage name="invalidEffectContextEffect_Track">트랙에 안정화 플러그 인을 추가하셨습니다. 이 플러그 인은 클립이나 서브클립에 미디어 효과로써 적용됩니다.
+
+미디어 이펙트를 적용하시려면, 타임라인에서 이벤트를 선택하신 후(혹은 프로젝트 미디어 창에서 클립을 선택하신 후) 도구 &gt; 영상 &gt; 미디어 FX를 선택하십시오. 미디어 FX 대화 상자 안의 ? 버튼을 누르시면 안정화 플러그 인을 사용하는 방법에 대한 더 자세한 정보를 찾아보실 수 있습니다.</OfxMessage>
+
+<OfxMessage name="invalidEffectContextEffect_VideoOutput">영상 출력에 안정화 플러그 인을 추가하셨습니다. 이 플러그 인은 클립이나 서브클립에 미디어 효과로써 적용됩니다.
+
+미디어 이펙트를 적용하시려면, 타임라인에서 이벤트를 선택하신 후(혹은 프로젝트 미디어 창에서 클립을 선택하신 후) 도구 &gt; 영상 &gt; 미디어 FX를 선택하십시오. 미디어 FX 대화 상자 안의 ? 버튼을 누르시면 안정화 플러그 인을 사용하는 방법에 대한 더 자세한 정보를 찾아보실 수 있습니다.</OfxMessage>
+
+<OfxProgress name="StabilizeAnalyzeProgress">미디어 안정화</OfxProgress>
+<OfxMessage name="mustClickApply">변경 사항을 적용하시려면 적용을 클릭하셔야 합니다.</OfxMessage>
+                
+                <OfxParamTypeDouble name="PanSmoothing">
+                    <OfxPropLabel>팬 매끄럽게 하기</OfxPropLabel>
+                </OfxParamTypeDouble>
+          
+                <OfxParamTypeDouble name="ViewScale">
+                    <OfxPropLabel>안정화 총량</OfxPropLabel>
+                </OfxParamTypeDouble>
+
+                <OfxParamTypeBoolean name="RollingShutterCorrection">
+                    <OfxPropLabel>롤링 셔터 보정</OfxPropLabel>
+                </OfxParamTypeBoolean>
+                
+                <OfxParamTypePushButton name="AnalyzeButton">
+                    <OfxPropLabel>적용</OfxPropLabel>
+                </OfxParamTypePushButton>
+                
+			</OfxImageEffectContext>
+
+		</OfxResourceSet>
+
+	</OfxPlugin>
+</OfxImageEffectResource>

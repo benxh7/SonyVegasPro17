@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<OfxImageEffectResource>
+	<OfxPlugin name="com.sonycreativesoftware:smart_zoom">
+		<OfxResourceSet ofxHost="default">
+			<OfxPropLabel>VEGAS 스마트 붕 소리</OfxPropLabel>
+			<OfxPropShortLabel>VEGAS 스마트 붕 소리</OfxPropShortLabel>
+			<OfxPropLongLabel>VEGAS 스마트 붕 소리</OfxPropLongLabel>
+			<OfxImageEffectPluginPropGrouping>VEGAS</OfxImageEffectPluginPropGrouping>			
+			<OfxPropPluginDescription>VEGAS 고품질 붕 소리</OfxPropPluginDescription>
+			<OfxImageEffectContext name="default">
+				<OfxParamTypeDouble3D name="LocationAndZoom">
+					<OfxPropLabel>자르기</OfxPropLabel>
+			        <OfxPropShortLabel>자르기</OfxPropShortLabel>
+			        <OfxPropLongLabel>자르기</OfxPropLongLabel>
+					<OfxParamPropHint>잘라낸 위치 및 확대/축소</OfxParamPropHint>
+				</OfxParamTypeDouble3D>
+				<OfxParamTypeDouble name="Noise">
+					<OfxPropLabel>노이즈 감도</OfxPropLabel>
+			        <OfxPropShortLabel>노이즈 감도</OfxPropShortLabel>
+			        <OfxPropLongLabel>노이즈 감도</OfxPropLongLabel>
+					<OfxParamPropHint>이미지의 노이즈 레벨</OfxParamPropHint>
+				</OfxParamTypeDouble>
+				<OfxParamTypeBoolean name="EnableEnhancement">
+					<OfxPropLabel>향상 활성화</OfxPropLabel>
+			        <OfxPropShortLabel>향상 활성화</OfxPropShortLabel>
+			        <OfxPropLongLabel>향상 활성화</OfxPropLongLabel>
+					<OfxParamPropHint>스마트 향상 활성화 혹은 비활성화</OfxParamPropHint>
+				</OfxParamTypeBoolean>
+				<OfxMessage name="GenericError">
+				    플러그인에서 복구할 수 없는 오류가 발생했습니다.
+				</OfxMessage>
+				<OfxMessage name="FrameFormatNotSupported">
+				    지원되지 않는 프레임 형식입니다. 프로젝트 설정에서  8 비트, 혹은 32 비트 부동 소수점 RGBA를 선택하십시오.
+				</OfxMessage>
+				<OfxMessage name="OpenCLMissing">
+				    이 플러그인을 사용하려면 OpenCL이 필요합니다.
+				</OfxMessage>
+				<OfxMessage name="OpenCLError">
+				    플러그인에서 OpenCL 오류가 발생했습니다.
+				</OfxMessage>
+				<OfxMessage name="OpenCLMemoryError">
+				    OpenCL GPU 메모리가 모두 소모되었습니다. 저해상도 이미지나 더 작은 OpenCL 영상 효과로 다시 시도해 보십시오.
+				</OfxMessage>
+				<OfxMessage name="OpenCLImageSizeError">
+				    프로젝트 해상도가 너무 큽니다. 더 작은 해상도 이미지로 다시 한번 시도해 보십시오.
+				</OfxMessage>
+			</OfxImageEffectContext>
+		</OfxResourceSet>
+	</OfxPlugin>
+</OfxImageEffectResource>

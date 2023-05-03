@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+	***************************************************************************
+	*   Copyright (C) 2011 Sony Creative Software Inc. All rights reserved. 
+	*
+	*       $Header: //sonic3/main/vplugins/ofxStabilize/Stabilize.xml#9 $
+	*       $DateTime: 2011/08/17 16:38:59 $
+	*       $Author: jwu $
+	*
+	*   Description:
+	*       Localized resources for the Stabilize plugin bundle (default)
+	***************************************************************************
+-->
+<!--
+<!DOCTYPE OfxImageEffectResource SYSTEM "ofx.dtd">
+ -->
+<OfxImageEffectResource>
+	<OfxPlugin name="com.vegascreativesoftware:Stabilize">
+
+		<OfxResourceSet ofxHost="default">
+			<OfxPropLabel>VEGAS 防抖动</OfxPropLabel>
+
+            <OfxImageEffectPluginPropGrouping>VEGAS</OfxImageEffectPluginPropGrouping>
+            <OfxPropPluginDescription>防止视频运动抖动</OfxPropPluginDescription>
+            <OfxImageEffectContext name="default">
+            </OfxImageEffectContext>
+
+			<OfxImageEffectContext name="OfxImageEffectContextFilter">
+
+<OfxMessage name="invalidEffectContextEffect_Event">您已向某个事件添加了防抖动插件。此插件必须作为媒体效果应用于剪辑或子剪辑。
+
+若要应用媒体效果，请选择时间线上的某个事件(或“项目媒体”窗口中的剪辑)，然后选择“工具”&gt;“视频”&gt;“媒体 FX”。单击“媒体 FX”对话框中的 ? 按钮可了解有关使用防抖动插件的更多信息。</OfxMessage>
+
+<OfxMessage name="invalidEffectContextEffect_Track">您已向某个轨道添加了防抖动插件。此插件必须作为媒体效果应用于剪辑或子剪辑。
+
+若要应用媒体效果，请选择时间线上的某个事件(或“项目媒体”窗口中的剪辑)，然后选择“工具”&gt;“视频”&gt;“媒体 FX”。单击“媒体 FX”对话框中的 ? 按钮可了解有关使用防抖动插件的更多信息。</OfxMessage>
+
+<OfxMessage name="invalidEffectContextEffect_VideoOutput">您已向视频输出添加了防抖动插件。此插件必须作为媒体效果应用于剪辑或子剪辑。
+
+若要应用媒体效果，请选择时间线上的某个事件(或“项目媒体”窗口中的剪辑)，然后选择“工具”&gt;“视频”&gt;“媒体 FX”。单击“媒体 FX”对话框中的 ? 按钮可了解有关使用防抖动插件的更多信息。</OfxMessage>
+
+<OfxProgress name="StabilizeAnalyzeProgress">防止媒体抖动</OfxProgress>
+<OfxMessage name="mustClickApply">您必须单击“应用”才能让更改生效。</OfxMessage>
+                
+                <OfxParamTypeDouble name="PanSmoothing">
+                    <OfxPropLabel>平移平滑</OfxPropLabel>
+                </OfxParamTypeDouble>
+          
+                <OfxParamTypeDouble name="ViewScale">
+                    <OfxPropLabel>防抖动量</OfxPropLabel>
+                </OfxParamTypeDouble>
+
+                <OfxParamTypeBoolean name="RollingShutterCorrection">
+                    <OfxPropLabel>卷帘快门校正</OfxPropLabel>
+                </OfxParamTypeBoolean>
+                
+                <OfxParamTypePushButton name="AnalyzeButton">
+                    <OfxPropLabel>应用</OfxPropLabel>
+                </OfxParamTypePushButton>
+                
+			</OfxImageEffectContext>
+
+		</OfxResourceSet>
+
+	</OfxPlugin>
+</OfxImageEffectResource>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<surface>
+  <combobox id="fisheye.presets" state="0">
+    <label>Your camera</label>
+    <hint>You can select a preset for a certain camera.</hint>
+    <data>
+      <entry>User Defined</entry>
+    </data>
+  </combobox>
+  <slider id="fisheye.fov" type="Plain">
+    <animation>false</animation>
+    <values default="180" min="180" max="220"/>
+    <label>Field of view</label>
+    <hint>The field of view is the extent of the observable world that is seen at any given moment.</hint>
+  </slider>
+  <combobox id="fisheye.orient.left" state="0">
+    <label>Left fisheye</label>
+    <hint>Select the orientation of the left fisheye in your raw footage.</hint>
+    <data>
+      <entry>0 Degree</entry>
+      <entry>-90 Degrees</entry>
+      <entry>180 Degrees</entry>
+      <entry>90 Degrees</entry>
+    </data>
+  </combobox>
+  <combobox id="fisheye.orient.right" state="0">
+    <label>Right fisheye</label>
+    <hint>Select the orientation of the right fisheye in your raw footage.</hint>
+    <data>
+      <entry>0 Degree</entry>
+      <entry>-90 Degrees</entry>
+      <entry>180 Degrees</entry>
+      <entry>90 Degrees</entry>
+    </data>
+  </combobox>
+
+  <group collapsed="false" label="Image Vignetting">
+    <surface>
+      <checkbox id="fisheye.falloff.use" state="true">
+        <label>Remove vignetting</label>
+        <hint>Vignetting is a reduction of an image's brightness or saturation toward the periphery compared to the image center.</hint>
+      </checkbox>
+      <slider id="fisheye.falloff.factor" type="Plain">
+        <animation>false</animation>
+        <values default="20" min="0" max="100"/>
+        <label>Intensity</label>
+        <hint>The maximum intensity to increase toward the periphery.</hint>
+      </slider>
+      <slider id="fisheye.falloff.range" type="Plain">
+        <animation>false</animation>
+        <values default="40" min="0" max="100"/>
+        <label>Range</label>
+        <hint>The radial distance from the periphery to treat.</hint>
+      </slider>
+    </surface>
+  </group>
+
+  <group collapsed="true" label="Refinement">
+    <surface>
+      <slider id="fisheye.center" type="Plain">
+        <animation>false</animation>
+        <values default="0" min="0" max="10"/>
+        <label>Center</label>
+        <hint>The offset of the center of each fisheye.</hint>
+      </slider>
+      <slider id="fisheye.narrowing" type="Plain">
+        <animation>false</animation>
+        <values default="100" min="70" max="100"/>
+        <label>Radius</label>
+        <hint>The radial distance to use in all computations.</hint>
+      </slider>
+      <slider id="fisheye.rotation" type="Plain">
+        <animation>false</animation>
+        <values default="0" min="-100" max="100"/>
+        <label>Rotation</label>
+        <hint>The rotation between both fisheyes.</hint>
+      </slider>
+    </surface>
+  </group>
+</surface>

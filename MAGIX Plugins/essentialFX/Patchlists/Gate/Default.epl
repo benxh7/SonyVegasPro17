@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<patchlist owner="efx" origin="">
+    <programs last_prg="0">
+        <prg number="0" preset="Default.efx" />
+        <prg number="1" preset="Attack Enhancer 6dB Kick.efx" /> 
+        <prg number="2" preset="Attack Enhancer 6dB Snare.efx" /> 
+        <prg number="3" preset="Delete Breath.efx" /> 
+        <prg number="4" preset="Snare Cleanup.efx" /> 
+        <prg number="5" preset="Try_On_Drums.efx" /> 
+        <prg number="6" preset="Voiceover_Gate.efx" /> 
+        <prg number="7" preset="Vox Cleanup.efx" />
+    </programs>
+</patchlist>

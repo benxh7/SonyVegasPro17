@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<preset owner="eFX Phaser" name="Synth Pad Mover">
+    <params version="2.000000">
+        <param id="active" value="1.000000" />
+        <param id="mode" value="1.000000" />
+        <param id="input" value="1.000000" />
+        <param id="output" value="1.000000" />
+        <param id="rate" value="0.103048" />
+        <param id="depth" value="1.000000" />
+        <param id="phase" value="0.250000" />
+        <param id="feedback" value="0.205000" />
+        <param id="mix" value="0.575000" />
+        <param id="sync" value="0.000000" />
+        <param id="fcenter" value="403.034912" />
+    </params>
+</preset>

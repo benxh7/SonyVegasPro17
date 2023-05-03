@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<patchlist owner="efx" origin="">
+    <programs last_prg="0">
+        <prg number="0" preset="Default.efx" />
+        <prg number="1" preset="Black Face FET-1.efx" /> 
+        <prg number="2" preset="Black Face FET-1-Parallel comp. Vocal.efx" /> 
+        <prg number="3" preset="Black Face FET-2.efx" /> 
+        <prg number="4" preset="Black Face FET-Drum buss.efx" /> 
+        <prg number="5" preset="Black Face FET-Parallel Comp. Drum buss.efx" /> 
+        <prg number="6" preset="Black Face FET-Parallel Comp. Hairy.efx" /> 
+        <prg number="7" preset="Bus Comp - Drums NY Style.efx" /> 
+        <prg number="8" preset="Bus Comp - snare enhancement.efx" /> 
+        <prg number="9" preset="Bus Comp - snare enhancement 2.efx" /> 
+        <prg number="10" preset="Classic Program Limiter.efx" />
+        <prg number="11" preset="Compressor_Acoustic_Guitar.efx" />
+        <prg number="12" preset="Compressor_Bass Guitar.efx" />
+        <prg number="13" preset="Compressor_Drums.efx" />
+        <prg number="14" preset="Compressor_Electric_Guitar.efx" />
+        <prg number="15" preset="Compressor_Master_Mixdown.efx" />
+        <prg number="16" preset="Compressor_OverCompressed_Vocals.efx" />
+        <prg number="17" preset="Compressor_Premastering.efx" />
+        <prg number="18" preset="Compressor_Vocals.efx" />
+        <prg number="19" preset="Drum Buss Ambience & Fatness.efx" />
+        <prg number="20" preset="Drum Buss Ambience.efx" />
+        <prg number="21" preset="Drum Slammer.efx" />
+        <prg number="22" preset="Extreme Guitar Compression.efx" />
+        <prg number="23" preset="Fat Kick.efx" />
+        <prg number="24" preset="Hot Master.efx" />
+        <prg number="25" preset="Peak Stop.efx" />
+        <prg number="26" preset="Reggae Guitar Strong.efx" />
+        <prg number="27" preset="Sequencer Compression.efx" />
+        <prg number="28" preset="Synth Bass Compression.efx" />
+        <prg number="29" preset="TDX160.efx" />
+        <prg number="30" preset="TDX-Paralel Comp. Glue.efx" />
+        <prg number="31" preset="TDX-Paralel Comp. Kick Drum.efx" />
+        <prg number="32" preset="TDX-Paralel Comp. Overhead Drum .efx" />
+    </programs>
+</patchlist>

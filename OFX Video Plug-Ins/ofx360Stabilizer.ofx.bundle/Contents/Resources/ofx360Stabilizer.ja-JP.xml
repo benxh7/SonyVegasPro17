@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	***************************************************************************
+	*   Copyright © 2018 MAGIX Software GmbH. All Rights Reserved.
+	*
+	*       $DateTime: 2018/09/24 $
+	*       $Author: pkelm $
+	*
+	*   Description:
+	*       Localized resources for the 360 Stabilization plugin bundle (default)
+	***************************************************************************
+-->
+
+<!--
+<!DOCTYPE OfxImageEffectResource SYSTEM "ofx.dtd">
+ -->
+
+<OfxImageEffectResource>  
+  <OfxPlugin name="com.magix.ofx.vr.stabilization">
+
+		<!--
+		Define the resouces overrides to be used for the host 'default' (or 'all' or 'com.vegascreativesoftware.vegas'
+		    in the locale 'fr-FR' (or 'de-DE' or 'es-ES' or 'ja-JP')
+			ofxHost="someHost"
+		-->
+		<OfxResourceSet ofxHost="default">
+
+			<!-- Set the user visible label on the plug-in -->
+			<OfxPropLabel>VEGAS 360°手ブレ補正</OfxPropLabel>
+
+			<OfxImageEffectPluginPropGrouping>VEGAS\360</OfxImageEffectPluginPropGrouping>
+
+			<OfxPropPluginDescription>Magix Computer Products Intl. Co. より提供しています。</OfxPropPluginDescription>
+
+			<!--
+	        Define default overrides that apply in all contexts (unless specified in a specific context)
+			-->
+			<OfxImageEffectContext name="default">
+			</OfxImageEffectContext>
+			
+			<!--
+	        Define default overrides that apply only in the generator context
+			-->			
+			
+			<OfxImageEffectContext name="OfxImageEffectContextFilter">
+			
+				<OfxMessage name="mx.ofx.stab.plugin.warning.effectfx">イベントにビデオ手ブレ補正プラグインが追加されています。このプラグインは、メディアエフェクトとしてクリップまたはサブクリップに適用される必要があります。
+
+          メディアエフェクトを適用するには、タイムライン内のイベント (またはプロジェクトメディアウィンドウ内のクリップ) を選択し、［ツール］&gt;［ビデオ］&gt;［メディア FX］を選択します。</OfxMessage>
+		  
+				<OfxMessage name="mx.ofx.plugin.rotate.warning.hostnotsupported">現在のホストはこのプラグインでサポートされていません。</OfxMessage>
+				
+				<OfxMessage name="mx.ofx.plugin.rotate.warning.unknown">未知のエラー！</OfxMessage>
+			
+				<OfxProgress name="mx.ofx.stab.plugin.progress">メディアの手ブレ補正</OfxProgress>
+			
+				<OfxParamTypeChoice name="mx.ofx.stab.plugin.stereo">
+					<OfxParamPropChoiceOption>なし</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>トップ - ボトム</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>サイドバイサイド</OfxParamPropChoiceOption>
+					<OfxPropLabel>三次元映像</OfxPropLabel>
+					<OfxPropShortLabel>三次元映像</OfxPropShortLabel>
+			        <OfxPropLongLabel>三次元映像</OfxPropLongLabel>
+					<OfxParamPropHint>ステレオスコピックモデルへのプリセットを選択できます。</OfxParamPropHint>
+				</OfxParamTypeChoice>			
+				
+				<OfxParamTypePushButton name="mx.ofx.stab.plugin.btn.analyze">
+                    <OfxPropLabel>モーションデータの分析</OfxPropLabel>
+					<OfxPropShortLabel>モーションデータの分析</OfxPropShortLabel>
+			        <OfxPropLongLabel>モーションデータの分析</OfxPropLongLabel>
+					<OfxParamPropHint>この分析はモーションデータの決定のために実行されます。</OfxParamPropHint>
+                </OfxParamTypePushButton>
+				
+				<OfxParamTypePushButton name="mx.ofx.stab.plugin.btn.clear">
+                    <OfxPropLabel>モーションデータの消去</OfxPropLabel>
+					<OfxPropShortLabel>モーションデータの消去</OfxPropShortLabel>
+			        <OfxPropLongLabel>モーションデータの消去</OfxPropLongLabel>
+					<OfxParamPropHint>分析結果が全て破棄されます。</OfxParamPropHint>
+                </OfxParamTypePushButton>
+				
+				<OfxParamTypeChoice name="mx.ofx.stab.plugin.exclude.bottom">
+					<OfxParamPropChoiceOption>北極と南極</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>南極</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>なし</OfxParamPropChoiceOption>
+					<OfxPropLabel>表示を除外</OfxPropLabel>
+					<OfxPropShortLabel>表示を除外</OfxPropShortLabel>
+			        <OfxPropLongLabel>表示を除外</OfxPropLongLabel>
+					<OfxParamPropHint>分析に含まれない表示</OfxParamPropHint>
+				</OfxParamTypeChoice>
+				
+				<OfxParamTypeBoolean name="mx.ofx.stab.plugin.ssd.deviation">
+				  <OfxPropLabel>リファイン</OfxPropLabel>
+				  <OfxPropShortLabel>リファイン</OfxPropShortLabel>
+			      <OfxPropLongLabel>リファイン</OfxPropLongLabel>
+				  <OfxParamPropHint>クリックすると分析結果が自動的に絞りこまれます。</OfxParamPropHint>
+				</OfxParamTypeBoolean>
+				
+				<OfxParamTypeInteger name="mx.ofx.stab.plugin.smoothness">
+                    <OfxPropLabel>スムージング</OfxPropLabel>
+					<OfxPropShortLabel>スムージング</OfxPropShortLabel>
+			        <OfxPropLongLabel>スムージング</OfxPropLongLabel>
+					<OfxParamPropHint>スムージングパラメーターは、どのくらいの&quot;不安定性&quot;がシーン内にあるべきかを定義づけるパラメータとなり、その係数が大きいほど、動きはスムーズになります。</OfxParamPropHint>
+                </OfxParamTypeInteger>
+								
+			</OfxImageEffectContext>
+		</OfxResourceSet>
+	</OfxPlugin>
+  
+</OfxImageEffectResource>

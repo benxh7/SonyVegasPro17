@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<preset owner="eFX Reverb" name="Central Station">
+    <params version="2.000000">
+        <param id="active" value="1.000000" />
+        <param id="mode" value="2.000000" />
+        <param id="input" value="1.000000" />
+        <param id="output" value="1.000000" />
+        <param id="size" value="0.905000" />
+        <param id="time" value="0.505000" />
+        <param id="damping" value="0.719512" />
+        <param id="mod" value="0.600793" />
+        <param id="mix" value="0.335000" />
+        <param id="sync" value="0.000000" />
+        <param id="predelay" value="31.542055" />
+        <param id="diffusion" value="0.829000" />
+        <param id="locut" value="253.571426" />
+    </params>
+</preset>

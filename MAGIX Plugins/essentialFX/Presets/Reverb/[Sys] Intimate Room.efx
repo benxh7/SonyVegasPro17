@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<preset owner="eFX Reverb" name="Intimate Room">
+    <params version="2.010000">
+        <param id="active" value="1.000000" />
+        <param id="mode" value="1.000000" />
+        <param id="input" value="1.000000" />
+        <param id="output" value="1.000000" />
+        <param id="size" value="0.122883" />
+        <param id="time" value="0.132422" />
+        <param id="damping" value="0.515756" />
+        <param id="mod" value="0.367001" />
+        <param id="mix" value="0.245381" />
+        <param id="sync" value="0.000000" />
+        <param id="predelay" value="3.277154" />
+        <param id="diffusion" value="1.000000" />
+        <param id="locut" value="184.625671" />
+    </params>
+</preset>

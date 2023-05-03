@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<preset owner="eFX Compressor" name="1176-2 - TimDolbear">
+    <params version="1.000000">
+        <param id="active" value="1.000000" />
+        <param id="mode" value="0.000000" />
+        <param id="sync" value="0.000000" />
+        <param id="input" value="1.000000" />
+        <param id="output" value="0.580000" />
+        <param id="scfilter" value="0.000000" />
+        <param id="threshold" value="0.718333" />
+        <param id="ratio" value="0.741667" />
+        <param id="attack" value="0.000000" />
+        <param id="release" value="0.000000" />
+    </params>
+</preset>

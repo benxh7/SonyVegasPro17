@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	***************************************************************************
+	*   Copyright © 2018 MAGIX Software GmbH. All Rights Reserved.
+	*
+	*       $DateTime: 2018/08/08 $
+	*       $Author: pkelm $
+	*
+	*   Description:
+	*       Localized resources for the dual-fisheye plugin bundle (default)
+	***************************************************************************
+-->
+
+<!--
+<!DOCTYPE OfxImageEffectResource SYSTEM "ofx.dtd">
+ -->
+
+<OfxImageEffectResource>  
+  <OfxPlugin name="com.magixsoftware:panorotation">
+
+		<!--
+		Define the resouces overrides to be used for the host 'default' (or 'all' or 'com.vegascreativesoftware.vegas'
+		    in the locale 'fr-FR' (or 'de-DE' or 'es-ES' or 'ja-JP')
+			ofxHost="someHost"
+		-->
+		<OfxResourceSet ofxHost="default">
+
+			<!-- Set the user visible label on the plug-in -->
+			<OfxPropLabel>VEGAS Scene Rotation</OfxPropLabel>
+
+			<OfxImageEffectPluginPropGrouping>VEGAS\360</OfxImageEffectPluginPropGrouping>
+
+			<OfxPropPluginDescription>From Magix Computer Products Intl. Co.</OfxPropPluginDescription>
+
+			<!--
+	        Define default overrides that apply in all contexts (unless specified in a specific context)
+			-->
+			<OfxImageEffectContext name="default">
+			</OfxImageEffectContext>
+			
+			<!--
+	        Define default overrides that apply only in the generator context
+			-->
+			<OfxImageEffectContext name="OfxImageEffectContextFilter">				
+				<OfxParamTypeDouble name="mx.ofx.plugin.rotate.x.angle">
+                    <OfxPropLabel>Turn around x-axis</OfxPropLabel>
+					<OfxPropShortLabel>Turn around x-axis</OfxPropShortLabel>
+			        <OfxPropLongLabel>Turn around x-axis</OfxPropLongLabel>
+					<OfxParamPropHint>Turn the field of view around x-axis.</OfxParamPropHint>
+                </OfxParamTypeDouble>
+				
+				<OfxParamTypeDouble name="mx.ofx.plugin.rotate.y.angle">
+                    <OfxPropLabel>Turn around y-axis</OfxPropLabel>
+					<OfxPropShortLabel>Turn around y-axis</OfxPropShortLabel>
+			        <OfxPropLongLabel>Turn around y-axis</OfxPropLongLabel>
+					<OfxParamPropHint>Turn the field of view around y-axis.</OfxParamPropHint>
+                </OfxParamTypeDouble>
+				
+				<OfxParamTypeDouble name="mx.ofx.plugin.rotate.z.angle">
+                    <OfxPropLabel>Turn around z-axis</OfxPropLabel>
+					<OfxPropShortLabel>Turn around z-axis</OfxPropShortLabel>
+			        <OfxPropLongLabel>Turn around z-axis</OfxPropLongLabel>
+					<OfxParamPropHint>Turn the field of view around z-axis.</OfxParamPropHint>
+                </OfxParamTypeDouble>
+				
+				<OfxParamTypeChoice name="mx.ofx.plugin.rotate.stereo">
+					<OfxParamPropChoiceOption>None</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>Top-and-Bottom</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>Side-by-Side</OfxParamPropChoiceOption>
+					<OfxPropLabel>Stereoscopy</OfxPropLabel>
+					<OfxPropShortLabel>Stereoscopy</OfxPropShortLabel>
+			        <OfxPropLongLabel>Stereoscopy</OfxPropLongLabel>
+					<OfxParamPropHint>Select the target 3D frame format.</OfxParamPropHint>
+				</OfxParamTypeChoice>
+				
+			</OfxImageEffectContext>
+		</OfxResourceSet>
+	</OfxPlugin>
+  
+</OfxImageEffectResource>

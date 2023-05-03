@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<preset owner="eFX Compressor" name="DBX160 - TimDolbear">
+    <params version="2.000000">
+        <param id="active" value="1.000000" />
+        <param id="input" value="1.000000" />
+        <param id="output" value="0.535000" />
+        <param id="scfilter" value="0.000000" />
+        <param id="threshold" value="0.735000" />
+        <param id="ratio" value="0.635000" />
+        <param id="attack" value="0.520000" />
+        <param id="release" value="0.800000" />
+        <param id="sclisten" value="0.000000" />
+        <param id="softclip" value="0.000000" />
+        <param id="scflttype" value="1.000000" />
+        <param id="mode" value="0.000000" />
+    </params>
+</preset>

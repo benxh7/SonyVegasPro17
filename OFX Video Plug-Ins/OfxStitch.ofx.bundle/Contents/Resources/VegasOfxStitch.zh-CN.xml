@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+	***************************************************************************
+	*   Copyright © 2018 MAGIX Software GmbH. All Rights Reserved.
+	*
+	*       $DateTime: 2018/08/08 $
+	*       $Author: pkelm $
+	*
+	*   Description:
+	*       Localized resources for the dual-fisheye plugin bundle (default)
+	***************************************************************************
+-->
+
+<!--
+<!DOCTYPE OfxImageEffectResource SYSTEM "ofx.dtd">
+ -->
+
+<OfxImageEffectResource>  
+  <OfxPlugin name="com.magix.ofx.vr.dual.stich">
+
+		<!--
+		Define the resouces overrides to be used for the host 'default' (or 'all' or 'com.vegascreativesoftware.vegas'
+		    in the locale 'fr-FR' (or 'de-DE' or 'es-ES' or 'ja-JP')
+			ofxHost="someHost"
+		-->
+		<OfxResourceSet ofxHost="default">
+
+			<!-- Set the user visible label on the plug-in -->
+			<OfxPropLabel>VEGAS双鱼眼拼接</OfxPropLabel>
+
+			<OfxImageEffectPluginPropGrouping>VEGAS\360</OfxImageEffectPluginPropGrouping>
+
+			<OfxPropPluginDescription>来自Magix Computer Products Intl. Co.</OfxPropPluginDescription>
+
+			<!--
+	        Define default overrides that apply in all contexts (unless specified in a specific context)
+			-->
+			<OfxImageEffectContext name="default">
+			</OfxImageEffectContext>
+			
+			<!--
+	        Define default overrides that apply only in the generator context
+			-->
+			<OfxImageEffectContext name="OfxImageEffectContextFilter">
+				<OfxParamTypeChoice name="mx.ofx.360.stitch.fisheye.presets">
+					<OfxParamPropChoiceOption>自定义</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>Samsung Gear 360°</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>LG 360° Cam</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>Ricoh Theta V</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>Ricoh Theta S</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>Ricoh Theta</OfxParamPropChoiceOption>
+					<OfxPropLabel>模板</OfxPropLabel>
+					<OfxPropShortLabel>模板</OfxPropShortLabel>
+			        <OfxPropLongLabel>模板</OfxPropLongLabel>
+					<OfxParamPropHint>您可以为某些摄像机选择预设。</OfxParamPropHint>
+				</OfxParamTypeChoice>			
+			
+				<OfxParamTypeDouble name="mx.ofx.360.stitch.fisheye.fov">
+                    <OfxPropLabel>视野</OfxPropLabel>
+					<OfxPropShortLabel>视野</OfxPropShortLabel>
+			        <OfxPropLongLabel>视野</OfxPropLongLabel>
+					<OfxParamPropHint>视野是在任何特定时刻可见的对可观察世界的范围。</OfxParamPropHint>
+                </OfxParamTypeDouble>
+				
+				<OfxParamTypeChoice name="mx.ofx.360.stitch.fisheye.orient.left">
+					<OfxParamPropChoiceOption>0度</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>-90 度</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>180 度</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>90 度</OfxParamPropChoiceOption>
+					<OfxPropLabel>左鱼眼</OfxPropLabel>
+					<OfxPropShortLabel>左鱼眼</OfxPropShortLabel>
+			        <OfxPropLongLabel>左鱼眼</OfxPropLongLabel>
+					<OfxParamPropHint>选择原始素材中左眼鱼眼的方向。</OfxParamPropHint>
+				</OfxParamTypeChoice>
+				
+				<OfxParamTypeChoice name="mx.ofx.360.stitch.fisheye.orient.right">
+					<OfxParamPropChoiceOption>0度</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>-90 度</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>180 度</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>90 度</OfxParamPropChoiceOption>
+					<OfxPropLabel>右鱼眼</OfxPropLabel>
+					<OfxPropShortLabel>右鱼眼</OfxPropShortLabel>
+			        <OfxPropLongLabel>右鱼眼</OfxPropLongLabel>
+					<OfxParamPropHint>在原始素材中选择右眼鱼眼的方向。</OfxParamPropHint>
+				</OfxParamTypeChoice>
+				
+				<OfxParamTypeGroup name="mx.ofx.360.stitch.group0_0">
+					<OfxPropLabel>图像渐晕</OfxPropLabel>
+					<OfxPropShortLabel>图像渐晕</OfxPropShortLabel>
+			        <OfxPropLongLabel>图像渐晕</OfxPropLongLabel>
+					<OfxParamPropHint>渐晕是图像亮度或饱和度从图像中心向边缘的逐次降低。</OfxParamPropHint>
+				</OfxParamTypeGroup>
+				
+				<OfxParamTypeBoolean name="mx.ofx.360.stitch.fisheye.falloff.use">
+					<OfxPropLabel>删除渐晕</OfxPropLabel>
+					<OfxPropShortLabel>删除渐晕</OfxPropShortLabel>
+			        <OfxPropLongLabel>删除渐晕</OfxPropLongLabel>
+					<OfxParamPropHint>渐晕是图像亮度或饱和度从图像中心向边缘的逐次降低。</OfxParamPropHint>
+				</OfxParamTypeBoolean>
+				
+                <OfxParamTypeDouble name="mx.ofx.360.stitch.fisheye.falloff.factor">
+                    <OfxPropLabel>强度</OfxPropLabel>
+					<OfxPropShortLabel>强度</OfxPropShortLabel>
+			        <OfxPropLongLabel>强度</OfxPropLongLabel>
+					<OfxParamPropHint>向边缘增加的最大强度。</OfxParamPropHint>
+                </OfxParamTypeDouble>
+				
+                <OfxParamTypeDouble name="mx.ofx.360.stitch.fisheye.falloff.range">
+                    <OfxPropLabel>范围</OfxPropLabel>
+					<OfxPropShortLabel>范围</OfxPropShortLabel>
+			        <OfxPropLongLabel>范围</OfxPropLongLabel>
+					<OfxParamPropHint>对从边缘开始径向距离的调整。</OfxParamPropHint>
+                </OfxParamTypeDouble>
+				
+				<OfxParamTypeGroup name="mx.ofx.360.stitch.group1_0">
+					<OfxPropLabel>精致</OfxPropLabel>
+					<OfxPropShortLabel>精致</OfxPropShortLabel>
+			        <OfxPropLongLabel>精致</OfxPropLongLabel>
+				</OfxParamTypeGroup>
+				
+				<OfxParamTypeDouble name="mx.ofx.360.stitch.fisheye.center">
+                    <OfxPropLabel>中部</OfxPropLabel>
+					<OfxPropShortLabel>中部</OfxPropShortLabel>
+			        <OfxPropLongLabel>中部</OfxPropLongLabel>
+					<OfxParamPropHint>每个鱼眼中心的偏移量。</OfxParamPropHint>
+                </OfxParamTypeDouble>
+				
+                <OfxParamTypeDouble name="mx.ofx.360.stitch.fisheye.narrowing">
+                    <OfxPropLabel>半径</OfxPropLabel>
+					<OfxPropShortLabel>半径</OfxPropShortLabel>
+			        <OfxPropLongLabel>半径</OfxPropLongLabel>
+					<OfxParamPropHint>在所有计算中使用的径向距离。</OfxParamPropHint>
+                </OfxParamTypeDouble>
+				
+				<OfxParamTypeDouble name="mx.ofx.360.stitch.fisheye.rotation">
+                    <OfxPropLabel>旋转</OfxPropLabel>
+					<OfxPropShortLabel>旋转</OfxPropShortLabel>
+			        <OfxPropLongLabel>旋转</OfxPropLongLabel>
+					<OfxParamPropHint>两个鱼眼之间的旋转。</OfxParamPropHint>
+                </OfxParamTypeDouble>
+				
+			</OfxImageEffectContext>
+		</OfxResourceSet>
+	</OfxPlugin>
+  
+</OfxImageEffectResource>

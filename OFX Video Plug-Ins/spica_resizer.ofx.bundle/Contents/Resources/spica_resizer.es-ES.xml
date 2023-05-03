@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<OfxImageEffectResource>
+	<OfxPlugin name="com.sonycreativesoftware:smart_upscale">
+		<OfxResourceSet ofxHost="default">
+			<OfxPropLabel>Incrementador de escala inteligente de VEGAS</OfxPropLabel>
+			<OfxPropShortLabel>VEGAS Smart Upscale</OfxPropShortLabel>
+			<OfxPropLongLabel>VEGAS Smart Upscale</OfxPropLongLabel>
+			<OfxImageEffectPluginPropGrouping>VEGAS</OfxImageEffectPluginPropGrouping>			
+			<OfxPropPluginDescription>Editor de tamaño de alta calidad de VEGAS.</OfxPropPluginDescription>
+			<OfxImageEffectContext name="default">
+				<OfxParamTypeDouble3D name="Scale">
+					<OfxPropLabel>Escala</OfxPropLabel>
+			        <OfxPropShortLabel>Scale</OfxPropShortLabel>
+			        <OfxPropLongLabel>Scale</OfxPropLongLabel>
+					<OfxParamPropHint>Ajusta el valor de escala de cambio de tamaño.</OfxParamPropHint>
+				</OfxParamTypeDouble3D>
+				<OfxParamTypeDouble name="Noise">
+					<OfxPropLabel>Sensibilidad al ruido</OfxPropLabel>
+			        <OfxPropShortLabel>Noise sensitivity</OfxPropShortLabel>
+			        <OfxPropLongLabel>Noise sensitivity</OfxPropLongLabel>
+					<OfxParamPropHint>El nivel de ruido de la imagen.</OfxParamPropHint>
+				</OfxParamTypeDouble>
+				<OfxParamTypeBoolean name="EnableEnhancement">
+					<OfxPropLabel>Habilitar mejora</OfxPropLabel>
+			        <OfxPropShortLabel>Enable enhancement</OfxPropShortLabel>
+			        <OfxPropLongLabel>Enable enhancement</OfxPropLongLabel>
+					<OfxParamPropHint>Habilite o deshabilite la mejora inteligente.</OfxParamPropHint>
+				</OfxParamTypeBoolean>
+				<OfxMessage name="GenericError">
+				    Se ha producido un error en el plugin del que no se puede recuperar.
+				</OfxMessage>
+				<OfxMessage name="FrameFormatNotSupported">
+				    El formato de fotograma especificado no es compatible. Elija RGBA de punto flotante de 8 bits o 32 bits en Configuración del proyecto.
+				</OfxMessage>
+				<OfxMessage name="OpenCLMissing">
+				    Este plugin requiere OpenCL para funcionar.
+				</OfxMessage>
+				<OfxMessage name="OpenCLError">
+				    Se ha producido un error de OpenCL en el plugin.
+				</OfxMessage>
+				<OfxMessage name="OpenCLMemoryError">
+				    La memoria OpenCL del GPU está llena. Inténtelo de nuevo con imágenes con resolución más baja o con menos efectos de vídeo OpenCL.
+				</OfxMessage>
+				<OfxMessage name="OpenCLImageSizeError">
+				    La resolución del proyecto es demasiado alta. Inténtelo de nuevo con imágenes de resolución más baja.
+				</OfxMessage>
+			</OfxImageEffectContext>
+		</OfxResourceSet>
+	</OfxPlugin>
+</OfxImageEffectResource>

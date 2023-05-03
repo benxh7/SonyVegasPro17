@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+	***************************************************************************
+	*   Copyright © 2018 MAGIX Software GmbH. All Rights Reserved.
+	*
+	*       $DateTime: 2018/08/08 $
+	*       $Author: pkelm $
+	*
+	*   Description:
+	*       Localized resources for the dual-fisheye plugin bundle (default)
+	***************************************************************************
+-->
+
+<!--
+<!DOCTYPE OfxImageEffectResource SYSTEM "ofx.dtd">
+ -->
+
+<OfxImageEffectResource>  
+  <OfxPlugin name="com.magixsoftware:panorotation">
+
+		<!--
+		Define the resouces overrides to be used for the host 'default' (or 'all' or 'com.vegascreativesoftware.vegas'
+		    in the locale 'fr-FR' (or 'de-DE' or 'es-ES' or 'ja-JP')
+			ofxHost="someHost"
+		-->
+		<OfxResourceSet ofxHost="default">
+
+			<!-- Set the user visible label on the plug-in -->
+			<OfxPropLabel>Rota&ccedil;&atilde;o de cenas VEGAS</OfxPropLabel>
+
+			<OfxImageEffectPluginPropGrouping>VEGAS\360</OfxImageEffectPluginPropGrouping>
+
+			<OfxPropPluginDescription>Da Magix Computer Products Intl. Co.</OfxPropPluginDescription>
+
+			<!--
+	        Define default overrides that apply in all contexts (unless specified in a specific context)
+			-->
+			<OfxImageEffectContext name="default">
+			</OfxImageEffectContext>
+			
+			<!--
+	        Define default overrides that apply only in the generator context
+			-->
+			<OfxImageEffectContext name="OfxImageEffectContextFilter">				
+				<OfxParamTypeDouble name="mx.ofx.plugin.rotate.x.angle">
+                    <OfxPropLabel>Girar em torno do eixo x</OfxPropLabel>
+					<OfxPropShortLabel>Girar em torno do eixo x</OfxPropShortLabel>
+			        <OfxPropLongLabel>Girar em torno do eixo x</OfxPropLongLabel>
+					<OfxParamPropHint>Girar o campo de vis&atilde;o em torno do eixo x.</OfxParamPropHint>
+                </OfxParamTypeDouble>
+				
+				<OfxParamTypeDouble name="mx.ofx.plugin.rotate.y.angle">
+                    <OfxPropLabel>Girar em torno do eixo y</OfxPropLabel>
+					<OfxPropShortLabel>Girar em torno do eixo y</OfxPropShortLabel>
+			        <OfxPropLongLabel>Girar em torno do eixo y</OfxPropLongLabel>
+					<OfxParamPropHint>Girar o campo de vis&atilde;o em torno do eixo y.</OfxParamPropHint>
+                </OfxParamTypeDouble>
+				
+				<OfxParamTypeDouble name="mx.ofx.plugin.rotate.z.angle">
+                    <OfxPropLabel>Girar em torno do eixo z</OfxPropLabel>
+					<OfxPropShortLabel>Girar em torno do eixo z</OfxPropShortLabel>
+			        <OfxPropLongLabel>Girar em torno do eixo z</OfxPropLongLabel>
+					<OfxParamPropHint>Girar o campo de vis&atilde;o em torno do eixo z.</OfxParamPropHint>
+                </OfxParamTypeDouble>
+				
+				<OfxParamTypeChoice name="mx.ofx.plugin.rotate.stereo">
+					<OfxParamPropChoiceOption>Nenhum</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>Superior e inferior</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>Lado a lado</OfxParamPropChoiceOption>
+					<OfxPropLabel>Estereoscopia</OfxPropLabel>
+					<OfxPropShortLabel>Estereoscopia</OfxPropShortLabel>
+			        <OfxPropLongLabel>Estereoscopia</OfxPropLongLabel>
+					<OfxParamPropHint>Selecione o formato 3D de destino.</OfxParamPropHint>
+				</OfxParamTypeChoice>
+				
+				<OfxMessage name="mx.ofx.plugin.rotate.warning.hostnotsupported">O host atual n&atilde;o &eacute; compat&iacute;vel com este plug-in.</OfxMessage>
+				
+				<OfxMessage name="mx.ofx.plugin.rotate.warning.unknown">Erro desconhecido</OfxMessage>
+				
+			</OfxImageEffectContext>
+		</OfxResourceSet>
+	</OfxPlugin>
+  
+</OfxImageEffectResource>

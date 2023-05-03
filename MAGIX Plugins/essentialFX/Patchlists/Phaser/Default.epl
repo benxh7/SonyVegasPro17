@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<patchlist owner="efx" origin="">
+    <programs last_prg="0">
+        <prg number="0" preset="Default.efx" />
+        <prg number="1" preset="4_Stage_Feedback.efx" /> 
+        <prg number="2" preset="Bad Experience.efx" /> 
+        <prg number="3" preset="Drum Resonator.efx" /> 
+        <prg number="4" preset="Fast Vibrato.efx" /> 
+        <prg number="5" preset="Fat Synth.efx" /> 
+        <prg number="6" preset="Full_Power.efx" /> 
+        <prg number="7" preset="Guitar Stereo Swirl.efx" /> 
+        <prg number="8" preset="Monovibe.efx" /> 
+        <prg number="9" preset="Mushroomed Drums.efx" /> 
+        <prg number="10" preset="Phasing pad.efx" />
+        <prg number="11" preset="Spring Fx.efx" />
+        <prg number="12" preset="Synth Pad Liquid.efx" />
+        <prg number="13" preset="Synth Pad Mover.efx" />
+        <prg number="14" preset="Under_Water.efx" />
+    </programs>
+</patchlist>

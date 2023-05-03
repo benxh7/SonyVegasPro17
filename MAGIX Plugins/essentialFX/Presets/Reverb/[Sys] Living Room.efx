@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<preset owner="eFX Reverb" name="Living Room">
+    <params version="2.000000">
+        <param id="active" value="1.000000" />
+        <param id="mode" value="1.000000" />
+        <param id="input" value="1.000000" />
+        <param id="output" value="1.000000" />
+        <param id="size" value="0.480000" />
+        <param id="time" value="0.240000" />
+        <param id="damping" value="0.579137" />
+        <param id="mod" value="0.135793" />
+        <param id="mix" value="0.280000" />
+        <param id="sync" value="0.000000" />
+        <param id="predelay" value="9.020617" />
+        <param id="diffusion" value="0.608500" />
+        <param id="locut" value="127.325577" />
+    </params>
+</preset>

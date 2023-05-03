@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<preset owner="eFX StereoDelay" name="Krankmachine">
+    <params version="2.000000">
+        <param id="active" value="1.000000" />
+        <param id="mode" value="2.000000" />
+        <param id="input" value="1.000000" />
+        <param id="output" value="1.000000" />
+        <param id="delay_l" value="0.416667" />
+        <param id="delay_r" value="0.166667" />
+        <param id="damping" value="0.145000" />
+        <param id="feedback" value="0.930000" />
+        <param id="mix" value="0.550000" />
+        <param id="sync" value="1.000000" />
+        <param id="hpfreq" value="310.071594" />
+        <param id="noise" value="-48.200001" />
+        <param id="bbd_stages" value="3.000000" />
+        <param id="bbd_compander" value="8.549999" />
+        <param id="bbd_cldrift" value="0.214286" />
+    </params>
+</preset>

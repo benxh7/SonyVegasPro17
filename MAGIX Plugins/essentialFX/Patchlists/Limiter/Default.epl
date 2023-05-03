@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<patchlist owner="efx" origin="">
+    <programs last_prg="0">
+        <prg number="0" preset="Default.efx" />
+        <prg number="1" preset="Default - no AutoMakeup.efx" />
+        <prg number="2" preset="Classical Limiter (Transparent).efx" />
+        <prg number="3" preset="Dance Limiter (Loud).efx" />
+        <prg number="4" preset="Dance Limiter (Moderate).efx" />
+        <prg number="5" preset="Dance Limiter (Tight Bass).efx" />
+        <prg number="6" preset="Drum Buss Fattener +6dB.efx" />
+        <prg number="7" preset="HipHop Limiter +6dB (Tight Bass).efx" />
+        <prg number="8" preset="Pop Maximizer +6dB (Transparent).efx" />
+        <prg number="9" preset="Rock Clipper +6dB (Soft Transients).efx" />
+        <prg number="10" preset="Rock Maximizer +6dB.efx" />
+    </programs>
+</patchlist>

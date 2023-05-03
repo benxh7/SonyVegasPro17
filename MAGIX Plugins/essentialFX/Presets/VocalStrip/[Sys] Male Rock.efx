@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<preset owner="eFX VocalStrip" name="Male Rock">
+    <params version="2.000000">
+        <param id="active" value="1.000000" />
+        <param id="input" value="0.000000" />
+        <param id="output" value="3.599999" />
+        <param id="hpfilter" value="79.619072" />
+        <param id="gate" value="-43.000401" />
+        <param id="deesser" value="12.040150" />
+        <param id="compression" value="28.559998" />
+        <param id="tone" value="0.460000" />
+        <param id="ds_detfreq" value="6320.000000" />
+        <param id="comp_automakeup" value="1.000000" />
+        <param id="comp_attack" value="1.502532" />
+        <param id="comp_adaptrelease" value="1.696429" />
+    </params>
+</preset>

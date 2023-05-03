@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<preset owner="eFX Phaser" name="Synth Pad Liquid">
+    <params version="2.000000">
+        <param id="active" value="1.000000" />
+        <param id="mode" value="1.000000" />
+        <param id="input" value="1.000000" />
+        <param id="output" value="1.000000" />
+        <param id="rate" value="0.302620" />
+        <param id="depth" value="0.550000" />
+        <param id="phase" value="1.000000" />
+        <param id="feedback" value="0.000000" />
+        <param id="mix" value="0.385000" />
+        <param id="sync" value="0.000000" />
+        <param id="fcenter" value="393.957703" />
+    </params>
+</preset>

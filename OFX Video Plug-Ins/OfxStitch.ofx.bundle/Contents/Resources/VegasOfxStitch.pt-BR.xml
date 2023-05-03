@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	***************************************************************************
+	*   Copyright © 2018 MAGIX Software GmbH. All Rights Reserved.
+	*
+	*       $DateTime: 2018/08/08 $
+	*       $Author: pkelm $
+	*
+	*   Description:
+	*       Localized resources for the dual-fisheye plugin bundle (default)
+	***************************************************************************
+-->
+
+<!--
+<!DOCTYPE OfxImageEffectResource SYSTEM "ofx.dtd">
+ -->
+
+<OfxImageEffectResource>  
+  <OfxPlugin name="com.magix.ofx.vr.dual.stich">
+
+		<!--
+		Define the resouces overrides to be used for the host 'default' (or 'all' or 'com.vegascreativesoftware.vegas'
+		    in the locale 'fr-FR' (or 'de-DE' or 'es-ES' or 'ja-JP')
+			ofxHost="someHost"
+		-->
+		<OfxResourceSet ofxHost="default">
+
+			<!-- Set the user visible label on the plug-in -->
+			<OfxPropLabel>Stitching de olho de peixe duplo VEGAS</OfxPropLabel>
+
+			<OfxImageEffectPluginPropGrouping>VEGAS\360</OfxImageEffectPluginPropGrouping>
+
+			<OfxPropPluginDescription>From Magix Computer Products Intl. Co.</OfxPropPluginDescription>
+
+			<!--
+	        Define default overrides that apply in all contexts (unless specified in a specific context)
+			-->
+			<OfxImageEffectContext name="default">
+			</OfxImageEffectContext>
+			
+			<!--
+	        Define default overrides that apply only in the generator context
+			-->
+			<OfxImageEffectContext name="OfxImageEffectContextFilter">
+				<OfxParamTypeChoice name="mx.ofx.360.stitch.fisheye.presets">
+					<OfxParamPropChoiceOption>Definido pelo utilizador</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>Samsung Gear 360°</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>LG 360° Cam</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>Ricoh Theta V</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>Ricoh Theta S</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>Ricoh Theta</OfxParamPropChoiceOption>
+					<OfxPropLabel>Modelo</OfxPropLabel>
+					<OfxPropShortLabel>Modelo</OfxPropShortLabel>
+			        <OfxPropLongLabel>Modelo</OfxPropLongLabel>
+					<OfxParamPropHint>Você pode selecionar uma predefinição para determinadas câmeras.</OfxParamPropHint>
+				</OfxParamTypeChoice>			
+			
+				<OfxParamTypeDouble name="mx.ofx.360.stitch.fisheye.fov">
+                    <OfxPropLabel>Campo de visão</OfxPropLabel>
+					<OfxPropShortLabel>Campo de visão</OfxPropShortLabel>
+			        <OfxPropLongLabel>Campo de visão</OfxPropLongLabel>
+					<OfxParamPropHint>O campo de visão abrange a extensão do mundo observável que é visto em qualquer momento.</OfxParamPropHint>
+                </OfxParamTypeDouble>
+				
+				<OfxParamTypeChoice name="mx.ofx.360.stitch.fisheye.orient.left">
+					<OfxParamPropChoiceOption>0 grau</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>-90 graus</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>180 graus</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>90 graus</OfxParamPropChoiceOption>
+					<OfxPropLabel>Olho de peixe esquerdo</OfxPropLabel>
+					<OfxPropShortLabel>Olho de peixe esquerdo</OfxPropShortLabel>
+			        <OfxPropLongLabel>Olho de peixe esquerdo</OfxPropLongLabel>
+					<OfxParamPropHint>Selecionar a orientação do olho de peixe esquerdo na sua filmagem bruta.</OfxParamPropHint>
+				</OfxParamTypeChoice>
+				
+				<OfxParamTypeChoice name="mx.ofx.360.stitch.fisheye.orient.right">
+					<OfxParamPropChoiceOption>0 grau</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>-90 graus</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>180 graus</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>90 graus</OfxParamPropChoiceOption>
+					<OfxPropLabel>Olho de peixe direito</OfxPropLabel>
+					<OfxPropShortLabel>Olho de peixe direito</OfxPropShortLabel>
+			        <OfxPropLongLabel>Olho de peixe direito</OfxPropLongLabel>
+					<OfxParamPropHint>Selecionar a orientação do olho de peixe direito na sua filmagem bruta.</OfxParamPropHint>
+				</OfxParamTypeChoice>
+				
+				<OfxParamTypeGroup name="mx.ofx.360.stitch.group0_0">
+					<OfxPropLabel>Imagens em vinheta</OfxPropLabel>
+					<OfxPropShortLabel>Imagens em vinheta</OfxPropShortLabel>
+			        <OfxPropLongLabel>Imagens em vinheta</OfxPropLongLabel>
+					<OfxParamPropHint>A vinheta reduz a luminosidade ou a saturação de uma imagem em relação ao seu contorno exterior em comparação à imagem central.</OfxParamPropHint>
+				</OfxParamTypeGroup>
+				
+				<OfxParamTypeBoolean name="mx.ofx.360.stitch.fisheye.falloff.use">
+					<OfxPropLabel>Remover vinheta</OfxPropLabel>
+					<OfxPropShortLabel>Remover vinheta</OfxPropShortLabel>
+			        <OfxPropLongLabel>Remover vinheta</OfxPropLongLabel>
+					<OfxParamPropHint>A vinheta reduz a luminosidade ou a saturação de uma imagem em relação ao seu contorno exterior em comparação à imagem central.</OfxParamPropHint>
+				</OfxParamTypeBoolean>
+				
+                <OfxParamTypeDouble name="mx.ofx.360.stitch.fisheye.falloff.factor">
+                    <OfxPropLabel>Intensidade</OfxPropLabel>
+					<OfxPropShortLabel>Intensidade</OfxPropShortLabel>
+			        <OfxPropLongLabel>Intensidade</OfxPropLongLabel>
+					<OfxParamPropHint>É a intensidade máxima de aumento em relação ao contorno exterior.</OfxParamPropHint>
+                </OfxParamTypeDouble>
+				
+                <OfxParamTypeDouble name="mx.ofx.360.stitch.fisheye.falloff.range">
+                    <OfxPropLabel>Intervalo</OfxPropLabel>
+					<OfxPropShortLabel>Intervalo</OfxPropShortLabel>
+			        <OfxPropLongLabel>Intervalo</OfxPropLongLabel>
+					<OfxParamPropHint>É a distância radial entre o contorno exterior e o local da edição.</OfxParamPropHint>
+                </OfxParamTypeDouble>
+				
+				<OfxParamTypeGroup name="mx.ofx.360.stitch.group1_0">
+					<OfxPropLabel>Refinamento</OfxPropLabel>
+					<OfxPropShortLabel>Refinamento</OfxPropShortLabel>
+			        <OfxPropLongLabel>Refinamento</OfxPropLongLabel>
+				</OfxParamTypeGroup>
+				
+				<OfxParamTypeDouble name="mx.ofx.360.stitch.fisheye.center">
+                    <OfxPropLabel>Centro</OfxPropLabel>
+					<OfxPropShortLabel>Centro</OfxPropShortLabel>
+			        <OfxPropLongLabel>Centro</OfxPropLongLabel>
+					<OfxParamPropHint>É a defasagem do centro de cada olho de peixe.</OfxParamPropHint>
+                </OfxParamTypeDouble>
+				
+                <OfxParamTypeDouble name="mx.ofx.360.stitch.fisheye.narrowing">
+                    <OfxPropLabel>Raio</OfxPropLabel>
+					<OfxPropShortLabel>Raio</OfxPropShortLabel>
+			        <OfxPropLongLabel>Raio</OfxPropLongLabel>
+					<OfxParamPropHint>É a distância radial a ser usada em todos os cálculos.</OfxParamPropHint>
+                </OfxParamTypeDouble>
+				
+				<OfxParamTypeDouble name="mx.ofx.360.stitch.fisheye.rotation">
+                    <OfxPropLabel>Rotação</OfxPropLabel>
+					<OfxPropShortLabel>Rotação</OfxPropShortLabel>
+			        <OfxPropLongLabel>Rotação</OfxPropLongLabel>
+					<OfxParamPropHint>A rotação entre os dois olhos de peixe.</OfxParamPropHint>
+                </OfxParamTypeDouble>
+				
+			</OfxImageEffectContext>
+		</OfxResourceSet>
+	</OfxPlugin>
+  
+</OfxImageEffectResource>

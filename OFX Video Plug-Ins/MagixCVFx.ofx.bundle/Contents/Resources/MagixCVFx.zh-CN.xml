@@ -1,0 +1,576 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<OfxImageEffectResource>
+  <OfxPlugin name="de.magix:LensCorrection">
+
+    <OfxResourceSet ofxHost="default">
+      <OfxPropLabel>VEGAS 镜头校正</OfxPropLabel>
+
+      <OfxImageEffectPluginPropGrouping>VEGAS</OfxImageEffectPluginPropGrouping>
+      <OfxPropPluginDescription>镜头畸变校正</OfxPropPluginDescription>
+      <OfxImageEffectContext name="default">
+      </OfxImageEffectContext>
+
+      <OfxImageEffectContext name="OfxImageEffectContextFilter">
+        
+		<OfxParamTypeChoice name="Localization">
+          <OfxParamPropChoiceOption>选择镜头</OfxParamPropChoiceOption>
+          <OfxParamPropChoiceOption>什么都没找到</OfxParamPropChoiceOption>
+        </OfxParamTypeChoice>
+
+		<OfxParamTypeGroup name="GroupDb">
+          <OfxPropLabel>镜头模型</OfxPropLabel>
+		  <OfxPropShortLabel>镜头模型</OfxPropShortLabel>
+		  <OfxPropLongLabel>镜头模型</OfxPropLongLabel>
+		  <OfxParamPropHint>包含一组镜头模型。</OfxParamPropHint>
+        </OfxParamTypeGroup>
+
+		<OfxParamTypeString name="Query">
+          <OfxPropLabel>搜索</OfxPropLabel>
+		  <OfxPropShortLabel>搜索</OfxPropShortLabel>
+		  <OfxPropLongLabel>搜索</OfxPropLongLabel>
+		  <OfxParamPropHint>输入要搜索的镜头型号名称。</OfxParamPropHint>
+        </OfxParamTypeString>
+		
+		<OfxParamTypeChoice name="QueryResult">
+          <OfxPropLabel>发现镜头</OfxPropLabel>
+		  <OfxPropShortLabel>发现镜头</OfxPropShortLabel>
+		  <OfxPropLongLabel>发现镜头</OfxPropLongLabel>
+		  <OfxParamPropHint>列举出所有满足查询要求的镜头。</OfxParamPropHint>
+        </OfxParamTypeChoice>
+		
+		<OfxParamTypeBoolean name="ShowMesh">
+          <OfxPropLabel>显示畸变</OfxPropLabel>
+		  <OfxPropShortLabel>显示畸变</OfxPropShortLabel>
+		  <OfxPropLongLabel>根据指定的参数显示畸变</OfxPropLongLabel>
+		  <OfxParamPropHint>显示由指定参数校正后的畸变。</OfxParamPropHint>
+        </OfxParamTypeBoolean>
+		
+        <OfxParamTypeDouble2D name="DistCenter">
+         <OfxPropLabel>变形中心</OfxPropLabel>
+		 <OfxPropShortLabel>变形中心</OfxPropShortLabel>
+		 <OfxPropLongLabel>变形中心</OfxPropLongLabel>
+		 <OfxParamPropHint>调整中心以防镜头偏离中心。</OfxParamPropHint>
+        </OfxParamTypeDouble2D>
+    
+		<OfxParamTypeDouble name="RadialDistParam1">
+         <OfxPropLabel>径向变形k1</OfxPropLabel>
+		 <OfxPropShortLabel>径向变形k1</OfxPropShortLabel>
+		 <OfxPropLongLabel>径向变形k1</OfxPropLongLabel>
+		 <OfxParamPropHint>这是ptlens模型的参数a。</OfxParamPropHint>
+        </OfxParamTypeDouble>
+		
+		<OfxParamTypeDouble name="RadialDistParam2">
+         <OfxPropLabel>径向变形k2</OfxPropLabel>
+		 <OfxPropShortLabel>径向变形k2</OfxPropShortLabel>
+		 <OfxPropLongLabel>径向变形k2</OfxPropLongLabel>
+		 <OfxParamPropHint>这是ptlens模型的参数b。</OfxParamPropHint>
+        </OfxParamTypeDouble>
+
+		<OfxParamTypeDouble name="RadialDistParam3">
+         <OfxPropLabel>径向变形k3</OfxPropLabel>
+		 <OfxPropShortLabel>径向变形k3</OfxPropShortLabel>
+		 <OfxPropLongLabel>径向变形k3</OfxPropLongLabel>
+		 <OfxParamPropHint>这是ptlens模型的参数c。</OfxParamPropHint>
+        </OfxParamTypeDouble>	
+      </OfxImageEffectContext>
+
+    </OfxResourceSet>
+
+  </OfxPlugin>
+  <OfxPlugin name="de.magix:MeshWarp">
+
+    <OfxResourceSet ofxHost="default">
+      <OfxPropLabel>VEGAS Mesh Warp</OfxPropLabel>
+
+      <OfxImageEffectPluginPropGrouping>VEGAS</OfxImageEffectPluginPropGrouping>
+      <OfxPropPluginDescription>扭曲图像</OfxPropPluginDescription>
+      <OfxImageEffectContext name="default">
+      </OfxImageEffectContext>
+
+      <OfxImageEffectContext name="OfxImageEffectContextFilter">
+        	
+		<OfxParamTypeBoolean name="EnableWarp">
+          <OfxPropLabel>启用扭曲特效</OfxPropLabel>
+		  <OfxPropShortLabel>启用特效</OfxPropShortLabel>
+		  <OfxPropLongLabel>启用扭曲特效</OfxPropLongLabel>
+		  <OfxParamPropHint>启用扭曲特效</OfxParamPropHint>
+        </OfxParamTypeBoolean>
+		
+		<OfxParamTypeInteger name="GridCountX">
+          <OfxPropLabel>X中的网格大小</OfxPropLabel>
+		  <OfxPropShortLabel>X中的网格大小</OfxPropShortLabel>
+		  <OfxPropLongLabel>X中的网格大小</OfxPropLongLabel>
+		  <OfxParamPropHint>X中的网格大小</OfxParamPropHint>
+        </OfxParamTypeInteger>
+
+		<OfxParamTypeInteger name="GridCountY">
+          <OfxPropLabel>Y中的网格大小</OfxPropLabel>
+		  <OfxPropShortLabel>Y中的网格大小</OfxPropShortLabel>
+		  <OfxPropLongLabel>Y中的网格大小</OfxPropLongLabel>
+		  <OfxParamPropHint>Y中的网格大小</OfxParamPropHint>
+        </OfxParamTypeInteger>
+		
+		<OfxParamTypeInteger name="ScaleGridX">
+          <OfxPropLabel>X中的网格大小倍增数</OfxPropLabel>
+		  <OfxPropShortLabel>X中的网格大小倍增数</OfxPropShortLabel>
+		  <OfxPropLongLabel>X中的网格大小倍增数</OfxPropLongLabel>
+		  <OfxParamPropHint>X中的网格大小倍增数</OfxParamPropHint>
+        </OfxParamTypeInteger>
+		
+		<OfxParamTypeInteger name="ScaleGridY">
+          <OfxPropLabel>Y中的网格大小倍增数</OfxPropLabel>
+		  <OfxPropShortLabel>Y中的网格大小倍增数</OfxPropShortLabel>
+		  <OfxPropLongLabel>Y中的网格大小倍增数</OfxPropLongLabel>
+		  <OfxParamPropHint>Y中的网格大小倍增数</OfxParamPropHint>
+        </OfxParamTypeInteger>
+    
+		<OfxParamTypeBoolean name="GridCountLink">
+         <OfxPropLabel>锁定X和Y中的网格大小</OfxPropLabel>
+		 <OfxPropShortLabel>锁定X和Y中的网格大小</OfxPropShortLabel>
+		 <OfxPropLongLabel>锁定X和Y中的网格大小</OfxPropLongLabel>
+		 <OfxParamPropHint>保持X和Y中的网格大小相等。</OfxParamPropHint>
+        </OfxParamTypeBoolean>
+		
+		<OfxParamTypeBoolean name="KeepMeshStructure">
+         <OfxPropLabel>保持网格结构</OfxPropLabel>
+		 <OfxPropShortLabel>保持网格结构</OfxPropShortLabel>
+		 <OfxPropLongLabel>保持网格结构</OfxPropLongLabel>
+		 <OfxParamPropHint>在调整大小时尝试保持网格结构不变。</OfxParamPropHint>
+        </OfxParamTypeBoolean>	
+
+		<OfxParamTypePushButton name="ResetMesh">
+          <OfxPropLabel>重置网格</OfxPropLabel>
+		  <OfxPropShortLabel>重置网格</OfxPropShortLabel>
+		  <OfxPropLongLabel>重置网格</OfxPropLongLabel>
+		  <OfxParamPropHint>重置网格</OfxParamPropHint>
+        </OfxParamTypePushButton>
+		
+      </OfxImageEffectContext>
+
+    </OfxResourceSet>
+
+  </OfxPlugin>
+  <OfxPlugin name="de.magix:TimeWarp">
+
+    <OfxResourceSet ofxHost="default">
+      <OfxPropLabel>VEGAS慢动作</OfxPropLabel>
+
+      <OfxImageEffectPluginPropGrouping>VEGAS</OfxImageEffectPluginPropGrouping>
+      <OfxPropPluginDescription>生成慢动作视频</OfxPropPluginDescription>
+      <OfxImageEffectContext name="default">
+      </OfxImageEffectContext>
+
+      <OfxImageEffectContext name="OfxImageEffectContextFilter">
+         
+		<OfxMessage name="OutOfMemory">您的图形卡没有足够的内存来以您指定的质量级别完成此操作。 您必须选择较低质量的设置。</OfxMessage>
+        <OfxMessage name="NoGPU">此插件在很大程度上依赖于GPU使用。 您当前正在使用CPU处理。 虽然插件仍然可以正常运行，但预计结果会导致性能降低和潜在的伪影。</OfxMessage>
+		<OfxMessage name="TrimHint">在应用慢动作特效后，再对此事件所作出的编辑可能会导致意外结果。建议在应用慢动作特效之前对此事件进行编辑。或者，在没有编辑限制的媒体特效级别中的事件使用慢动作特效。</OfxMessage>
+		<OfxMessage name="EventFXSpeedUp">A Playback Rate greater than 1.0 will have unexpected results if you change the event length. If you need to change the length of the event after applying a rate greater than 1.0, apply the Slow Motion plug-in at the media level where no restrictions apply.</OfxMessage>
+		
+		<OfxParamTypeGroup name="Group Parameter">
+          <OfxPropLabel>参数</OfxPropLabel>
+		  <OfxPropShortLabel>参数</OfxPropShortLabel>
+		  <OfxPropLongLabel>参数</OfxPropLongLabel>
+		  <OfxParamPropHint>对各个参数进行分组。</OfxParamPropHint>	
+        </OfxParamTypeGroup>
+		
+		<OfxParamTypeChoice name="Choice Box Algorithm">
+          <OfxParamPropChoiceOption>快速光流</OfxParamPropChoiceOption>
+		  <OfxParamPropChoiceOption>变形</OfxParamPropChoiceOption>
+          <!--<OfxParamPropChoiceOption>边缘感知光流</OfxParamPropChoiceOption>-->
+		  <OfxPropLabel>方法</OfxPropLabel>	
+		  <OfxParamPropHint>在用于创建中间帧的不同方法之间切换。</OfxParamPropHint>		  
+        </OfxParamTypeChoice>
+    
+		<OfxParamTypeChoice name="Choice Box Quality">
+          <OfxParamPropChoiceOption>粗</OfxParamPropChoiceOption>
+		  <OfxParamPropChoiceOption>介质</OfxParamPropChoiceOption>
+          <OfxParamPropChoiceOption>精细</OfxParamPropChoiceOption>
+		  <OfxPropLabel>质量</OfxPropLabel>	
+		  <OfxParamPropHint>在用于创建中间帧的不同质量之间切换。</OfxParamPropHint>		  
+        </OfxParamTypeChoice>
+		
+		<OfxParamTypeDouble name="Slow Motion Ratio">
+         <OfxPropLabel>回放速率</OfxPropLabel>
+		 <OfxPropShortLabel>回放速率</OfxPropShortLabel>
+		 <OfxPropLongLabel>回放速率</OfxPropLongLabel>
+		 <OfxParamPropHint>此参数更改剪辑的速度比。</OfxParamPropHint>
+        </OfxParamTypeDouble>
+
+        <OfxParamTypePushButton name="Analyse Button">
+          <OfxPropLabel>分析动作</OfxPropLabel>
+		  <OfxPropShortLabel>分析动作</OfxPropShortLabel>
+		  <OfxPropLongLabel>分析动作</OfxPropLongLabel>
+		  <OfxParamPropHint>开始运动分析。</OfxParamPropHint>
+        </OfxParamTypePushButton>
+
+        <OfxParamTypePushButton name="Clear Button">
+          <OfxPropLabel>清除动作数据</OfxPropLabel>
+		  <OfxPropShortLabel>清除动作数据</OfxPropShortLabel>
+		  <OfxPropLongLabel>清除动作数据</OfxPropLongLabel>
+		  <OfxParamPropHint>清除运动分析的结果。</OfxParamPropHint>
+        </OfxParamTypePushButton>
+				
+      </OfxImageEffectContext>
+
+    </OfxResourceSet>
+
+  </OfxPlugin>
+  <OfxPlugin name="de.magix:Stabilize">
+
+    <OfxResourceSet ofxHost="default">
+      <OfxPropLabel>VEGAS 视频防抖动处理</OfxPropLabel>
+
+      <OfxImageEffectPluginPropGrouping>VEGAS</OfxImageEffectPluginPropGrouping>
+      <OfxPropPluginDescription>稳定视频动画</OfxPropPluginDescription>
+      <OfxImageEffectContext name="default">
+      </OfxImageEffectContext>
+
+      <OfxImageEffectContext name="OfxImageEffectContextFilter">
+
+        <OfxMessage name="invalidEffectContextEffect_Event">
+          您已将视频防抖动处理插件添加到事件中。此插件必须作为媒体效果应用于素材或子素材。
+
+要应用媒体效果，请选择时间线上的事件（或“工程媒体”窗口中的素材），然后选择“工具”&gt;“视频”&gt;“Media FX”。</OfxMessage>
+
+        <OfxMessage name="invalidEffectContextEffect_Track">
+          您已将视频防抖动处理插件添加到音轨中。此插件必须作为媒体效果应用于素材或子素材。
+
+要应用媒体效果，请选择时间线上的事件（或“工程媒体”窗口中的素材），然后选择“工具”&gt;“视频”&gt;“Media FX”。</OfxMessage>
+
+        <OfxMessage name="invalidEffectContextEffect_VideoOutput">
+          您已将视频防抖动处理插件添加到视频输出中。此插件必须作为媒体效果应用于素材或子素材。
+
+要应用媒体效果，请选择时间线上的事件（或“工程媒体”窗口中的素材），然后选择“工具”&gt;“视频”&gt;“Media FX”。</OfxMessage>
+
+        <OfxProgress name="StabilizeAnalyzeProgress">正在对媒体进行防抖动处理</OfxProgress>
+        <OfxMessage name="mustClickApply">要对视频做防抖动处理，请单击“分析动作”按钮。分析时不要尝试播放媒体。</OfxMessage>
+		
+		<OfxMessage name="trimHint">
+		对此事件进行编辑（修剪、拆分等）可能会导致视频防抖动处理时数据的丢失或其它的意外结果。因此建议在应用视频防抖动处理之前，最好先处理完成对此事件进行的所有编辑的工作。
+		</OfxMessage> 
+
+		<OfxParamTypeGroup name="GroupParameters">
+          <OfxPropLabel>参数</OfxPropLabel>
+		  <OfxPropShortLabel>参数</OfxPropShortLabel>
+		  <OfxPropLongLabel>参数</OfxPropLongLabel>
+		  <OfxParamPropHint>在稳定之前显示有关参数的其他信息</OfxParamPropHint>
+        </OfxParamTypeGroup>
+		
+		<OfxParamTypeChoice name="Views">
+			<OfxParamPropChoiceOption>基本模式</OfxParamPropChoiceOption>
+			<OfxParamPropChoiceOption>专业模式</OfxParamPropChoiceOption>
+			<OfxParamPropChoiceOption>专家模式</OfxParamPropChoiceOption>
+          <OfxPropLabel>查看模型</OfxPropLabel>
+		  <OfxPropShortLabel>查看模型</OfxPropShortLabel>
+		  <OfxPropLongLabel>查看模型</OfxPropLongLabel>
+		  <OfxParamPropHint>切换不同的用户视图</OfxParamPropHint>
+        </OfxParamTypeChoice>
+		
+		<OfxParamTypePushButton name="AnalyzeMotionBasic">
+          <OfxPropLabel>稳定</OfxPropLabel>
+		  <OfxPropShortLabel>稳定</OfxPropShortLabel>
+		  <OfxPropLongLabel>稳定</OfxPropLongLabel>
+		  <OfxParamPropHint>开始稳定.</OfxParamPropHint>
+        </OfxParamTypePushButton>
+
+        <OfxParamTypePushButton name="CLearMotionBasic">
+          <OfxPropLabel>重启</OfxPropLabel>
+		  <OfxPropShortLabel>重启</OfxPropShortLabel>
+		  <OfxPropLongLabel>重启</OfxPropLongLabel>
+		  <OfxParamPropHint>清除图像稳定的结果</OfxParamPropHint>
+        </OfxParamTypePushButton>
+		
+		<OfxParamTypeGroup name="GroupSmoothing">
+          <OfxPropLabel>平滑</OfxPropLabel>
+		  <OfxPropShortLabel>平滑</OfxPropShortLabel>
+		  <OfxPropLongLabel>平滑</OfxPropLongLabel>
+		  <OfxParamPropHint>显示有关平滑过程的其他信息</OfxParamPropHint>
+        </OfxParamTypeGroup>
+		
+		<OfxParamTypeBoolean name="IsStaticCamera">
+          <OfxPropLabel>静态相机</OfxPropLabel>
+		  <OfxPropShortLabel>静态相机</OfxPropShortLabel>
+		  <OfxPropLongLabel>静态相机</OfxPropLongLabel>
+		  <OfxParamPropHint>在平滑运动（“静态摄像机”已禁用）和固定运动（“静态摄像机”已启用）之间切换模式</OfxParamPropHint>
+        </OfxParamTypeBoolean>
+		
+		<OfxParamTypeInteger name="StaticReference">
+          <OfxPropLabel>参考帧号</OfxPropLabel>
+		  <OfxPropShortLabel>参考帧号</OfxPropShortLabel>
+		  <OfxPropLongLabel>参考帧号</OfxPropLongLabel>
+		  <OfxParamPropHint>此参数更改视频运动周围的参考帧是否稳定</OfxParamPropHint>
+        </OfxParamTypeInteger>
+		
+		<OfxParamTypeChoice name="Presets">
+			<OfxParamPropChoiceOption>快速</OfxParamPropChoiceOption>
+			<OfxParamPropChoiceOption>准确</OfxParamPropChoiceOption>
+          <OfxPropLabel>方法</OfxPropLabel>
+		  <OfxPropShortLabel>方法</OfxPropShortLabel>
+		  <OfxPropLongLabel>方法</OfxPropLongLabel>
+		  <OfxParamPropHint>该选择框影响运动跟踪算法，确定可跟踪点的方式以及涉及运动建模的运动轨迹。</OfxParamPropHint>
+        </OfxParamTypeChoice>
+
+        <OfxParamTypeChoice name="MotionCompensation">
+          <OfxParamPropChoiceOption>平移</OfxParamPropChoiceOption>
+          <OfxParamPropChoiceOption>平移 + 旋转</OfxParamPropChoiceOption>
+          <OfxParamPropChoiceOption>平移 + 旋转 + 缩放</OfxParamPropChoiceOption>		  
+          <OfxParamPropChoiceOption>仿射</OfxParamPropChoiceOption>
+          <OfxPropLabel>运动补偿</OfxPropLabel>
+		  <OfxPropShortLabel>运动补偿</OfxPropShortLabel>
+		  <OfxPropLongLabel>运动补偿</OfxPropLongLabel>
+		  <OfxParamPropHint>此选项框会影响运动建模算法。</OfxParamPropHint>
+        </OfxParamTypeChoice>
+		
+        <OfxParamTypeDouble name="SmoothingMagnitude">
+         <OfxPropLabel>平滑</OfxPropLabel>
+		 <OfxPropShortLabel>平滑</OfxPropShortLabel>
+		 <OfxPropLongLabel>平滑</OfxPropLongLabel>
+		 <OfxParamPropHint>平滑幅度（很快）是有助于定义场景中应保持多少“不稳定”的参数，该因子越高，平滑运动越多。</OfxParamPropHint>
+        </OfxParamTypeDouble>
+
+        <OfxParamTypePushButton name="AnalyzeMotion">
+          <OfxPropLabel>分析动作</OfxPropLabel>
+		  <OfxPropShortLabel>分析动作</OfxPropShortLabel>
+		  <OfxPropLongLabel>分析动作</OfxPropLongLabel>
+		  <OfxParamPropHint>开始运动分析。</OfxParamPropHint>
+        </OfxParamTypePushButton>
+
+        <OfxParamTypePushButton name="CLearMotion">
+          <OfxPropLabel>清除动作数据</OfxPropLabel>
+		  <OfxPropShortLabel>清除动作数据</OfxPropShortLabel>
+		  <OfxPropLongLabel>清除动作数据</OfxPropLongLabel>
+		  <OfxParamPropHint>清除运动分析的结果。</OfxParamPropHint>
+        </OfxParamTypePushButton>
+		
+		
+		<OfxParamTypeGroup name="GroupBorders">
+          <OfxPropLabel>边框</OfxPropLabel>
+		  <OfxPropShortLabel>边框</OfxPropShortLabel>
+		  <OfxPropLongLabel>边框</OfxPropLongLabel>
+		  <OfxParamPropHint>显示有关边框的其他信息。</OfxParamPropHint>
+        </OfxParamTypeGroup>
+		
+		<OfxParamTypeBoolean name="AvoidBlackBorders">
+          <OfxPropLabel>自动缩放</OfxPropLabel>
+		  <OfxPropShortLabel>自动缩放</OfxPropShortLabel>
+		  <OfxPropLongLabel>自动缩放</OfxPropLongLabel>
+		  <OfxParamPropHint>单击自动放大以避免黑色边框。</OfxParamPropHint>
+        </OfxParamTypeBoolean>
+		
+		<OfxParamTypeDouble2D name="AdditionalTranslation">
+         <OfxPropLabel>额外平移</OfxPropLabel>
+		 <OfxPropShortLabel>额外平移</OfxPropShortLabel>
+		 <OfxPropLongLabel>额外平移</OfxPropLongLabel>
+		 <OfxParamPropHint>向该位置添加偏移量。</OfxParamPropHint>
+        </OfxParamTypeDouble2D>
+
+        <OfxParamTypeDouble name="AdditionalRotation">
+          <OfxPropLabel>额外旋转</OfxPropLabel>
+		  <OfxPropShortLabel>额外旋转</OfxPropShortLabel>
+		  <OfxPropLongLabel>额外旋转</OfxPropLongLabel>
+		  <OfxParamPropHint>为旋转添加偏移量。旋转（角度）参数可用于拉直地平线。</OfxParamPropHint>
+        </OfxParamTypeDouble>
+
+		<OfxParamTypeDouble name="AdditionalScale">
+          <OfxPropLabel>额外缩放</OfxPropLabel>
+		  <OfxPropShortLabel>额外缩放</OfxPropShortLabel>
+		  <OfxPropLongLabel>额外缩放</OfxPropLongLabel>
+		  <OfxParamPropHint>为缩放添加偏移量。您可以放大以避免黑色边框或聚焦在图像的中心。</OfxParamPropHint>
+        </OfxParamTypeDouble>
+		
+		<OfxParamTypeChoice name="Zoom_Filling">
+          <OfxParamPropChoiceOption>透明</OfxParamPropChoiceOption>
+          <OfxParamPropChoiceOption>镜面填充</OfxParamPropChoiceOption>
+          <OfxParamPropChoiceOption>重复</OfxParamPropChoiceOption>		  
+          <OfxParamPropChoiceOption>夹到边缘</OfxParamPropChoiceOption>
+<!--- 
+          <OfxParamPropChoiceOption>黑色</OfxParamPropChoiceOption>	
+          <OfxParamPropChoiceOption>颜色</OfxParamPropChoiceOption>	
+-->		  
+          <OfxPropLabel>边缘填充</OfxPropLabel>
+		  <OfxPropShortLabel>边缘填充</OfxPropShortLabel>
+		  <OfxPropLongLabel>边缘填充</OfxPropLongLabel>
+		  <OfxParamPropHint>此选项框会影响背景的填充。</OfxParamPropHint>
+        </OfxParamTypeChoice>
+		
+		<OfxParamTypeRGBA name="Zoom_ColorPicker">
+          <OfxPropLabel>颜色</OfxPropLabel>
+		  <OfxPropShortLabel>颜色</OfxPropShortLabel>
+		  <OfxPropLongLabel>颜色</OfxPropLongLabel>
+		  <OfxParamPropHint>选择填充颜色。</OfxParamPropHint>
+        </OfxParamTypeRGBA>
+        
+
+        <OfxParamTypeGroup name="GroupMotionBlur">
+          <OfxPropLabel>运动模糊</OfxPropLabel>
+		  <OfxPropShortLabel>运动模糊</OfxPropShortLabel>
+		  <OfxPropLongLabel>运动模糊</OfxPropLongLabel>
+		  <OfxParamPropHint>显示有关运动模糊的其他信息。</OfxParamPropHint>
+        </OfxParamTypeGroup>
+        
+        <OfxParamTypeBoolean name="MotionBlur">
+          <OfxPropLabel>添加运动模糊</OfxPropLabel>
+		  <OfxPropShortLabel>添加运动模糊</OfxPropShortLabel>
+		  <OfxPropLongLabel>添加运动模糊</OfxPropLongLabel>
+		  <OfxParamPropHint>单击以将“运动模糊”添加到水平摄像机平移。</OfxParamPropHint>
+        </OfxParamTypeBoolean>
+
+        <OfxParamTypeDouble name="MotionBlurThreshold">
+          <OfxPropLabel>阈值</OfxPropLabel>
+		  <OfxPropShortLabel>阈值</OfxPropShortLabel>
+		  <OfxPropLongLabel>阈值</OfxPropLongLabel>
+		  <OfxParamPropHint>仅在检测到的水平摄像机平移超过该阈值时才应用运动模糊。</OfxParamPropHint>
+        </OfxParamTypeDouble>
+		
+		
+		<OfxParamTypeGroup name="GroupExpertMode">
+          <OfxPropLabel>专业模式</OfxPropLabel>
+		  <OfxPropShortLabel>专业模式</OfxPropShortLabel>
+		  <OfxPropLongLabel>专业模式</OfxPropLongLabel>
+		  <OfxParamPropHint>显示用于调整跟踪算法的其他信息。</OfxParamPropHint>
+        </OfxParamTypeGroup>
+		
+		<OfxParamTypeDouble name="XScale">
+          <OfxPropLabel>宽度（ROI）</OfxPropLabel>
+		  <OfxPropShortLabel>宽度（ROI）</OfxPropShortLabel>
+		  <OfxPropLongLabel>宽度（ROI）</OfxPropLongLabel>
+		  <OfxParamPropHint>此参数缩小感兴趣区域的宽度。</OfxParamPropHint>
+        </OfxParamTypeDouble>
+		
+		<OfxParamTypeDouble name="YScale">
+          <OfxPropLabel>高度（ROI）</OfxPropLabel>
+		  <OfxPropShortLabel>高度（ROI）</OfxPropShortLabel>
+		  <OfxPropLongLabel>高度（ROI）</OfxPropLongLabel>
+		  <OfxParamPropHint>此参数缩小感兴趣区域的高度。</OfxParamPropHint>
+        </OfxParamTypeDouble>
+		
+		<OfxParamTypeInteger name="NumGridsX">
+          <OfxPropLabel>X中的网格数量</OfxPropLabel>
+		  <OfxPropShortLabel>X中的网格数量</OfxPropShortLabel>
+		  <OfxPropLongLabel>X中的网格数量</OfxPropLongLabel>
+		  <OfxParamPropHint>此参数更改X中的网格数。</OfxParamPropHint>
+        </OfxParamTypeInteger>
+		
+		<OfxParamTypeInteger name="NumGridsY">
+          <OfxPropLabel>Y中的网格数</OfxPropLabel>
+		  <OfxPropShortLabel>Y中的网格数</OfxPropShortLabel>
+		  <OfxPropLongLabel>Y中的网格数</OfxPropLongLabel>
+		  <OfxParamPropHint>此参数更改Y中的网格数。</OfxParamPropHint>
+        </OfxParamTypeInteger>
+		
+		<OfxParamTypeInteger name="PointsPerGridCell">
+          <OfxPropLabel>每个网格单元的点数</OfxPropLabel>
+		  <OfxPropShortLabel>每个网格单元的点数</OfxPropShortLabel>
+		  <OfxPropLongLabel>每个网格单元的点数</OfxPropLongLabel>
+		  <OfxParamPropHint>此参数更改每个单元格的点数。</OfxParamPropHint>
+        </OfxParamTypeInteger>
+		
+		<OfxParamTypeChoice name="ChoiceTrackerType">
+          <OfxParamPropChoiceOption>卢卡斯-卡纳德方法</OfxParamPropChoiceOption>
+          <OfxParamPropChoiceOption>绝对差异的总和</OfxParamPropChoiceOption>
+          <OfxParamPropChoiceOption>混合动力</OfxParamPropChoiceOption>
+          <OfxPropLabel>跟踪器类型</OfxPropLabel>
+		  <OfxPropShortLabel>跟踪器类型</OfxPropShortLabel>
+		  <OfxPropLongLabel>跟踪器类型</OfxPropLongLabel>
+		  <OfxParamPropHint>此选项框会影响跟踪器的类型。</OfxParamPropHint>
+        </OfxParamTypeChoice>
+		
+		
+		<OfxParamTypeGroup name="GroupLockState">
+          <OfxPropLabel>平滑参数</OfxPropLabel>
+		  <OfxPropShortLabel>平滑参数</OfxPropShortLabel>
+		  <OfxPropLongLabel>平滑参数</OfxPropLongLabel>
+		  <OfxParamPropHint>显示调整平滑参数的其他信息。</OfxParamPropHint>
+        </OfxParamTypeGroup>
+		
+		<OfxParamTypeBoolean name="LockTranslateX">
+          <OfxPropLabel>平移X</OfxPropLabel>
+		  <OfxPropShortLabel>平移X</OfxPropShortLabel>
+		  <OfxPropLongLabel>平移X</OfxPropLongLabel>
+		  <OfxParamPropHint>平滑X中的平移。</OfxParamPropHint>
+        </OfxParamTypeBoolean>
+		
+		<OfxParamTypeBoolean name="LockTranslateY">
+          <OfxPropLabel>平移Y</OfxPropLabel>
+		  <OfxPropShortLabel>平移Y</OfxPropShortLabel>
+		  <OfxPropLongLabel>平移Y</OfxPropLongLabel>
+		  <OfxParamPropHint>平滑Y中的平移。</OfxParamPropHint>
+        </OfxParamTypeBoolean>
+		
+		<OfxParamTypeBoolean name="LockAngle">
+          <OfxPropLabel>角度</OfxPropLabel>
+		  <OfxPropShortLabel>角度</OfxPropShortLabel>
+		  <OfxPropLongLabel>角度</OfxPropLongLabel>
+		  <OfxParamPropHint>平滑角度。</OfxParamPropHint>
+        </OfxParamTypeBoolean>
+		
+		<OfxParamTypeBoolean name="LockScaleX">
+          <OfxPropLabel>缩放X</OfxPropLabel>
+		  <OfxPropShortLabel>缩放X</OfxPropShortLabel>
+		  <OfxPropLongLabel>缩放X</OfxPropLongLabel>
+		  <OfxParamPropHint>平滑在X中的缩放。</OfxParamPropHint>
+        </OfxParamTypeBoolean>
+		
+		<OfxParamTypeBoolean name="LockScaleY">
+          <OfxPropLabel>缩放Y</OfxPropLabel>
+		  <OfxPropShortLabel>缩放Y</OfxPropShortLabel>
+		  <OfxPropLongLabel>缩放Y</OfxPropLongLabel>
+		  <OfxParamPropHint>平滑在Y中的缩放。</OfxParamPropHint>
+        </OfxParamTypeBoolean>
+		
+		<OfxParamTypeBoolean name="LockShear">
+          <OfxPropLabel>修剪</OfxPropLabel>
+		  <OfxPropShortLabel>修剪</OfxPropShortLabel>
+		  <OfxPropLongLabel>修剪</OfxPropLongLabel>
+		  <OfxParamPropHint>平滑剪切。</OfxParamPropHint>
+        </OfxParamTypeBoolean>
+		
+		<OfxParamTypeGroup name="GroupVisualization">
+          <OfxPropLabel>可視化</OfxPropLabel>
+		  <OfxPropShortLabel>可視化</OfxPropShortLabel>
+		  <OfxPropLongLabel>可視化</OfxPropLongLabel>
+		  <OfxParamPropHint>顯示有關可視化的其他信息。</OfxParamPropHint>
+        </OfxParamTypeGroup>
+		
+		<OfxParamTypeBoolean name="ShowFeatures">
+          <OfxPropLabel>顯示點數</OfxPropLabel>
+		  <OfxPropShortLabel>顯示點數</OfxPropShortLabel>
+		  <OfxPropLongLabel>顯示點數</OfxPropLongLabel>
+		  <OfxParamPropHint>顯示跟踪點。</OfxParamPropHint>
+        </OfxParamTypeBoolean>
+
+        <OfxParamTypeInteger name="ShowFeaturesMinLen">
+          <OfxPropLabel>最小轨道长度</OfxPropLabel>
+          <OfxPropShortLabel>最小轨道长度</OfxPropShortLabel>
+          <OfxPropLongLabel>要显示的最小曲目长度</OfxPropLongLabel>
+          <OfxParamPropHint>此参数确定显示哪些跟踪点。</OfxParamPropHint>
+        </OfxParamTypeInteger>        	
+		
+      </OfxImageEffectContext>
+
+    </OfxResourceSet>
+
+  </OfxPlugin>
+
+  <OfxPlugin name="de.magix:WarpFlowTransition">
+
+    <OfxResourceSet ofxHost="default">
+      <OfxPropLabel>VEGAS Warp Flow</OfxPropLabel>
+
+      <OfxImageEffectPluginPropGrouping>VEGAS</OfxImageEffectPluginPropGrouping>
+      <OfxPropPluginDescription>创建一个变幻转场。</OfxPropPluginDescription>
+      <OfxImageEffectContext name="default">
+      </OfxImageEffectContext>
+
+      <OfxImageEffectContext name="OfxImageEffectContextTransition">
+        	
+		<OfxMessage name="NoCorrespondences">您的剪辑结果差异太大，因此Warp Flow转换可能只会产生一个简单的交叉渐变转场。</OfxMessage>
+		
+      </OfxImageEffectContext>
+
+    </OfxResourceSet>
+
+  </OfxPlugin>
+
+</OfxImageEffectResource>

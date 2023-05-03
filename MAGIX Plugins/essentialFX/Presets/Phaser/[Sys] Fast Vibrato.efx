@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<preset owner="eFX Phaser" name="Fast Vibrato">
+    <params version="2.000000">
+        <param id="active" value="1.000000" />
+        <param id="mode" value="0.000000" />
+        <param id="input" value="1.000000" />
+        <param id="output" value="1.000000" />
+        <param id="rate" value="0.947619" />
+        <param id="depth" value="0.453361" />
+        <param id="phase" value="0.167571" />
+        <param id="feedback" value="0.000000" />
+        <param id="mix" value="1.000000" />
+        <param id="sync" value="0.000000" />
+        <param id="fcenter" value="421.439484" />
+    </params>
+</preset>

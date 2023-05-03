@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<preset owner="eFX StereoDelay" name="Bucket Brigade In Space">
+    <params version="2.010000">
+        <param id="active" value="1.000000" />
+        <param id="mode" value="2.000000" />
+        <param id="input" value="1.000000" />
+        <param id="output" value="1.000000" />
+        <param id="delay_l" value="0.166667" />
+        <param id="delay_r" value="0.166667" />
+        <param id="damping" value="0.219996" />
+        <param id="feedback" value="0.061199" />
+        <param id="mix" value="0.385000" />
+        <param id="sync" value="2.000000" />
+        <param id="hpfreq" value="185.263168" />
+        <param id="noise" value="-55.400002" />
+        <param id="bbd_stages" value="3.000000" />
+        <param id="bbd_compander" value="8.900000" />
+        <param id="bbd_cldrift" value="0.342697" />
+    </params>
+</preset>

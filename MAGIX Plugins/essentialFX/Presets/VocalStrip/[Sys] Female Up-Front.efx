@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<preset owner="eFX VocalStrip" name="Female Up-Front">
+    <params version="2.000000">
+        <param id="active" value="1.000000" />
+        <param id="input" value="0.000000" />
+        <param id="output" value="3.120000" />
+        <param id="hpfilter" value="129.027863" />
+        <param id="gate" value="-27.310133" />
+        <param id="deesser" value="15.798427" />
+        <param id="compression" value="30.240002" />
+        <param id="tone" value="0.290000" />
+        <param id="ds_detfreq" value="7000.000000" />
+        <param id="comp_automakeup" value="1.000000" />
+        <param id="comp_attack" value="1.450628" />
+        <param id="comp_adaptrelease" value="2.246377" />
+    </params>
+</preset>

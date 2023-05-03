@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<filter_expr type="OR" comment="exclude IDR/I files where M = 1">
+	<video Title="DJI.AVC" />
+	<video Title="GoPro AVC" />
+	<video Title="XiaoYi AVC   " />
+</filter_expr>

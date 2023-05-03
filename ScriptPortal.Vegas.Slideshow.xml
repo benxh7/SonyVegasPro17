@@ -1,0 +1,464 @@
+<transitions-list>
+    <transition-set>
+        <name>Fades</name>
+        <pan>false</pan>
+        <zoom>false</zoom>
+    </transition-set>
+
+    <transition-set>
+        <name>FadesPan</name>
+        <pan>true</pan>
+        <zoom>false</zoom>
+    </transition-set>
+
+    <transition-set>
+        <name>FadesZoom</name>
+        <pan>false</pan>
+        <zoom>true</zoom>
+    </transition-set>
+
+    <transition-set>
+        <name>FadesPanZoom</name>
+        <pan>true</pan>
+        <zoom>true</zoom>
+    </transition-set>
+
+    <transition-set>
+        <name>Random</name>
+        <pan>false</pan>
+        <zoom>false</zoom>
+        <transition>
+            <transition-name>Sony Linear Wipe</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony Clock Wipe</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony Page Roll</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony Page Peel</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony Page Loop</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony Portals</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony Swap</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony Split</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony Slide</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony Spiral</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony Cross Effect</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony Venetian Blinds</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony 3D Cascade</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony 3D Fly In/Out</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony 3D Shuffle</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony 3D Blinds</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony Flash</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony Dissolve</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony Iris</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony Push</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony Squeeze</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony Barn Door</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony Zoom</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony Gradient Wipe</transition-name>
+        </transition>
+
+    </transition-set>
+
+    <transition-set>
+        <name>RandomPan</name>
+        <pan>true</pan>
+        <zoom>false</zoom>
+        <transition>
+            <transition-name>Sony Linear Wipe</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony Clock Wipe</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony Page Roll</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony Page Peel</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony Page Loop</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony Portals</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony Swap</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony Split</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony Slide</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony Spiral</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony Cross Effect</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony Venetian Blinds</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony 3D Cascade</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony 3D Fly In/Out</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony 3D Shuffle</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony 3D Blinds</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony Flash</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony Dissolve</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony Iris</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony Push</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony Squeeze</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony Barn Door</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony Zoom</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony Gradient Wipe</transition-name>
+        </transition>
+
+    </transition-set>
+
+    <transition-set>
+        <name>RandomZoom</name>
+        <pan>false</pan>
+        <zoom>true</zoom>
+        <transition>
+            <transition-name>Sony Linear Wipe</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony Clock Wipe</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony Page Roll</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony Page Peel</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony Page Loop</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony Portals</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony Swap</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony Split</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony Slide</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony Spiral</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony Cross Effect</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony Venetian Blinds</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony 3D Cascade</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony 3D Fly In/Out</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony 3D Shuffle</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony 3D Blinds</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony Flash</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony Dissolve</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony Iris</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony Push</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony Squeeze</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony Barn Door</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony Zoom</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony Gradient Wipe</transition-name>
+        </transition>
+
+    </transition-set>
+
+    <transition-set>
+        <name>RandomPanZoom</name>
+        <pan>true</pan>
+        <zoom>true</zoom>
+        <transition>
+            <transition-name>Sony Linear Wipe</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony Clock Wipe</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony Page Roll</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony Page Peel</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony Page Loop</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony Portals</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony Swap</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony Split</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony Slide</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony Spiral</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony Cross Effect</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony Venetian Blinds</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony 3D Cascade</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony 3D Fly In/Out</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony 3D Shuffle</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony 3D Blinds</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony Flash</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony Dissolve</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony Iris</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony Push</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony Squeeze</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony Barn Door</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony Zoom</transition-name>
+        </transition>
+        <transition>
+            <transition-name>Sony Gradient Wipe</transition-name>
+        </transition>
+    </transition-set>
+
+    <transition-set>
+        <name>SciFi</name>
+        <transition>
+            <transition-name>Sony Linear Wipe</transition-name>
+            <preset-index>11</preset-index>
+            <preset-name>Bottom-Right, Diagonal, Soft Edge</preset-name>
+        </transition>
+        <transition>
+            <transition-name>Sony Portals</transition-name>
+            <preset-index>4</preset-index>
+            <preset-name>Jigsaw Puzzle</preset-name>
+        </transition>
+        <transition>
+            <transition-name>Sony Clock Wipe</transition-name>
+            <preset-index>1</preset-index>
+            <preset-name>Clockwise, Soft Edge</preset-name>
+        </transition>
+        <transition>
+            <transition-name>Sony Dissolve</transition-name>
+            <preset-index>1</preset-index>
+            <preset-name>Additive Dissolve</preset-name>
+        </transition>
+        <transition>
+            <transition-name>Sony Flash</transition-name>
+            <preset-index>2</preset-index>
+            <preset-name>Soft Flash</preset-name>
+        </transition>
+        <transition>
+            <transition-name>Sony Gradient Wipe</transition-name>
+            <preset-index>7</preset-index>
+            <preset-name>Soft Noise</preset-name>
+        </transition>
+        <transition>
+            <transition-name>Sony Gradient Wipe</transition-name>
+            <preset-index>5</preset-index>
+            <preset-name>Nebulous</preset-name>
+        </transition>
+    </transition-set>
+
+    <transition-set>
+        <name>FilmStrip</name>
+        <transition>
+            <transition-name>Sony Push</transition-name>
+            <preset-index>1</preset-index>
+            <preset-name>Push Up</preset-name>
+        </transition>
+    </transition-set>
+
+    <transition-set>
+        <name>Carousel</name>
+        <transition>
+            <transition-name>Sony Push</transition-name>
+            <preset-index>3</preset-index>
+            <preset-name>Push Left</preset-name>
+        </transition>
+    </transition-set>
+
+    <transition-set>
+        <name>NewsFlash</name>
+        <transition>
+            <transition-name>Sony 3D Fly In/Out</transition-name>
+            <preset-index>1</preset-index>
+            <preset-name>Tumble In</preset-name>
+        </transition>
+        <transition>
+            <transition-name>Sony Zoom</transition-name>
+            <preset-index>3</preset-index>
+            <preset-name>Zoom In, Top-Right</preset-name>
+        </transition>
+        <transition>
+            <transition-name>Sony Zoom</transition-name>
+            <preset-index>7</preset-index>
+            <preset-name>Zoom Out, Top-Left</preset-name>
+        </transition>
+    </transition-set>
+
+    <transition-set>
+        <name>PhotoAlbum</name>
+        <transition>
+            <transition-name>Sony Page Peel</transition-name>
+            <preset-index>8</preset-index>
+            <preset-name>Bottom-Right, Loose Fold, Opaque</preset-name>
+        </transition>
+    </transition-set>
+
+    <transition-set>
+        <name>HeartsAndStars</name>
+        <transition>
+            <transition-name>Sony Gradient Wipe</transition-name>
+            <preset-index>0</preset-index>
+            <preset-name>Star</preset-name>
+        </transition>
+        <transition>
+            <transition-name>Sony Gradient Wipe</transition-name>
+            <preset-index>1</preset-index>
+            <preset-name>Heart</preset-name>
+        </transition>
+        <transition>
+            <transition-name>Sony Gradient Wipe</transition-name>
+            <preset-index>3</preset-index>
+            <preset-name>Spiral</preset-name>
+        </transition>
+        <transition>
+            <transition-name>Sony Iris</transition-name>
+            <preset-index>1</preset-index>
+            <preset-name>Circle, Out, Center</preset-name>
+        </transition>
+        <transition>
+            <transition-name>Sony Iris</transition-name>
+            <preset-index>3</preset-index>
+            <preset-name>Diamond, Out, Center</preset-name>
+        </transition>
+    </transition-set>
+
+    <transition-set>
+        <name>SoftWipes</name>
+        <transition>
+            <transition-name>Sony Dissolve</transition-name>
+            <preset-index>16</preset-index>
+            <preset-name>Fade Through Grayscale</preset-name>
+        </transition>
+    </transition-set>
+
+</transitions-list>

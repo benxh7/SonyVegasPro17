@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<preset owner="eFX StereoDelay" name="Analog Dual Delay">
+    <params version="1.000000">
+        <param id="active" value="1.000000" />
+        <param id="mode" value="1.000000" />
+        <param id="sync" value="1.000000" />
+        <param id="input" value="1.000000" />
+        <param id="output" value="1.000000" />
+        <param id="delay_l" value="0.655000" />
+        <param id="delay_r" value="0.580000" />
+        <param id="damping" value="0.755000" />
+        <param id="feedback" value="0.765000" />
+        <param id="mix" value="0.365000" />
+    </params>
+</preset>

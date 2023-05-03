@@ -1,0 +1,37 @@
+<error-report>
+    <runtime>
+        <enabled>yes</enabled>
+        <messagelogSize>64</messagelogSize>
+        <supplementfileSize>200</supplementfileSize>
+        <frontstopTrapper>yes</frontstopTrapper>
+        <backstopTrapper>no</backstopTrapper>
+        <unhandledTrapper>yes</unhandledTrapper>
+        <useUILauncher>yes</useUILauncher>
+        <stackOverflowOnly>no</stackOverflowOnly>
+        <excludeExceptions>
+            <unmanaged first="0x406d1388"/>                <!-- CSfThread -->
+            <unmanaged first="0x40010006"/>                <!-- OutputDebugString -->
+            <unmanaged first="0xe06d7363" where="front"/>  <!-- .NET -->
+            <unmanaged first="0xc0000005" where="front" module="wmvcore"/>  <!-- WMVCore.dll V10 -->
+            <unmanaged first="0" last="0xbfffffff" where="front"/>
+        </excludeExceptions>
+        <includeExceptions>
+            <unmanaged first="0xc00000fd" where="front"/>  <!-- status_stack_overflow -->
+        </includeExceptions>
+    </runtime>
+
+    <upload>
+        <jobName>SonyErrorReport</jobName>
+        <basicAuthentication>yes</basicAuthentication>
+        <completionExe>ErrorReportClient.exe</completionExe>
+        <priority>low</priority>
+        <proxy mode="preconfig" list="" bypass=""></proxy>
+    </upload>
+    
+    <client>
+        <automatedReporting>yes</automatedReporting>
+        <reportTimeoutSecs>15</reportTimeoutSecs>
+        <logging>no</logging>
+    </client>
+</error-report>
+

@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+This XML file is an example for a hypothetical OFX plugin 'someplugin'. It is there to illustrate the basics. 
+
+Bruno Nicoletti
+
+ -->
+
+<!--
+<!DOCTYPE OfxImageEffectResource SYSTEM "ofx.dtd">
+ -->
+
+<OfxImageEffectResource>
+	<!--
+	Define the resource overrides for the plugin with the identifier 'someplugin'
+	-->
+	<OfxPlugin name="com.vegascreativesoftware:titlesandtext">
+
+		<!--
+		Define the resouces overrides to be used for the host 'default' (or 'all' or 'com.vegascreativesoftware.vegas'
+		    in the locale 'fr-FR' (or 'de-DE' or 'es-ES' or 'ja-JP')
+			ofxHost="someHost"
+		-->
+		<OfxResourceSet ofxHost="default">
+
+			<!-- Set the user visible label on the plug-in -->
+			<OfxPropLabel>VEGAS Títulos e Texto</OfxPropLabel>
+			
+			<OfxImageEffectPluginPropGrouping>VEGAS</OfxImageEffectPluginPropGrouping>
+			
+			<OfxPropPluginDescription>Gera eventos de texto estático e animado.</OfxPropPluginDescription>
+
+			<!--
+	        Define default overrides that apply in all contexts (unless specified in a specific context)
+			-->
+			<OfxImageEffectContext name="default">
+
+			</OfxImageEffectContext>
+
+			<!--
+	        Define default overrides that apply only in the generator context
+			-->
+			<OfxImageEffectContext name="OfxImageEffectContextGenerator">
+
+				<OfxParamTypeString name="Text">
+					<OfxPropLabel>Texto</OfxPropLabel>
+                    <OfxParamPropDefault>{\rtf1\ansi\ansicpg1252\deff0{\fonttbl{\f0\fnil\fcharset0 Verdana;}}
+\viewkind4\uc1\pard\lang1033\f0\fs96 Sample Text\par
+}
+					</OfxParamPropDefault>
+				</OfxParamTypeString>
+				<OfxParamTypeDouble name="Scale">
+					<OfxPropLabel>Escala</OfxPropLabel>
+				</OfxParamTypeDouble>
+				<OfxParamTypeDouble2D name="Location">
+					<OfxPropLabel>Localização</OfxPropLabel>
+				</OfxParamTypeDouble2D>
+				<OfxParamTypeRGBA name="TextColor">
+					<OfxPropLabel>Cor do texto</OfxPropLabel>
+				</OfxParamTypeRGBA>
+				<OfxParamTypeChoice name="collection">
+					<OfxPropLabel>Animação</OfxPropLabel>
+				</OfxParamTypeChoice>
+				<OfxParamTypeChoice name="Alignment">
+					<OfxPropLabel>Ponto de Ancoragem</OfxPropLabel>
+					<OfxParamPropChoiceOption>Superior Esquerdo</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>Superior Central</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>Superior Direito</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>Centro à esquerda</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>Centro</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>Centro à direita</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>Fundo à esquerda</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>Fundo ao centro</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>Fundo à direita</OfxParamPropChoiceOption>
+				</OfxParamTypeChoice>
+
+				<OfxParamTypeGroup name="AdvancedGroup">
+					<OfxPropLabel>Avançado</OfxPropLabel>
+				</OfxParamTypeGroup>
+				<OfxParamTypeRGBA name="Background">
+					<OfxPropLabel>Fundo</OfxPropLabel>
+				</OfxParamTypeRGBA>
+				<OfxParamTypeDouble name="Tracking">
+					<OfxPropLabel>Rastreamento</OfxPropLabel>
+				</OfxParamTypeDouble>
+				<OfxParamTypeDouble name="LineSpacing">
+					<OfxPropLabel>Espaçamento entre linhas</OfxPropLabel>
+				</OfxParamTypeDouble>
+
+				<OfxParamTypeGroup name="OutlineGroup">
+					<OfxPropLabel>Contorno</OfxPropLabel>
+				</OfxParamTypeGroup>
+				<OfxParamTypeDouble name="OutlineWidth">
+					<OfxPropLabel>Largura do contorno</OfxPropLabel>
+				</OfxParamTypeDouble>
+				<OfxParamTypeRGBA name="OutlineColor">
+					<OfxPropLabel>Cor do contorno</OfxPropLabel>
+				</OfxParamTypeRGBA>
+
+				<OfxParamTypeGroup name="ShadowGroup">
+					<OfxPropLabel>Sombra</OfxPropLabel>
+				</OfxParamTypeGroup>
+				<OfxParamTypeBoolean name="ShadowEnable">
+					<OfxPropLabel>Permissão da sombra</OfxPropLabel>
+				</OfxParamTypeBoolean>
+				<OfxParamTypeRGBA name="ShadowColor">
+					<OfxPropLabel>Cor da sombra</OfxPropLabel>
+				</OfxParamTypeRGBA>
+				<OfxParamTypeDouble name="ShadowOffsetX">
+					<OfxPropLabel>Compensação da sombra X</OfxPropLabel>
+				</OfxParamTypeDouble>
+				<OfxParamTypeDouble name="ShadowOffsetY">
+					<OfxPropLabel>Compensação da sombra Y</OfxPropLabel>
+				</OfxParamTypeDouble>
+				<OfxParamTypeDouble name="ShadowBlur">
+					<OfxPropLabel>Aspecto da sombra</OfxPropLabel>
+				</OfxParamTypeDouble>
+
+			</OfxImageEffectContext>
+
+		</OfxResourceSet>
+	</OfxPlugin>
+</OfxImageEffectResource>

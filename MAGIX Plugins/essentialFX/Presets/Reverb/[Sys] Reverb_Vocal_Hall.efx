@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<preset owner="eFX Reverb" name="Reverb_Vocal_Hall">
+    <params version="2.000000">
+        <param id="active" value="1.000000" />
+        <param id="mode" value="2.000000" />
+        <param id="input" value="1.000000" />
+        <param id="output" value="1.000000" />
+        <param id="size" value="1.000000" />
+        <param id="time" value="0.241574" />
+        <param id="damping" value="0.250000" />
+        <param id="mod" value="0.000000" />
+        <param id="mix" value="0.154198" />
+        <param id="sync" value="0.000000" />
+        <param id="predelay" value="17.969364" />
+    </params>
+</preset>

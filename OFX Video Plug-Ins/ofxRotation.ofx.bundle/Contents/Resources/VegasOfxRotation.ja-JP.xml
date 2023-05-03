@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+	***************************************************************************
+	*   Copyright © 2018 MAGIX Software GmbH. All Rights Reserved.
+	*
+	*       $DateTime: 2018/08/08 $
+	*       $Author: pkelm $
+	*
+	*   Description:
+	*       Localized resources for the dual-fisheye plugin bundle (default)
+	***************************************************************************
+-->
+
+<!--
+<!DOCTYPE OfxImageEffectResource SYSTEM "ofx.dtd">
+ -->
+
+<OfxImageEffectResource>  
+  <OfxPlugin name="com.magixsoftware:panorotation">
+
+		<!--
+		Define the resouces overrides to be used for the host 'default' (or 'all' or 'com.vegascreativesoftware.vegas'
+		    in the locale 'fr-FR' (or 'de-DE' or 'es-ES' or 'ja-JP')
+			ofxHost="someHost"
+		-->
+		<OfxResourceSet ofxHost="default">
+
+			<!-- Set the user visible label on the plug-in -->
+			<OfxPropLabel>VEGAS シーン回転</OfxPropLabel>
+
+			<OfxImageEffectPluginPropGrouping>VEGAS\360</OfxImageEffectPluginPropGrouping>
+
+			<OfxPropPluginDescription>Magix Computer Products Intl. Co. より提供しています。</OfxPropPluginDescription>
+
+			<!--
+	        Define default overrides that apply in all contexts (unless specified in a specific context)
+			-->
+			<OfxImageEffectContext name="default">
+			</OfxImageEffectContext>
+			
+			<!--
+	        Define default overrides that apply only in the generator context
+			-->
+			<OfxImageEffectContext name="OfxImageEffectContextFilter">				
+				<OfxParamTypeDouble name="mx.ofx.plugin.rotate.x.angle">
+                    <OfxPropLabel>X軸を中心に回転します。</OfxPropLabel>
+					<OfxPropShortLabel>X軸を中心に回転します。</OfxPropShortLabel>
+			        <OfxPropLongLabel>X軸を中心に回転します。</OfxPropLongLabel>
+					<OfxParamPropHint>視野をX軸を中心に回転します。</OfxParamPropHint>
+                </OfxParamTypeDouble>
+				
+				<OfxParamTypeDouble name="mx.ofx.plugin.rotate.y.angle">
+                    <OfxPropLabel>Y軸を中心に回転します。</OfxPropLabel>
+					<OfxPropShortLabel>Y軸を中心に回転します。</OfxPropShortLabel>
+			        <OfxPropLongLabel>Y軸を中心に回転します。</OfxPropLongLabel>
+					<OfxParamPropHint>視野をY軸を中心に回転します。</OfxParamPropHint>
+                </OfxParamTypeDouble>
+				
+				<OfxParamTypeDouble name="mx.ofx.plugin.rotate.z.angle">
+                    <OfxPropLabel>Z軸を中心に回転します。</OfxPropLabel>
+					<OfxPropShortLabel>Z軸を中心に回転します。</OfxPropShortLabel>
+			        <OfxPropLongLabel>Z軸を中心に回転します。</OfxPropLongLabel>
+					<OfxParamPropHint>視野をZ軸を中心に回転します。</OfxParamPropHint>
+                </OfxParamTypeDouble>
+				
+				<OfxParamTypeChoice name="mx.ofx.plugin.rotate.stereo">
+					<OfxParamPropChoiceOption>なし</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>上下</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>サイドバイサイド</OfxParamPropChoiceOption>
+					<OfxPropLabel>三次元映像</OfxPropLabel>
+					<OfxPropShortLabel>三次元映像</OfxPropShortLabel>
+			        <OfxPropLongLabel>三次元映像</OfxPropLongLabel>
+					<OfxParamPropHint>ターゲット3Dフレームフォーマットを選択してください。</OfxParamPropHint>
+				</OfxParamTypeChoice>
+				
+				<OfxMessage name="mx.ofx.plugin.rotate.warning.hostnotsupported">既存のホストはこのプラグインに対応していません。</OfxMessage>
+				
+				<OfxMessage name="mx.ofx.plugin.rotate.warning.unknown">不明なエラー</OfxMessage>
+				
+			</OfxImageEffectContext>
+		</OfxResourceSet>
+	</OfxPlugin>
+  
+</OfxImageEffectResource>

@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<preset owner="eFX Compressor" name="Hot Master">
+    <params version="1.000000">
+        <param id="active" value="1.000000" />
+        <param id="mode" value="0.000000" />
+        <param id="softclip" value="1.000000" />
+        <param id="input" value="1.000000" />
+        <param id="output" value="0.600000" />
+        <param id="scfilter" value="0.595000" />
+        <param id="threshold" value="0.670000" />
+        <param id="ratio" value="0.150000" />
+        <param id="attack" value="0.590000" />
+        <param id="release" value="0.115000" />
+    </params>
+</preset>

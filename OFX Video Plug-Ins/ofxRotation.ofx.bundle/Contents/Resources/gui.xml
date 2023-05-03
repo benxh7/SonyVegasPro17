@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<surface>
+  <slider id="x.angle" type="Angle">
+    <animation>true</animation>
+    <values default="0" min="-180" max="180"/>
+    <label>Turn around x-axis</label>
+    <hint>Turn around the x-axis: positive - clockwise, negative - counterclockwise.</hint>
+  </slider>
+  <slider id="y.angle" type="angle">
+    <animation>true</animation>
+    <values default="0" min="-180" max="180"/>
+    <label>Turn around y-axis</label>
+    <hint>Turn around the y-axis: positive - to right, negative - to left.</hint>
+  </slider>
+  <slider id="z.angle" type="angle">
+    <animation>true</animation>
+    <values default="0" min="-180" max="180"/>
+    <label>Turn around z-axis</label>
+    <hint>Turn around the z-axis: positive - up, negative - down.</hint>
+  </slider>
+  <combobox id="stereo" state="0">
+    <label>Stereoscopy</label>
+    <hint>Select the target 3D frame format.</hint>
+    <data>
+      <entry>None</entry>
+      <entry>Top-and-Bottom</entry>
+      <entry>Side-by-Side</entry>
+    </data>
+  </combobox>
+</surface>

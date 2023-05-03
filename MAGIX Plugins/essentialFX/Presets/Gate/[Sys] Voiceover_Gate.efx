@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<preset owner="eFX Gate" name="Voiceover_Gate">
+    <params version="2.000000">
+        <param id="active" value="1.000000" />
+        <param id="input" value="0.000000" />
+        <param id="output" value="0.000000" />
+        <param id="scfilter" value="60.057343" />
+        <param id="threshold" value="-40.955196" />
+        <param id="range" value="21.788963" />
+        <param id="attack" value="4.990247" />
+        <param id="release" value="69.552811" />
+        <param id="sclisten" value="0.000000" />
+        <param id="softknee" value="0.000000" />
+        <param id="scflttype" value="1.000000" />
+        <param id="scmode" value="0.000000" />
+        <param id="holdtime" value="1.000000" />
+    </params>
+</preset>

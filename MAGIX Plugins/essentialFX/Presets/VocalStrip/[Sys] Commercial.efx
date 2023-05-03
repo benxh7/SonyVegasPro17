@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<preset owner="eFX VocalStrip" name="Commercial">
+    <params version="2.000000">
+        <param id="active" value="1.000000" />
+        <param id="input" value="0.000000" />
+        <param id="output" value="4.800001" />
+        <param id="hpfilter" value="118.996964" />
+        <param id="gate" value="-37.734234" />
+        <param id="deesser" value="16.020000" />
+        <param id="compression" value="32.159996" />
+        <param id="tone" value="0.500000" />
+    </params>
+</preset>

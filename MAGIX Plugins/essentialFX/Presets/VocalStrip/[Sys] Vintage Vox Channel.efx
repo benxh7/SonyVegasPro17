@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<preset owner="eFX VocalStrip" name="Vintage Vox Channel">
+    <params version="2.010000">
+        <param id="active" value="1.000000" />
+        <param id="input" value="5.039998" />
+        <param id="output" value="4.319999" />
+        <param id="hpfilter" value="129.027847" />
+        <param id="gate" value="-40.786201" />
+        <param id="deesser" value="6.300000" />
+        <param id="compression" value="21.840000" />
+        <param id="tone" value="0.190000" />
+        <param id="ds_detfreq" value="6800.000000" />
+        <param id="comp_automakeup" value="1.000000" />
+        <param id="comp_attack" value="4.050000" />
+        <param id="comp_adaptrelease" value="5.344827" />
+    </params>
+</preset>

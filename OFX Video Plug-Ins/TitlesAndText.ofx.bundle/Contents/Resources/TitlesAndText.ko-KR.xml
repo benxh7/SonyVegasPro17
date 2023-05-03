@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+This XML file is an example for a hypothetical OFX plugin 'someplugin'. It is there to illustrate the basics. 
+
+Bruno Nicoletti
+
+ -->
+
+<!--
+<!DOCTYPE OfxImageEffectResource SYSTEM "ofx.dtd">
+ -->
+
+<OfxImageEffectResource>
+	<!--
+	Define the resource overrides for the plugin with the identifier 'someplugin'
+	-->
+	<OfxPlugin name="com.vegascreativesoftware:titlesandtext">
+
+		<!--
+		Define the resouces overrides to be used for the host 'default' (or 'all' or 'com.vegascreativesoftware.vegas'
+		    in the locale 'fr-FR' (or 'de-DE' or 'es-ES' or 'ja-JP')
+			ofxHost="someHost"
+		-->
+		<OfxResourceSet ofxHost="default">
+
+			<!-- Set the user visible label on the plug-in -->
+			<OfxPropLabel>VEGAS 타이틀 &amp; 자막</OfxPropLabel>
+			
+			<OfxImageEffectPluginPropGrouping>VEGAS</OfxImageEffectPluginPropGrouping>
+			
+			<OfxPropPluginDescription>정적/동적 애니메이션 자막 이벤트 생성</OfxPropPluginDescription>
+
+			<!--
+	        Define default overrides that apply in all contexts (unless specified in a specific context)
+			-->
+			<OfxImageEffectContext name="default">
+
+			</OfxImageEffectContext>
+
+			<!--
+	        Define default overrides that apply only in the generator context
+			-->
+			<OfxImageEffectContext name="OfxImageEffectContextGenerator">
+
+				<OfxParamTypeString name="Text">
+					<OfxPropLabel>자막</OfxPropLabel>
+                    <OfxParamPropDefault>{\rtf1\ansi\ansicpg1252\deff0{\fonttbl{\f0\fnil\fcharset0 Malgun Gothic;}}
+\viewkind4\uc1\pard\lang1042\f0\fs96 샘플 텍스트\par
+}
+					</OfxParamPropDefault>
+				</OfxParamTypeString>
+				<OfxParamTypeDouble name="Scale">
+					<OfxPropLabel>스케일</OfxPropLabel>
+				</OfxParamTypeDouble>
+				<OfxParamTypeDouble2D name="Location">
+					<OfxPropLabel>위치</OfxPropLabel>
+				</OfxParamTypeDouble2D>
+				<OfxParamTypeRGBA name="TextColor">
+					<OfxPropLabel>자막 색상</OfxPropLabel>
+				</OfxParamTypeRGBA>
+				<OfxParamTypeChoice name="collection">
+					<OfxPropLabel>애니메이션</OfxPropLabel>
+				</OfxParamTypeChoice>
+				<OfxParamTypeChoice name="Alignment">
+					<OfxPropLabel>닻 지점</OfxPropLabel>
+					<OfxParamPropChoiceOption>위 왼쪽</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>위 중앙</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>위 오른쪽</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>가운데 왼쪽</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>중앙</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>중앙 오른쪽</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>아래 왼쪽</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>아래 중앙</OfxParamPropChoiceOption>
+					<OfxParamPropChoiceOption>아래 오른쪽</OfxParamPropChoiceOption>
+				</OfxParamTypeChoice>
+
+				<OfxParamTypeGroup name="AdvancedGroup">
+					<OfxPropLabel>상급</OfxPropLabel>
+				</OfxParamTypeGroup>
+				<OfxParamTypeRGBA name="Background">
+					<OfxPropLabel>배경</OfxPropLabel>
+				</OfxParamTypeRGBA>
+				<OfxParamTypeDouble name="Tracking">
+					<OfxPropLabel>트래킹</OfxPropLabel>
+				</OfxParamTypeDouble>
+				<OfxParamTypeDouble name="LineSpacing">
+					<OfxPropLabel>줄 간격</OfxPropLabel>
+				</OfxParamTypeDouble>
+
+				<OfxParamTypeGroup name="OutlineGroup">
+					<OfxPropLabel>아웃라인</OfxPropLabel>
+				</OfxParamTypeGroup>
+				<OfxParamTypeDouble name="OutlineWidth">
+					<OfxPropLabel>아웃라인 너비</OfxPropLabel>
+				</OfxParamTypeDouble>
+				<OfxParamTypeRGBA name="OutlineColor">
+					<OfxPropLabel>아웃라인 색상</OfxPropLabel>
+				</OfxParamTypeRGBA>
+
+				<OfxParamTypeGroup name="ShadowGroup">
+					<OfxPropLabel>그림자</OfxPropLabel>
+				</OfxParamTypeGroup>
+				<OfxParamTypeBoolean name="ShadowEnable">
+					<OfxPropLabel>그림자 넣기</OfxPropLabel>
+				</OfxParamTypeBoolean>
+				<OfxParamTypeRGBA name="ShadowColor">
+					<OfxPropLabel>그림자 색상</OfxPropLabel>
+				</OfxParamTypeRGBA>
+				<OfxParamTypeDouble name="ShadowOffsetX">
+					<OfxPropLabel>그림자 오프셋 X</OfxPropLabel>
+				</OfxParamTypeDouble>
+				<OfxParamTypeDouble name="ShadowOffsetY">
+					<OfxPropLabel>그림자 오프셋 Y</OfxPropLabel>
+				</OfxParamTypeDouble>
+				<OfxParamTypeDouble name="ShadowBlur">
+					<OfxPropLabel>그림자 블러</OfxPropLabel>
+				</OfxParamTypeDouble>
+
+			</OfxImageEffectContext>
+
+		</OfxResourceSet>
+	</OfxPlugin>
+</OfxImageEffectResource>

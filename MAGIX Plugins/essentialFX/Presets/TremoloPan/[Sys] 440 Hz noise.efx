@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<preset owner="eFX TremoloPan" name="440 Hz noise">
+    <params version="2.056">
+        <param id="active" value="1" />
+        <param id="input" value="0" />
+        <param id="output" value="0" />
+        <param id="rate" value="0.5445" />
+        <param id="shape" value="0" />
+        <param id="phase" value="0" />
+        <param id="depth" value="1" />
+        <param id="sync" value="0" />
+        <param id="version" value="10" />
+    </params>
+</preset>

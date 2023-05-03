@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<OfxImageEffectResource>
+	<OfxPlugin name="com.sonycreativesoftware:smart_zoom">
+		<OfxResourceSet ofxHost="default">
+			<OfxPropLabel>VEGAS スマート ズーム</OfxPropLabel>
+			<OfxPropShortLabel>VEGAS Smart Zoom</OfxPropShortLabel>
+			<OfxPropLongLabel>VEGAS Smart Zoom</OfxPropLongLabel>
+			<OfxImageEffectPluginPropGrouping>VEGAS</OfxImageEffectPluginPropGrouping>			
+			<OfxPropPluginDescription>VEGAS の高品質ズーム機能。</OfxPropPluginDescription>
+			<OfxImageEffectContext name="default">
+				<OfxParamTypeDouble3D name="LocationAndZoom">
+					<OfxPropLabel>カットアウト</OfxPropLabel>
+			        <OfxPropShortLabel>Cutout</OfxPropShortLabel>
+			        <OfxPropLongLabel>Cutout</OfxPropLongLabel>
+					<OfxParamPropHint>カットアウトの場所とズーム。</OfxParamPropHint>
+				</OfxParamTypeDouble3D>
+				<OfxParamTypeDouble name="Noise">
+					<OfxPropLabel>ノイズ感度</OfxPropLabel>
+			        <OfxPropShortLabel>Noise sensitivity</OfxPropShortLabel>
+			        <OfxPropLongLabel>Noise sensitivity</OfxPropLongLabel>
+					<OfxParamPropHint>画像のノイズ レベル。</OfxParamPropHint>
+				</OfxParamTypeDouble>
+				<OfxParamTypeBoolean name="EnableEnhancement">
+					<OfxPropLabel>エンハンスメントを有効にする</OfxPropLabel>
+			        <OfxPropShortLabel>Enable enhancement</OfxPropShortLabel>
+			        <OfxPropLongLabel>Enable enhancement</OfxPropLongLabel>
+					<OfxParamPropHint>スマート エンハンスメントを有効または無効にします。</OfxParamPropHint>
+				</OfxParamTypeBoolean>
+				<OfxMessage name="GenericError">
+				    プラグインで修復できないエラーが発生しました。
+				</OfxMessage>
+				<OfxMessage name="FrameFormatNotSupported">
+				    指定されたフレーム フォーマットはサポートされていません。プロジェクト設定から 8 ビットまたは 32 ビットの浮動小数点 RGBA を選択してください。
+				</OfxMessage>
+				<OfxMessage name="OpenCLMissing">
+				    このプラグインが機能するには、OpenCL が必要です。
+				</OfxMessage>
+				<OfxMessage name="OpenCLError">
+				    プラグインで OpenCL エラーが発生しました。
+				</OfxMessage>
+				<OfxMessage name="OpenCLMemoryError">
+				    OpenCL GPU メモリーに空きがありません。低解像度の画像を使用するか、OpenCL ビデオ エフェクトの数を減らして、やり直してください。
+				</OfxMessage>
+				<OfxMessage name="OpenCLImageSizeError">
+				    プロジェクトの解像度が大きすぎます。低解像度の画像を使用してやり直してください。
+				</OfxMessage>
+			</OfxImageEffectContext>
+		</OfxResourceSet>
+	</OfxPlugin>
+</OfxImageEffectResource>

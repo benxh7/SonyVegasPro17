@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<preset owner="eFX Compressor" name="Drum Slammer">
+    <params>
+        <param id="active" value="1.000000" />
+        <param id="mode" value="0.000000" />
+        <param id="sync" value="0.000000" />
+        <param id="input" value="1.000000" />
+        <param id="output" value="0.602392" />
+        <param id="scfilter" value="0.296793" />
+        <param id="threshold" value="0.436143" />
+        <param id="ratio" value="0.826490" />
+        <param id="attack" value="0.072792" />
+        <param id="release" value="0.233601" />
+    </params>
+</preset>

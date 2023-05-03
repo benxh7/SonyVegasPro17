@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<preset owner="eFX VocalStrip" name="Female Rock">
+    <params version="2.000000">
+        <param id="active" value="1.000000" />
+        <param id="input" value="0.000000" />
+        <param id="output" value="3.995419" />
+        <param id="hpfilter" value="120.088364" />
+        <param id="gate" value="-42.357296" />
+        <param id="deesser" value="15.299999" />
+        <param id="compression" value="24.959999" />
+        <param id="tone" value="0.510000" />
+    </params>
+</preset>

@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<preset owner="eFX Reverb" name="Light Guitar Plate">
+    <params version="2.000000">
+        <param id="active" value="1.000000" />
+        <param id="mode" value="0.000000" />
+        <param id="input" value="1.000000" />
+        <param id="output" value="1.000000" />
+        <param id="size" value="0.656065" />
+        <param id="time" value="0.426671" />
+        <param id="damping" value="0.505608" />
+        <param id="mod" value="0.308482" />
+        <param id="mix" value="0.199899" />
+        <param id="sync" value="0.000000" />
+        <param id="predelay" value="3.526646" />
+        <param id="diffusion" value="1.000000" />
+        <param id="locut" value="154.268280" />
+    </params>
+</preset>

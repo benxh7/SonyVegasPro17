@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+	***************************************************************************
+	*   Copyright (C) 2011 Sony Creative Software Inc. All rights reserved. 
+	*
+	*       $Header: //sonic3/main/vplugins/ofxStabilize/Stabilize.xml#9 $
+	*       $DateTime: 2011/08/17 16:38:59 $
+	*       $Author: jwu $
+	*
+	*   Description:
+	*       Localized resources for the Stabilize plugin bundle (default)
+	***************************************************************************
+-->
+<!--
+<!DOCTYPE OfxImageEffectResource SYSTEM "ofx.dtd">
+ -->
+<OfxImageEffectResource>
+	<OfxPlugin name="com.vegascreativesoftware:Stabilize">
+
+		<OfxResourceSet ofxHost="default">
+			<OfxPropLabel>Stabilizacja VEGAS</OfxPropLabel>
+
+            <OfxImageEffectPluginPropGrouping>VEGAS</OfxImageEffectPluginPropGrouping>
+            <OfxPropPluginDescription>Stabilizuje ruch wideo</OfxPropPluginDescription>
+            <OfxImageEffectContext name="default">
+            </OfxImageEffectContext>
+
+			<OfxImageEffectContext name="OfxImageEffectContextFilter">
+
+<OfxMessage name="invalidEffectContextEffect_Event">Do zdarzena dodano wtyczkę stabilizatora. Ta wtyczka musi być dodana do klipu lub podklipu jako efekt mediów.
+
+Aby używać efektów mediów, wybierz zdarzenie na osi czasu (lub klip w oknie mediów projektu) i wybierz narzędzia &gt; wideo &gt; efekty mediów. Kliknij przycisk „?” w oknie efektów mediów, aby uzyskać informacje o korzystaniu z wtyczki stabilizatora.</OfxMessage>
+
+<OfxMessage name="invalidEffectContextEffect_Track">Do ścieżki dodano wtyczkę stabilizatora. Ta wtyczka musi być dodana do klipu lub podklipu jako efekt mediów.
+
+Aby używać efektów mediów wybierz zdarzenie na osi czasu (lub klip w oknie mediów projektu) i wybierz narzędzia &gt; wideo &gt; efekty mediów. Kliknij na ? przycisku w oknie efektów mediów aby uzyskać informacje o korzystaniu z wtyczki stabilizatora.</OfxMessage>
+
+<OfxMessage name="invalidEffectContextEffect_VideoOutput">Do wyjścia wideo dodano wtyczkę stabilizatora. Ta wtyczka musi być dodana do klipu lub podklipu jako efekt mediów.
+
+Aby używać efektów mediów wybierz zdarzenie na osi czasu (lub klip w oknie mediów projektu) i wybierz narzędzia &gt; wideo &gt; efekty mediów. Kliknij na ? przycisku w oknie efektów mediów aby uzyskać informacje o korzystaniu z wtyczki stabilizatora.</OfxMessage>
+
+<OfxProgress name="StabilizeAnalyzeProgress">Stabilizowanie mediów</OfxProgress>
+<OfxMessage name="mustClickApply">Musisz kliknąć „zastosuj”, żeby zmiany weszły w życie.</OfxMessage>
+                
+                <OfxParamTypeDouble name="PanSmoothing">
+                    <OfxPropLabel>Wygladzanie panoramowania</OfxPropLabel>
+                </OfxParamTypeDouble>
+          
+                <OfxParamTypeDouble name="ViewScale">
+                    <OfxPropLabel>Stopień stabilizacji</OfxPropLabel>
+                </OfxParamTypeDouble>
+
+                <OfxParamTypeBoolean name="RollingShutterCorrection">
+                    <OfxPropLabel>Korekta ruchomej migawki</OfxPropLabel>
+                </OfxParamTypeBoolean>
+                
+                <OfxParamTypePushButton name="AnalyzeButton">
+                    <OfxPropLabel>Zastosuj</OfxPropLabel>
+                </OfxParamTypePushButton>
+                
+			</OfxImageEffectContext>
+
+		</OfxResourceSet>
+
+	</OfxPlugin>
+</OfxImageEffectResource>

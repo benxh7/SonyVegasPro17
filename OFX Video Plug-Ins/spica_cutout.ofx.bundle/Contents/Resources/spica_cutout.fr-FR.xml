@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<OfxImageEffectResource>
+	<OfxPlugin name="com.sonycreativesoftware:smart_zoom">
+		<OfxResourceSet ofxHost="default">
+			<OfxPropLabel>Zoom intelligent VEGAS</OfxPropLabel>
+			<OfxPropShortLabel>VEGAS Smart Zoom</OfxPropShortLabel>
+			<OfxPropLongLabel>VEGAS Smart Zoom</OfxPropLongLabel>
+			<OfxImageEffectPluginPropGrouping>VEGAS</OfxImageEffectPluginPropGrouping>			
+			<OfxPropPluginDescription>Zoom VEGAS haute qualité.</OfxPropPluginDescription>
+			<OfxImageEffectContext name="default">
+				<OfxParamTypeDouble3D name="LocationAndZoom">
+					<OfxPropLabel>Découpage</OfxPropLabel>
+			        <OfxPropShortLabel>Cutout</OfxPropShortLabel>
+			        <OfxPropLongLabel>Cutout</OfxPropLongLabel>
+					<OfxParamPropHint>Emplacement et zoom sur le découpage.</OfxParamPropHint>
+				</OfxParamTypeDouble3D>
+				<OfxParamTypeDouble name="Noise">
+					<OfxPropLabel>Sensibilité au bruit</OfxPropLabel>
+			        <OfxPropShortLabel>Noise sensitivity</OfxPropShortLabel>
+			        <OfxPropLongLabel>Noise sensitivity</OfxPropLongLabel>
+					<OfxParamPropHint>Niveau de bruit de l'image.</OfxParamPropHint>
+				</OfxParamTypeDouble>
+				<OfxParamTypeBoolean name="EnableEnhancement">
+					<OfxPropLabel>Activer l'amélioration</OfxPropLabel>
+			        <OfxPropShortLabel>Enable enhancement</OfxPropShortLabel>
+			        <OfxPropLongLabel>Enable enhancement</OfxPropLongLabel>
+					<OfxParamPropHint>Activez ou désactivez l'amélioration intelligente.</OfxParamPropHint>
+				</OfxParamTypeBoolean>
+				<OfxMessage name="GenericError">
+				    Le module externe a rencontré une erreur suite à laquelle il ne peut récupérer.
+				</OfxMessage>
+				<OfxMessage name="FrameFormatNotSupported">
+				    Le format de trame spécifié n'est pas pris en charge.Veuillez sélectionner un RVBA à virgule flottante 8 bits ou 32 bits dans les paramètres du projet.
+				</OfxMessage>
+				<OfxMessage name="OpenCLMissing">
+				    Ce module externe nécessite OpenCL pour fonctionner.
+				</OfxMessage>
+				<OfxMessage name="OpenCLError">
+				    Le module externe a rencontré une erreur OpenCL.
+				</OfxMessage>
+				<OfxMessage name="OpenCLMemoryError">
+				    La mémoire GPU d'OpenCL est épuisée. Veuillez réessayer avec des images de résolution inférieure, ou avec moins d'effets vidéo OpenCL.
+				</OfxMessage>
+				<OfxMessage name="OpenCLImageSizeError">
+				    La résolution du projet est trop haute. Veuillez réessayer avec des images de résolution inférieure.
+				</OfxMessage>
+			</OfxImageEffectContext>
+		</OfxResourceSet>
+	</OfxPlugin>
+</OfxImageEffectResource>

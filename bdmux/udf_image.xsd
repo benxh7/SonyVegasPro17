@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns="http://tempuri.org/XMLSchema.xsd" xmlns:mstns="http://tempuri.org/XMLSchema.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://tempuri.org/XMLSchema.xsd" elementFormDefault="qualified" attributeFormDefault="unqualified" version="3.0.0.0006">
+	<xs:element name="udf_image">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="volume">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="sectors" type="xs:unsignedInt"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="layer_break_point">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="LBN" type="xs:unsignedInt"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="partition">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="access_type" type="xs:unsignedInt"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="identifier">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="volume_id" type="xs:string"/>
+							<xs:element name="volume_set_id" type="xs:string"/>
+							<xs:element name="application_id" type="xs:string"/>
+							<xs:element name="implementation_id" type="xs:string"/>
+							<xs:element name="implementation_use" type="xs:string"/>
+							<xs:element name="logical_volume_id" type="xs:string"/>
+							<xs:element name="file_set_id" type="xs:string"/>
+							<xs:element name="Recording_date_time" type="xs:dateTime" minOccurs="0"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="logical_dir_struct">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="directory" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="file_id" type="xs:unsignedInt"/>
+										<xs:element name="file_entry" minOccurs="0" maxOccurs="unbounded">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="file_id" type="xs:unsignedInt"/>
+													<xs:element name="file_name" type="xs:string"/>
+													<xs:element name="is_dir" type="xs:boolean"/>
+													<xs:element name="is_real_time_file" type="xs:boolean"/>
+													<xs:element name="is_SSIF_file" type="xs:boolean">
+														<xs:annotation>
+															<xs:documentation>for 3D</xs:documentation>
+														</xs:annotation>
+													</xs:element>
+													<xs:element name="Creation_date_time" type="xs:dateTime" minOccurs="0"/>
+													<xs:element name="Modification_date_time" type="xs:dateTime" minOccurs="0"/>
+													<xs:element name="Access_date_time" type="xs:dateTime" minOccurs="0"/>
+													<xs:element name="File_attributes" minOccurs="0">
+														<xs:complexType>
+															<xs:simpleContent>
+																<xs:extension base="xs:unsignedInt">
+																	<xs:attribute name="Mask" type="xs:unsignedInt" use="required"/>
+																</xs:extension>
+															</xs:simpleContent>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="physical_dir_struct">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="file" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="file_id" type="xs:unsignedInt"/>
+										<xs:element name="file_path" type="xs:string"/>
+										<xs:element name="file_extent" minOccurs="0" maxOccurs="unbounded">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="LBN" type="xs:unsignedInt"/>
+													<xs:element name="extent_length" type="xs:unsignedInt"/>
+													<xs:element name="offset_in_source_file" type="xs:unsignedLong">
+														<xs:annotation>
+															<xs:documentation>for 3D</xs:documentation>
+														</xs:annotation>
+													</xs:element>
+													<xs:element name="is_SSIF_only" type="xs:boolean">
+														<xs:annotation>
+															<xs:documentation>for 3D</xs:documentation>
+														</xs:annotation>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="unallocated_space_bitmap" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="LBN" type="xs:unsignedInt"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="metadata">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="file_entry_LBN" type="xs:unsignedInt"/>
+							<xs:element name="metadata_extent" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="LBN" type="xs:unsignedInt"/>
+										<xs:element name="extent_length" type="xs:unsignedInt"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="metadata_mirror" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="file_entry_LBN" type="xs:unsignedInt"/>
+							<xs:element name="metadata_mirror_extent" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="LBN" type="xs:unsignedInt"/>
+										<xs:element name="extent_length" type="xs:unsignedInt"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="named_streams" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="named_stream" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="file_id" type="xs:unsignedInt"/>
+										<xs:element name="file_name" type="xs:string"/>
+										<xs:element name="file_path" type="xs:string"/>
+										<xs:element name="LBN" type="xs:unsignedInt"/>
+										<xs:element name="extent_length" type="xs:unsignedInt"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="compressed_file" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="LSNss" type="xs:unsignedInt"/>
+							<xs:element name="LSNse" type="xs:unsignedInt"/>
+							<xs:element name="original_file_name" type="xs:string"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="output">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Filename_Image" type="xs:string" minOccurs="0"/>
+							<xs:element name="Filename_Image0" type="xs:string" minOccurs="0"/>
+							<xs:element name="Filename_Image1" type="xs:string" minOccurs="0"/>
+							<xs:element name="Filename_Image_digest" type="xs:string" minOccurs="0"/>
+							<xs:element name="Filename_Image0_digest" type="xs:string" minOccurs="0"/>
+							<xs:element name="Filename_Image1_digest" type="xs:string" minOccurs="0"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="alloc_log" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="logical_volume_length" type="xs:unsignedInt"/>
+							<xs:element name="metadata_file_length" type="xs:unsignedInt"/>
+							<xs:element name="unallocated_space_bitmap_length" type="xs:unsignedInt"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Common_data" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Common_date_time" type="xs:dateTime" minOccurs="0"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="UID_mapping_data">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="UID_mapping_data_extent" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="LBN" type="xs:unsignedInt"/>
+										<xs:element name="extent_length" type="xs:unsignedInt"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="SSIF_info" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>for 3D</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="SSIF_file" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="Base_file">
+											<xs:complexType>
+												<xs:attribute name="file_id" type="xs:unsignedInt" use="required"/>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="Dependent_file">
+											<xs:complexType>
+												<xs:attribute name="file_id" type="xs:unsignedInt" use="required"/>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+									<xs:attribute name="file_id" type="xs:unsignedInt" use="required"/>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

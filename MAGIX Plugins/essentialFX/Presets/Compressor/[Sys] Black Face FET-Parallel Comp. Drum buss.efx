@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<preset owner="eFX Compressor" name="Black Face FET-Parallel Comp. Drum buss">
+    <params version="2.010000">
+        <param id="active" value="1.000000" />
+        <param id="input" value="1.000000" />
+        <param id="output" value="0.630000" />
+        <param id="scfilter" value="0.000000" />
+        <param id="threshold" value="0.578333" />
+        <param id="ratio" value="0.836667" />
+        <param id="attack" value="0.060000" />
+        <param id="release" value="0.110000" />
+        <param id="sclisten" value="0.000000" />
+        <param id="softclip" value="1.000000" />
+        <param id="scflttype" value="0.000000" />
+        <param id="mode" value="0.000000" />
+        <param id="adaptrelease" value="2.300000" />
+        <param id="automakeup" value="0.000000" />
+        <param id="mix" value="0.662500" />
+        <param id="version" value="2.010000" />
+    </params>
+</preset>

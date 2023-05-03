@@ -1,0 +1,574 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<OfxImageEffectResource>
+  <OfxPlugin name="de.magix:LensCorrection">
+
+    <OfxResourceSet ofxHost="default">
+      <OfxPropLabel>VEGAS 렌즈 보정</OfxPropLabel>
+
+      <OfxImageEffectPluginPropGrouping>VEGAS</OfxImageEffectPluginPropGrouping>
+      <OfxPropPluginDescription>렌즈 왜곡 보정</OfxPropPluginDescription>
+      <OfxImageEffectContext name="default">
+      </OfxImageEffectContext>
+
+      <OfxImageEffectContext name="OfxImageEffectContextFilter">
+        
+		<OfxParamTypeChoice name="Localization">
+          <OfxParamPropChoiceOption>렌즈 선택</OfxParamPropChoiceOption>
+          <OfxParamPropChoiceOption>해당 사항을 찾을 수 없습니다</OfxParamPropChoiceOption>
+        </OfxParamTypeChoice>
+
+		<OfxParamTypeGroup name="GroupDb">
+          <OfxPropLabel>렌즈 모델</OfxPropLabel>
+		  <OfxPropShortLabel>렌즈 모델</OfxPropShortLabel>
+		  <OfxPropLongLabel>렌즈 모델</OfxPropLongLabel>
+		  <OfxParamPropHint>일련의 렌즈 모델 포함</OfxParamPropHint>
+        </OfxParamTypeGroup>
+
+		<OfxParamTypeString name="Query">
+          <OfxPropLabel>찾기</OfxPropLabel>
+		  <OfxPropShortLabel>찾기</OfxPropShortLabel>
+		  <OfxPropLongLabel>찾기</OfxPropLongLabel>
+		  <OfxParamPropHint>찾으실 렌즈 모델명을 입력해 주십시오.</OfxParamPropHint>
+        </OfxParamTypeString>
+		
+		<OfxParamTypeChoice name="QueryResult">
+          <OfxPropLabel>찾은 렌즈</OfxPropLabel>
+		  <OfxPropShortLabel>찾은 렌즈</OfxPropShortLabel>
+		  <OfxPropLongLabel>찾은 렌즈</OfxPropLongLabel>
+		  <OfxParamPropHint>모든 렌즈 채우기 쿼리 열기</OfxParamPropHint>
+        </OfxParamTypeChoice>
+		
+		<OfxParamTypeBoolean name="ShowMesh">
+          <OfxPropLabel>왜곡 보기</OfxPropLabel>
+		  <OfxPropShortLabel>왜곡 보기</OfxPropShortLabel>
+		  <OfxPropLongLabel>특정 매개변수로 인한 왜곡 보기</OfxPropLongLabel>
+		  <OfxParamPropHint>특정 매개변수에 의해 보정된 왜곡 보기</OfxParamPropHint>
+        </OfxParamTypeBoolean>
+		
+        <OfxParamTypeDouble2D name="DistCenter">
+         <OfxPropLabel>왜곡 중앙</OfxPropLabel>
+		 <OfxPropShortLabel>왜곡 중앙</OfxPropShortLabel>
+		 <OfxPropLongLabel>왜곡 중앙</OfxPropLongLabel>
+		 <OfxParamPropHint>렌즈의 중심이 어긋났을 경우 초점 보정</OfxParamPropHint>
+        </OfxParamTypeDouble2D>
+    
+		<OfxParamTypeDouble name="RadialDistParam1">
+         <OfxPropLabel>방사형 왜곡 k1</OfxPropLabel>
+		 <OfxPropShortLabel>방사형 왜곡 k1</OfxPropShortLabel>
+		 <OfxPropLongLabel>방사형 왜곡 k1</OfxPropLongLabel>
+		 <OfxParamPropHint>pt렌즈 모델의 매개변수 A입니다.</OfxParamPropHint>
+        </OfxParamTypeDouble>
+		
+		<OfxParamTypeDouble name="RadialDistParam2">
+         <OfxPropLabel>방사형 왜곡 k2</OfxPropLabel>
+		 <OfxPropShortLabel>방사형 왜곡 k2</OfxPropShortLabel>
+		 <OfxPropLongLabel>방사형 왜곡 k2</OfxPropLongLabel>
+		 <OfxParamPropHint>pt렌즈 모델의 매개변수 B입니다.</OfxParamPropHint>
+        </OfxParamTypeDouble>
+
+		<OfxParamTypeDouble name="RadialDistParam3">
+         <OfxPropLabel>방사형 왜곡 k3</OfxPropLabel>
+		 <OfxPropShortLabel>방사형 왜곡 k3</OfxPropShortLabel>
+		 <OfxPropLongLabel>방사형 왜곡 k3</OfxPropLongLabel>
+		 <OfxParamPropHint>pt렌즈 모델의 매개변수 C입니다.</OfxParamPropHint>
+        </OfxParamTypeDouble>	
+      </OfxImageEffectContext>
+
+    </OfxResourceSet>
+
+  </OfxPlugin>
+  <OfxPlugin name="de.magix:MeshWarp">
+
+    <OfxResourceSet ofxHost="default">
+      <OfxPropLabel>VEGAS Mesh Warp</OfxPropLabel>
+
+      <OfxImageEffectPluginPropGrouping>VEGAS</OfxImageEffectPluginPropGrouping>
+      <OfxPropPluginDescription>왜곡 이미지</OfxPropPluginDescription>
+      <OfxImageEffectContext name="default">
+      </OfxImageEffectContext>
+
+      <OfxImageEffectContext name="OfxImageEffectContextFilter">
+        	
+		<OfxParamTypeBoolean name="EnableWarp">
+          <OfxPropLabel>비틀기 효과 사용</OfxPropLabel>
+		  <OfxPropShortLabel>효과 사용</OfxPropShortLabel>
+		  <OfxPropLongLabel>비틀기 효과 사용</OfxPropLongLabel>
+		  <OfxParamPropHint>비틀기 효과 사용</OfxParamPropHint>
+        </OfxParamTypeBoolean>
+		
+		<OfxParamTypeInteger name="GridCountX">
+          <OfxPropLabel>그리드 눈금 크기(X)</OfxPropLabel>
+		  <OfxPropShortLabel>그리드 눈금 크기(X)</OfxPropShortLabel>
+		  <OfxPropLongLabel>그리드 눈금 크기(X)</OfxPropLongLabel>
+		  <OfxParamPropHint>그리드 눈금 크기(X)</OfxParamPropHint>
+        </OfxParamTypeInteger>
+
+		<OfxParamTypeInteger name="GridCountY">
+          <OfxPropLabel>그리드 눈금 크기(Y)</OfxPropLabel>
+		  <OfxPropShortLabel>그리드 눈금 크기(Y)</OfxPropShortLabel>
+		  <OfxPropLongLabel>그리드 눈금 크기(Y)</OfxPropLongLabel>
+		  <OfxParamPropHint>그리드 눈금 크기(Y)</OfxParamPropHint>
+        </OfxParamTypeInteger>
+		
+		<OfxParamTypeInteger name="ScaleGridX">
+          <OfxPropLabel>X의 그리드 크기 배율</OfxPropLabel>
+		  <OfxPropShortLabel>X의 그리드 크기 배율</OfxPropShortLabel>
+		  <OfxPropLongLabel>X의 그리드 크기 배율</OfxPropLongLabel>
+		  <OfxParamPropHint>X의 그리드 크기 배율</OfxParamPropHint>
+        </OfxParamTypeInteger>
+		
+		<OfxParamTypeInteger name="ScaleGridY">
+          <OfxPropLabel>Y의 그리드 크기 배율</OfxPropLabel>
+		  <OfxPropShortLabel>Y의 그리드 크기 배율</OfxPropShortLabel>
+		  <OfxPropLongLabel>Y의 그리드 크기 배율</OfxPropLongLabel>
+		  <OfxParamPropHint>Y의 그리드 크기 배율</OfxParamPropHint>
+        </OfxParamTypeInteger>
+    
+		<OfxParamTypeBoolean name="GridCountLink">
+         <OfxPropLabel>X와 Y그리드 눈금 크기 고정</OfxPropLabel>
+		 <OfxPropShortLabel>X와 Y그리드 눈금 크기 고정</OfxPropShortLabel>
+		 <OfxPropLongLabel>X와 Y그리드 눈금 크기 고정</OfxPropLongLabel>
+		 <OfxParamPropHint>X와 Y 눈금 크기 동일하게 고정</OfxParamPropHint>
+        </OfxParamTypeBoolean>
+		
+		<OfxParamTypeBoolean name="KeepMeshStructure">
+         <OfxPropLabel>메쉬 구조 저장</OfxPropLabel>
+		 <OfxPropShortLabel>메쉬 구조 저장</OfxPropShortLabel>
+		 <OfxPropLongLabel>메쉬 구조 저장</OfxPropLongLabel>
+		 <OfxParamPropHint>크기를 조정할 때에도 그리드 구조를 유지하기.</OfxParamPropHint>
+        </OfxParamTypeBoolean>	
+
+		<OfxParamTypePushButton name="ResetMesh">
+          <OfxPropLabel>재설정 메쉬</OfxPropLabel>
+		  <OfxPropShortLabel>재설정 메쉬</OfxPropShortLabel>
+		  <OfxPropLongLabel>재설정 메쉬</OfxPropLongLabel>
+		  <OfxParamPropHint>재설정 메쉬</OfxParamPropHint>
+        </OfxParamTypePushButton>
+		
+      </OfxImageEffectContext>
+
+    </OfxResourceSet>
+
+  </OfxPlugin>
+  <OfxPlugin name="de.magix:TimeWarp">
+
+    <OfxResourceSet ofxHost="default">
+      <OfxPropLabel>VEGAS 슬로 모션</OfxPropLabel>
+
+      <OfxImageEffectPluginPropGrouping>VEGAS</OfxImageEffectPluginPropGrouping>
+      <OfxPropPluginDescription>슬로 모션 영상 생성</OfxPropPluginDescription>
+      <OfxImageEffectContext name="default">
+      </OfxImageEffectContext>
+
+      <OfxImageEffectContext name="OfxImageEffectContextFilter">
+
+        <OfxMessage name="OutOfMemory">그래픽 카드에 지정한 품질 수준으로이 작업을 완료하는 데 필요한 메모리가 부족합니다. 품질이 낮은 설정을 선택해야합니다.</OfxMessage>
+        <OfxMessage name="NoGPU">이 플러그인은 GPU 사용에 크게 의존합니다. 현재 CPU 처리를 사용하고 있습니다. 플러그인은 여전히 작동하지만 결과에서 성능이 저하되고 아티팩트가 발생할 수 있습니다.</OfxMessage>
+		<OfxMessage name="TrimHint">슬로 모션을 적용하신 후 이 이벤트를 편집하시면 원치 않았던 결과를 얻으실 수도 있습니다. 슬로 모션 효과를 적용하시기 전에 이벤트를 편집하시는 것이 가장 좋습니다. 또는, 그러한 제한이 없는 미디어 효과 단계에서 슬로 모션 을 적용하셔도 됩니다.</OfxMessage>
+		<OfxMessage name="EventFXSpeedUp">A Playback Rate greater than 1.0 will have unexpected results if you change the event length. If you need to change the length of the event after applying a rate greater than 1.0, apply the Slow Motion plug-in at the media level where no restrictions apply.</OfxMessage>
+		
+		<OfxParamTypeGroup name="Group Parameter">
+          <OfxPropLabel>매개변수</OfxPropLabel>
+		  <OfxPropShortLabel>매개변수</OfxPropShortLabel>
+		  <OfxPropLongLabel>매개변수</OfxPropLongLabel>
+		  <OfxParamPropHint>각 매개변수 그룹짓기</OfxParamPropHint>	
+        </OfxParamTypeGroup>
+		
+		<OfxParamTypeChoice name="Choice Box Algorithm">
+		  <OfxParamPropChoiceOption>모핑</OfxParamPropChoiceOption>
+          <OfxParamPropChoiceOption>빠른 옵티컬 플로우</OfxParamPropChoiceOption>
+          <!--<OfxParamPropChoiceOption>엣지 인식 옵티컬 플로우</OfxParamPropChoiceOption>-->
+		  <OfxPropLabel>방법</OfxPropLabel>	
+		  <OfxParamPropHint>다른 방법을 이용해 생성한 중간 프레임 바꾸기</OfxParamPropHint>		  
+        </OfxParamTypeChoice>
+    
+		<OfxParamTypeChoice name="Choice Box Quality">
+          <OfxParamPropChoiceOption>조잡한</OfxParamPropChoiceOption>
+		  <OfxParamPropChoiceOption>매질</OfxParamPropChoiceOption>
+          <OfxParamPropChoiceOption>벌금</OfxParamPropChoiceOption>
+		  <OfxPropLabel>품질</OfxPropLabel>	
+		  <OfxParamPropHint>중간 프레임을 만드는 데 필요한 여러 품질 사이를 전환합니다.</OfxParamPropHint>		  
+        </OfxParamTypeChoice>
+
+		<OfxParamTypeDouble name="Slow Motion Ratio">
+         <OfxPropLabel>재생 속도</OfxPropLabel>
+		 <OfxPropShortLabel>재생 속도</OfxPropShortLabel>
+		 <OfxPropLongLabel>재생 속도</OfxPropLongLabel>
+		 <OfxParamPropHint>이 매개변수로 클립의 속도 비율을 변경하실 수 있습니다.</OfxParamPropHint>
+        </OfxParamTypeDouble>
+
+        <OfxParamTypePushButton name="Analyse Button">
+          <OfxPropLabel>모션 분석</OfxPropLabel>
+		  <OfxPropShortLabel>모션 분석</OfxPropShortLabel>
+		  <OfxPropLongLabel>모션 분석</OfxPropLongLabel>
+		  <OfxParamPropHint>모션 분석을 시작합니다.</OfxParamPropHint>
+        </OfxParamTypePushButton>
+
+        <OfxParamTypePushButton name="Clear Button">
+          <OfxPropLabel>모션 데이터 지우기</OfxPropLabel>
+		  <OfxPropShortLabel>모션 데이터 지우기</OfxPropShortLabel>
+		  <OfxPropLongLabel>모션 데이터 지우기</OfxPropLongLabel>
+		  <OfxParamPropHint>모션 분석 결과 지우기</OfxParamPropHint>
+        </OfxParamTypePushButton>
+				
+      </OfxImageEffectContext>
+
+    </OfxResourceSet>
+
+  </OfxPlugin>
+  <OfxPlugin name="de.magix:Stabilize">
+
+    <OfxResourceSet ofxHost="default">
+      <OfxPropLabel>VEGAS 영상 안정화 </OfxPropLabel>
+
+      <OfxImageEffectPluginPropGrouping>VEGAS</OfxImageEffectPluginPropGrouping>
+      <OfxPropPluginDescription>영상 모션 안정화</OfxPropPluginDescription>
+      <OfxImageEffectContext name="default">
+      </OfxImageEffectContext>
+
+      <OfxImageEffectContext name="OfxImageEffectContextFilter">
+
+        <OfxMessage name="invalidEffectContextEffect_Event">
+          이벤트에 영상 안정화 플러그 인을 추가하셨습니다. 이 플러그 인은 클립이나 서브클립에 미디어 효과로써 적용됩니다.
+
+	미디어 이펙트를 적용하시려면, 타임라인에서 이벤트를 선택하신 후(혹은 프로젝트 미디어 창에서 클립을 선택하신 후) 도구 &gt; 영상 &gt; 미디어 FX를 선택하십시오.</OfxMessage>
+
+        <OfxMessage name="invalidEffectContextEffect_Track">
+          트랙에 영상 안정화 플러그 인을 추가하셨습니다. 이 플러그 인은 클립이나 서브클립에 미디어 효과로써 적용됩니다.
+
+	미디어 이펙트를 적용하시려면, 타임라인에서 이벤트를 선택하신 후(혹은 프로젝트 미디어 창에서 클립을 선택하신 후) 도구 &gt; 영상 &gt; 미디어 FX를 선택하십시오.</OfxMessage>
+
+        <OfxMessage name="invalidEffectContextEffect_VideoOutput">
+          영상 출력에 영상 안정화 플러그 인을 추가하셨습니다. 이 플러그 인은 클립이나 서브클립에 미디어 효과로써 적용됩니다.
+
+	미디어 이펙트를 적용하시려면, 타임라인에서 이벤트를 선택하신 후(혹은 프로젝트 미디어 창에서 클립을 선택하신 후) 도구 &gt; 영상 &gt; 미디어 FX를 선택하십시오. </OfxMessage>
+
+		<OfxMessage name="trimHint">
+		이 이벤트를 편집(자르기, 나누기 등)하면 안정화 데이터가 손상되거나 예기치 않은 결과를 발생시킬 수 있습니다. 안정화를 적용하기 이전에 이벤트를 수정하시는 편이 좋습니다. 
+		</OfxMessage> 	
+	
+        <OfxProgress name="StabilizeAnalyzeProgress">미디어 안정화</OfxProgress>
+        <OfxMessage name="mustClickApply">영상을 안정화하시려면 모션 분석 버튼을 클릭하십시오. 분석 중인 미디어를 재생하지 마십시오. </OfxMessage>
+        <OfxParamTypeGroup name="GroupParameters">
+          <OfxPropLabel>매개변수</OfxPropLabel>
+		  <OfxPropShortLabel>매개변수</OfxPropShortLabel>
+		  <OfxPropLongLabel>매개변수</OfxPropLongLabel>
+		  <OfxParamPropHint>안정화 이전의 매개 변수에 대한 추가 정보 보기</OfxParamPropHint>
+        </OfxParamTypeGroup>
+		
+		<OfxParamTypeChoice name="Views">
+			<OfxParamPropChoiceOption>기본</OfxParamPropChoiceOption>
+			<OfxParamPropChoiceOption>고급</OfxParamPropChoiceOption>
+			<OfxParamPropChoiceOption>전문가</OfxParamPropChoiceOption>
+          <OfxPropLabel>사용자 보기</OfxPropLabel>
+		  <OfxPropShortLabel>사용자 보기</OfxPropShortLabel>
+		  <OfxPropLongLabel>사용자 보기</OfxPropLongLabel>
+		  <OfxParamPropHint>다른 사용자 보기로 바꾸기</OfxParamPropHint>
+        </OfxParamTypeChoice>
+		
+		<OfxParamTypePushButton name="AnalyzeMotionBasic">
+          <OfxPropLabel>안정화</OfxPropLabel>
+		  <OfxPropShortLabel>안정화</OfxPropShortLabel>
+		  <OfxPropLongLabel>안정화</OfxPropLongLabel>
+		  <OfxParamPropHint>안정화 시작하기</OfxParamPropHint>
+        </OfxParamTypePushButton>
+
+        <OfxParamTypePushButton name="CLearMotionBasic">
+          <OfxPropLabel>재설정</OfxPropLabel>
+		  <OfxPropShortLabel>재설정</OfxPropShortLabel>
+		  <OfxPropLongLabel>재설정</OfxPropLongLabel>
+		  <OfxParamPropHint>안정화 결과 지우기</OfxParamPropHint>
+        </OfxParamTypePushButton>
+		
+		<OfxParamTypeGroup name="GroupSmoothing">
+          <OfxPropLabel>스무딩</OfxPropLabel>
+		  <OfxPropShortLabel>스무딩</OfxPropShortLabel>
+		  <OfxPropLongLabel>스무딩</OfxPropLongLabel>
+		  <OfxParamPropHint>스무딩 프로세스에 대한 더 자세한 정보 보기</OfxParamPropHint>
+        </OfxParamTypeGroup>
+		
+		<OfxParamTypeBoolean name="IsStaticCamera">
+          <OfxPropLabel>정적 카메라</OfxPropLabel>
+		  <OfxPropShortLabel>정적 카메라</OfxPropShortLabel>
+		  <OfxPropLongLabel>정적 카메라</OfxPropLongLabel>
+		  <OfxParamPropHint>스무딩 모션 모드(정적 카메라를 사용하실 수 없습니다)와 고정 모션(정적 카메라를 사용하실수 있습니다)를 바꾸기</OfxParamPropHint>
+        </OfxParamTypeBoolean>
+		
+		<OfxParamTypeInteger name="StaticReference">
+          <OfxPropLabel>참조 프레임 수</OfxPropLabel>
+		  <OfxPropShortLabel>참조 프레임 수</OfxPropShortLabel>
+		  <OfxPropLongLabel>참조 프레임 수</OfxPropLongLabel>
+		  <OfxParamPropHint>이 매개 변수를 조정하여 영상 모션을 안정화시키는 참조 프레임을 변경할 수 있습니다. </OfxParamPropHint>
+        </OfxParamTypeInteger>
+      
+		<OfxParamTypeChoice name="Presets">
+			<OfxParamPropChoiceOption>빠르게</OfxParamPropChoiceOption>
+			<OfxParamPropChoiceOption>정확하게</OfxParamPropChoiceOption>
+          <OfxPropLabel>방법</OfxPropLabel>
+		  <OfxPropShortLabel>방법</OfxPropShortLabel>
+		  <OfxPropLongLabel>방법</OfxPropLongLabel>
+		  <OfxParamPropHint>이 선택상자는 모션 추적 알고리즘과 추적 가능한 포인트가 정해지는 방식, 그리고 어떤 모션 모델링을 위한 모션 트랙에 영향을 미칩니다.</OfxParamPropHint>
+        </OfxParamTypeChoice>
+
+        <OfxParamTypeChoice name="MotionCompensation">
+          <OfxParamPropChoiceOption>평행 이동</OfxParamPropChoiceOption>
+          <OfxParamPropChoiceOption>평행 이동 + 회전</OfxParamPropChoiceOption>
+          <OfxParamPropChoiceOption>평행 이동 + 회전 + 스케일</OfxParamPropChoiceOption>		  
+          <OfxParamPropChoiceOption>아핀</OfxParamPropChoiceOption>
+          <OfxPropLabel>모션 보정</OfxPropLabel>
+		  <OfxPropShortLabel>모션 보정</OfxPropShortLabel>
+		  <OfxPropLongLabel>모션 보정</OfxPropLongLabel>
+		  <OfxParamPropHint>이 선택 박스로 모션 모델링 알고리즘을 조정하실 수 있습니다.</OfxParamPropHint>
+        </OfxParamTypeChoice>
+		
+        <OfxParamTypeDouble name="SmoothingMagnitude">
+         <OfxPropLabel>매끄럽게</OfxPropLabel>
+		 <OfxPropShortLabel>매끄럽게</OfxPropShortLabel>
+		 <OfxPropLongLabel>매끄럽게</OfxPropLongLabel>
+		 <OfxParamPropHint>매끄럽게 설정(초 단위)을 사용하여 한 장면당 &quot;불안정한&quot; 요소를 얼마나 유지해야 하는지 정의하실 수 있습니다. 매개변수를 높게 지정하실수록 움직임이 매끄러워집니다.</OfxParamPropHint>
+        </OfxParamTypeDouble>
+
+        <OfxParamTypePushButton name="AnalyzeMotion">
+          <OfxPropLabel>모션 분석</OfxPropLabel>
+		  <OfxPropShortLabel>모션 분석</OfxPropShortLabel>
+		  <OfxPropLongLabel>모션 분석</OfxPropLongLabel>
+		  <OfxParamPropHint>모션 분석을 시작합니다.</OfxParamPropHint>
+        </OfxParamTypePushButton>
+
+        <OfxParamTypePushButton name="CLearMotion">
+          <OfxPropLabel>모션 데이터 지우기</OfxPropLabel>
+		  <OfxPropShortLabel>모션 데이터 지우기</OfxPropShortLabel>
+		  <OfxPropLongLabel>모션 데이터 지우기</OfxPropLongLabel>
+		  <OfxParamPropHint>모션 분석 결과 지우기</OfxParamPropHint>
+        </OfxParamTypePushButton>
+		
+		
+		<OfxParamTypeGroup name="GroupBorders">
+          <OfxPropLabel>테두리</OfxPropLabel>
+		  <OfxPropShortLabel>테두리</OfxPropShortLabel>
+		  <OfxPropLongLabel>테두리</OfxPropLongLabel>
+		  <OfxParamPropHint>테두리에 대한 추가 정보 보기</OfxParamPropHint>
+        </OfxParamTypeGroup>
+		
+		<OfxParamTypeBoolean name="AvoidBlackBorders">
+          <OfxPropLabel>자동 확대/축소</OfxPropLabel>
+		  <OfxPropShortLabel>자동 확대/축소</OfxPropShortLabel>
+		  <OfxPropLongLabel>자동 확대/축소</OfxPropLongLabel>
+		  <OfxParamPropHint>자동 확대/축소를 클릭하여 검은 테두리를 제거합니다.</OfxParamPropHint>
+        </OfxParamTypeBoolean>
+		
+		<OfxParamTypeDouble2D name="AdditionalTranslation">
+         <OfxPropLabel>추가 평행 이동</OfxPropLabel>
+		 <OfxPropShortLabel>추가 평행 이동</OfxPropShortLabel>
+		 <OfxPropLongLabel>추가 평행 이동</OfxPropLongLabel>
+		 <OfxParamPropHint>위치 이동하기</OfxParamPropHint>
+        </OfxParamTypeDouble2D>
+
+        <OfxParamTypeDouble name="AdditionalRotation">
+          <OfxPropLabel>추가 회전</OfxPropLabel>
+		  <OfxPropShortLabel>추가 회전</OfxPropShortLabel>
+		  <OfxPropLongLabel>추가 회전</OfxPropLongLabel>
+		  <OfxParamPropHint>회전에 오프셋을 추가합니다. 회전(각도) 매개변수를 조정하여 수평선을 평행으로 만들 수 있습니다. </OfxParamPropHint>
+        </OfxParamTypeDouble>
+
+		<OfxParamTypeDouble name="AdditionalScale">
+          <OfxPropLabel>추가 확대/축소</OfxPropLabel>
+		  <OfxPropShortLabel>추가 확대/축소</OfxPropShortLabel>
+		  <OfxPropLongLabel>추가 확대/축소</OfxPropLongLabel>
+		  <OfxParamPropHint>확대/축소에 오프셋을 추가합니다. 화면을 확대하여 검은 테두리가 생기는 것을 막거나 이미지의 중앙으로 포커스를 맞출 수 있습니다.</OfxParamPropHint>
+        </OfxParamTypeDouble>
+		
+		<OfxParamTypeChoice name="Zoom_Filling">
+          <OfxParamPropChoiceOption>투명도</OfxParamPropChoiceOption>
+          <OfxParamPropChoiceOption>미러 패딩</OfxParamPropChoiceOption>
+          <OfxParamPropChoiceOption>반복</OfxParamPropChoiceOption>		  
+          <OfxParamPropChoiceOption>가장자리 고정</OfxParamPropChoiceOption>
+<!--		  
+          <OfxParamPropChoiceOption>검은색</OfxParamPropChoiceOption>	
+          <OfxParamPropChoiceOption>색상</OfxParamPropChoiceOption>	
+-->
+          <OfxPropLabel>가장자리 채우기</OfxPropLabel>
+		  <OfxPropShortLabel>가장자리 채우기</OfxPropShortLabel>
+		  <OfxPropLongLabel>가장자리 채우기</OfxPropLongLabel>
+		  <OfxParamPropHint>이 선택 박스는 배경색을 채울 때 쓰실 수 있습니다.</OfxParamPropHint>
+        </OfxParamTypeChoice>
+		
+		<OfxParamTypeRGBA name="Zoom_ColorPicker">
+          <OfxPropLabel>색상</OfxPropLabel>
+		  <OfxPropShortLabel>색상</OfxPropShortLabel>
+		  <OfxPropLongLabel>색상</OfxPropLongLabel>
+		  <OfxParamPropHint>채울 색 선택하기 </OfxParamPropHint>
+        </OfxParamTypeRGBA>
+        
+
+        <OfxParamTypeGroup name="GroupMotionBlur">
+          <OfxPropLabel>모션 블러</OfxPropLabel>
+		  <OfxPropShortLabel>모션 블러</OfxPropShortLabel>
+		  <OfxPropLongLabel>모션 블러</OfxPropLongLabel>
+		  <OfxParamPropHint>모션 블러에 대한 추가 정보 보기</OfxParamPropHint>
+        </OfxParamTypeGroup>
+        
+        <OfxParamTypeBoolean name="MotionBlur">
+          <OfxPropLabel>모션 블러 추가하기</OfxPropLabel>
+		  <OfxPropShortLabel>모션 블러 추가하기</OfxPropShortLabel>
+		  <OfxPropLongLabel>모션 블러 추가하기</OfxPropLongLabel>
+		  <OfxParamPropHint>클릭하여 모션 블러를 평행 카메라 팬에 추가합니다.</OfxParamPropHint>
+        </OfxParamTypeBoolean>
+
+        <OfxParamTypeDouble name="MotionBlurThreshold">
+          <OfxPropLabel>한도</OfxPropLabel>
+		  <OfxPropShortLabel>한도</OfxPropShortLabel>
+		  <OfxPropLongLabel>한도</OfxPropLongLabel>
+		  <OfxParamPropHint>모션 블러는 평행 카메라 팬이 해당 임계값을 초과하는 경우에만 적용됩니다.</OfxParamPropHint>
+        </OfxParamTypeDouble>
+		
+		
+		<OfxParamTypeGroup name="GroupExpertMode">
+          <OfxPropLabel>전문가 모드</OfxPropLabel>
+		  <OfxPropShortLabel>전문가 모드</OfxPropShortLabel>
+		  <OfxPropLongLabel>전문가 모드</OfxPropLongLabel>
+		  <OfxParamPropHint>추적 알고리즘을 조정하는 법에 대한 추가 정보 보기</OfxParamPropHint>
+        </OfxParamTypeGroup>
+		
+		<OfxParamTypeDouble name="XScale">
+          <OfxPropLabel>넓이 (ROI)</OfxPropLabel>
+		  <OfxPropShortLabel>넓이 (ROI)</OfxPropShortLabel>
+		  <OfxPropLongLabel>넓이 (ROI)</OfxPropLongLabel>
+		  <OfxParamPropHint>이 매개 변수로 관심 영역의 넓이를 조정하실 수 있습니다.</OfxParamPropHint>
+        </OfxParamTypeDouble>
+		
+		<OfxParamTypeDouble name="YScale">
+          <OfxPropLabel>높이 (ROI)</OfxPropLabel>
+		  <OfxPropShortLabel>높이 (ROI)</OfxPropShortLabel>
+		  <OfxPropLongLabel>높이 (ROI)</OfxPropLongLabel>
+		  <OfxParamPropHint>이 매개 변수로 관심 영역의 높이를 조정하실 수 있습니다.</OfxParamPropHint>
+        </OfxParamTypeDouble>
+		
+		<OfxParamTypeInteger name="NumGridsX">
+          <OfxPropLabel>X행 그리드 수 </OfxPropLabel>
+		  <OfxPropShortLabel>X행 그리드 수 </OfxPropShortLabel>
+		  <OfxPropLongLabel>X행 그리드 수 </OfxPropLongLabel>
+		  <OfxParamPropHint>이 매개 변수로 X행의 그리드 수를 설정하실 수 있습니다.</OfxParamPropHint>
+        </OfxParamTypeInteger>
+		
+		<OfxParamTypeInteger name="NumGridsY">
+          <OfxPropLabel>Y열 그리드 수</OfxPropLabel>
+		  <OfxPropShortLabel>Y열 그리드 수</OfxPropShortLabel>
+		  <OfxPropLongLabel>Y열 그리드 수</OfxPropLongLabel>
+		  <OfxParamPropHint>이 매개 변수로 Y열의 그리드 수를 설정하실 수 있습니다.</OfxParamPropHint>
+        </OfxParamTypeInteger>
+		
+		<OfxParamTypeInteger name="PointsPerGridCell">
+          <OfxPropLabel>그리드 셀 당 값</OfxPropLabel>
+		  <OfxPropShortLabel>그리드 셀 당 값</OfxPropShortLabel>
+		  <OfxPropLongLabel>그리드 셀 당 값</OfxPropLongLabel>
+		  <OfxParamPropHint>이 매개 변수로 그리드 셀 당 값을 설정하실 수 있습니다.</OfxParamPropHint>
+        </OfxParamTypeInteger>
+		
+		<OfxParamTypeChoice name="ChoiceTrackerType">
+          <OfxParamPropChoiceOption>루카스-캐나다</OfxParamPropChoiceOption>
+          <OfxParamPropChoiceOption>차의 절대값의 합(SAD)</OfxParamPropChoiceOption>
+          <OfxParamPropChoiceOption>잡종</OfxParamPropChoiceOption>
+          <OfxPropLabel>트래커 타입</OfxPropLabel>
+		  <OfxPropShortLabel>트래커 타입</OfxPropShortLabel>
+		  <OfxPropLongLabel>트래커 타입</OfxPropLongLabel>
+		  <OfxParamPropHint>이 선택 박스로 트래커 타입을 지정하실 수 있습니다.</OfxParamPropHint>
+        </OfxParamTypeChoice>
+		
+		
+		<OfxParamTypeGroup name="GroupLockState">
+          <OfxPropLabel>매끄럽게 매개 변수 </OfxPropLabel>
+		  <OfxPropShortLabel>매끄럽게 매개 변수 </OfxPropShortLabel>
+		  <OfxPropLongLabel>매끄럽게 매개 변수 </OfxPropLongLabel>
+		  <OfxParamPropHint>매개 변수를 조정하여 매끄럽게 하는 법에 대한 더 자세한 정보 보기</OfxParamPropHint>
+        </OfxParamTypeGroup>
+		
+		<OfxParamTypeBoolean name="LockTranslateX">
+          <OfxPropLabel>X 평행 이동</OfxPropLabel>
+		  <OfxPropShortLabel>X 평행 이동</OfxPropShortLabel>
+		  <OfxPropLongLabel>X 평행 이동</OfxPropLongLabel>
+		  <OfxParamPropHint>X 평행 이동 매끄럽게</OfxParamPropHint>
+        </OfxParamTypeBoolean>
+		
+		<OfxParamTypeBoolean name="LockTranslateY">
+          <OfxPropLabel>Y 평행 이동</OfxPropLabel>
+		  <OfxPropShortLabel>Y 평행 이동</OfxPropShortLabel>
+		  <OfxPropLongLabel>Y 평행 이동</OfxPropLongLabel>
+		  <OfxParamPropHint>Y 평행 이동 매끄럽게</OfxParamPropHint>
+        </OfxParamTypeBoolean>
+		
+		<OfxParamTypeBoolean name="LockAngle">
+          <OfxPropLabel>각도</OfxPropLabel>
+		  <OfxPropShortLabel>각도</OfxPropShortLabel>
+		  <OfxPropLongLabel>각도</OfxPropLongLabel>
+		  <OfxParamPropHint>앵글 매끄럽게</OfxParamPropHint>
+        </OfxParamTypeBoolean>
+		
+		<OfxParamTypeBoolean name="LockScaleX">
+          <OfxPropLabel>X 스케일</OfxPropLabel>
+		  <OfxPropShortLabel>X 스케일</OfxPropShortLabel>
+		  <OfxPropLongLabel>X 스케일</OfxPropLongLabel>
+		  <OfxParamPropHint>X의 스케일 매끄럽게</OfxParamPropHint>
+        </OfxParamTypeBoolean>
+		
+		<OfxParamTypeBoolean name="LockScaleY">
+          <OfxPropLabel>Y 스케일</OfxPropLabel>
+		  <OfxPropShortLabel>Y 스케일</OfxPropShortLabel>
+		  <OfxPropLongLabel>Y 스케일</OfxPropLongLabel>
+		  <OfxParamPropHint>Y 스케일 매끄럽게</OfxParamPropHint>
+        </OfxParamTypeBoolean>
+		
+		<OfxParamTypeBoolean name="LockShear">
+          <OfxPropLabel>기울이기</OfxPropLabel>
+		  <OfxPropShortLabel>기울이기</OfxPropShortLabel>
+		  <OfxPropLongLabel>기울이기</OfxPropLongLabel>
+		  <OfxParamPropHint>기울이기 매끄럽게</OfxParamPropHint>
+        </OfxParamTypeBoolean>
+		
+		<OfxParamTypeGroup name="GroupVisualization">
+          <OfxPropLabel>심상</OfxPropLabel>
+		  <OfxPropShortLabel>심상</OfxPropShortLabel>
+		  <OfxPropLongLabel>심상</OfxPropLongLabel>
+		  <OfxParamPropHint>시각화에 대한 추가 정보를 표시합니다.</OfxParamPropHint>
+        </OfxParamTypeGroup>
+		
+		<OfxParamTypeBoolean name="ShowFeatures">
+          <OfxPropLabel>포인트 표시</OfxPropLabel>
+		  <OfxPropShortLabel>포인트 표시</OfxPropShortLabel>
+		  <OfxPropLongLabel>포인트 표시</OfxPropLongLabel>
+		  <OfxParamPropHint>추적 지점을 표시합니다.</OfxParamPropHint>
+        </OfxParamTypeBoolean>
+
+        <OfxParamTypeInteger name="ShowFeaturesMinLen">
+          <OfxPropLabel>최단 트랙 길이</OfxPropLabel>
+          <OfxPropShortLabel>최단 트랙 길이</OfxPropShortLabel>
+          <OfxPropLongLabel>보여지는 최단 트랙 길이</OfxPropLongLabel>
+          <OfxParamPropHint>이 매개 변수를 조정하여 어떤 추적 포인트를 표시할지 정할 수 있습니다.</OfxParamPropHint>
+        </OfxParamTypeInteger> 
+
+	</OfxImageEffectContext>
+
+    </OfxResourceSet>
+
+  </OfxPlugin>
+  <OfxPlugin name="de.magix:WarpFlowTransition">
+
+    <OfxResourceSet ofxHost="default">
+      <OfxPropLabel>VEGAS 비틀기 변환 플로우	</OfxPropLabel>
+
+      <OfxImageEffectPluginPropGrouping>VEGAS</OfxImageEffectPluginPropGrouping>
+      <OfxPropPluginDescription>모핑 변환 효과 생성하기.</OfxPropPluginDescription>
+      <OfxImageEffectContext name="default">
+      </OfxImageEffectContext>
+
+      <OfxImageEffectContext name="OfxImageEffectContextTransition">
+        	
+		<OfxMessage name="NoCorrespondences">클립들이 서로 너무 다르므로, 비틀기 변환 효과를 적용해도 단순한 크로스페이드 효과가 될 수도 있습니다.</OfxMessage>
+		
+      </OfxImageEffectContext>
+
+    </OfxResourceSet>
+
+  </OfxPlugin>
+
+</OfxImageEffectResource>

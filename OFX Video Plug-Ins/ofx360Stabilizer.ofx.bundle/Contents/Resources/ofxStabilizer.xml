@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<strings>
+  <string id="mx.ofx.stab.plugin.stereo" default="0x9">
+    <text langid="0x9">Stereoscopy</text>
+    <text langid="0x7">Stereoskopie</text>
+    <text langid="0x19">Стерео</text>
+  </string>
+  <string id="mx.ofx.stab.plugin.stereo.hint" default="0x9">
+    <text langid="0x9">Selects the 3D frame format.</text>
+    <text langid="0x7">Das stereoskopische Frame-Format festlegen.</text>
+    <text langid="0x19">Выбор стерео формата для фреймов.</text>
+  </string>
+  <string id="mx.ofx.stab.plugin.stereo.entry.0" default="0x9">
+    <text langid="0x9">None</text>
+    <text langid="0x7">Keine</text>
+    <text langid="0x19">Отсутствует</text>
+  </string>
+  <string id="mx.ofx.stab.plugin.stereo.entry.1" default="0x9">
+    <text langid="0x9">Top-and-Bottom</text>
+    <text langid="0x7">Oben-Unten</text>
+    <text langid="0x19">Верх-низ</text>
+  </string>
+  <string id="mx.ofx.stab.plugin.stereo.entry.2" default="0x9">
+    <text langid="0x9">Side-by-Side</text>
+    <text langid="0x7">Seite an Seite</text>
+    <text langid="0x19">Бок-о-бок</text>
+  </string>
+  
+  <string id="mx.ofx.stab.plugin.btn.analyze" default="0x9">
+    <text langid="0x9">Start Analysis</text>
+    <text langid="0x7">Analyse ausführen</text>
+    <text langid="0x19">Выполнить анализ</text>
+  </string>
+  <string id="mx.ofx.stab.plugin.btn.analyze.hint" default="0x9">
+    <text langid="0x9">Starts the analysis to detemine motion data for the entire media.</text>
+    <text langid="0x7">Die Analyse wird ausgeführt, um die Bewegugsdaten zu ermitteln.</text>
+    <text langid="0x19">Процедура анализа для сбора данных о движении во всём видео.</text>
+  </string>
+  
+  <string id="mx.ofx.stab.plugin.btn.clear" default="0x9">
+    <text langid="0x9">Discard Analysis</text>
+    <text langid="0x7">Analyse verwerfen</text>
+    <text langid="0x19">Аннулировать анализ</text>
+  </string>
+  <string id="mx.ofx.stab.plugin.btn.clear.hint" default="0x9">
+    <text langid="0x9">Clears the results of analysis.</text>
+    <text langid="0x7">Alle Ergebnisse der Analyse werden verworfen.</text>
+    <text langid="0x19">Результаты анализа будут уничтожены.</text>
+  </string>
+  
+  <string id="mx.ofx.stab.plugin.smoothness" default="0x9">
+    <text langid="0x9">Smoothness</text>
+    <text langid="0x7">Glättung</text>
+    <text langid="0x19">Сглаживание</text>
+  </string>
+  <string id="mx.ofx.stab.plugin.smoothness.hint" default="0x9">
+    <text langid="0x9">The larger the more stable the video, but less reactive to sudden panning.</text>
+    <text langid="0x7">Je größer der Wert, desto ruhiger wird das Video, aber weniger ansprechbar auf plötzliche Bewegungen.</text>
+    <text langid="0x19">Чем больше значение, тем спокойнее видео, однако менее реактивно на спонтанные движения камеры.</text>
+  </string>
+  
+  <string id="mx.ofx.stab.plugin.exclude.bottom" default="0x9">
+    <text langid="0x9">Exclude views</text>
+    <text langid="0x7">Ansichten ausschließen</text>
+    <text langid="0x19">Исключить виды</text>
+  </string>
+  <string id="mx.ofx.stab.plugin.exclude.bottom.hint" default="0x9">
+    <text langid="0x9">Defines views, these will be excluded from the analysis.</text>
+    <text langid="0x7">Ansichten, die bei der Analyse nicht berücksichtigt werden.</text>
+    <text langid="0x19">Определяет виды, которые не будут учтены при анализе.</text>
+  </string>
+  <string id="mx.ofx.stab.plugin.exclude.bottom.entry.0" default="0x9">
+    <text langid="0x9">North &amp; South Pole</text>
+    <text langid="0x7">Nord- &amp; Südpol</text>
+    <text langid="0x19">Северный &amp; южный полюс</text>
+  </string>
+  <string id="mx.ofx.stab.plugin.exclude.bottom.entry.1" default="0x9">
+    <text langid="0x9">South Pole</text>
+    <text langid="0x7">Südpol</text>
+    <text langid="0x19">Южный полюс</text>
+  </string>
+  <string id="mx.ofx.stab.plugin.exclude.bottom.entry.2" default="0x9">
+    <text langid="0x9">Nothing</text>
+    <text langid="0x7">Keine</text>
+    <text langid="0x19">Отсутствуют</text>
+  </string>
+  
+  <string id="mx.ofx.stab.plugin.progress" default="0x9">
+    <text langid="0x9">Being analyzed...</text>
+    <text langid="0x7">Videomaterial wird analysiert...</text>
+    <text langid="0x19">Анализ материала ...</text>
+  </string>
+  
+  <string id="mx.ofx.stab.plugin.about" default="0x9">
+    <text langid="0x9">Designed to reduce unstable motion in your 360° videos.</text>
+    <text langid="0x7">Dieser Plugin wurde entwickelt, um Verwacklungen in einem 360° Video zu eliminieren.</text>
+    <text langid="0x19">Разработан для стабилизации видеопоследовательности в формате 360°.</text>
+  </string>
+  <string id="mx.ofx.stab.plugin.label" default="0x9">
+    <text langid="0x9">VEGAS 360° Video Stabilization</text>
+    <text langid="0x7">VEGAS 360° Video Stabilisierung</text>
+    <text langid="0x19">VEGAS 360° Видео Стабилизация</text>
+  </string>
+  <string id="mx.ofx.stab.plugin.grouping" default="0x9">
+    <text langid="0x9">VEGAS\360</text>
+  </string>
+  
+  <string id="mx.ofx.stab.plugin.warning.effectfx" default="0x9">
+    <text langid="0x9">Please assign this plugin exclusively via media FX!</text>
+    <text langid="0x7">Bitte weisen Sie diesen Plugin einem Medium nur über Media-FX zu!</text>
+    <text langid="0x19">Вы можете использовать этот плагин только как медиа-FX!</text>
+  </string>
+  <string id="mx.ofx.plugin.rotate.warning.hostnotsupported" default="0x9">
+    <text langid="0x9">The current host is not supported by this plugin.</text>
+    <text langid="0x7">Der Host wird nicht durch diesen Plugin unterstützt.</text>
+    <text langid="0x19">Этот плагин не поддерживает данный хост.</text>
+  </string>
+  <string id="mx.ofx.plugin.rotate.warning.unknown" default="0x9">
+    <text langid="0x9">Unknown error!</text>
+    <text langid="0x7">Unbekannter Fehler!</text>
+    <text langid="0x19">Неизвестная ошибка!</text>
+  </string>
+</strings>

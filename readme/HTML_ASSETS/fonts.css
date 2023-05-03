@@ -1,0 +1,20 @@
+div,p,td{font-family: Arial, Tahoma, Verdana, MS Sans Serif; color: #000000; font-size: 12px}
+ul{font-family: Arial, Tahoma, Verdana, MS Sans Serif; color: #000000; font-size: 12px; list-style: square outside; margin: 0 0 0 16px; padding: 0 0 1em 0;}
+sup{font-size: 80%; margin-top: 0px;}
+.headline{font-family: Arial, Tahoma, Verdana, MS Sans Serif; color: #000000; font-size: 18px; font-weight: 500; text-decoration: none}
+.subhead{font-family: Arial, Tahoma, Verdana, MS Sans Serif; color: #000000; font-size: 14px; font-weight: bold; text-decoration: none}
+.large{font-size: 13px}
+.small{font-family: 'Lucida Grande', Geneva, Verdana, Arial, sans-serif; font-size: 10px; line-height: 120%}
+.tiny{font-size:6px}
+.legal{font-family: 'Lucida Grande', Geneva, Verdana, Arial, sans-serif; color: #666666; font-size: 10px}<br>
+.footer{font-family: 'Lucida Grande', Geneva, Verdana, Arial, sans-serif;font-size: 10px;color:#999999;line-height: 100%;font-weight:bold;}
+.footer{font-family: 'Lucida Grande', Geneva, Verdana, Arial, sans-serif;font-size: 10px;color:#999999;line-height: 100%;font-weight:bold;}
+A.footer:link{color: #999999; text-decoration: none}
+A.footer:active{color: #999999; text-decoration: none}
+A.footer:visited{color: #999999; text-decoration: none}
+A.footer:hover{color: #999999; text-decoration: underline}
+A:hover{text-decoration: none}
+A.hiddenlink:link{color: #000000; text-decoration: none}
+A.hiddenlink:active{color: #000000; text-decoration: none}
+A.hiddenlink:visited{color: #000000; text-decoration: none}
+A.hiddenlink:hover{color: #333333; text-decoration: none}

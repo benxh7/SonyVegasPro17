@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<patchlist owner="efx" origin="">
+    <programs last_prg="0">
+        <prg number="0" preset="Default.efx" />
+        <prg number="1" preset="Female Vox.efx" /> 
+        <prg number="2" preset="Male Vox.efx" />
+    </programs>
+</patchlist>
